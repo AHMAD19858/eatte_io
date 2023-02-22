@@ -14,9 +14,9 @@
 		<IoLandingSystemFeatures />
 		<IoLandingSolutions />
 		<IoLandingPlans />
+		<IoLandingFaq />
 
 
-	
 
 
 	</div>
