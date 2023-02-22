@@ -15,107 +15,117 @@
 
 			<section class=" text-black">
 				<div class="container flex flex-col items-center p-4 mx-auto md:p-8">
-					<div class="flex flex-col w-full divide-y sm:flex-row sm:divide-y-0 sm:divide-x  divide-[#93A3B029]">
-						<div class="flex flex-col w-full divide-y divide-[#93A3B029]">
-							<div class="flex flex-col gap-2 items-center justify-center p-4 sm:py-8 lg:py-12">
-								
+					<div class="sol_container">
+						<div class="divide_section">
+							<div class="item_section">
+
 								<img src="../../../../assets/images/icons/hat.svg" alt="">
 								<h3 class="font-bold text-xl">
 									Full Service Restaurant
 								</h3>
 								<p class="font-normal text-base text-[#3F4440]">
-									Lorem ipsum dolor sit amet, consectetur adipis elit. Sit enim nec, proin faucibus nibh et sagittis a. Lacinia purus ac amet.
+									Lorem ipsum dolor sit amet, consectetur adipis elit. Sit enim nec, proin faucibus nibh
+									et sagittis a. Lacinia purus ac amet.
 								</p>
 							</div>
-							<div class="flex flex-col gap-2 items-center justify-center p-4 sm:py-8 lg:py-12">
+							<div class="item_section">
 								<img src="../../../../assets/images/icons/location.svg" alt="">
 								<h3 class="font-bold text-xl">
 									Food Truck
 								</h3>
 								<p class="font-normal text-base text-[#3F4440]">
-									Lorem ipsum dolor sit amet, consectetur adipis elit. Sit enim nec, proin faucibus nibh et sagittis a. Lacinia purus ac amet.
+									Lorem ipsum dolor sit amet, consectetur adipis elit. Sit enim nec, proin faucibus nibh
+									et sagittis a. Lacinia purus ac amet.
 								</p>
 							</div>
-							<div class="flex flex-col gap-2 items-center justify-center p-4 sm:py-8 lg:py-12"></div>
+							<div class="item_section"></div>
 						</div>
-						<div class="flex flex-col w-full divide-y divide-[#93A3B029]">
-							<div class="flex flex-col gap-2 items-center justify-center p-4 sm:py-8 lg:py-12">
+						<div class="divide_section">
+							<div class="item_section">
 								<img src="../../../../assets/images/icons/users.svg" alt="">
 								<h3 class="font-bold text-xl">
 									Family Style
 								</h3>
 								<p class="font-normal text-base text-[#3F4440]">
-									Lorem ipsum dolor sit amet, consectetur adipis elit. Sit enim nec, proin faucibus nibh et sagittis a. Lacinia purus ac amet.
+									Lorem ipsum dolor sit amet, consectetur adipis elit. Sit enim nec, proin faucibus nibh
+									et sagittis a. Lacinia purus ac amet.
 								</p>
 							</div>
-							<div class="flex flex-col gap-2 items-center justify-center p-4 sm:py-8 lg:py-12">
+							<div class="item_section">
 								<img src="../../../../assets/images/icons/restaurant.svg" alt="">
 								<h3 class="font-bold text-xl">
 									Fine Dining
 								</h3>
 								<p class="font-normal text-base text-[#3F4440]">
-									Lorem ipsum dolor sit amet, consectetur adipis elit. Sit enim nec, proin faucibus nibh et sagittis a. Lacinia purus ac amet.
+									Lorem ipsum dolor sit amet, consectetur adipis elit. Sit enim nec, proin faucibus nibh
+									et sagittis a. Lacinia purus ac amet.
 								</p>
 							</div>
-							<div class="flex flex-col gap-2 items-center justify-center p-4 sm:py-8 lg:py-12">
+							<div class="item_section">
 								<img src="../../../../assets/images/icons/shop.svg" alt="">
 								<h3 class="font-bold text-xl">
 									Quick Service Restaurant
 								</h3>
 								<p class="font-normal text-base text-[#3F4440]">
-									Lorem ipsum dolor sit amet, consectetur adipis elit. Sit enim nec, proin faucibus nibh et sagittis a. Lacinia purus ac amet.
+									Lorem ipsum dolor sit amet, consectetur adipis elit. Sit enim nec, proin faucibus nibh
+									et sagittis a. Lacinia purus ac amet.
 								</p>
 							</div>
 						</div>
-						<div class="flex flex-col w-full divide-y divide-[#93A3B029]">
-							<div class="flex flex-col gap-2 items-center justify-center p-4 sm:py-8 lg:py-12">
+						<div class="divide_section">
+							<div class="item_section">
 								<img src="../../../../assets/images/icons/coffee.svg" alt="">
 								<h3 class="font-bold text-xl">
 									Coffee Shop
 								</h3>
 								<p class="font-normal text-base text-[#3F4440]">
-									Lorem ipsum dolor sit amet, consectetur adipis elit. Sit enim nec, proin faucibus nibh et sagittis a. Lacinia purus ac amet.
+									Lorem ipsum dolor sit amet, consectetur adipis elit. Sit enim nec, proin faucibus nibh
+									et sagittis a. Lacinia purus ac amet.
 								</p>
 							</div>
-							<div class="flex flex-col gap-2 items-center justify-center p-4 sm:py-8 lg:py-12">
+							<div class="item_section">
 								<img src="../../../../assets/images/icons/hamburger.svg" alt="">
 								<h3 class="font-bold text-xl">
 									Fast Casual
 								</h3>
 								<p class="font-normal text-base text-[#3F4440]">
-									Lorem ipsum dolor sit amet, consectetur adipis elit. Sit enim nec, proin faucibus nibh et sagittis a. Lacinia purus ac amet.
+									Lorem ipsum dolor sit amet, consectetur adipis elit. Sit enim nec, proin faucibus nibh
+									et sagittis a. Lacinia purus ac amet.
 								</p>
 							</div>
-							<div class="flex flex-col gap-2 items-center justify-center p-4 sm:py-8 lg:py-12">
+							<div class="item_section">
 								<img src="../../../../assets/images/icons/room-service.svg" alt="">
 								<h3 class="font-bold text-xl">
 									Catering
 								</h3>
 								<p class="font-normal text-base text-[#3F4440]">
-									Lorem ipsum dolor sit amet, consectetur adipis elit. Sit enim nec, proin faucibus nibh et sagittis a. Lacinia purus ac amet.
+									Lorem ipsum dolor sit amet, consectetur adipis elit. Sit enim nec, proin faucibus nibh
+									et sagittis a. Lacinia purus ac amet.
 								</p>
 							</div>
 						</div>
 						<div class="hidden w-full divide-y sm:flex-col sm:flex divide-[#93A3B029]">
-							<div class="flex flex-col gap-2 items-center justify-center p-4 sm:py-8 lg:py-12">
+							<div class="item_section">
 								<img src="../../../../assets/images/icons/food.svg" alt="">
 								<h3 class="font-bold text-xl">
 									Bakery
 								</h3>
 								<p class="font-normal text-base text-[#3F4440]">
-									Lorem ipsum dolor sit amet, consectetur adipis elit. Sit enim nec, proin faucibus nibh et sagittis a. Lacinia purus ac amet.
+									Lorem ipsum dolor sit amet, consectetur adipis elit. Sit enim nec, proin faucibus nibh
+									et sagittis a. Lacinia purus ac amet.
 								</p>
 							</div>
-							<div class="flex flex-col gap-2 items-center justify-center p-4 sm:py-8 lg:py-12">
+							<div class="item_section">
 								<img src="../../../../assets/images/icons/mug.svg" alt="">
 								<h3 class="font-bold text-xl">
 									Cafe
 								</h3>
 								<p class="font-normal text-base text-[#3F4440]">
-									Lorem ipsum dolor sit amet, consectetur adipis elit. Sit enim nec, proin faucibus nibh et sagittis a. Lacinia purus ac amet.
+									Lorem ipsum dolor sit amet, consectetur adipis elit. Sit enim nec, proin faucibus nibh
+									et sagittis a. Lacinia purus ac amet.
 								</p>
 							</div>
-							<div class="flex flex-col gap-2 items-center justify-center p-4 sm:py-8 lg:py-12"></div>
+							<div class="item_section"></div>
 						</div>
 					</div>
 				</div>
@@ -145,57 +155,43 @@
 }
 
 .container {
-	width: 100%;
-	max-width: 1200px;
-	padding: 0 15px;
-	margin: 0 auto;
+	@apply w-full max-w-[1200px] py-0 px-[15px] my-0 mx-auto
 }
 
 .solutions_section {
-	position: relative;
-	height: 1000px;
-	background-color: #ffffff;
-	margin: 260px 0px;
+	@apply relative bg-white h-[1000px] my-[260px] mx-0
+}
+.sol_container{
+	@apply flex flex-col w-full divide-y sm:flex-row sm:divide-y-0 sm:divide-x  divide-[#93A3B029]
 }
 
+.divide_section{
+	@apply flex flex-col w-full divide-y divide-[#93A3B029]
+}
+.item_section{
+@apply flex flex-col gap-2 items-center justify-center p-4 sm:py-8 lg:py-12
+}
 .solutions_section::before,
 .solutions_section::after {
-	content: '';
-	position: absolute;
-	left: 0;
-	display: block;
-	height: 110px;
-	width: 100%;
-	background-repeat: no-repeat;
-	background-size: cover;
+
+	@apply absolute left-0 block h-[110px] w-full  bg-cover bg-no-repeat content-['']
 }
 
 .solutions_section::before {
-	background-image: url("../../../../assets/images/Vector.svg");
-	background-position: top center;
-	top: -110px;
+
+	@apply top-[-110px] bg-[url('../../../../assets/images/Vector.svg')] bg-[top_center]
 }
 
 .solutions_section::after {
-	background-image: url("../../../../assets/images/Vector1.svg");
-	background-position: bottom center;
-	bottom: -110px;
+	@apply bottom-[-110px] bg-[bottom_center] bg-[url('../../../../assets/images/Vector1.svg')]
 }
 
 .solutions_section .line-top {
-	position: absolute;
-	top: -125px;
-	object-fit: cover;
-	width: 100%;
-	z-index: 1;
+	@apply absolute top-[-125px] object-cover w-full z-[1]
 }
 
 .solutions_section .line-bottom {
-	position: absolute;
-	bottom: -160px;
-	object-fit: cover;
-	width: 100%;
-	z-index: 1;
+	@apply absolute bottom-[-160px] object-cover w-full z-[1]
 }
 
 @media (max-width: 1200px) {
@@ -212,13 +208,13 @@
 
 @media (max-width: 768px) {
 	.container {
-		max-width: 576px;
+
+		@apply max-w-[576px]
 	}
 }
 
 @media (max-width: 576px) {
 	.container {
-		max-width: 100%;
+		@apply max-w-full
 	}
-}
-</style>
+}</style>
