@@ -68,10 +68,7 @@
 
 <style scoped>
 .container {
-    width: 100%;
-    max-width: 1200px;
-    padding: 0 15px;
-    margin: 0 auto;
+    @apply w-full max-w-[1200px] py-0 px-[15px]
 }
 
 @media (max-width: 1200px) {
@@ -99,19 +96,13 @@
 }
 
 .plan_title {
-    font-size: 40px;
-    font-weight: 700;
-    margin-bottom: 40px;
-    color: var(--primary);
+    @apply text-[40px] font-bold my-10 text-primary-color
 }
 
+
 .plan_section {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    gap: 50px;
-    margin-bottom: 100px;
+
+    @apply flex justify-between items-start flex-wrap mb-[100px] gap-[50px]
 }
 
 .plan_section .plan_side {
@@ -119,139 +110,82 @@
 }
 
 .plan_section .plan_side h1 {
-    font-size: 60px;
-    font-weight: 700;
-    margin-bottom: 15px;
+    @apply mb-[15px] font-bold text-6xl
 }
 
 .plan_section .plan_side p {
-    font-size: 18px;
-    margin-bottom: 35px;
+    @apply text-lg mb-[35px]
 }
 
 .plan_section .plan_side ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    gap: 20px;
-    margin: 40px 0px;
+
+    @apply list-none p-0 flex justify-between items-start flex-wrap gap-5 mt-10
 }
 
 .plan_section .plan_side ul li {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    gap: 10px;
+    @apply flex items-center w-full gap-[10px]
 }
 
 .plan_section .plan_side ul li i {
-    font-size: 20px;
-    color: var(--primary);
+    @apply text-primary-color text-[20px]
 }
 
 .plan_section .plan_side ul li p {
-    font-size: 16px;
-    font-weight: 600;
-    margin-bottom: 0;
+    @apply text-base font-semibold mb-0
 }
 
 .plan_section .plan_side .plan {
-    position: relative;
-    width: 100%;
-    height: 110px;
-    padding: 25px 15px;
-    background-color: #fff;
-    border: 3px solid #fff;
-    border-radius: 15px;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 20px;
-    margin-bottom: 40px;
+    @apply py-[25px] border-[3px] px-[15px] border-white border-solid h-[110px] bg-white gap-[20px] rounded-[15px] flex w-full mb-10 items-center justify-start relative
 }
 
 .plan_section .plan_side .plan .plan_icon {
-    width: 55px;
-    height: 55px;
-    background-color: #93A3B029;
-    border-radius: 8px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+    @apply flex w-[55px] rounded-lg h-[55px] bg-[#93A3B029] justify-center items-center
 }
 
 .plan_section .plan_side .plan .plan_icon i {
-    font-size: 40px;
+    @apply text-[40px]
 }
 
 .plan_section .plan_side .plan .plan_info h4 {
-    font-size: 18px;
-    font-weight: 700;
-    margin-bottom: 5px;
-    color: var(--font);
+    @apply font-bold mb-[5px] text-font-color text-lg
 }
 
 .plan_section .plan_side .plan .plan_info p {
-    font-size: 16px;
-    margin: 0;
-    color: #3F4440;
+    @apply text-base m-0 text-[#3F4440]
 }
 
 .plan_section .plan_side .plan .plan_best {
-    position: absolute;
-    top: 50%;
-    right: 15px;
-    transform: translateY(-50%);
-    font-size: 12px;
-    font-weight: 700;
-    background: linear-gradient(90deg, #FF6137, #CC4D2C);
-    padding: 5px 10px;
-    border-radius: 20px;
-    color: #fff;
-    margin: 0;
+    @apply absolute m-0 text-white rounded-[20px] font-bold text-xs top-[50%] right-[15px] translate-y-[-50%] py-[5px] px-[10px] bg-gradient-to-r from-primary-color to-[#CC4D2C]
 }
 
 .plan_section .plan_side .plan.active_plan {
-    border-color: var(--primary);
+    @apply border-primary-color
 }
 
 .plan_section .plan_side .plan.active_plan .plan_icon {
-    background-color: var(--primary);
+    @apply bg-primary-color
 }
 
 .plan_section .plan_side .plan.active_plan .plan_icon i {
-    color: #fff;
+    @apply text-white
 }
 
 .plan_section .plan_btn {
-    width: 100%;
-    height: 55px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 15px;
-    border-radius: 10px;
-    background-image: linear-gradient(90deg, #FF6137, #CC4D2C);
+    @apply gap-[15px] w-full flex h-[55px] bg-gradient-to-r from-primary-color to-[#CC4D2C] justify-center rounded-[10px] items-center
 }
 
 .plan_section .plan_btn p {
-    font-size: 18px;
-    font-weight: 700;
-    color: #ffffff;
-    margin: 0;
+    @apply m-0 text-white font-bold text-lg
 }
 
 .plan_section .plan_btn i {
-    font-size: 26px;
-    color: #ffffff;
+    @apply text-[26px] text-white
 }
 
 @media (max-width:992px) {
     .plan_section .plan_side {
-        width: 100%;
+        @apply w-full
     }
 }
 </style>
