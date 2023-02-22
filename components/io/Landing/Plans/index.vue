@@ -61,6 +61,11 @@
             </div>
         </div>
 
+        <div class="header_container">
+			<h2 class="main_text">Built To Handle The Details, The Rush</h2>
+				<h2 class="main_text">
+				And Everything In-Between</h2>
+		</div>
     </div>
 </template>
 
@@ -68,7 +73,7 @@
 
 <style scoped>
 .container {
-    @apply w-full max-w-[1200px] py-0 px-[15px]
+    @apply w-full max-w-[1200px] py-0 px-[15px] my-0 mx-auto
 }
 
 @media (max-width: 1200px) {
@@ -187,5 +192,13 @@
     .plan_section .plan_side {
         @apply w-full
     }
+}
+
+.header_container {
+	@apply space-y-2 text-center mb-16
+}
+
+.main_text {
+	@apply text-[35px] font-bold text-primary-color leading-7
 }
 </style>
