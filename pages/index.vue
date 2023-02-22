@@ -1,36 +1,5 @@
 <script setup>
 
-
-let a = useState('a', () => { true })
-let b = useState('b', () => { false })
-function toggle(plan) {
-	if (plan === "basic") {
-		if (a === true) {
-			a = useState('a', () => { false })
-			b = useState('b', () => { true })
-		}
-		else {
-			let a = true;
-			let b = false;
-		}
-		console.log('a in basic', a)
-		console.log('b in basic', b)
-	}
-	else {
-
-		if (a === true) {
-			b = false;
-			a = true;
-		}
-		else {
-			b = true;
-			a = false;
-		}
-		console.log('a in pro', a)
-		console.log('b in pro', b)
-	}
-}
-
 </script>
 
 <template>
@@ -44,66 +13,9 @@ function toggle(plan) {
 		<IoLandingBannerCard />
 		<IoLandingSystemFeatures />
 		<IoLandingSolutions />
-		
+		<IoLandingPlans/>
 
-		<div class="container">
-		
-			<h3 class="plan_title">Pricing that works for you.</h3>
-			<div class="plan_section">
-				<div class="plan_side">
-					<h1>Try EATTE</h1>
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elemen.
-					</p>
-					<ul>
-						<li>
-							<i class='bx bx-check-circle'></i>
-							<p>
-								Loyalty
-							</p>
-						</li>
-						<li>
-							<i class='bx bx-check-circle'></i>
-							<p>
-								Gift Cards
-							</p>
-						</li>
-						<li>
-							<i class='bx bx-check-circle'></i>
-							<p>
-								SMS Marketing
-							</p>
-						</li>
-					</ul>
-				</div>
-				<div class="plan_side">
-					<div class="plan">
-						<div class="plan_icon">
-							<i class='bx bx-check-circle'></i>
-						</div>
-						<div class="plan_info">
-							<h4>Pay as you go</h4>
-							<p>No upfront cost. No monthly subscription</p>
-						</div>
-					</div>
-					<div class="plan active_plan">
-						<div class="plan_icon">
-							<i class='bx bx-check-circle'></i>
-						</div>
-						<div class="plan_info">
-							<h4>Pay as you go</h4>
-							<p>No upfront cost. No monthly subscription</p>
-						</div>
-						<p class="plan_best">Best Value</p>
-					</div>
-					<button class="plan_btn">
-						<p>Try</p>
-						<i class='bx bx-check-circle'></i>
-					</button>
-				</div>
-			</div>
-
-		</div>
+	
 
 
 
