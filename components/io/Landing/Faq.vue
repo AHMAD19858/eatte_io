@@ -1,5 +1,5 @@
 <template>
-    <section class="dark:bg-white dark:text-gray-100">
+    <section class="dark:bg-white dark:text-gray-100 h-[750px]">
         <div class="container flex flex-col justify-center p-4 mx-auto md:p-8">
             <h2 class=" mb-6 text-[36px] font-semibold leading-none text-center  text-black">Frequently Asked Questions</h2>
             <p class="p-2 text-sm font-medium tracking-wider text-center  text-[#3F4440] mb-5">Everything you need to know
@@ -55,7 +55,7 @@
             <p class=" text-center font-normal text-[15px] text-[#3F4440]">Can’t find the answer you’re looking for? Please
                 chat to our friendly team.</p>
             <div class="view_button">
-                <button class="get_started">View all features
+                <button class="get_started">Get in touch
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                         stroke="currentColor" class="w-6 h-6">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
