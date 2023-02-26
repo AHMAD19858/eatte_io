@@ -14,11 +14,10 @@
 		<IoLandingSystemFeatures />
 		<IoLandingSolutions />
 		<IoLandingPlans />
-		<IoLandingMobile/>
+		<IoLandingMobile />
 		<IoLandingFaq />
+		<IoLandingContactForm />
 
-
-<p>aaaaaaaaaaaaaa</p>
 
 	</div>
 </template>
