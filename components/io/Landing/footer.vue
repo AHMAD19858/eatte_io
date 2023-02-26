@@ -1,13 +1,13 @@
 <template>
 
   <div>
-    <div class="card">
+<!--     <div class="card">
    
 
 
   
 
-</div>
+</div> -->
 
     <footer class="p-6 text-white z-10 relative bg-gradient-to-r from-[#FF6137] to-[#CC4D2C] ">
  
