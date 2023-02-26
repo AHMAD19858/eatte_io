@@ -17,7 +17,7 @@
 		<IoLandingMobile />
 		<IoLandingFaq />
 		<IoLandingContactForm />
-
+		<IoLandingFooter />
 
 	</div>
 </template>
@@ -28,5 +28,4 @@
 .screen_container {
 	@apply bg-background-color min-h-full
 }
-
 </style>
