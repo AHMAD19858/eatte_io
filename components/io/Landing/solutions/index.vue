@@ -217,4 +217,12 @@
 	.container {
 		@apply max-w-full
 	}
+	.solutions_section{
+		height: 2060px;
+		margin-bottom: 150px;
+	}
+
+	.solutions_section .line-bottom {
+	bottom: -85px;
+}
 }</style>
