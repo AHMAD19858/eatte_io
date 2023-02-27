@@ -46,7 +46,7 @@
                 </div>
             </div>
 
-            <div class="plan_side">
+            <div class="plan_side pic">
                 <img src="../../../assets/images/icons/mobile.svg" alt="">
             </div>
 
@@ -107,29 +107,7 @@
 	@apply w-full max-w-[1200px] py-0 px-[15px] my-0 mx-auto
 }
 
-@media (max-width: 1200px) {
-	.container {
-		max-width: 992px;
-	}
-}
 
-@media (max-width: 992px) {
-	.container {
-		max-width: 768px;
-	}
-}
-
-@media (max-width: 768px) {
-	.container {
-		max-width: 576px;
-	}
-}
-
-@media (max-width: 576px) {
-	.container {
-		max-width: 100%;
-	}
-}
 
 .plan_title {
 	@apply text-[40px] font-bold my-10 text-primary-color
@@ -195,4 +173,60 @@
 
 .get_started {
 	@apply flex  items-center self-baseline justify-evenly rounded-lg  py-3 m-2 text-lg font-semibold text-white bg-gradient-to-r from-[#FF6137] to-[#CC4D2C]
-}</style>
+}
+
+
+
+@media (max-width: 1200px) {
+	.container {
+		max-width: 992px;
+	}
+}
+
+@media (max-width: 992px) {
+	.container {
+		max-width: 768px;
+	}
+}
+
+@media (max-width: 768px) {
+	.container {
+		max-width: 576px;
+	}
+}
+
+@media (max-width: 576px) {
+	.container {
+		max-width: 100%;
+	}
+
+    .plan_section .plan_side .plan{
+        width: 335px;
+    }
+
+    .plan_info{
+        width: inherit;
+    }
+    .plan_info h4{
+        font-size: 25px;
+    }
+
+    .plan_info p{
+        width: 285px;
+    }
+
+    .x {
+        width: unset;
+        padding: 4px 6px 7px;
+    }
+
+    .pic{
+        display: none;
+    }
+
+    .plan_side{
+        margin-block: 20px;
+    }
+}
+
+</style>

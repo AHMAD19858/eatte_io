@@ -11,14 +11,16 @@
                     <div class="tabs">
                         <div class="tab">
                             <input type="checkbox" id="chck1">
-                            <label class="tab-label" for="chck1">Lorem ipsum dolor sit amet, consectetur adipiscing elit?</label>
+                            <label class="tab-label" for="chck1">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                elit?</label>
                             <div class="tab-content">
                                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum, reiciendis!
                             </div>
                         </div>
                         <div class="tab">
                             <input type="checkbox" id="chck2">
-                            <label class="tab-label" for="chck2">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum?</label>
+                            <label class="tab-label" for="chck2">Duis aute irure dolor in reprehenderit in voluptate velit
+                                esse cillum?</label>
                             <div class="tab-content">
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. A, in!
                             </div>
@@ -26,7 +28,8 @@
 
                         <div class="tab">
                             <input type="checkbox" id="chck3">
-                            <label class="tab-label" for="chck3">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum?</label>
+                            <label class="tab-label" for="chck3">Duis aute irure dolor in reprehenderit in voluptate velit
+                                esse cillum?</label>
                             <div class="tab-content">
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. A, in!
                             </div>
@@ -191,4 +194,12 @@ input:checked+.tab-label::after {
 input:checked~.tab-content {
     max-height: 100vh;
     padding: 1em;
+}
+
+@media (max-width: 576px) {
+    .card {
+
+        margin-left: unset;
+        margin-right: unset;
+    }
 }</style>
