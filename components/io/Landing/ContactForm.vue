@@ -96,6 +96,7 @@
 @media (max-width: 576px) {
 	.container {
 		max-width: 100%;
+        margin-top: 150px;
 	}
 }
 
