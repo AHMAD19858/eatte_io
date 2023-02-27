@@ -137,11 +137,11 @@
 }
 
 .cards_container {
-	@apply grid grid-cols-3 gap-3 md:grid-cols-2 lg:grid-cols-3
+	@apply  md:grid grid-cols-3 gap-3 md:grid-cols-2 lg:grid-cols-3 
 }
 
 article {
-	@apply flex flex-col bg-white rounded-2xl
+	@apply flex flex-col bg-white rounded-2xl my-3
 }
 
 .card_container {

@@ -22,7 +22,7 @@
                             <path d="M0 7.33l2.829-2.83 9.175 9.339 9.167-9.339 2.829 2.83-11.996 12.17z" />
                         </svg>
                     </a>
-                    <ul
+             <!--        <ul
                         class="nav_child_container child">
                         <li>
                             <a href="#" class="nav_child_element">
@@ -39,7 +39,7 @@
                                 data
                             </a>
                         </li>
-                    </ul>
+                    </ul> -->
                 </li>
                 <li class="relative parent">
                     <a href="#" class="nav_parent_element">
@@ -48,7 +48,7 @@
                             <path d="M0 7.33l2.829-2.83 9.175 9.339 9.167-9.339 2.829 2.83-11.996 12.17z" />
                         </svg>
                     </a>
-                    <ul
+       <!--              <ul
                         class="nav_child_container child">
                         <li>
                             <a href="#" class="nav_child_element">
@@ -65,7 +65,7 @@
                                 data
                             </a>
                         </li>
-                    </ul>
+                    </ul> -->
                 </li>
                 <li>
                     <a href="#" class="nav_element">
@@ -96,12 +96,12 @@
                 </div>
             </div>
 
-            <div class="ham_icon">
+     <!--        <div class="ham_icon">
                 <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 fill-current" viewBox="0 0 24 24">
                     <path
                         d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z" />
                 </svg>
-            </div>
+            </div> -->
         </nav>
     </div>
 
@@ -156,7 +156,7 @@
     @apply flex items-center space-x-10
 }
 .get_started{
-    @apply  px-2 py-3 m-1 pt-1.5 text-base text-white rounded-lg bg-primary-color 
+    @apply  text-base text-white rounded-lg bg-primary-color sm:px-2 py-3 m-1 pt-1.5
 }
 .contact_container{
     @apply flex items-center space-x-5
@@ -196,4 +196,6 @@
         z-index: 999;
     }
 }
+
+
 </style>

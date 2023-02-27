@@ -43,7 +43,7 @@
 
 
 .header_container {
-	@apply container flex flex-col items-center px-4 py-16 mx-auto text-center md:px-10 lg:px-32
+	@apply container flex flex-col items-center px-4  pt-[17rem] mx-auto text-center md:px-10 lg:px-32
 }
 
 .slogan {
