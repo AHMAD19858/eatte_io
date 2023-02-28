@@ -78,7 +78,7 @@
 
             <div class="right_side">
                 <div class="right_container">
-                    <p class="nav_text login">Login</p>
+                    <p class="login_btn login">Login</p>
                     <button class="get_started">Get
                         started</button>
                     <div class="contact_container">
@@ -95,14 +95,14 @@
                         </div>
 
                         <div class="col">
-    <!--                         <SunIcon v-if="colorMode.preference === 'dark'" @click="colorMode.preference = 'light'"
+       <!--                      <SunIcon v-if="colorMode.preference === 'dark'" @click="colorMode.preference = 'light'"
                                 class="block w-6 h-6 cursor-pointer stroke-white" aria-hidden="true" />
  -->
-                            <MoonIcon v-if="colorMode.preference === 'light' || colorMode.preference === 'system'"
+                            <MoonIcon v-if="colorMode.preference === 'light'"
                                 @click="colorMode.preference = 'dark'" class="block w-6 h-6 cursor-pointer "
                                 aria-hidden="true" />
 
-                      
+                               
                         </div>
                     </div>
 
@@ -110,7 +110,22 @@
             </div>
 
             <div @click="showMenu = !showMenu" class="ham_btn flex md:hidden">
-            <button
+            
+                <button
+              type="button"
+              class=" mx-5
+                text-gray-800
+                hover:text-gray-400
+                focus:outline-none focus:text-gray-400
+                
+        
+                "
+            >
+            
+            <i class='bx bx-moon' ></i>
+            </button>
+
+                <button
               type="button"
               class="
                 text-gray-800
@@ -125,13 +140,14 @@
                 ></path>
               </svg>
             </button>
+     
           </div>
         
         </nav>
-<!-- <div class="btn_div">
-    <button class="get_started_mobile">Get
-                        started</button>
-</div> -->
+<div class="btn_div"  :class="showMenu ? 'block' : 'hidden'">
+    <p class="login_btn login_mobile">Login</p>
+    <button class="get_started_mobile">Get started</button>
+</div>
     </div>
 
 </template>
@@ -178,9 +194,13 @@ const showMenu = ref(false)
 }
 
 .nav_text{
-    @apply text-font-color
+    @apply text-font-color 
 }
 
+.login_btn{
+ 
+    @apply text-font-color text-base font-medium
+}
 .dropDown_icon{
     @apply stroke-font-color w-2 h-4 pt-1 fill-current
 }
@@ -267,6 +287,9 @@ const showMenu = ref(false)
 }
 .get_started_mobile {
 	@apply inline w-52 self-end items-center justify-evenly rounded-lg px-8 py-3 m-2 text-lg font-semibold text-white bg-gradient-to-r from-[#FF6137] to-[#CC4D2C]
+}
+.login_mobile{
+    margin-bottom: 20px;
 }
 }
 
