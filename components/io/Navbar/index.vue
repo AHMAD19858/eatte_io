@@ -94,20 +94,16 @@
                             <p class="number_text">010-123-4567</p>
                         </div>
 
-                      <!--   <div class="col">
-                            <SunIcon v-if="colorMode.preference === 'dark'" @click="colorMode.preference = 'light'"
+                        <div class="col">
+    <!--                         <SunIcon v-if="colorMode.preference === 'dark'" @click="colorMode.preference = 'light'"
                                 class="block w-6 h-6 cursor-pointer stroke-white" aria-hidden="true" />
-
+ -->
                             <MoonIcon v-if="colorMode.preference === 'light' || colorMode.preference === 'system'"
                                 @click="colorMode.preference = 'dark'" class="block w-6 h-6 cursor-pointer "
                                 aria-hidden="true" />
 
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                                stroke="currentColor" class="w-6 h-6 dark:stroke-white">
-                                <path stroke-linecap="round" stroke-linejoin="round"
-                                    d="M10.5 21l5.25-11.25L21 21m-9-3h7.5M3 5.621a48.474 48.474 0 016-.371m0 0c1.12 0 2.233.038 3.334.114M9 5.25V3m3.334 2.364C11.176 10.658 7.69 15.08 3 17.502m9.334-12.138c.896.061 1.785.147 2.666.257m-4.589 8.495a18.023 18.023 0 01-3.827-5.802" />
-                            </svg>
-                        </div> -->
+                      
+                        </div>
                     </div>
 
                 </div>
@@ -140,20 +136,21 @@
 
 </template>
 
-<script >
+<script setup>
 
-/* import { MoonIcon, SunIcon } from '@heroicons/vue/24/outline'
+import { MoonIcon, SunIcon } from '@heroicons/vue/24/outline'
 const colorMode = useColorMode()
 console.log(colorMode.preference)
-const showMenu = false */
+const showMenu = ref(false)
 
-export default {
+
+/* export default {
   data() {
     return {
       showMenu: false,
     };
   },
-};
+}; */
 
 
 </script>
