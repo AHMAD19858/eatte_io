@@ -115,6 +115,8 @@
     margin-right: auto;
     margin-bottom: -60px;
     z-index: 999999;
+
+	@apply dark:bg-[#272727]
 }
 
 .footer_element {
@@ -138,6 +140,7 @@
 	margin: 10px;
 	font-weight: 600;
 	font-size: 40px;
+	@apply dark:text-white
 }
 
 .sub {
@@ -145,6 +148,7 @@
 	color: #3F4440;
 	font-weight: 500;
 	width: 645px;
+	@apply dark:text-white
 }
 
 .get_started {

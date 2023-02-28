@@ -49,7 +49,7 @@
     @apply mt-6 text-xl text-white w-2/5
 }
 .shadow_card {
-    @apply absolute mx-auto text-center left-0 right-0
+    @apply absolute mx-auto text-center left-0 right-0 h-[200px]
 }
 
 @media only screen and (max-width:500px) {

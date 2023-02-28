@@ -4,12 +4,14 @@
 
         
         <nav class="nav_container" :class="showMenu ? ' mb-[325px]' : 'mb-1'">
-            <img class="nav_text" src="../../../assets/images/icons/eatteLogo.svg" alt="">
+           <!--  <img   v-show="$colorMode.value === 'light'" class="nav_text" src="../../../assets/images/icons/eatteLogo.svg" alt="svg"> -->
+            <img   class="nav_text" src="../../../assets/images/blackMode icons/logo.svg" alt="svg">
+           
             <ul class="nav_ul_container"  :class="showMenu ? 'block' : 'hidden'">
 
                 <li>
                     <a href="#" class="nav_element">
-                        <span class="nav_text">About EATTE</span>
+                        <span class="nav_text">About dEATTE</span>
                     </a>
                 </li>
                 <li>
@@ -95,37 +97,35 @@
                         </div>
 
                         <div class="col">
-       <!--                      <SunIcon v-if="colorMode.preference === 'dark'" @click="colorMode.preference = 'light'"
-                                class="block w-6 h-6 cursor-pointer stroke-white" aria-hidden="true" />
- -->
-                            <MoonIcon v-if="colorMode.preference === 'light'"
-                                @click="colorMode.preference = 'dark'" class="block w-6 h-6 cursor-pointer "
-                                aria-hidden="true" />
 
-                               
+                                <i class=' bx bx-sun cursor-pointer dark:text-white' v-if="colorMode.preference = 'light' || colorMode.preference == 'system'"
+                                @click="colorMode.preference = 'light'"></i>
+                                <i class='bx bx-moon cursor-pointer dark:text-white' v-if="colorMode.preference = 'dark'|| colorMode.preference == 'system'" 
+                                @click="colorMode.preference = 'dark'"></i>
                         </div>
                     </div>
 
                 </div>
             </div>
 
-            <div @click="showMenu = !showMenu" class="ham_btn flex md:hidden">
+            <div class="ham_btn flex md:hidden">
             
                 <button
-              type="button"
-              class=" mx-5
+                type="button"
+                class=" mx-5
                 text-gray-800
                 hover:text-gray-400
-                focus:outline-none focus:text-gray-400
-                
-        
-                "
+                focus:outline-none focus:text-gray-400"
             >
             
-            <i class='bx bx-moon' ></i>
+            <i class=' bx bx-sun cursor-pointer ' v-if="colorMode.preference = 'light' || colorMode.preference == 'system'"
+                                @click="colorMode.preference = 'light'"></i>
+                                <i class='bx bx-moon cursor-pointer' v-if="colorMode.preference = 'dark'|| colorMode.preference == 'system'" 
+                                @click="colorMode.preference = 'dark'"></i>
             </button>
 
                 <button
+                @click="showMenu = !showMenu"
               type="button"
               class="
                 text-gray-800
@@ -156,7 +156,7 @@
 
 import { MoonIcon, SunIcon } from '@heroicons/vue/24/outline'
 const colorMode = useColorMode()
-console.log(colorMode.preference)
+console.log("dddddd",colorMode.preference)
 const showMenu = ref(false)
 
 
@@ -175,7 +175,7 @@ const showMenu = ref(false)
 
 
 .section_container{
-    @apply bg-background-color 
+    @apply bg-background-color dark:bg-dark-background-color
 }
 .nav_container{
     @apply relative flex items-center px-4 
@@ -186,20 +186,20 @@ const showMenu = ref(false)
 }
 
 .nav_element{
-    @apply flex items-center p-4 md:inline-flex hover:bg-gray-50
+    @apply flex items-center p-4 md:inline-flex hover:bg-gray-50 dark:hover:bg-black
 }
 
 .nav_parent_element{
-    @apply flex items-center justify-between p-4 space-x-2 md:inline-flex hover:bg-gray-50
+    @apply flex items-center justify-between p-4 space-x-2 md:inline-flex hover:bg-gray-50 dark:hover:bg-black
 }
 
 .nav_text{
-    @apply text-font-color 
+    @apply text-font-color dark:text-white
 }
 
 .login_btn{
  
-    @apply text-font-color text-base font-medium
+    @apply text-font-color text-base font-medium dark:text-white
 }
 .dropDown_icon{
     @apply stroke-font-color w-2 h-4 pt-1 fill-current

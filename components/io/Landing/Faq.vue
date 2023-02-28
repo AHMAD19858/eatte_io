@@ -1,12 +1,12 @@
 <template>
-    <section class="dark:bg-white dark:text-gray-100 h-[750px]">
+    <section class="dark:bg-[#272727]  h-[750px]">
         <div class="container flex flex-col justify-center p-4 mx-auto md:p-8">
-            <h2 class=" mb-6 text-[36px] font-semibold leading-none text-center  text-black">Frequently Asked Questions</h2>
-            <p class="p-2 text-sm font-medium tracking-wider text-center  text-[#3F4440] mb-5">Everything you need to know
+            <h2 class=" mb-6 text-[36px] font-semibold leading-none text-center  text-black dark:text-white">Frequently Asked Questions</h2>
+            <p class="p-2 text-sm font-medium tracking-wider text-center  text-[#3F4440] mb-5 dark:text-white">Everything you need to know
                 about the product and billing.</p>
-            <div class="flex flex-col divide-y sm:px-8 lg:px-12 xl:px-32 divide-white">
+            <div class="flex flex-col divide-y sm:px-8 lg:px-12 xl:px-32 divide-black">
 
-                <div>
+                <div >
 
                     <div class="tabs">
                         <div class="tab">
@@ -19,7 +19,7 @@
                         </div>
                         <div class="tab">
                             <input type="checkbox" id="chck2">
-                            <label class="tab-label" for="chck2">Duis aute irure dolor in reprehenderit in voluptate velit
+                            <label class="tab-label " for="chck2">Duis aute irure dolor in reprehenderit in voluptate velit
                                 esse cillum?</label>
                             <div class="tab-content">
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. A, in!
@@ -41,7 +41,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card dark:bg-dark-background-color">
             <div class="flex flex-col items-center justify-center py-10">
                 <div class="flex -space-x-4">
                     <img alt="" class="w-12 h-12 border rounded-full dark:bg-gray-500 dark:border-gray-700"
@@ -53,9 +53,9 @@
                 </div>
             </div>
 
-            <h1 class=" text-center font-semibold text-xl text-font-color">Still have questions?</h1>
+            <h1 class=" text-center font-semibold text-xl text-font-color dark:text-white">Still have questions?</h1>
 
-            <p class=" text-center font-normal text-[15px] text-[#3F4440]">Can’t find the answer you’re looking for? Please
+            <p class=" text-center font-normal text-[15px] text-[#3F4440] dark:text-white">Can’t find the answer you’re looking for? Please
                 chat to our friendly team.</p>
             <div class="view_button">
                 <button class="get_started">Get in touch
@@ -76,12 +76,14 @@
 
 <style  scoped>
 .card {
-    background-color: #F5F6FA;
+/*     background-color: #F5F6FA;
     border-radius: 16px;
     height: 300px;
     margin-right: 250px;
     margin-left: 250px;
-    margin-bottom: 10px;
+    margin-bottom: 10px; */
+
+    @apply bg-[#F5F6FA] rounded-2xl mx-[250px] mb-3 dark:bg-dark-background-color
 }
 
 .view_button {
@@ -150,6 +152,7 @@ input {
     font-size: 18px;
     cursor: pointer;
     color: var(--font);
+    @apply dark:bg-[#272727] dark:text-white
 }
 
 
@@ -169,6 +172,8 @@ input {
     color: #2c3e50;
     background: white;
     transition: all 0.35s;
+
+    @apply dark:bg-[#272727] dark:text-[#F5F6FA] dark:font-normal
 }
 
 .tab-close {

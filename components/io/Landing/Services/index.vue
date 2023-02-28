@@ -129,7 +129,7 @@
 }
 
 .main_text {
-	@apply text-3xl font-bold
+	@apply text-3xl font-bold text-primary-color
 }
 
 .sub_text {
@@ -141,7 +141,7 @@
 }
 
 article {
-	@apply flex flex-col bg-white rounded-2xl my-3
+	@apply flex flex-col bg-white rounded-2xl my-3 dark:bg-[#272727]
 }
 
 .card_container {

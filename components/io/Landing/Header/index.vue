@@ -2,11 +2,11 @@
 	<section>
 		<div class="header_container">
 			<h1 class="slogan">
-				<span class=" text_glow shadow_text ">All-in-One</span>
+				<span class=" text_glow shadow_text">All-in-One</span>
 				Restaurant Management & Ordering System
 			</h1>
 
-			<p class="sub_header">
+			<p class="sub_header ">
 				Elevate your restaurant's guest experience and business operations with our solutions.
 			</p>
 			<div class="header_buttons">
@@ -43,7 +43,7 @@
 
 
 .header_container {
-	@apply mb-20 container flex flex-col items-center px-4  pt-[4rem] mx-auto text-center md:px-10 lg:px-32
+	@apply mb-20 container flex flex-col items-center px-4  pt-[4rem] mx-auto text-center md:px-10 lg:px-32 dark:bg-dark-background-color
 }
 
 @media (max-width: 576px) {
@@ -53,12 +53,12 @@
 }
 
 .slogan {
-	@apply text-4xl font-bold leading-none text-font-color sm:text-5xl
+	@apply text-4xl font-bold leading-none text-font-color sm:text-5xl dark:text-white
 }
 
 
 .sub_header {
-	@apply px-8 mt-8 mb-12 text-lg text-font-color
+	@apply px-8 mt-8 mb-12 text-lg text-font-color dark:text-white
 }
 
 .header_buttons {
@@ -66,7 +66,7 @@
 }
 
 .text_glow {
-	@apply text-black text-center text-5xl
+	@apply text-black text-center text-5xl dark:text-white
 }
 
 .shadow_text {
@@ -79,7 +79,7 @@
 
 
 .get_demo {
-	@apply flex w-72 self-baseline items-center justify-evenly rounded-lg px-8 py-3 m-2 text-lg text-font-color border-font-color border-2
+	@apply dark:text-white dark:border-white flex w-72 self-baseline items-center justify-evenly rounded-lg px-8 py-3 m-2 text-lg text-font-color border-font-color border-2
 }
 
 .screen_container {
