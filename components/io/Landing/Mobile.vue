@@ -203,6 +203,9 @@
 @media (max-width: 576px) {
 	.container {
 		max-width: 100%;
+        padding-left: unset;
+        padding-right: unset;
+        width: min-content;
 	}
 
     .plan_section .plan_side .plan{

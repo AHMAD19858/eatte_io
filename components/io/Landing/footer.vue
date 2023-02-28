@@ -168,7 +168,7 @@
 		width: unset;
 		text-align: center;
 		position: unset;
-		margin-bottom: 0px;
+		 margin-bottom: -20px;
 	}
 
 	.slogan p {
