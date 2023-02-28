@@ -3,8 +3,8 @@
 
 
 
-        <nav class="nav_container">
-            <ul class="nav_ul_container">
+        <nav class="nav_container" :class="showMenu ? ' mb-[230px]' : 'mb-1'">
+            <ul class="nav_ul_container"  :class="showMenu ? 'block' : 'hidden'">
                 <li>
                     <a href="#" class="nav_element">
                         <span class="nav_text">About EATTE</span>
@@ -96,19 +96,37 @@
                 </div>
             </div>
 
-     <!--        <div class="ham_icon">
-                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 fill-current" viewBox="0 0 24 24">
-                    <path
-                        d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z" />
-                </svg>
-            </div> -->
+            <div @click="showMenu = !showMenu" class="flex md:hidden">
+            <button
+              type="button"
+              class="
+                text-gray-800
+                hover:text-gray-400
+                focus:outline-none focus:text-gray-400
+              "
+            >
+              <svg viewBox="0 0 24 24" class="w-6 h-6 fill-current">
+                <path
+                  fill-rule="evenodd"
+                  d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"
+                ></path>
+              </svg>
+            </button>
+          </div>
+        
         </nav>
     </div>
 
 </template>
 
-<script setup>
-
+<script>
+export default {
+  data() {
+    return {
+      showMenu: false,
+    };
+  },
+};
 </script>
 
 <style scoped>

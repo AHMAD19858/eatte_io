@@ -47,9 +47,9 @@
 }
 
 @media (max-width: 576px) {
-	.header_container {
+/* 	.header_container {
 	padding-top: 300px;
-	}
+	} */
 }
 
 .slogan {
