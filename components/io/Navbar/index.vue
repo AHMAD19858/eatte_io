@@ -196,6 +196,16 @@
         z-index: 999;
     }
 }
+@media (max-width: 576px) {
 
+	.section_container {
+	    width: 466px;
+}
+
+.nav_ul_container{
+    background-color: #fff;
+    width: 455px;
+}
+}
 
 </style>
