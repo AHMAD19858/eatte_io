@@ -63,5 +63,10 @@
     width: 100%;
     text-align: center;
   }
+
+  .banner_container {
+   margin-left: unset;
+   margin-right: unset;
+}
 }
 </style>

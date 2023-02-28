@@ -1,28 +1,28 @@
 <template>
 	<div class=" footer_container">
+		<div class="card">
 
+<div class="main">
+	<div class="right">
+		<div class="slogan">
+
+			<img src="../../../assets/images/icons/svg.svg" alt="">
+			<p>Start selling with EATTE</p>
+		</div>
+		<p class="sub">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+			laudantium</p>
+	</div>
+	<div class="left">
+		<button class="get_started">Get started </button>
+		<p class="left_sub">No credit card required </p>
+	</div>
+</div>
+
+
+
+</div>
 		<footer class="p-6 text-white z-10 relative bg-gradient-to-r from-[#FF6137] to-[#CC4D2C] ">
-			<div class="card">
 
-				<div class="main">
-					<div class="right">
-						<div class="slogan">
-
-							<img src="../../../assets/images/icons/svg.svg" alt="">
-							<p>Start selling with EATTE</p>
-						</div>
-						<p class="sub">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
-							laudantium</p>
-					</div>
-					<div class="left">
-						<button class="get_started">Get started </button>
-						<p class="left_sub">No credit card required </p>
-					</div>
-				</div>
-
-
-
-			</div>
 			<div class=" mt-20 container grid grid-cols-2 mx-auto gap-x-3 gap-y-8 sm:grid-cols-3 md:grid-cols-4">
 				<div class="flex flex-col space-y-4">
 					<h2 class=" font-semibold text-[26px] text-[#F5F6FA]">FEATURES</h2>
@@ -106,16 +106,15 @@
 }
 
 .card {
-	background-color: white;
-	border-radius: 16px;
-	height: 200px;
-	position: absolute;
-	top: -140px;
-	width: 1000px;
-	left: 0;
-	right: 0;
-	margin-left: auto;
-	margin-right: auto;
+    background-color: white;
+    border-radius: 16px;
+    height: 200px;
+    position: relative;
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: -60px;
+    z-index: 999999;
 }
 
 .footer_element {
@@ -149,7 +148,7 @@
 }
 
 .get_started {
-	@apply flex w-56 self-end items-center justify-evenly rounded-lg px-8 py-3 m-2 text-lg font-semibold text-white bg-gradient-to-r bg-white
+	@apply flex w-56 self-end items-center justify-evenly rounded-lg px-8 py-3 m-2 text-lg font-semibold text-white bg-gradient-to-r from-[#FF6137] to-[#CC4D2C]
 }
 
 .left_sub {
