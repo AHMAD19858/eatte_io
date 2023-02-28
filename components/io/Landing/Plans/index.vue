@@ -76,29 +76,7 @@
     @apply w-full max-w-[1200px] py-0 px-[15px] my-0 mx-auto
 }
 
-@media (max-width: 1200px) {
-    .container {
-        max-width: 992px;
-    }
-}
 
-@media (max-width: 992px) {
-    .container {
-        max-width: 768px;
-    }
-}
-
-@media (max-width: 768px) {
-    .container {
-        max-width: 576px;
-    }
-}
-
-@media (max-width: 576px) {
-    .container {
-        max-width: 100%;
-    }
-}
 
 .plan_title {
     @apply text-[40px] font-bold my-10 text-primary-color
@@ -201,4 +179,32 @@
 .main_text {
 	@apply text-[35px] font-bold text-primary-color leading-7
 }
+
+@media (max-width: 1200px) {
+    .container {
+        max-width: 992px;
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        max-width: 768px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 576px;
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        max-width: 100%;
+    }
+    .plan_section .plan_side .plan .plan_best{
+        top: 25%;
+    }
+}
+
 </style>
