@@ -10,7 +10,7 @@
                         <p>With Eatte Admin mobile app you can streamline all of your operations in no time, now a
                             single platform can empower your staff to deliver amazing dining experiences From KDS to
                             multi-location and inventory management.</p>
-                        <div class="flex justify-between">
+                        <div class="flex justify-between ">
                             <div class="x">
                                 <div class="flex justify-between gap-2 pl-2">
                                     <i class='bx bxl-apple self-center text-5xl '></i>
@@ -23,7 +23,7 @@
 
                                 </div>
                             </div>
-                            <div>
+                            <div class="pl-1">
 
 
 
@@ -71,18 +71,23 @@
                                 </div>
                             </div>
 
-                            <div class="x">
-                                <div class="flex justify-between gap-2 pl-2">
-                                    <i class='bx bxl-play-store self-center text-5xl '></i>
+                            <div class="pl-1">
 
-                                    <div class=" self-center">
-                                        <h6 class=" text-[#1E1E1E] text-[13px]"> Download on the</h6>
-                                        <h6 class=" text-[#1E1E1E] text-[15px] font-bold"> Google Play</h6>
 
-                                    </div>
 
-                                </div>
-                            </div>
+<div class="x">
+    <div class="flex justify-between gap-2 pl-2">
+        <i class='bx bxl-play-store self-center text-5xl '></i>
+
+        <div class=" self-center">
+            <h6 class=" text-[#1E1E1E] text-[13px]"> Download on the</h6>
+            <h6 class=" text-[#1E1E1E] text-[15px] font-bold"> Google Play</h6>
+
+        </div>
+
+    </div>
+</div>
+</div>
 
                         </div>
                     </div>
