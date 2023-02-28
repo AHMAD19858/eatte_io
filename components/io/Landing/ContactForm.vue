@@ -214,6 +214,7 @@
     .plan_section .plan_side .plan{
         height: 410px;
         margin-left: -20px;
+        margin-bottom: unset;
     }
     .plan_section .plan_btn{
         float: left;
@@ -257,6 +258,7 @@
     .plan_section .plan_side .plan{
         height: 410px;
         margin-left: -20px;
+        margin-bottom: unset;
     }
 
     .plan_section .plan_btn{

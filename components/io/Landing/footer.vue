@@ -184,6 +184,10 @@
 	margin-inline: 77px;
 	width: unset;
 }
+
+.footer_container {
+	padding-top: unset
+}
 }
 
 </style>
