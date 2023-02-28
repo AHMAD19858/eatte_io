@@ -43,7 +43,7 @@
 
 
 .header_container {
-	@apply container flex flex-col items-center px-4  pt-[4rem] mx-auto text-center md:px-10 lg:px-32
+	@apply mb-20 container flex flex-col items-center px-4  pt-[4rem] mx-auto text-center md:px-10 lg:px-32
 }
 
 @media (max-width: 576px) {
