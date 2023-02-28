@@ -97,6 +97,7 @@
 	.container {
 		max-width: 100%;
         margin-top: 150px;
+        margin-inline: 20px;
 	}
 }
 
@@ -104,6 +105,7 @@
 	.container {
 		max-width: 100%;
         margin-top: 200px;
+        margin-inline: 20px;
 	}
 }
 .plan_title {
