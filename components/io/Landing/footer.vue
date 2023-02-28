@@ -167,6 +167,8 @@
 		height: unset;
 		width: unset;
 		text-align: center;
+		position: unset;
+		margin-bottom: 0px;
 	}
 
 	.slogan p {

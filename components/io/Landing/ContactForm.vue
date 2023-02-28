@@ -218,7 +218,7 @@
     .plan_section .plan_btn{
         float: left;
         margin-inline: 20px;
-        width: 210px;
+        width: 300px;
     }
 
     .input_div{
@@ -228,9 +228,13 @@
         grid-column: span 4 / span 4; 
     }
 
-  /*   .plan_section .plan_side p {
-        width: 343px;
-    } */
+    .label_input{
+        width: 300px;
+    }
+    .textarea{
+
+        width: 300px;
+}
     .plan_section .plan_btn i{
         display: none;
     }
@@ -244,8 +248,12 @@
 	}
 
     .label_input{
-        width: auto;
+        width: 300px;
     }
+    .textarea{
+
+        width: 300px;
+}
     .plan_section .plan_side .plan{
         height: 410px;
         width: 80%;
@@ -254,7 +262,11 @@
     .plan_section .plan_btn{
         float: left;
         margin-inline: 20px;
-        width: 210px;
+        width: 300px;
     }
+
+    .plan_section .plan_side p {
+	width: 345px;
+}
 }
 </style>

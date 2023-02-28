@@ -2,14 +2,15 @@
     <div class="section_container">
 
 
-
+        
         <nav class="nav_container" :class="showMenu ? ' mb-[325px]' : 'mb-1'">
+            <img class="nav_text" src="../../../assets/images/icons/eatteLogo.svg" alt="">
             <ul class="nav_ul_container"  :class="showMenu ? 'block' : 'hidden'">
-                <li>
+          <!--       <li>
                     <a href="#" class="nav_element">
                   <img class="nav_text" src="../../../assets/images/icons/eatteLogo.svg" alt="">
                     </a>
-                </li>
+                </li> -->
 
                 <li>
                     <a href="#" class="nav_element">
@@ -139,10 +140,10 @@ export default {
 
 
 .section_container{
-    @apply bg-white 
+    @apply bg-background-color 
 }
 .nav_container{
-    @apply relative flex items-center px-4 border-b md:shadow-lg
+    @apply relative flex items-center px-4 
 }
 
 .nav_ul_container{
