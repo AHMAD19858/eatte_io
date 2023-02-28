@@ -7,11 +7,12 @@
 				<div class="main">
 					<div class="right">
 						<div class="slogan">
-						
+
 							<img src="../../../assets/images/icons/svg.svg" alt="">
 							<p>Start selling with EATTE</p>
 						</div>
-						<p class="sub">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium</p>
+						<p class="sub">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+							laudantium</p>
 					</div>
 					<div class="left">
 						<button class="get_started">Get started </button>
@@ -107,27 +108,29 @@
 .card {
 	background-color: white;
 	border-radius: 16px;
-	height: 220px;
-	margin-right: 250px;
-	margin-left: 130px;
-	margin-bottom: 10px;
+	height: 200px;
 	position: absolute;
 	top: -140px;
 	width: 1000px;
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .footer_element {
 	@apply font-semibold text-base
 }
 
-.main{
+.main {
 	display: flex;
-    justify-content: space-between;
-    margin-inline: 30px;
-    margin-block: 20px;
+	justify-content: space-between;
+	margin-inline: 30px;
+	margin-block: 20px;
 	align-items: center;
 }
-.slogan{
+
+.slogan {
 	display: flex;
 }
 
@@ -146,18 +149,40 @@
 }
 
 .get_started {
-    @apply flex w-56 self-end items-center justify-evenly rounded-lg px-8 py-3 m-2 text-lg font-semibold text-white bg-gradient-to-r bg-white
+	@apply flex w-56 self-end items-center justify-evenly rounded-lg px-8 py-3 m-2 text-lg font-semibold text-white bg-gradient-to-r bg-white
 }
 
-.left_sub{
+.left_sub {
 	font-size: 14px;
 	font-weight: 400;
 	color: #93A3B0CC;
 	text-align: center;
 }
+
 @media (max-width: 576px) {
-	.card {
-		display: none;
+	
+	.main{
+		display: block;
 	}
+	.card {
+		height: unset;
+		width: unset;
+		text-align: center;
+	}
+
+	.slogan p {
+	font-weight: 400;
+	font-size: 20px;
 }
+
+.sub{
+	width: unset;
+	font-weight: 300;
+}
+.get_started{
+	margin-inline: 77px;
+	width: unset;
+}
+}
+
 </style>

@@ -15,28 +15,28 @@
                 <fieldset class="grid grid-cols-4 gap-6  ">
 
                     <div class="grid grid-cols-6 gap-4 col-span-full ">
-                        <div class="col-span-full sm:col-span-3">
+                        <div class="input_div">
                             <label for="firstname" class="text-sm font-normal text-[#93A3B0CC]">First name</label>
                             <input id="firstname" type="text" placeholder="First name"
                                 class="label_input ">
                         </div>
-                        <div class="col-span-full sm:col-span-3">
+                        <div class="input_div">
                             <label for="lastname"  class="text-sm font-normal text-[#93A3B0CC]">Last name</label>
                             <input id="lastname" type="text" placeholder="Last name"
                                 class="label_input">
                         </div>
-                        <div class="col-span-full">
+                        <div class="single_input_div">
                             <label for="email"  class="text-sm font-normal text-[#93A3B0CC]">Email Address</label>
                             <input id="email" type="email" placeholder="Email Address"
                                 class="label_input">
                         </div>
-                        <div class="col-span-full">
+                        <div class="single_input_div">
                             <label for="email"  class="text-sm font-normal text-[#93A3B0CC]">Phone Number</label>
                             <input id="email" type="email" placeholder="Phone Number"
                                 class="label_input">
                         </div>
 
-                        <div class="col-span-full">
+                        <div class="single_input_div">
                             <label for="email"  class="text-sm font-normal text-[#93A3B0CC]">Message</label>
                             <textarea  rows="4" cols="50" placeholder="Message"
                                 class="textarea"></textarea>
@@ -75,39 +75,7 @@
 	@apply w-full max-w-[1200px] py-0  my-0 mx-auto
 }
 
-@media (max-width: 1200px) {
-	.container {
-		max-width: 992px;
-	}
-}
 
-@media (max-width: 992px) {
-	.container {
-		max-width: 768px;
-	}
-}
-
-@media (max-width: 768px) {
-	.container {
-		max-width: 576px;
-	}
-}
-
-@media (max-width: 576px) {
-	.container {
-		max-width: 100%;
-        margin-top: 150px;
-        margin-inline: 20px;
-	}
-}
-
-@media (max-width: 500px) {
-	.container {
-		max-width: 100%;
-        margin-top: 200px;
-        margin-inline: 20px;
-	}
-}
 .plan_title {
 	@apply text-[40px] font-bold my-10 text-primary-color w-[285px]
 }
@@ -210,5 +178,83 @@
 
 	@apply  p-[10px] mt-[10px] h-[100px] w-full rounded-[8px] focus:ring focus:ring-opacity-75 focus:ring-violet-400
 
+}
+
+.input_div{
+    @apply col-span-full sm:col-span-3
+}
+.single_input_div{
+    @apply col-span-full
+}
+@media (max-width: 1200px) {
+	.container {
+		max-width: 992px;
+	}
+}
+
+@media (max-width: 992px) {
+	.container {
+		max-width: 768px;
+	}
+}
+
+@media (max-width: 768px) {
+	.container {
+		max-width: 576px;
+	}
+}
+
+@media (max-width: 576px) {
+	.container {
+		max-width: 100%;
+        margin-top: 150px;
+        margin-inline: 20px;
+	}
+
+    .plan_section .plan_side .plan{
+        height: 410px;
+        width: 80%;
+    }
+    .plan_section .plan_btn{
+        float: left;
+        margin-inline: 20px;
+        width: 210px;
+    }
+
+    .input_div{
+        grid-column: span 4 / span 4;
+    }
+    .single_input_div{
+        grid-column: span 4 / span 4; 
+    }
+
+  /*   .plan_section .plan_side p {
+        width: 343px;
+    } */
+    .plan_section .plan_btn i{
+        display: none;
+    }
+}
+
+@media (max-width: 500px) {
+	.container {
+		max-width: 100%;
+        margin-top: 200px;
+        margin-inline: 20px;
+	}
+
+    .label_input{
+        width: auto;
+    }
+    .plan_section .plan_side .plan{
+        height: 410px;
+        width: 80%;
+    }
+
+    .plan_section .plan_btn{
+        float: left;
+        margin-inline: 20px;
+        width: 210px;
+    }
 }
 </style>
