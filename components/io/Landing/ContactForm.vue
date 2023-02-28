@@ -100,6 +100,12 @@
 	}
 }
 
+@media (max-width: 500px) {
+	.container {
+		max-width: 100%;
+        margin-top: 200px;
+	}
+}
 .plan_title {
 	@apply text-[40px] font-bold my-10 text-primary-color w-[285px]
 }
