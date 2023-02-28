@@ -3,8 +3,14 @@
 
 
 
-        <nav class="nav_container" :class="showMenu ? ' mb-[230px]' : 'mb-1'">
+        <nav class="nav_container" :class="showMenu ? ' mb-[325px]' : 'mb-1'">
             <ul class="nav_ul_container"  :class="showMenu ? 'block' : 'hidden'">
+                <li>
+                    <a href="#" class="nav_element">
+                  <img class="nav_text" src="../../../assets/images/icons/eatteLogo.svg" alt="">
+                    </a>
+                </li>
+
                 <li>
                     <a href="#" class="nav_element">
                         <span class="nav_text">About EATTE</span>
@@ -140,7 +146,7 @@ export default {
 }
 
 .nav_ul_container{
-    @apply absolute left-0 right-0 mr-auto md:px-2 md:flex md:space-x-2 md:relative top-full
+    @apply  items-center absolute left-0 right-0 mr-auto md:px-2 md:flex md:space-x-2 md:relative top-full
 }
 
 .nav_element{
