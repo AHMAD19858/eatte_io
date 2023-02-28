@@ -1,18 +1,28 @@
 <template>
-	<div>
+	<div class=" footer_container">
 
-		<div class=" relative">
+		<footer class="p-6 text-white z-10 relative bg-gradient-to-r from-[#FF6137] to-[#CC4D2C] ">
 			<div class="card">
 
-
+				<div class="main">
+					<div class="right">
+						<div class="slogan">
+						
+							<img src="../../../assets/images/icons/svg.svg" alt="">
+							<p>Start selling with EATTE</p>
+						</div>
+						<p class="sub">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium</p>
+					</div>
+					<div class="left">
+						<button class="get_started">Get started </button>
+						<p class="left_sub">No credit card required </p>
+					</div>
+				</div>
 
 
 
 			</div>
-		</div>
-		<footer class="p-6 text-white z-10 relative bg-gradient-to-r from-[#FF6137] to-[#CC4D2C] ">
-
-			<div class="container grid grid-cols-2 mx-auto gap-x-3 gap-y-8 sm:grid-cols-3 md:grid-cols-4">
+			<div class=" mt-20 container grid grid-cols-2 mx-auto gap-x-3 gap-y-8 sm:grid-cols-3 md:grid-cols-4">
 				<div class="flex flex-col space-y-4">
 					<h2 class=" font-semibold text-[26px] text-[#F5F6FA]">FEATURES</h2>
 					<div class="flex flex-col space-y-2 text-sm text-white">
@@ -90,17 +100,64 @@
 </script>
 
 <style  scoped>
+.footer_container {
+	padding-top: 48px
+}
+
 .card {
-	background-color: red;
+	background-color: white;
 	border-radius: 16px;
-	height: 300px;
+	height: 220px;
 	margin-right: 250px;
-	margin-left: 250px;
+	margin-left: 130px;
 	margin-bottom: 10px;
 	position: absolute;
+	top: -140px;
+	width: 1000px;
 }
 
 .footer_element {
 	@apply font-semibold text-base
+}
+
+.main{
+	display: flex;
+    justify-content: space-between;
+    margin-inline: 30px;
+    margin-block: 20px;
+	align-items: center;
+}
+.slogan{
+	display: flex;
+}
+
+.slogan p {
+	color: black;
+	margin: 10px;
+	font-weight: 600;
+	font-size: 40px;
+}
+
+.sub {
+	font-size: 16px;
+	color: #3F4440;
+	font-weight: 500;
+	width: 645px;
+}
+
+.get_started {
+    @apply flex w-56 self-end items-center justify-evenly rounded-lg px-8 py-3 m-2 text-lg font-semibold text-white bg-gradient-to-r bg-white
+}
+
+.left_sub{
+	font-size: 14px;
+	font-weight: 400;
+	color: #93A3B0CC;
+	text-align: center;
+}
+@media (max-width: 576px) {
+	.card {
+		display: none;
+	}
 }
 </style>
