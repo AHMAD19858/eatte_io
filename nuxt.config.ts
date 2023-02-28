@@ -9,7 +9,7 @@ export default defineNuxtConfig({
 
   app: {
     head: {
-      title: 'EATTE-Super-Admin',
+      title: 'EATTE-All-in-One Restaurant Management & Ordering System',
       link: [{ rel: 'icon', type: 'image/x-icon', href: 'https://eatte.io/img/png/logo.png' }],
     },
 
