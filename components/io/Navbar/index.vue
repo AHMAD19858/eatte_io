@@ -98,10 +98,10 @@
 
                         <div class="col">
 
-                                <i class=' bx bx-sun cursor-pointer dark:text-white' v-if="colorMode.preference = 'light' || colorMode.preference == 'system'"
-                                @click="colorMode.preference = 'light'"></i>
-                                <i class='bx bx-moon cursor-pointer dark:text-white' v-if="colorMode.preference = 'dark'|| colorMode.preference == 'system'" 
-                                @click="colorMode.preference = 'dark'"></i>
+                                <i class=' bx bx-sun cursor-pointer dark:text-white' v-if="colorMode.value == 'light'"
+                                @click="$colorMode.preference = 'dark'"></i>
+                                <i class='bx bx-moon cursor-pointer dark:text-white' v-if="colorMode.value == 'dark'" 
+                                @click="$colorMode.preference = 'light'"></i>
                         </div>
                     </div>
 
@@ -118,9 +118,9 @@
                 focus:outline-none focus:text-gray-400"
             >
             
-            <i class=' bx bx-sun cursor-pointer ' v-if="colorMode.preference = 'light' || colorMode.preference == 'system'"
+            <i class=' bx bx-sun cursor-pointer ' v-if="colorMode.value == 'light'"
                                 @click="colorMode.preference = 'light'"></i>
-                                <i class='bx bx-moon cursor-pointer' v-if="colorMode.preference = 'dark'|| colorMode.preference == 'system'" 
+                                <i class='bx bx-moon cursor-pointer' v-if="colorMode.value == 'dark'" 
                                 @click="colorMode.preference = 'dark'"></i>
             </button>
 
