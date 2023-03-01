@@ -47,7 +47,7 @@
             </div>
 
             <div class="plan_side pic">
-                <img src="../../../assets/images/icons/mobile.svg" alt="">
+                <img src="../../../assets/images/Mockup.svg" alt="">
             </div>
 
             <div class="plan_side">
@@ -152,7 +152,7 @@
 }
 
 .plan_section .plan_side .plan {
-	@apply py-[25px] border-[3px] px-[15px] border-white border-solid bg-white gap-[20px] rounded-[15px] flex w-[430px]  items-center justify-start relative dark:bg-[#272727]
+	@apply py-[25px] border-[3px] px-[15px] border-white border-solid bg-white gap-[20px] rounded-[15px] flex w-[430px]  items-center justify-start relative dark:bg-[#272727] cursor-pointer hover:border-primary-color hover:border-solid
 }
 
 .plan_section .plan_side .plan .plan_icon {
