@@ -175,7 +175,7 @@
     padding-top: 5px;
     padding-bottom: 0px;
 
-    @apply bg-[#272727]
+    @apply dark:bg-[#272727]
 }
 
 .get_started {
