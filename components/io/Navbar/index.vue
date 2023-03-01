@@ -188,7 +188,7 @@ const showMenu = ref(false)
     @apply text-font-color text-base font-medium dark:text-white
 }
 .dropDown_icon{
-    @apply stroke-font-color w-2 h-4 pt-1 fill-current
+    @apply stroke-font-color w-2 h-4 pt-1 fill-current  dark:text-white
 }
 
 .nav_child_container{
