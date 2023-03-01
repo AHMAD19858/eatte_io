@@ -76,12 +76,7 @@
 
 <style  scoped>
 .card {
-/*     background-color: #F5F6FA;
-    border-radius: 16px;
-    height: 300px;
-    margin-right: 250px;
-    margin-left: 250px;
-    margin-bottom: 10px; */
+
 
     @apply bg-[#F5F6FA] rounded-2xl mx-[250px] mb-3 dark:bg-dark-background-color
 }
@@ -200,7 +195,13 @@ input:checked~.tab-content {
     max-height: 100vh;
     padding: 1em;
 }
+@media (max-width: 768px) {
+    .card {
 
+        margin-left: unset;
+        margin-right: unset;
+    }
+}
 @media (max-width: 576px) {
     .card {
 

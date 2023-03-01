@@ -11,7 +11,7 @@
 
                 <li>
                     <a href="#" class="nav_element">
-                        <span class="nav_text">About dEATTE</span>
+                        <span class="nav_text">About EATTE</span>
                     </a>
                 </li>
                 <li>
@@ -82,7 +82,7 @@
                 <div class="right_container">
                     <p class="login_btn login">Login</p>
                     <button class="get_started">Get
-                        started</button>
+                        Started</button>
                     <div class="contact_container">
                         <div class="card_container">
                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
@@ -96,26 +96,23 @@
                             <p class="number_text">010-123-4567</p>
                         </div>
 
-                        <div class="col">
+                       <!--  <div class="col web_mode">
 
                                 <i class=' bx bx-sun cursor-pointer dark:text-white' v-if="colorMode.value == 'light'"
                                 @click="$colorMode.preference = 'dark'"></i>
                                 <i class='bx bx-moon cursor-pointer dark:text-white' v-if="colorMode.value == 'dark'" 
                                 @click="$colorMode.preference = 'light'"></i>
-                        </div>
+                        </div> -->
                     </div>
 
                 </div>
             </div>
 
-            <div class="ham_btn flex md:hidden">
+            <div class="ham_btn flex ">
             
                 <button
                 type="button"
-                class=" mx-5
-                text-gray-800
-                hover:text-gray-400
-                focus:outline-none focus:text-gray-400"
+                class="mobile_mode"
             >
             
             <i class=' bx bx-sun cursor-pointer dark:text-white' v-if="colorMode.value == 'light'"
@@ -126,12 +123,13 @@
 
                 <button
                 @click="showMenu = !showMenu"
-              type="button"
-              class="
+                type="button"
+                class="
                 text-gray-800
                 hover:text-gray-400
                 focus:outline-none focus:text-gray-400
-              "
+                md:hidden
+                "
             >
               <svg viewBox="0 0 24 24" class="w-6 h-6 fill-current">
                 <path
@@ -144,10 +142,10 @@
           </div>
         
         </nav>
-<div class="btn_div"  :class="showMenu ? 'block' : 'hidden'">
+    <div class="btn_div"  :class="showMenu ? 'block' : 'hidden'">
     <p class="login_btn login_mobile">Login</p>
-    <button class="get_started_mobile">Get started</button>
-</div>
+    <button class="get_started_mobile">Get Started</button>
+    </div>
     </div>
 
 </template>
@@ -232,10 +230,10 @@ const showMenu = ref(false)
 .ham_icon{
     @apply ml-auto text-gray-500 cursor-pointer md:hidden
 }
+.mobile_mode{
+    @apply  mx-5 text-gray-800 hover:text-gray-400  focus:outline-none focus:text-gray-400
+}
 
-/* .btn_div{
-    display: none;
-} */
 @media only screen and (min-width: 768px) {
     .parent:hover .child {
         opacity: 1;
@@ -251,6 +249,14 @@ const showMenu = ref(false)
         transform: translateY(-10%);
         z-index: 999;
     }
+
+    .mobile_mode{
+    @apply  mx-5 text-gray-800 hover:text-gray-400  focus:outline-none focus:text-gray-400
+}
+
+.web_mode{
+    display: none;
+}
 }
 @media (max-width: 576px) {
 
@@ -276,6 +282,14 @@ const showMenu = ref(false)
 }
 .login_mobile{
     margin-bottom: 20px;
+}
+
+.mobile_mode{
+    @apply  mx-5 text-gray-800 hover:text-gray-400  focus:outline-none focus:text-gray-400
+}
+
+.web_mode{
+    display: none;
 }
 }
 

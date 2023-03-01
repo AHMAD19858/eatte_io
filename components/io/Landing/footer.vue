@@ -14,7 +14,7 @@
 	</div>
 	<div class="left">
 		<button class="get_started">Get started </button>
-		<p class="left_sub">No credit card required </p>
+	
 	</div>
 </div>
 
@@ -155,12 +155,7 @@
 	@apply flex w-56 self-end items-center justify-evenly rounded-lg px-8 py-3 m-2 text-lg font-semibold text-white bg-gradient-to-r from-[#FF6137] to-[#CC4D2C]
 }
 
-.left_sub {
-	font-size: 14px;
-	font-weight: 400;
-	color: #93A3B0CC;
-	text-align: center;
-}
+
 
 @media (max-width: 576px) {
 	

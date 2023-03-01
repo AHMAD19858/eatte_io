@@ -208,6 +208,9 @@
 	.container {
 		max-width: 992px;
 	}
+	.solutions_section {
+	@apply   h-[1133px] 
+}
 }
 
 @media (max-width: 992px) {
@@ -221,6 +224,9 @@
 
 		@apply max-w-[576px]
 	}
+	.solutions_section {
+	@apply   h-[1675px] 
+}
 }
 
 @media (max-width: 576px) {
