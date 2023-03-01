@@ -4,8 +4,8 @@
 
         
         <nav class="nav_container" :class="showMenu ? ' mb-[325px]' : 'mb-1'">
-           <!--  <img   v-show="$colorMode.value === 'light'" class="nav_text" src="../../../assets/images/icons/eatteLogo.svg" alt="svg"> -->
-            <img   class="nav_text" src="../../../assets/images/blackModeIcons/logo.svg" alt="svg">
+            <img  class="nav_text" v-if="colorMode.value == 'light'" src="~/assets/images/icons/eatteLogo.svg" alt="svg">
+            <img  class="nav_text" v-else src="~/assets/images/blackModeIcons/logo.svg" alt="svg">
             
             <ul class="nav_ul_container"  :class="showMenu ? 'block' : 'hidden'">
 
