@@ -153,22 +153,8 @@
 </template>
 
 <script setup>
-
-import { MoonIcon, SunIcon } from '@heroicons/vue/24/outline'
 const colorMode = useColorMode()
-console.log("dddddd",colorMode.preference)
 const showMenu = ref(false)
-
-
-/* export default {
-  data() {
-    return {
-      showMenu: false,
-    };
-  },
-}; */
-
-
 </script>
 
 <style scoped>

@@ -1,4 +1,6 @@
 <script setup>
+const select_month = ref(false)
+const select_pay = ref(false)
 
 </script>
 
@@ -35,7 +37,8 @@
                 </ul>
             </div>
             <div class="plan_side">
-                <div class="plan">
+                <div class="plan" :class="select_month ? 'active_plan' : ''"
+                @click="select_month = !select_month ; select_pay = false">
                     <div class="plan_icon">
                         <i class='bx bx-check text-[#93A3B0CC]'></i>
                     </div>
@@ -44,7 +47,8 @@
                         <p>Pay Monthly for software and devices.</p>
                     </div>
                 </div>
-                <div class="plan active_plan">
+                <div class="plan " :class="select_pay ? 'active_plan' : ''"
+                @click="select_pay = !select_pay ; select_month = false">
                     <div class="plan_icon">
                         <i class='bx bx-check'></i>
                     </div>
@@ -118,7 +122,7 @@
 }
 
 .plan_section .plan_side .plan {
-    @apply py-[25px] border-[3px] px-[15px] border-white border-solid h-[110px] bg-white gap-[20px] rounded-[15px] flex w-full mb-10 items-center justify-start relative
+    @apply cursor-pointer py-[25px] border-[3px] px-[15px] border-white border-solid h-[110px] bg-white gap-[20px] rounded-[15px] flex w-full mb-10 items-center justify-start relative hover:border-primary-color hover:border-solid
 }
 
 .plan_section .plan_side .plan .plan_icon {
@@ -143,11 +147,11 @@
 }
 
 .plan_section .plan_side .plan.active_plan {
-    @apply border-primary-color
+    @apply border-primary-color cursor-pointer
 }
 
 .plan_section .plan_side .plan.active_plan .plan_icon {
-    @apply bg-primary-color
+    @apply bg-primary-color 
 }
 
 .plan_section .plan_side .plan.active_plan .plan_icon i {
