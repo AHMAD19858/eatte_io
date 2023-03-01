@@ -80,20 +80,29 @@
 
             <div class="right_side">
                 <div class="right_container">
-                    <p class="login_btn login">Login</p>
-                    <button class="get_started">Get
-                        Started</button>
+                    <NuxtLink to="/login" ><p class="login_btn login">Login</p></NuxtLink>
+                   
+                    <button class="get_started">
+                        <p class=" w-max">Get Started</p>
+                    </button>
                     <div class="contact_container">
                         <div class="card_container">
-                               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                      
+
+                            <a href="tel:010-123-4567">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                                 stroke="currentColor" class="phone_icon">
                                 <path stroke-linecap="round" stroke-linejoin="round"
                                     d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
                             </svg>
+                            </a>
                         </div>
                         <div class="col ">
                             <p class="contact_text">contact access</p>
-                            <p class="number_text">010-123-4567</p>
+                            
+                            <a href="tel:010-123-4567">
+                                <p class="number_text">010-123-4567</p>
+                            </a>
                         </div>
 
                        <!--  <div class="col web_mode">
@@ -143,7 +152,10 @@
         
         </nav>
     <div class="btn_div"  :class="showMenu ? 'block' : 'hidden'">
-    <p class="login_btn login_mobile">Login</p>
+        <NuxtLink to="/login"> 
+            <p class="login_btn login_mobile">Login</p>
+        </NuxtLink>
+    
     <button class="get_started_mobile">Get Started</button>
     </div>
     </div>
@@ -234,7 +246,7 @@ const showMenu = ref(false)
     @apply  mx-5 text-gray-800 hover:text-gray-400  focus:outline-none focus:text-gray-400
 }
 
-@media only screen and (min-width: 768px) {
+@media (min-width: 768px) {
     .parent:hover .child {
         opacity: 1;
         height: auto;
@@ -254,8 +266,17 @@ const showMenu = ref(false)
     @apply  mx-5 text-gray-800 hover:text-gray-400  focus:outline-none focus:text-gray-400
 }
 
+
 .web_mode{
     display: none;
+}
+
+
+}
+
+@media (max-width: 690px) {
+.nav_container{
+    padding-left: 6rem;
 }
 }
 @media (max-width: 576px) {
