@@ -108,7 +108,7 @@
 .card {
     background-color: white;
     border-radius: 16px;
-    height: 200px;
+    height: 165px;
     position: relative;
     width: 1000px;
     margin-left: auto;
