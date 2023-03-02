@@ -23,7 +23,7 @@
 								<h3 class="font-montse font-bold text-xl dark:text-white">
 									Full Service Restaurant
 								</h3>
-								<p class="font-montse font-normal text-base text-[#3F4440] dark:text-white">
+								<p class="dark:text-[#93A3B0CC] font-montse font-normal text-base text-[#3F4440]">
 									Lorem ipsum dolor sit amet, consectetur adipis elit. Sit enim nec, proin faucibus nibh
 									et sagittis a. Lacinia purus ac amet.
 								</p>
@@ -34,7 +34,7 @@
 								<h3 class="font-montse font-bold text-xl dark:text-white">
 									Food Truck
 								</h3>
-								<p class=" font-montse font-normal text-base text-[#3F4440] dark:text-white">
+								<p class=" dark:text-[#93A3B0CC] font-montse font-normal text-base text-[#3F4440] ">
 									Lorem ipsum dolor sit amet, consectetur adipis elit. Sit enim nec, proin faucibus nibh
 									et sagittis a. Lacinia purus ac amet.
 								</p>
@@ -48,7 +48,7 @@
 								<h3 class="font-montse font-bold text-xl dark:text-white">
 									Family Style
 								</h3>
-								<p class="font-montse font-normal text-base text-[#3F4440] dark:text-white">
+								<p class="dark:text-[#93A3B0CC] font-montse font-normal text-base text-[#3F4440] ">
 									Lorem ipsum dolor sit amet, consectetur adipis elit. Sit enim nec, proin faucibus nibh
 									et sagittis a. Lacinia purus ac amet.
 								</p>
@@ -59,7 +59,7 @@
 								<h3 class="font-montse font-bold text-xl dark:text-white">
 									Fine Dining
 								</h3>
-								<p class="font-montse font-normal text-base text-[#3F4440] dark:text-white">
+								<p class="dark:text-[#93A3B0CC] font-montse font-normal text-base text-[#3F4440] ">
 									Lorem ipsum dolor sit amet, consectetur adipis elit. Sit enim nec, proin faucibus nibh
 									et sagittis a. Lacinia purus ac amet.
 								</p>
@@ -70,7 +70,7 @@
 								<h3 class="font-bold text-xl dark:text-white">
 									Quick Service Restaurant
 								</h3>
-								<p class="font-montse font-normal text-base text-[#3F4440] dark:text-white">
+								<p class="dark:text-[#93A3B0CC] font-montse font-normal text-base text-[#3F4440] ">
 									Lorem ipsum dolor sit amet, consectetur adipis elit. Sit enim nec, proin faucibus nibh
 									et sagittis a. Lacinia purus ac amet.
 								</p>
@@ -83,7 +83,7 @@
 								<h3 class="font-montse font-bold text-xl dark:text-white">
 									Coffee Shop
 								</h3>
-								<p class="font-montse font-normal text-base text-[#3F4440] dark:text-white">
+								<p class="dark:text-[#93A3B0CC] font-montse font-normal text-base text-[#3F4440]">
 									Lorem ipsum dolor sit amet, consectetur adipis elit. Sit enim nec, proin faucibus nibh
 									et sagittis a. Lacinia purus ac amet.
 								</p>
@@ -94,7 +94,7 @@
 								<h3 class="font-montse font-bold text-xl dark:text-white">
 									Fast Casual
 								</h3>
-								<p class="font-montse font-normal text-base text-[#3F4440] dark:text-white">
+								<p class="dark:text-[#93A3B0CC] font-montse font-normal text-base text-[#3F4440] ">
 									Lorem ipsum dolor sit amet, consectetur adipis elit. Sit enim nec, proin faucibus nibh
 									et sagittis a. Lacinia purus ac amet.
 								</p>
@@ -105,7 +105,7 @@
 								<h3 class="font-montse font-bold text-xl dark:text-white">
 									Catering
 								</h3>
-								<p class="font-montse font-normal text-base text-[#3F4440] dark:text-white">
+								<p class="dark:text-[#93A3B0CC] font-montse font-normal text-base text-[#3F4440] ">
 									Lorem ipsum dolor sit amet, consectetur adipis elit. Sit enim nec, proin faucibus nibh
 									et sagittis a. Lacinia purus ac amet.
 								</p>
@@ -118,7 +118,7 @@
 								<h3 class="font-montse font-bold text-xl dark:text-white">
 									Bakery
 								</h3>
-								<p class="font-montse font-normal text-base text-[#3F4440] dark:text-white">
+								<p class="dark:text-[#93A3B0CC] font-montse font-normal text-base text-[#3F4440] ">
 									Lorem ipsum dolor sit amet, consectetur adipis elit. Sit enim nec, proin faucibus nibh
 									et sagittis a. Lacinia purus ac amet.
 								</p>
@@ -129,7 +129,7 @@
 								<h3 class="font-montse font-bold text-xl dark:text-white">
 									Cafe
 								</h3>
-								<p class="font-montse font-normal text-base text-[#3F4440] dark:text-white">
+								<p class="dark:text-[#93A3B0CC] font-montse font-normal text-base text-[#3F4440] ">
 									Lorem ipsum dolor sit amet, consectetur adipis elit. Sit enim nec, proin faucibus nibh
 									et sagittis a. Lacinia purus ac amet.
 								</p>
