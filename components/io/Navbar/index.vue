@@ -83,7 +83,7 @@
                     <NuxtLink to="/login" ><p class="login_btn login">Login</p></NuxtLink>
                    
                     <button class="get_started">
-                        <p class=" w-max">Get Started</p>
+                        <p class=" w-max font-montse">Get Started</p>
                     </button>
                     <div class="contact_container">
                         <div class="card_container">
@@ -190,12 +190,12 @@ const showMenu = ref(false)
 }
 
 .nav_text{
-    @apply text-font-color dark:text-white
+    @apply text-font-color dark:text-white font-montse
 }
 
 .login_btn{
  
-    @apply text-font-color text-base font-medium dark:text-white
+    @apply text-font-color text-base font-medium dark:text-white font-montse
 }
 .dropDown_icon{
     @apply stroke-font-color w-2 h-4 pt-1 fill-current  dark:text-white
@@ -233,7 +233,7 @@ const showMenu = ref(false)
 }
 
 .contact_text{
-    @apply text-second-font-color text-sm
+    @apply text-second-font-color text-sm font-montse
 }
 .number_text{
     @apply text-primary-color text-sm
