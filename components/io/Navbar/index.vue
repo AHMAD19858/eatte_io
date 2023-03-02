@@ -83,7 +83,7 @@
                     <NuxtLink to="/login" ><p class="login_btn login">Login</p></NuxtLink>
                    
                     <button class="get_started">
-                        <p class=" w-max font-montse">Get Started</p>
+                        <p class=" w-max font-montse font-normal text-[14px]">Get Started</p>
                     </button>
                     <div class="contact_container">
                         <div class="card_container">
@@ -182,11 +182,11 @@ const showMenu = ref(false)
 }
 
 .nav_element{
-    @apply flex items-center p-4 md:inline-flex hover:bg-gray-50 dark:hover:bg-black
+    @apply flex items-center p-4 md:inline-flex 
 }
 
 .nav_parent_element{
-    @apply flex items-center justify-between p-4 space-x-2 md:inline-flex hover:bg-gray-50 dark:hover:bg-black
+    @apply flex items-center justify-between p-4 space-x-2 md:inline-flex 
 }
 
 .nav_text{

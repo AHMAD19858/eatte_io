@@ -64,11 +64,16 @@
             <input type="checkbox" class="text-sm ml-2 cursor-pointer" for="checkboxDefault" >
             <span class="ml-2 text-gray-700 font-montse dark:text-white">Remember me</span>
           </label>
-          <span class="forgot_text">Forgot Password ?</span>
+          
+          <NuxtLink to="/forget-password">
+            <span class="forgot_text">Forgot Password ?</span>
+          </NuxtLink>
         </div>
+
+        <NuxtLink to="/">
         <button type="submit"
           class="login_btn">Login</button>
-
+        </NuxtLink>
    
       </form>
     </div>
