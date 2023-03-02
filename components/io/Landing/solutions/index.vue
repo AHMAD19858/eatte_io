@@ -20,10 +20,10 @@
 							<div class="item_section">
 								<img  v-show="$colorMode.value === 'dark'" src="../../../../assets/images/blackModeIcons/hat.svg" alt="svg">
 								<img v-show="$colorMode.value === 'light'" src="../../../../assets/images/icons/hat.svg" alt="">
-								<h3 class="font-bold text-xl dark:text-white">
+								<h3 class="font-montse font-bold text-xl dark:text-white">
 									Full Service Restaurant
 								</h3>
-								<p class="font-normal text-base text-[#3F4440] dark:text-white">
+								<p class="font-montse font-normal text-base text-[#3F4440] dark:text-white">
 									Lorem ipsum dolor sit amet, consectetur adipis elit. Sit enim nec, proin faucibus nibh
 									et sagittis a. Lacinia purus ac amet.
 								</p>
@@ -31,10 +31,10 @@
 							<div class="item_section">
 								<img  v-show="$colorMode.value === 'dark'" src="../../../../assets/images/blackModeIcons/food.svg" alt="svg">
 								<img v-show="$colorMode.value === 'light'" src="../../../../assets/images/icons/location.svg" alt="">
-								<h3 class="font-bold text-xl dark:text-white">
+								<h3 class="font-montse font-bold text-xl dark:text-white">
 									Food Truck
 								</h3>
-								<p class="font-normal text-base text-[#3F4440] dark:text-white">
+								<p class=" font-montse font-normal text-base text-[#3F4440] dark:text-white">
 									Lorem ipsum dolor sit amet, consectetur adipis elit. Sit enim nec, proin faucibus nibh
 									et sagittis a. Lacinia purus ac amet.
 								</p>
@@ -45,10 +45,10 @@
 							<div class="item_section">
 								<img  v-show="$colorMode.value === 'dark'" src="../../../../assets/images/blackModeIcons/family.svg" alt="svg">
 								<img v-show="$colorMode.value === 'light'" src="../../../../assets/images/icons/users.svg" alt="">
-								<h3 class="font-bold text-xl dark:text-white">
+								<h3 class="font-montse font-bold text-xl dark:text-white">
 									Family Style
 								</h3>
-								<p class="font-normal text-base text-[#3F4440] dark:text-white">
+								<p class="font-montse font-normal text-base text-[#3F4440] dark:text-white">
 									Lorem ipsum dolor sit amet, consectetur adipis elit. Sit enim nec, proin faucibus nibh
 									et sagittis a. Lacinia purus ac amet.
 								</p>
@@ -56,10 +56,10 @@
 							<div class="item_section">
 								<img  v-show="$colorMode.value === 'dark'" src="../../../../assets/images/blackModeIcons/dining.svg" alt="svg">
 								<img  v-show="$colorMode.value === 'light'" src="../../../../assets/images/icons/restaurant.svg" alt="">
-								<h3 class="font-bold text-xl dark:text-white">
+								<h3 class="font-montse font-bold text-xl dark:text-white">
 									Fine Dining
 								</h3>
-								<p class="font-normal text-base text-[#3F4440] dark:text-white">
+								<p class="font-montse font-normal text-base text-[#3F4440] dark:text-white">
 									Lorem ipsum dolor sit amet, consectetur adipis elit. Sit enim nec, proin faucibus nibh
 									et sagittis a. Lacinia purus ac amet.
 								</p>
@@ -70,7 +70,7 @@
 								<h3 class="font-bold text-xl dark:text-white">
 									Quick Service Restaurant
 								</h3>
-								<p class="font-normal text-base text-[#3F4440] dark:text-white">
+								<p class="font-montse font-normal text-base text-[#3F4440] dark:text-white">
 									Lorem ipsum dolor sit amet, consectetur adipis elit. Sit enim nec, proin faucibus nibh
 									et sagittis a. Lacinia purus ac amet.
 								</p>
@@ -80,10 +80,10 @@
 							<div class="item_section">
 								<img  v-show="$colorMode.value === 'dark'" src="../../../../assets/images/blackModeIcons/coffee.svg" alt="svg">
 								<img v-show="$colorMode.value === 'light'" src="../../../../assets/images/icons/coffee.svg" alt="">
-								<h3 class="font-bold text-xl dark:text-white">
+								<h3 class="font-montse font-bold text-xl dark:text-white">
 									Coffee Shop
 								</h3>
-								<p class="font-normal text-base text-[#3F4440] dark:text-white">
+								<p class="font-montse font-normal text-base text-[#3F4440] dark:text-white">
 									Lorem ipsum dolor sit amet, consectetur adipis elit. Sit enim nec, proin faucibus nibh
 									et sagittis a. Lacinia purus ac amet.
 								</p>
@@ -91,10 +91,10 @@
 							<div class="item_section">
 								<img  v-show="$colorMode.value === 'dark'" src="../../../../assets/images/blackModeIcons/hat.svg" alt="svg">
 								<img  v-show="$colorMode.value === 'light'" src="../../../../assets/images/icons/hamburger.svg" alt="svg">
-								<h3 class="font-bold text-xl dark:text-white">
+								<h3 class="font-montse font-bold text-xl dark:text-white">
 									Fast Casual
 								</h3>
-								<p class="font-normal text-base text-[#3F4440] dark:text-white">
+								<p class="font-montse font-normal text-base text-[#3F4440] dark:text-white">
 									Lorem ipsum dolor sit amet, consectetur adipis elit. Sit enim nec, proin faucibus nibh
 									et sagittis a. Lacinia purus ac amet.
 								</p>
@@ -102,10 +102,10 @@
 							<div class="item_section">
 								<img  v-show="$colorMode.value === 'dark'" src="../../../../assets/images/blackModeIcons/catring.svg" alt="svg">
 								<img v-show="$colorMode.value === 'light'" src="../../../../assets/images/icons/room-service.svg" alt="">
-								<h3 class="font-bold text-xl dark:text-white">
+								<h3 class="font-montse font-bold text-xl dark:text-white">
 									Catering
 								</h3>
-								<p class="font-normal text-base text-[#3F4440] dark:text-white">
+								<p class="font-montse font-normal text-base text-[#3F4440] dark:text-white">
 									Lorem ipsum dolor sit amet, consectetur adipis elit. Sit enim nec, proin faucibus nibh
 									et sagittis a. Lacinia purus ac amet.
 								</p>
@@ -115,10 +115,10 @@
 							<div class="item_section">
 								<img  v-show="$colorMode.value === 'dark'" src="../../../../assets/images/blackModeIcons/bakery.svg" alt="svg">
 								<img  v-show="$colorMode.value === 'light'" src="../../../../assets/images/icons/food.svg" alt="">
-								<h3 class="font-bold text-xl dark:text-white">
+								<h3 class="font-montse font-bold text-xl dark:text-white">
 									Bakery
 								</h3>
-								<p class="font-normal text-base text-[#3F4440] dark:text-white">
+								<p class="font-montse font-normal text-base text-[#3F4440] dark:text-white">
 									Lorem ipsum dolor sit amet, consectetur adipis elit. Sit enim nec, proin faucibus nibh
 									et sagittis a. Lacinia purus ac amet.
 								</p>
@@ -126,10 +126,10 @@
 							<div class="item_section">
 								<img  v-show="$colorMode.value === 'dark'" src="../../../../assets/images/blackModeIcons/mug.svg" alt="svg">
 								<img v-show="$colorMode.value === 'light'" src="../../../../assets/images/icons/mug.svg" alt="">
-								<h3 class="font-bold text-xl dark:text-white">
+								<h3 class="font-montse font-bold text-xl dark:text-white">
 									Cafe
 								</h3>
-								<p class="font-normal text-base text-[#3F4440] dark:text-white">
+								<p class="font-montse font-normal text-base text-[#3F4440] dark:text-white">
 									Lorem ipsum dolor sit amet, consectetur adipis elit. Sit enim nec, proin faucibus nibh
 									et sagittis a. Lacinia purus ac amet.
 								</p>
@@ -157,11 +157,11 @@
 }
 
 .main_text {
-	@apply text-3xl font-bold text-primary-color
+	@apply text-3xl font-bold text-primary-color font-montse
 }
 
 .sub_text {
-	@apply font-serif text-xl text-font-color font-normal dark:text-white
+	@apply font-montse text-xl text-font-color font-normal dark:text-white
 }
 
 .container {
@@ -169,7 +169,7 @@
 }
 
 .solutions_section {
-	@apply relative bg-white h-[1000px] my-[260px] mx-0 dark:bg-[#272727]
+	@apply relative bg-white h-[1080px] my-[260px] mx-0 dark:bg-[#272727]
 }
 .sol_container{
 	@apply flex flex-col w-full divide-y sm:flex-row sm:divide-y-0 sm:divide-x  divide-[#93A3B029]

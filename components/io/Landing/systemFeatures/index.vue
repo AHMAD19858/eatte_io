@@ -10,8 +10,8 @@
         </div>
         <div class="features_section">
             <div class="features_side">
-                <h3>Customer Engagement</h3>
-                <p>
+                <h3 class="font-montse">Customer Engagement</h3>
+                <p class="font-montse">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
                     et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
                     aliquip ex ea commodo consequat.
@@ -19,36 +19,36 @@
                 <ul>
                     <li>
                         <i class='bx bx-check-circle'></i>
-                        <p>
+                        <p class="font-montse">
                             Loyalty
                         </p>
                     </li>
                     <li>
                         <i class='bx bx-check-circle'></i>
-                        <p>
+                        <p class="font-montse">
                             Gift Cards
                         </p>
                     </li>
-                    <li>
+                    <li class="font-montse">
                         <i class='bx bx-check-circle'></i>
-                        <p>
+                        <p class="font-montse">
                             SMS Marketing
                         </p>
                     </li>
                     <li>
                         <i class='bx bx-check-circle'></i>
-                        <p>
+                        <p class="font-montse">
                             Customer Online Reservations
                         </p>
                     </li>
                     <li>
                         <i class='bx bx-check-circle'></i>
-                        <p>
+                        <p class="font-montse">
                             Coupons
                         </p>
                     </li>
                 </ul>
-                <a href="#test">
+                <a href="#test" class="font-montse">
                     Learn more about Customer Engagement <i class='bx bx-right-arrow-alt'></i>
                 </a>
             </div>
@@ -59,8 +59,8 @@
 
         <div class="features_section reverse">
             <div class="features_side">
-                <h3>Employee Management</h3>
-                <p>
+                <h3 class="font-montse">Employee Management</h3>
+                <p class="font-montse">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
                     et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
                     aliquip ex ea commodo consequat.
@@ -68,36 +68,36 @@
                 <ul>
                     <li>
                         <i class='bx bx-check-circle'></i>
-                        <p>
+                        <p class="font-montse">
                             Loyalty
                         </p>
                     </li>
                     <li>
                         <i class='bx bx-check-circle'></i>
-                        <p>
+                        <p class="font-montse">
                             Gift Cards
                         </p>
                     </li>
                     <li>
                         <i class='bx bx-check-circle'></i>
-                        <p>
+                        <p class="font-montse">
                             SMS Marketing
                         </p>
                     </li>
                     <li>
                         <i class='bx bx-check-circle'></i>
-                        <p>
+                        <p class="font-montse">
                             Customer Online Reservations
                         </p>
                     </li>
                     <li>
                         <i class='bx bx-check-circle'></i>
-                        <p>
+                        <p class="font-montse">
                             Coupons
                         </p>
                     </li>
                 </ul>
-                <a href="#test">
+                <a href="#test" class="font-montse">
                     Learn more about Employee Management  <i class='bx bx-right-arrow-alt'></i>
                 </a>
             </div>
@@ -108,8 +108,8 @@
 
         <div class="features_section">
             <div class="features_side">
-                <h3>Back-Office Management</h3>
-                <p>
+                <h3 class="font-montse">Back-Office Management</h3>
+                <p class="font-montse">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
                     et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
                     aliquip ex ea commodo consequat.
@@ -117,36 +117,36 @@
                 <ul>
                     <li>
                         <i class='bx bx-check-circle'></i>
-                        <p>
+                        <p class="font-montse">
                             Loyalty
                         </p>
                     </li>
                     <li>
                         <i class='bx bx-check-circle'></i>
-                        <p>
+                        <p class="font-montse">
                             Gift Cards
                         </p>
                     </li>
                     <li>
                         <i class='bx bx-check-circle'></i>
-                        <p>
+                        <p class="font-montse">
                             SMS Marketing
                         </p>
                     </li>
                     <li>
                         <i class='bx bx-check-circle'></i>
-                        <p>
+                        <p class="font-montse">
                             Customer Online Reservations
                         </p>
                     </li>
                     <li>
                         <i class='bx bx-check-circle'></i>
-                        <p>
+                        <p class="font-montse">
                             Coupons
                         </p>
                     </li>
                 </ul>
-                <a href="#test">
+                <a href="#test" class="font-montse">
                     Learn more about Back-Office Management  <i class='bx bx-right-arrow-alt'></i>
                 </a>
             </div>
@@ -157,8 +157,8 @@
 
         <div class="features_section reverse">
             <div class="features_side">
-                <h3>Point Of Sale (POS)</h3>
-                <p>
+                <h3 class="font-montse">Point Of Sale (POS)</h3>
+                <p class="font-montse">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
                     et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
                     aliquip ex ea commodo consequat.
@@ -166,36 +166,36 @@
                 <ul>
                     <li>
                         <i class='bx bx-check-circle'></i>
-                        <p>
+                        <p class="font-montse">
                             Loyalty
                         </p>
                     </li>
                     <li>
                         <i class='bx bx-check-circle'></i>
-                        <p>
+                        <p class="font-montse">
                             Gift Cards
                         </p>
                     </li>
                     <li>
                         <i class='bx bx-check-circle'></i>
-                        <p>
+                        <p class="font-montse">
                             SMS Marketing
                         </p>
                     </li>
                     <li>
                         <i class='bx bx-check-circle'></i>
-                        <p>
+                        <p class="font-montse">
                             Customer Online Reservations
                         </p>
                     </li>
                     <li>
                         <i class='bx bx-check-circle'></i>
-                        <p>
+                        <p class="font-montse">
                             Coupons
                         </p>
                     </li>
                 </ul>
-                <a href="#test">
+                <a href="#test" class="font-montse">
                     Learn more about Payment Processing  <i class='bx bx-right-arrow-alt'></i>
                 </a>
             </div>
@@ -206,8 +206,8 @@
 
         <div class="features_section">
             <div class="features_side">
-                <h3>Kitchen Display System (KDS)</h3>
-                <p>
+                <h3 class="font-montse">Kitchen Display System (KDS)</h3>
+                <p class="font-montse">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
                     et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
                     aliquip ex ea commodo consequat.
@@ -215,36 +215,36 @@
                 <ul>
                     <li>
                         <i class='bx bx-check-circle'></i>
-                        <p>
+                        <p class="font-montse">
                             Loyalty
                         </p>
                     </li>
                     <li>
                         <i class='bx bx-check-circle'></i>
-                        <p>
+                        <p class="font-montse">
                             Gift Cards
                         </p>
                     </li>
                     <li>
                         <i class='bx bx-check-circle'></i>
-                        <p>
+                        <p class="font-montse">
                             SMS Marketing
                         </p>
                     </li>
                     <li>
                         <i class='bx bx-check-circle'></i>
-                        <p>
+                        <p class="font-montse">
                             Customer Online Reservations
                         </p>
                     </li>
                     <li>
                         <i class='bx bx-check-circle'></i>
-                        <p>
+                        <p class="font-montse">
                             Coupons
                         </p>
                     </li>
                 </ul>
-                <a href="#test">
+                <a href="#test" class="font-montse">
                     Learn more about Customer Support <i class='bx bx-right-arrow-alt'></i>
                 </a>
             </div>
@@ -274,11 +274,11 @@
 }
 
 .main_text {
-    @apply text-3xl font-bold text-primary-color
+    @apply text-3xl font-bold text-primary-color font-montse
 }
 
 .sub_text {
-    @apply font-serif text-xl text-font-color font-normal
+    @apply  text-xl text-font-color font-normal font-montse
 }
 
 .view_button {
@@ -288,7 +288,7 @@
 
 
 .get_started {
-    @apply flex w-72 self-baseline items-center justify-evenly rounded-lg px-8 py-3 m-2 text-lg font-semibold text-white bg-gradient-to-r from-[#FF6137] to-[#CC4D2C]
+    @apply font-montse flex w-72 self-baseline items-center justify-evenly rounded-lg px-8 py-3 m-2 text-lg font-semibold text-white bg-gradient-to-r from-[#FF6137] to-[#CC4D2C]
 }
 
 .container {

@@ -6,8 +6,8 @@
             <div class="plan_side">
                 <div class="plan">
                     <div class="plan_info">
-                        <h4 class=" font-semibold text-[35px] dark:text-white">Admin Mobile App</h4>
-                        <p class="dark:text-white">With Eatte Admin mobile app you can streamline all of your operations in no time, now a
+                        <h4 class=" font-montse font-semibold text-[35px] dark:text-white">Admin Mobile App</h4>
+                        <p class="dark:text-white font-montse">With Eatte Admin mobile app you can streamline all of your operations in no time, now a
                             single platform can empower your staff to deliver amazing dining experiences From KDS to
                             multi-location and inventory management.</p>
                         <div class="flex justify-between ">
@@ -16,8 +16,8 @@
                                     <i class='bx bxl-apple self-center text-5xl '></i>
 
                                     <div class=" self-center">
-                                        <h6 class=" text-[#1E1E1E] text-[13px] dark:text-white"> Download on the</h6>
-                                        <h6 class="text-[#1E1E1E] text-[15px] font-bold dark:text-white"> App Store</h6>
+                                        <h6 class=" text-[#1E1E1E] text-[13px] dark:text-white font-montse"> Download on the</h6>
+                                        <h6 class="text-[#1E1E1E] text-[15px] font-bold dark:text-white font-montse"> App Store</h6>
 
                                     </div>
 
@@ -32,8 +32,8 @@
                                         <i class='bx bxl-play-store self-center text-5xl '></i>
 
                                         <div class=" self-center">
-                                            <h6 class=" text-[#1E1E1E] text-[13px] dark:text-white"> Download on the</h6>
-                                            <h6 class=" text-[#1E1E1E] text-[15px] font-bold dark:text-white"> Google Play</h6>
+                                            <h6 class=" text-[#1E1E1E] text-[13px] dark:text-white font-montse"> Download on the</h6>
+                                            <h6 class=" text-[#1E1E1E] text-[15px] font-bold dark:text-white font-montse"> Google Play</h6>
 
                                         </div>
 
@@ -53,8 +53,8 @@
             <div class="plan_side">
                 <div class="plan">
                     <div class="plan_info">
-                        <h4 class=" font-semibold text-[35px] dark:text-white">POS Mobile App</h4>
-                        <p>POS mobile app is a part of a unified platform that work together to grow your business and
+                        <h4 class=" font-semibold text-[35px] dark:text-white font-montse">POS Mobile App</h4>
+                        <p class="font-montse">POS mobile app is a part of a unified platform that work together to grow your business and
                             delight your guests. Our app developed to keep your business moving, streamline your
                             ordering, and keep service hustling.</p>
                         <div class="flex justify-between">
@@ -63,8 +63,8 @@
                                     <i class='bx bxl-apple self-center text-5xl '></i>
 
                                     <div class=" self-center">
-                                        <h6 class=" text-[#1E1E1E] text-[13px] dark:text-white"> Download on the</h6>
-                                        <h6 class="text-[#1E1E1E] text-[15px] font-bold dark:text-white"> App Store</h6>
+                                        <h6 class=" text-[#1E1E1E] text-[13px] dark:text-white font-montse"> Download on the</h6>
+                                        <h6 class="text-[#1E1E1E] text-[15px] font-bold dark:text-white font-montse"> App Store</h6>
 
                                     </div>
 
@@ -80,8 +80,8 @@
         <i class='bx bxl-play-store self-center text-5xl '></i>
 
         <div class=" self-center">
-            <h6 class=" text-[#1E1E1E] text-[13px] dark:text-white"> Download on the</h6>
-            <h6 class=" text-[#1E1E1E] text-[15px] font-bold dark:text-white"> Google Play</h6>
+            <h6 class=" text-[#1E1E1E] text-[13px] dark:text-white font-montse"> Download on the</h6>
+            <h6 class=" text-[#1E1E1E] text-[15px] font-bold dark:text-white font-montse"> Google Play</h6>
 
         </div>
 

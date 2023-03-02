@@ -59,7 +59,7 @@ const select_pay = ref(false)
                     <p class="plan_best">Best Value</p>
                 </div>
                 <button class="plan_btn">
-                    <p>Try</p>
+                    <p class="font-montse">Try</p>
                     <i class='bx bx-right-arrow-alt'></i>
                 </button>
             </div>
@@ -83,7 +83,7 @@ const select_pay = ref(false)
 
 
 .plan_title {
-    @apply text-[40px] font-bold my-10 text-primary-color
+    @apply text-[40px] font-bold my-10 text-primary-color font-montse
 }
 
 
@@ -97,11 +97,11 @@ const select_pay = ref(false)
 }
 
 .plan_section .plan_side h1 {
-    @apply mb-[15px] font-bold text-6xl
+    @apply mb-[15px] font-bold text-6xl font-montse
 }
 
 .plan_section .plan_side p {
-    @apply text-lg mb-[35px]
+    @apply text-lg mb-[35px] font-montse
 }
 
 .plan_section .plan_side ul {
@@ -118,7 +118,7 @@ const select_pay = ref(false)
 }
 
 .plan_section .plan_side ul li p {
-    @apply text-base font-semibold mb-0
+    @apply text-base font-semibold mb-0 font-montse
 }
 
 .plan_section .plan_side .plan {
@@ -135,15 +135,15 @@ const select_pay = ref(false)
 }
 
 .plan_section .plan_side .plan .plan_info h4 {
-    @apply font-bold mb-[5px] text-font-color text-lg
+    @apply font-bold mb-[5px] text-font-color text-lg font-montse
 }
 
 .plan_section .plan_side .plan .plan_info p {
-    @apply text-base m-0 text-[#3F4440]
+    @apply text-base m-0 text-[#3F4440] font-montse
 }
 
 .plan_section .plan_side .plan .plan_best {
-    @apply absolute m-0 text-white rounded-[20px] font-bold text-xs top-[50%] right-[15px] translate-y-[-50%] py-[5px] px-[10px] bg-gradient-to-r from-primary-color to-[#CC4D2C]
+    @apply font-montse absolute m-0 text-white rounded-[20px] font-bold text-xs top-[50%] right-[15px] translate-y-[-50%] py-[5px] px-[10px] bg-gradient-to-r from-primary-color to-[#CC4D2C]
 }
 
 .plan_section .plan_side .plan.active_plan {
@@ -181,7 +181,7 @@ const select_pay = ref(false)
 }
 
 .main_text {
-	@apply text-[35px] font-bold text-primary-color leading-7
+	@apply text-[35px] font-bold text-primary-color leading-7 font-montse
 }
 
 @media (max-width: 1200px) {
@@ -208,6 +208,7 @@ const select_pay = ref(false)
     }
     .plan_section .plan_side .plan .plan_best{
         top: 25%;
+        font-family: "Montserrat";
     }
 }
 

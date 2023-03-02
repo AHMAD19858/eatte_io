@@ -8,15 +8,21 @@
   --second-font:#93A3B0CC;
   --background:#F5F6FA;
   --dark_background:#1E1E1E;
-
+  
 }
+@font-face {
+  font-family: 'MontserratBold';
+  src: url('../fonts/Montserrat-Bold.ttf')  format('truetype'),
+}
+
 
 body {
   @apply bg-gray-50;
 }
 
 @layer components {
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
 
- 
 
 }

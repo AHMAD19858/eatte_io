@@ -38,15 +38,15 @@
 }
 
 .get_started {
-    @apply flex w-72 self-end items-center justify-evenly rounded-lg px-8 py-3 m-2 text-lg font-semibold text-primary-color bg-gradient-to-r bg-white
+    @apply font-montse flex w-72 self-end items-center justify-evenly rounded-lg px-8 py-3 m-2 text-lg font-semibold text-primary-color bg-gradient-to-r bg-white
 }
 
 .slogan {
-    @apply  text-5xl tracking-tighter font-bold
+    @apply  font-montse text-5xl tracking-tighter font-bold
 }
 
 .sub{
-    @apply mt-6 text-xl text-white w-2/5
+    @apply font-montse mt-6 text-xl text-white w-2/5
 }
 .shadow_card {
     @apply absolute mx-auto text-center left-0 right-0 h-[200px]

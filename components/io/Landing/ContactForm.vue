@@ -6,38 +6,38 @@
 <div class="plan_section">
     <div class="plan_side">
 
-        <p>
+        <p class="font-montse">
             EATTE has the highest rated client support in software. We're here 24 hours a day, every day of the
             week, including holidays.
         </p>
-        <section class=" ">
+        <section >
             <form novalidate="" action="" class="container flex flex-col mx-auto ">
                 <fieldset class="grid grid-cols-4 gap-6  ">
 
                     <div class="grid grid-cols-6 gap-4 col-span-full ">
                         <div class="input_div">
-                            <label for="firstname" class="text-sm font-normal text-[#93A3B0CC]">First name</label>
+                            <label for="firstname" class="font-montse text-sm font-normal text-[#93A3B0CC]">First name</label>
                             <input id="firstname" type="text" placeholder="First name"
                                 class="label_input ">
                         </div>
                         <div class="input_div">
-                            <label for="lastname"  class="text-sm font-normal text-[#93A3B0CC]">Last name</label>
+                            <label for="lastname"  class="font-montse text-sm font-normal text-[#93A3B0CC]">Last name</label>
                             <input id="lastname" type="text" placeholder="Last name"
                                 class="label_input">
                         </div>
                         <div class="single_input_div">
-                            <label for="email"  class="text-sm font-normal text-[#93A3B0CC]">Email Address</label>
+                            <label for="email"  class="font-montse text-sm font-normal text-[#93A3B0CC]">Email Address</label>
                             <input id="email" type="email" placeholder="Email Address"
                                 class="label_input">
                         </div>
                         <div class="single_input_div">
-                            <label for="email"  class="text-sm font-normal text-[#93A3B0CC]">Phone Number</label>
+                            <label for="email"  class="font-montse text-sm font-normal text-[#93A3B0CC]">Phone Number</label>
                             <input id="email" type="email" placeholder="Phone Number"
                                 class="label_input">
                         </div>
 
                         <div class="single_input_div">
-                            <label for="email"  class="text-sm font-normal text-[#93A3B0CC]">Message</label>
+                            <label for="email"  class="font-montse text-sm font-normal text-[#93A3B0CC]">Message</label>
                             <textarea  rows="4" cols="50" placeholder="Message"
                                 class="textarea"></textarea>
                         </div>
@@ -47,7 +47,7 @@
             </form>
         </section>
         <button class="plan_btn">
-            <p>Send message</p>
+            <p class="font-montse">Send message</p>
             <i class='bx bx-right-arrow-alt'></i>
         </button>
     </div>
@@ -77,7 +77,7 @@
 
 
 .plan_title {
-	@apply text-[40px] font-bold my-10 text-primary-color w-[285px]
+	@apply font-montse text-[40px] font-bold my-10 text-primary-color w-[285px]
 }
 
 

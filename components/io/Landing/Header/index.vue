@@ -53,12 +53,12 @@
 }
 
 .slogan {
-	@apply text-4xl font-bold leading-none text-font-color sm:text-5xl dark:text-white
+	@apply font-montse text-4xl font-bold leading-none text-font-color sm:text-5xl dark:text-white
 }
 
 
 .sub_header {
-	@apply px-8 mt-8 mb-12 text-lg text-font-color dark:text-white
+	@apply font-montse px-8 mt-8 mb-12 text-lg text-font-color dark:text-white
 }
 
 .header_buttons {
@@ -66,7 +66,7 @@
 }
 
 .text_glow {
-	@apply text-black text-center text-5xl dark:text-white
+	@apply text-black text-center text-5xl dark:text-white font-sans
 }
 
 .shadow_text {
@@ -74,12 +74,12 @@
 }
 
 .get_started {
-	@apply flex w-72 self-baseline items-center justify-evenly rounded-lg px-8 py-3 m-2 text-lg font-semibold text-white bg-gradient-to-r from-[#FF6137] to-[#CC4D2C]
+	@apply font-montse flex w-72 self-baseline items-center justify-evenly rounded-lg px-8 py-3 m-2 text-lg font-semibold text-white bg-gradient-to-r from-[#FF6137] to-[#CC4D2C]
 }
 
 
 .get_demo {
-	@apply dark:text-white dark:border-white flex w-72 self-baseline items-center justify-evenly rounded-lg px-8 py-3 m-2 text-lg text-font-color border-font-color border-2
+	@apply font-montse dark:text-white dark:border-white flex w-72 self-baseline items-center justify-evenly rounded-lg px-8 py-3 m-2 text-lg text-font-color border-font-color border-2
 }
 
 .screen_container {

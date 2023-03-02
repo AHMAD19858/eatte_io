@@ -1,8 +1,8 @@
 <template>
-    <section class="dark:bg-[#272727]  h-[750px]">
+    <section class="dark:bg-[#272727]  h-[750px] bg-white">
         <div class="container flex flex-col justify-center p-4 mx-auto md:p-8">
-            <h2 class=" mb-6 text-[36px] font-semibold leading-none text-center  text-black dark:text-white">Frequently Asked Questions</h2>
-            <p class="p-2 text-sm font-medium tracking-wider text-center  text-[#3F4440] mb-5 dark:text-white">Everything you need to know
+            <h2 class=" font-montse mb-6 text-[36px] font-semibold leading-none text-center  text-black dark:text-white">Frequently Asked Questions</h2>
+            <p class="font-montse p-2 text-sm font-medium tracking-wider text-center  text-[#3F4440] mb-5 dark:text-white">Everything you need to know
                 about the product and billing.</p>
             <div class="flex flex-col divide-y sm:px-8 lg:px-12 xl:px-32 divide-black">
 
@@ -53,9 +53,9 @@
                 </div>
             </div>
 
-            <h1 class=" text-center font-semibold text-xl text-font-color dark:text-white">Still have questions?</h1>
+            <h1 class="font-montse text-center font-semibold text-xl text-font-color dark:text-white">Still have questions?</h1>
 
-            <p class=" text-center font-normal text-[15px] text-[#3F4440] dark:text-white">Can’t find the answer you’re looking for? Please
+            <p class="font-montse text-center font-normal text-[15px] text-[#3F4440] dark:text-white">Can’t find the answer you’re looking for? Please
                 chat to our friendly team.</p>
             <div class="view_button">
                 <button class="get_started">Get in touch
@@ -88,7 +88,7 @@
 
 
 .get_started {
-    @apply flex w-[234px] items-end self-baseline justify-evenly rounded-lg px-8 py-3 m-2 text-lg font-semibold text-white bg-gradient-to-r from-[#FF6137] to-[#CC4D2C]
+    @apply font-montse flex w-[234px] items-end self-baseline justify-evenly rounded-lg px-8 py-3 m-2 text-lg font-semibold text-white bg-gradient-to-r from-[#FF6137] to-[#CC4D2C]
 }
 
 body {
@@ -147,7 +147,7 @@ input {
     font-size: 18px;
     cursor: pointer;
     color: var(--font);
-    @apply dark:bg-[#272727] dark:text-white
+    @apply dark:bg-[#272727] dark:text-white font-montse
 }
 
 
@@ -159,6 +159,7 @@ input {
     text-align: center;
     transition: all 0.35s;
     color: #FF6137;
+    font-family: "Montserrat";
 }
 
 .tab-content {
@@ -167,7 +168,7 @@ input {
     color: #2c3e50;
     background: white;
     transition: all 0.35s;
-
+    font-family: "Montserrat";
     @apply dark:bg-[#272727] dark:text-[#F5F6FA] dark:font-normal
 }
 

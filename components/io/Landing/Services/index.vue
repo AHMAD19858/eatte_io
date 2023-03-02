@@ -17,7 +17,7 @@
 
 
 						<h3 class="main_card_text">COMPLETE ORDER AND MANAGEMENT SYSTEM</h3>
-						<h6>
+						<h6 class="font-montse font-normal text-[#3F4440] text-base">
 							This provides hungry customers the ability to order directly from your restaurant's website —
 							whether on desktops or mobile devices.
 						</h6>
@@ -32,7 +32,7 @@
 					</a>
 					<div class="p-4">
 						<h3 class="main_card_text">CUSTOMER ACQUISITION, RETENTION AND LOYALTY</h3>
-						<h6>
+						<h6 class="font-montse font-normal text-[#3F4440] text-base">
 							Recruit new customers by taking orders anywhere they find you, including Google or social media sites.
 						</h6>
 					</div>
@@ -49,7 +49,7 @@
 
 
 						<h3 class="main_card_text">FULL SUITE OF BUSINESS TOOLS (HUBB BOSS)</h3>
-						<h6>
+						<h6 class="font-montse font-normal text-[#3F4440] text-base">
 							Accept orders and establish delivery times through your tablet, mobile phone or desktop device. Use your Dashboard to update your menu, control inventory and communicate with your customers on the fly.
 						</h6>
 					</div>
@@ -66,7 +66,7 @@
 
 
 						<h3 class="main_card_text">CUSTOMER FEEDBACK</h3>
-						<h6>
+						<h6 class="font-montse font-normal text-[#3F4440] text-base">
 							Learn valuable client data. After every order you will receive feedback allowing you to understand what your customers felt about their experience with your business. This information is crucial to improving your customer satisfaction ratings.
 						</h6>
 					</div>
@@ -82,7 +82,7 @@
 
 
 						<h3 class="main_card_text">MARKETING AND BUSINESS</h3>
-						<h6>
+						<h6 class="font-montse font-normal text-[#3F4440] text-base">
 							EATTE will enable restaurants to partner with a dedicated success manager, mutually developing strategies that will procure more online orders.
 						</h6>
 					</div>
@@ -99,7 +99,7 @@
 
 
 						<h3 class="main_card_text">DEDICATED SUPPORT</h3>
-						<h6>
+						<h6 class="font-montse font-normal text-[#3F4440] text-base">
 							Reach EATTE support any day of the week. Our award-winning team is on call and proactively monitors orders as they come in. If you are having issues, they will be addressed and corrected immediately.
 						</h6>
 					</div>
@@ -129,11 +129,11 @@
 }
 
 .main_text {
-	@apply text-3xl font-bold text-primary-color
+	@apply text-3xl font-bold text-primary-color font-montse
 }
 
 .sub_text {
-	@apply font-serif text-sm dark:text-gray-400
+	@apply  text-sm dark:text-gray-400 font-montse
 }
 
 .cards_container {
@@ -149,7 +149,7 @@ article {
 }
 
 .main_card_text {
-	@apply flex-1 leading-snug text-2xl font-bold
+	@apply flex-1 leading-snug text-2xl font-bold font-montse
 }
 
 .phone_icon {

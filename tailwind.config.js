@@ -9,6 +9,10 @@ module.exports = {
         "background-color": "var(--background)",
         "dark-background-color": "var(--dark_background)",
       },
+      fontFamily: {
+        'montse': ['Montserrat']
+
+      }
     }
   }
 }

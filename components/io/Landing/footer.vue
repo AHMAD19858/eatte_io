@@ -7,7 +7,7 @@
 		<div class="slogan">
 
 			<img src="../../../assets/images/icons/svg.svg" alt="">
-			<p>Start selling with EATTE</p>
+			<p class="font-montse">Start selling with EATTE</p>
 		</div>
 		<p class="sub">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
 			laudantium</p>
@@ -82,7 +82,7 @@
 			<div class="flex items-center justify-between px-6  text-sm">
 				<div class=" grid gap-4">
 					<img src="../../../assets/images/icons/logo.svg" alt="svg">
-					<span class="text-white font-semibold text-[12px]">© 2023 EATTE</span>
+					<span class="text-white font-semibold text-[12px] font-montse ">© 2023 EATTE</span>
 				</div>
 
 				<div class="flex gap-[20px]">
@@ -120,7 +120,7 @@
 }
 
 .footer_element {
-	@apply font-semibold text-base
+	@apply font-semibold text-base font-montse
 }
 
 .main {
@@ -148,11 +148,11 @@
 	color: #3F4440;
 	font-weight: 500;
 	width: 645px;
-	@apply dark:text-white
+	@apply dark:text-white font-montse
 }
 
 .get_started {
-	@apply flex w-56 self-end items-center justify-evenly rounded-lg px-8 py-3 m-2 text-lg font-semibold text-white bg-gradient-to-r from-[#FF6137] to-[#CC4D2C]
+	@apply font-montse flex w-56 self-end items-center justify-evenly rounded-lg px-8 py-3 m-2 text-lg font-semibold text-white bg-gradient-to-r from-[#FF6137] to-[#CC4D2C]
 }
 
 
