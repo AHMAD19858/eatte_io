@@ -46,13 +46,14 @@
 
         <p class=" label">Email Address</p>
         <div class="input_div">
-          <input class="login_input" type="text" name="" id="" placeholder="enter your email address" />
+          <input autocomplete="off" class="login_input" type="text" name="" id="" placeholder="enter your email address" />
         </div>
         <p class="label">Password</p>
         <div class="input_div">
 
           <input class="login_input" 
-          type="text" 
+          autocomplete="off"
+          type="password" 
           name=""
            id="" 
           placeholder="enter your password" />
@@ -147,7 +148,7 @@ definePageMeta({
 }
 
 .login_input{
-  @apply  w-full bg-transparent pl-2 outline-none border-none
+  @apply  w-full bg-transparent pl-2 outline-none border-none dark:text-white
 }
 
 .forgot_text{
@@ -158,5 +159,10 @@ definePageMeta({
   @apply font-montse block w-full bg-gradient-to-tr from-primary-color to-[#CC4D2C] mt-4 py-2 rounded-[10px] text-white font-semibold mb-2
 }
 
-
+/* input:-internal-autofill-selected {
+    appearance: menulist-button;
+    background-image: none !important;
+    background-color: transparent !important;
+    color: fieldtext !important;
+} */
 </style>

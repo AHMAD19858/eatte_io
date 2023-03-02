@@ -35,7 +35,7 @@
       <div class="right_side">
         <form class=" form_section">
           <h1 class=" welcome">
-            Forgot your
+            Set new
           </h1>
           <h1 class=" welcome">
              password?
@@ -47,21 +47,15 @@
           </p>
   
   
-          <p class=" label">Email Address</p>
+          <p class=" label">New password</p>
           <div class="input_div">
-            <input class="login_input" autocomplete="off" type="text" name="" id="" placeholder="enter your email address" />
+            <input autocomplete="off" class="login_input" type="password" name="" id="" placeholder="New password" />
           </div>
-          <NuxtLink to="/reset-password">
-            <button type="submit"
-              class="login_btn">Send me the link</button>
-          </NuxtLink>
+          <NuxtLink to="/login">
+              <button type="submit"
+                class="login_btn">Save</button>
+            </NuxtLink>
   
-          <div class="flex my-3 justify-center gap-1">
-            <p class="text-sm font-montse dark:text-white">or </p>
-            <NuxtLink to="/login">
-              <p class="create">Login</p>
-              </NuxtLink>
-          </div>
         </form>
       </div>
     </div>
