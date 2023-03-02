@@ -13,7 +13,7 @@
 
 	</div>
 	<div class="flex md:w-1/2 justify-center py-10 items-center bg-white">
-		<form class="bg-white w-2/4">
+		<form class="bg-white w-[60%]">
 			<h1 class="text-gray-800  text-2xl mb-1 text-center font-montse font-semibold text-[45px] w-max">Welcome Back</h1>
 			<p class="text-sm font-normal  mb-7 text-center mt-5 font-montse text-[#3F4440]">
         At vero eos et accusamus et iusto odio dignissimos ducimus qui 
