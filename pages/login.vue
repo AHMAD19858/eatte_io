@@ -166,12 +166,13 @@ definePageMeta({
 
 .light{
   -webkit-text-fill-color: black;
-  -webkit-box-shadow: 0 0 0px 1000px transparent inset;
+  box-shadow: 0 0 0px 1000px transparent;
+  box-shadow: 0 0 0px 1000px transparent inset;
   transition: background-color 5000s ease-in-out 0s;
 }
 .dark{
   -webkit-text-fill-color: white;
-  -webkit-box-shadow: 0 0 0px 1000px #313131 inset;
+ box-shadow: 0 0 0px 1000px #313131 inset;
   transition: background-color 5000s ease-in-out 0s;
 }
 
