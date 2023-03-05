@@ -10,7 +10,7 @@
 				<article>
 					<a rel="noopener noreferrer" href="#" aria-label="Te nulla oportere reprimique his dolorum">
 						<div class="card_container ">
-							<img src="../../../../assets/images/icons/charts.svg" class="phone_icon" alt="svg">
+							<img src="../../../assets/images/icons/charts.svg" class="phone_icon" alt="svg">
 						</div>
 					</a>
 					<div class="p-4">
@@ -27,7 +27,7 @@
 				<article>
 					<a rel="noopener noreferrer" href="#" aria-label="Te nulla oportere reprimique his dolorum">
 						<div class="card_container ">
-							<img src="../../../../assets/images/icons/hand.svg" class="phone_icon" alt="svg">
+							<img src="../../../assets/images/icons/hand.svg" class="phone_icon" alt="svg">
 						</div>
 					</a>
 					<div class="p-4">
@@ -42,7 +42,7 @@
 					<a rel="noopener noreferrer" href="#" aria-label="Te nulla oportere reprimique his dolorum">
 						<div class="card_container ">
 
-							<img src="../../../../assets/images/icons/code.svg" class="phone_icon" alt="svg">
+							<img src="../../../assets/images/icons/code.svg" class="phone_icon" alt="svg">
 						</div>
 					</a>
 					<div class="p-4">
@@ -59,7 +59,7 @@
 					<a rel="noopener noreferrer" href="#" aria-label="Te nulla oportere reprimique his dolorum">
 						<div class="card_container ">
 
-							<img src="../../../../assets/images/icons/stars.svg" class="phone_icon" alt="svg">
+							<img src="../../../assets/images/icons/stars.svg" class="phone_icon" alt="svg">
 						</div>
 					</a>
 					<div class="p-4">
@@ -75,7 +75,7 @@
 					<a rel="noopener noreferrer" href="#" aria-label="Te nulla oportere reprimique his dolorum">
 						<div class="card_container ">
 
-							<img src="../../../../assets/images/icons/ad.svg" class="phone_icon" alt="svg">
+							<img src="../../../assets/images/icons/ad.svg" class="phone_icon" alt="svg">
 						</div>
 					</a>
 					<div class="p-4">
@@ -92,7 +92,7 @@
 					<a rel="noopener noreferrer" href="#" aria-label="Te nulla oportere reprimique his dolorum">
 						<div class="card_container ">
 
-							<img src="../../../../assets/images/icons/history.svg" class="phone_icon" alt="svg">
+							<img src="../../../assets/images/icons/history.svg" class="phone_icon" alt="svg">
 						</div>
 					</a>
 					<div class="p-4">

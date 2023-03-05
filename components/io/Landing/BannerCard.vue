@@ -1,6 +1,6 @@
 <template>
     <div class="banner_container ">
-        <img src="../../../../assets/images/shadow/image.png" class="shadow_card">
+        <img src="../../../assets/images/shadow/image.png" class="shadow_card">
         <div class="container mx-auto">
             <div class="row_container">
                 <div class="">
