@@ -7,11 +7,11 @@
           <p class="sub_slogan">What you need to manage your business in one software!</p>
           <div class=" mt-[185px] ml-[120px]">
             <div class="flex ">
-              <img src="../../assets/images/star.svg" alt="">
-              <img src="../../assets/images/star.svg" alt="">
-              <img src="../../assets/images/star.svg" alt="">
-              <img src="../../assets/images/star.svg" alt="">
-              <img src="../../assets/images/star.svg" alt="">
+              <img src="../assets/images/star.svg" alt="">
+              <img src="../assets/images/star.svg" alt="">
+              <img src="../assets/images/star.svg" alt="">
+              <img src="../assets/images/star.svg" alt="">
+              <img src="../assets/images/star.svg" alt="">
             </div>
             <div>
               <p class="testmonial">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis

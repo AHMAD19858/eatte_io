@@ -10,10 +10,10 @@
   --dark_background:#1E1E1E;
   
 }
-@font-face {
+/* @font-face {
   font-family: 'MontserratBold';
   src: url('../fonts/Montserrat-Bold.ttf')  format('truetype'),
-}
+} */
 
 
 body {
