@@ -46,7 +46,9 @@
 
         <p class=" label">Email Address</p>
         <div class="input_div">
-          <input autocomplete="off" class="login_input" type="text" name="" id="" placeholder="enter your email address" />
+          <input autocomplete="off" 
+          :class="colorMode.value == 'light'?'light':'dark'"
+          class="login_input" type="text"  placeholder="enter your email address" />
         </div>
         <p class="label">Password</p>
         <div class="input_div">
@@ -82,6 +84,7 @@
 </template>
 
 <script setup>
+const colorMode = useColorMode()
 definePageMeta({
   layout: 'outside'
 })
@@ -159,10 +162,16 @@ definePageMeta({
   @apply font-montse block w-full bg-gradient-to-tr from-primary-color to-[#CC4D2C] mt-4 py-2 rounded-[10px] text-white font-semibold mb-2
 }
 
-/* input:-internal-autofill-selected {
-    appearance: menulist-button;
-    background-image: none !important;
-    background-color: transparent !important;
-    color: fieldtext !important;
-} */
+
+.light{
+  -webkit-text-fill-color: black;
+  -webkit-box-shadow: 0 0 0px 1000px transparent inset;
+  transition: background-color 5000s ease-in-out 0s;
+}
+.dark{
+  -webkit-text-fill-color: white;
+  -webkit-box-shadow: 0 0 0px 1000px #313131 inset;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
 </style>
