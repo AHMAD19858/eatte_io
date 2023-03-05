@@ -41,10 +41,9 @@ const select_pay = ref(false)
             
                 </button>
             </div>
-            <div class="plan_side">
-       
-                <img src="~/assets/images/devices.svg" alt="">
-         
+            <div class="plan_side plan_shapes">
+                <img class="mobile" src="~/assets/images/mobileScreen.svg" alt="mobile">
+                <img src="~/assets/images/webScreen.svg" alt="web">
             </div>
         </div>
 
@@ -56,7 +55,7 @@ const select_pay = ref(false)
 
 <style scoped>
 .container {
-    @apply w-full max-w-[1200px] py-0 px-[15px] my-0 mx-auto z-10
+    @apply w-full max-w-[1200px] py-0 px-[15px] mt-28 mx-auto z-10
 }
 
 
@@ -73,7 +72,29 @@ const select_pay = ref(false)
 }
 
 .plan_section .plan_side {
+    position: relative;
     width: calc(100%/2 - 25px);
+}
+
+.plan_section .plan_side.plan_shapes {
+    left: 10%;
+}
+
+.plan_section .plan_side img{
+    position: absolute;
+    right: -10%;
+    object-fit: cover;
+    object-position: left bottom;
+    height: 500px;
+}
+.plan_section .plan_side img.mobile{
+    right: unset;
+    left: -100px;
+    top: -100px;
+    z-index: 10;
+    object-fit: unset;
+    object-position: unset;
+    height: auto;
 }
 
 .plan_section .plan_side h1 {
@@ -169,15 +190,42 @@ const select_pay = ref(false)
 	@apply text-[35px] font-bold text-primary-color leading-7 font-montse
 }
 
+@media (min-width: 1440px) {
+    .plan_section .plan_side.plan_shapes {
+        left: 20%;
+    }
+}
 @media (max-width: 1200px) {
     .container {
         max-width: 992px;
+    }
+    .plan_section .plan_side img.mobile{
+        transform: scale(0.8);
+        left: -140px;
+        top: -120px;
+    }
+    .plan_section .plan_side.plan_shapes {
+        left: 5%;
     }
 }
 
 @media (max-width: 992px) {
     .container {
         max-width: 768px;
+    }
+    .plan_section .plan_side img{
+        position: initial;
+        display: block;
+        object-fit: contain;
+        height: auto;
+    }
+    .plan_section .plan_side img.mobile{
+        margin: auto;
+        transform: translateX(45px);
+        
+    }
+    .plan_section .plan_side.plan_shapes {
+        left: unset;
     }
 }
 

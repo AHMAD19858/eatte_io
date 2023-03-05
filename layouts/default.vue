@@ -13,6 +13,8 @@ console.log(colorMode.preference)
 
 
 
-<style scoped>
-
+<style>
+body {
+    overflow-x: hidden;
+}
 </style>
