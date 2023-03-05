@@ -18,7 +18,7 @@
 					<div class="sol_container">
 						<div class="divide_section">
 							<div class="item_section">
-								<img  v-show="$colorMode.value === 'dark'" src="../../../assets/images/blackModeIcons/hat.svg" alt="svg">
+								<img  v-show="$colorMode.value === 'dark'" src="../../../assets/images/icons/hat.svg" class="darak_img" alt="svg">
 								<img v-show="$colorMode.value === 'light'" src="../../../assets/images/icons/hat.svg" alt="">
 								<h3 class="font-montse font-bold text-xl dark:text-white">
 									Full Service Restaurant
@@ -29,7 +29,7 @@
 								</p>
 							</div>
 							<div class="item_section">
-								<img  v-show="$colorMode.value === 'dark'" src="../../../assets/images/blackModeIcons/food.svg" alt="svg">
+								<img  v-show="$colorMode.value === 'dark'" src="../../../assets/images/icons/location.svg" class="darak_img" alt="svg">
 								<img v-show="$colorMode.value === 'light'" src="../../../assets/images/icons/location.svg" alt="">
 								<h3 class="font-montse font-bold text-xl dark:text-white">
 									Food Truck
@@ -43,7 +43,7 @@
 						</div>
 						<div class="divide_section">
 							<div class="item_section">
-								<img  v-show="$colorMode.value === 'dark'" src="../../../assets/images/blackModeIcons/family.svg" alt="svg">
+								<img  v-show="$colorMode.value === 'dark'" src="../../../assets/images/icons/users.svg" class="darak_img" alt="svg">
 								<img v-show="$colorMode.value === 'light'" src="../../../assets/images/icons/users.svg" alt="">
 								<h3 class="font-montse font-bold text-xl dark:text-white">
 									Family Style
@@ -54,7 +54,7 @@
 								</p>
 							</div>
 							<div class="item_section">
-								<img  v-show="$colorMode.value === 'dark'" src="../../../assets/images/blackModeIcons/dining.svg" alt="svg">
+								<img  v-show="$colorMode.value === 'dark'" src="../../../assets/images/icons/restaurant.svg" class="darak_img" alt="svg">
 								<img  v-show="$colorMode.value === 'light'" src="../../../assets/images/icons/restaurant.svg" alt="">
 								<h3 class="font-montse font-bold text-xl dark:text-white">
 									Fine Dining
@@ -65,7 +65,7 @@
 								</p>
 							</div>
 							<div class="item_section">
-								<img  v-show="$colorMode.value === 'dark'" src="../../../assets/images/blackModeIcons/restaurant.svg" alt="svg">
+								<img  v-show="$colorMode.value === 'dark'" src="../../../assets/images/icons/shop.svg" class="darak_img" alt="svg">
 								<img v-show="$colorMode.value === 'light'" src="../../../assets/images/icons/shop.svg" alt="">
 								<h3 class="font-bold text-xl dark:text-white">
 									Quick Service Restaurant
@@ -78,7 +78,7 @@
 						</div>
 						<div class="divide_section">
 							<div class="item_section">
-								<img  v-show="$colorMode.value === 'dark'" src="../../../assets/images/blackModeIcons/coffee.svg" alt="svg">
+								<img  v-show="$colorMode.value === 'dark'" src="../../../assets/images/icons/coffee.svg" class="darak_img" alt="svg">
 								<img v-show="$colorMode.value === 'light'" src="../../../assets/images/icons/coffee.svg" alt="">
 								<h3 class="font-montse font-bold text-xl dark:text-white">
 									Coffee Shop
@@ -89,7 +89,7 @@
 								</p>
 							</div>
 							<div class="item_section">
-								<img  v-show="$colorMode.value === 'dark'" src="../../../assets/images/blackModeIcons/hat.svg" alt="svg">
+								<img  v-show="$colorMode.value === 'dark'" src="../../../assets/images/icons/hamburger.svg" class="darak_img" alt="svg">
 								<img  v-show="$colorMode.value === 'light'" src="../../../assets/images/icons/hamburger.svg" alt="svg">
 								<h3 class="font-montse font-bold text-xl dark:text-white">
 									Fast Casual
@@ -100,8 +100,8 @@
 								</p>
 							</div>
 							<div class="item_section">
-								<img  v-show="$colorMode.value === 'dark'" src="../../../assets/images/blackModeIcons/catring.svg" alt="svg">
-								<img v-show="$colorMode.value === 'light'" src="../../../assets/images/icons/room-service.svg" alt="">
+								<img  v-show="$colorMode.value === 'dark'" src="../../../assets/images/icons/room-service.svg" class="darak_img"  alt="svg">
+								<img v-show="$colorMode.value === 'light'" src="../../../assets/images/icons/room-service.svg"  alt="">
 								<h3 class="font-montse font-bold text-xl dark:text-white">
 									Catering
 								</h3>
@@ -113,7 +113,7 @@
 						</div>
 						<div class="hidden w-full divide-y sm:flex-col sm:flex divide-[#93A3B029]">
 							<div class="item_section">
-								<img  v-show="$colorMode.value === 'dark'" src="../../../assets/images/blackModeIcons/bakery.svg" alt="svg">
+								<img  v-show="$colorMode.value === 'dark'" src="../../../assets/images/icons/food.svg" class="darak_img" alt="svg">
 								<img  v-show="$colorMode.value === 'light'" src="../../../assets/images/icons/food.svg" alt="">
 								<h3 class="font-montse font-bold text-xl dark:text-white">
 									Bakery
@@ -124,7 +124,7 @@
 								</p>
 							</div>
 							<div class="item_section">
-								<img  v-show="$colorMode.value === 'dark'" src="../../../assets/images/blackModeIcons/mug.svg" alt="svg">
+								<img  v-show="$colorMode.value === 'dark'" src="../../../assets/images/icons/mug.svg" class="darak_img" alt="svg">
 								<img v-show="$colorMode.value === 'light'" src="../../../assets/images/icons/mug.svg" alt="">
 								<h3 class="font-montse font-bold text-xl dark:text-white">
 									Cafe
@@ -152,6 +152,10 @@
 </script>
 
 <style  scoped>
+
+.darak_img{
+	filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(70deg) brightness(99%) contrast(107%);
+}
 .header_container {
 	@apply space-y-2 text-center mb-16
 }

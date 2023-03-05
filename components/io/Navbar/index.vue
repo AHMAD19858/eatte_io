@@ -4,8 +4,8 @@
 
         
         <nav class="nav_container" :class="showMenu ? ' mb-[325px]' : 'mb-1'">
-            <img  class="nav_text" v-if="colorMode.value == 'light'" src="~/assets/images/icons/eatteLogo.svg" alt="svg">
-            <img  class="nav_text" v-else src="~/assets/images/blackModeIcons/logo.svg" alt="svg">
+            <img  class="nav_text " v-if="colorMode.value == 'light'" src="~/assets/images/icons/eatteLogo.svg" alt="svg">
+            <img  class="nav_text darak_img" v-else src="~/assets/images/icons/eatteLogo.svg" alt="svg">
             
             <ul class="nav_ul_container"  :class="showMenu ? 'block' : 'hidden'">
 
@@ -168,7 +168,9 @@ const showMenu = ref(false)
 </script>
 
 <style scoped>
-
+.darak_img{
+	filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(70deg) brightness(99%) contrast(107%);
+}
 
 .section_container{
     @apply bg-background-color dark:bg-dark-background-color
