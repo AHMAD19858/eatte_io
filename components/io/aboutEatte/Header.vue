@@ -1,7 +1,7 @@
 <template>
 	<section>
 		<div class="header_container">
-            <img src="~/assets/images/shadow/Ellipse.png" alt="" class="shadow">
+            <img src="~/assets/images/shadow/Ellipse.svg" alt="" class="shadow_color">
             <h1 class="slogan "> The all-in-one platform built</h1>
 			<h1 class="slogan">
                 exclusively for restaurants, we're on a mission to enrich the food experience for all.
@@ -37,30 +37,30 @@
 
 <style  scoped>
 
-.shadow{
-    @apply absolute top-[-88px]
+.shadow_color{
+    @apply absolute top-[41px] w-[600px]
 }
 .header_container {
-	@apply mb-20 container flex flex-col items-center px-4  pt-[4rem] mx-auto text-center md:px-10 lg:px-32 dark:bg-dark-background-color
+	@apply  pt-24 mb-20 container flex flex-col items-center px-4  mx-auto text-center md:px-10 lg:px-32 dark:bg-dark-background-color
 }
 
 
 .slogan {
-	@apply font-montse text-4xl font-bold leading-none text-font-color sm:text-5xl dark:text-white
+	@apply font-montse text-4xl font-bold leading-none text-font-color sm:text-5xl dark:text-white z-10
 }
 
 .header_buttons {
-	@apply flex flex-wrap justify-center pt-10
+	@apply flex flex-wrap justify-center pt-16
 }
 
 
 .get_started {
-	@apply font-montse flex w-72 self-baseline items-center justify-evenly rounded-lg px-8 py-3 m-2 text-lg font-semibold text-white bg-gradient-to-r from-[#FF6137] to-[#CC4D2C]
+	@apply z-10 font-montse flex w-72 self-baseline items-center justify-evenly rounded-lg px-8 py-3 m-2 text-lg font-semibold text-white bg-gradient-to-r from-[#FF6137] to-[#CC4D2C]
 }
 
 
 .get_demo {
-	@apply font-montse dark:text-white dark:border-white flex w-72 self-baseline items-center justify-evenly rounded-lg px-8 py-3 m-2 text-lg text-font-color border-font-color border-2
+	@apply  z-10 font-montse dark:text-white dark:border-white flex w-72 self-baseline items-center justify-evenly rounded-lg px-8 py-3 m-2 text-lg text-font-color border-font-color border-2
 }
 
 </style>

@@ -56,7 +56,7 @@ const select_pay = ref(false)
 
 <style scoped>
 .container {
-    @apply w-full max-w-[1200px] py-0 px-[15px] my-0 mx-auto
+    @apply w-full max-w-[1200px] py-0 px-[15px] my-0 mx-auto z-10
 }
 
 
@@ -153,7 +153,7 @@ const select_pay = ref(false)
 .line {
   
 
-  @apply h-20 border-solid border-font-color self-center border dark:border-white
+  @apply  mt-2 h-20 border-solid border-font-color self-center border dark:border-white
 }
 @media (max-width:992px) {
     .plan_section .plan_side {

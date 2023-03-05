@@ -4,10 +4,12 @@
 
         
         <nav class="nav_container" :class="showMenu ? ' mb-[325px]' : 'mb-1'">
-            <img  class="nav_text " v-if="colorMode.value == 'light'" src="../../../assets/images/icons/eatteLogo.svg" alt="svg">
-            <img  class="nav_text darak_img" v-else src="../../../assets/images/icons/eatteLogo.svg" alt="svg">
-            
-   
+            <NuxtLink to="/">
+
+
+             <img  v-show="$colorMode.value === 'dark'" src="../../../assets/images/icons/eatteLogo.svg" class="darak_img" alt="svg">
+             <img  v-show="$colorMode.value === 'light'" src="../../../assets/images/icons/eatteLogo.svg"  alt="svg">
+                </NuxtLink>
             <ul class="nav_ul_container"  :class="showMenu ? 'block' : 'hidden'">
 
                 <li>
@@ -176,7 +178,7 @@ const showMenu = ref(false)
 }
 
 .section_container{
-    @apply bg-background-color dark:bg-dark-background-color
+    @apply  z-10 bg-background-color dark:bg-dark-background-color
 }
 .nav_container{
     @apply relative flex items-center px-4 
