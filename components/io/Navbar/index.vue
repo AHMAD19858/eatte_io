@@ -10,13 +10,13 @@
    
             <ul class="nav_ul_container"  :class="showMenu ? 'block' : 'hidden'">
 
-                <NuxtLink to="/about-eatte">
                 <li>
+                    <NuxtLink to="/about-eatte">
                     <a href="#" class="nav_element">
                         <span class="nav_text">About EATTE</span>
                     </a>
+                </NuxtLink>
                 </li>
-                    </NuxtLink>
                 <li>
                     <a href="#" class="nav_element">
                         <span class="nav_text">Why EATTE</span>

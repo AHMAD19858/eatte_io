@@ -7,6 +7,7 @@
 	<div class="screen_container">
 
         <IoAboutEatteHeader/>
+		<IoAboutEatteWhoWeAre/>
 		<IoLandingContactForm />
 		<IoLandingFooter />
 
