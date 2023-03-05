@@ -1,6 +1,6 @@
 <template>
 	<div class="solutions_section">
-		<img class="line-top" src="../../../../assets/images/line.svg" alt="svg">
+		<img class="line-top" src="../../../assets/images/line.svg" alt="svg">
 
 		<div class="container">
 			<div class="header_container">
@@ -18,8 +18,8 @@
 					<div class="sol_container">
 						<div class="divide_section">
 							<div class="item_section">
-								<img  v-show="$colorMode.value === 'dark'" src="../../../../assets/images/blackModeIcons/hat.svg" alt="svg">
-								<img v-show="$colorMode.value === 'light'" src="../../../../assets/images/icons/hat.svg" alt="">
+								<img  v-show="$colorMode.value === 'dark'" src="../../../assets/images/blackModeIcons/hat.svg" alt="svg">
+								<img v-show="$colorMode.value === 'light'" src="../../../assets/images/icons/hat.svg" alt="">
 								<h3 class="font-montse font-bold text-xl dark:text-white">
 									Full Service Restaurant
 								</h3>
@@ -29,8 +29,8 @@
 								</p>
 							</div>
 							<div class="item_section">
-								<img  v-show="$colorMode.value === 'dark'" src="../../../../assets/images/blackModeIcons/food.svg" alt="svg">
-								<img v-show="$colorMode.value === 'light'" src="../../../../assets/images/icons/location.svg" alt="">
+								<img  v-show="$colorMode.value === 'dark'" src="../../../assets/images/blackModeIcons/food.svg" alt="svg">
+								<img v-show="$colorMode.value === 'light'" src="../../../assets/images/icons/location.svg" alt="">
 								<h3 class="font-montse font-bold text-xl dark:text-white">
 									Food Truck
 								</h3>
@@ -43,8 +43,8 @@
 						</div>
 						<div class="divide_section">
 							<div class="item_section">
-								<img  v-show="$colorMode.value === 'dark'" src="../../../../assets/images/blackModeIcons/family.svg" alt="svg">
-								<img v-show="$colorMode.value === 'light'" src="../../../../assets/images/icons/users.svg" alt="">
+								<img  v-show="$colorMode.value === 'dark'" src="../../../assets/images/blackModeIcons/family.svg" alt="svg">
+								<img v-show="$colorMode.value === 'light'" src="../../../assets/images/icons/users.svg" alt="">
 								<h3 class="font-montse font-bold text-xl dark:text-white">
 									Family Style
 								</h3>
@@ -54,8 +54,8 @@
 								</p>
 							</div>
 							<div class="item_section">
-								<img  v-show="$colorMode.value === 'dark'" src="../../../../assets/images/blackModeIcons/dining.svg" alt="svg">
-								<img  v-show="$colorMode.value === 'light'" src="../../../../assets/images/icons/restaurant.svg" alt="">
+								<img  v-show="$colorMode.value === 'dark'" src="../../../assets/images/blackModeIcons/dining.svg" alt="svg">
+								<img  v-show="$colorMode.value === 'light'" src="../../../assets/images/icons/restaurant.svg" alt="">
 								<h3 class="font-montse font-bold text-xl dark:text-white">
 									Fine Dining
 								</h3>
@@ -65,8 +65,8 @@
 								</p>
 							</div>
 							<div class="item_section">
-								<img  v-show="$colorMode.value === 'dark'" src="../../../../assets/images/blackModeIcons/restaurant.svg" alt="svg">
-								<img v-show="$colorMode.value === 'light'" src="../../../../assets/images/icons/shop.svg" alt="">
+								<img  v-show="$colorMode.value === 'dark'" src="../../../assets/images/blackModeIcons/restaurant.svg" alt="svg">
+								<img v-show="$colorMode.value === 'light'" src="../../../assets/images/icons/shop.svg" alt="">
 								<h3 class="font-bold text-xl dark:text-white">
 									Quick Service Restaurant
 								</h3>
@@ -78,8 +78,8 @@
 						</div>
 						<div class="divide_section">
 							<div class="item_section">
-								<img  v-show="$colorMode.value === 'dark'" src="../../../../assets/images/blackModeIcons/coffee.svg" alt="svg">
-								<img v-show="$colorMode.value === 'light'" src="../../../../assets/images/icons/coffee.svg" alt="">
+								<img  v-show="$colorMode.value === 'dark'" src="../../../assets/images/blackModeIcons/coffee.svg" alt="svg">
+								<img v-show="$colorMode.value === 'light'" src="../../../assets/images/icons/coffee.svg" alt="">
 								<h3 class="font-montse font-bold text-xl dark:text-white">
 									Coffee Shop
 								</h3>
@@ -89,8 +89,8 @@
 								</p>
 							</div>
 							<div class="item_section">
-								<img  v-show="$colorMode.value === 'dark'" src="../../../../assets/images/blackModeIcons/hat.svg" alt="svg">
-								<img  v-show="$colorMode.value === 'light'" src="../../../../assets/images/icons/hamburger.svg" alt="svg">
+								<img  v-show="$colorMode.value === 'dark'" src="../../../assets/images/blackModeIcons/hat.svg" alt="svg">
+								<img  v-show="$colorMode.value === 'light'" src="../../../assets/images/icons/hamburger.svg" alt="svg">
 								<h3 class="font-montse font-bold text-xl dark:text-white">
 									Fast Casual
 								</h3>
@@ -100,8 +100,8 @@
 								</p>
 							</div>
 							<div class="item_section">
-								<img  v-show="$colorMode.value === 'dark'" src="../../../../assets/images/blackModeIcons/catring.svg" alt="svg">
-								<img v-show="$colorMode.value === 'light'" src="../../../../assets/images/icons/room-service.svg" alt="">
+								<img  v-show="$colorMode.value === 'dark'" src="../../../assets/images/blackModeIcons/catring.svg" alt="svg">
+								<img v-show="$colorMode.value === 'light'" src="../../../assets/images/icons/room-service.svg" alt="">
 								<h3 class="font-montse font-bold text-xl dark:text-white">
 									Catering
 								</h3>
@@ -113,8 +113,8 @@
 						</div>
 						<div class="hidden w-full divide-y sm:flex-col sm:flex divide-[#93A3B029]">
 							<div class="item_section">
-								<img  v-show="$colorMode.value === 'dark'" src="../../../../assets/images/blackModeIcons/bakery.svg" alt="svg">
-								<img  v-show="$colorMode.value === 'light'" src="../../../../assets/images/icons/food.svg" alt="">
+								<img  v-show="$colorMode.value === 'dark'" src="../../../assets/images/blackModeIcons/bakery.svg" alt="svg">
+								<img  v-show="$colorMode.value === 'light'" src="../../../assets/images/icons/food.svg" alt="">
 								<h3 class="font-montse font-bold text-xl dark:text-white">
 									Bakery
 								</h3>
@@ -124,8 +124,8 @@
 								</p>
 							</div>
 							<div class="item_section">
-								<img  v-show="$colorMode.value === 'dark'" src="../../../../assets/images/blackModeIcons/mug.svg" alt="svg">
-								<img v-show="$colorMode.value === 'light'" src="../../../../assets/images/icons/mug.svg" alt="">
+								<img  v-show="$colorMode.value === 'dark'" src="../../../assets/images/blackModeIcons/mug.svg" alt="svg">
+								<img v-show="$colorMode.value === 'light'" src="../../../assets/images/icons/mug.svg" alt="">
 								<h3 class="font-montse font-bold text-xl dark:text-white">
 									Cafe
 								</h3>
@@ -143,7 +143,7 @@
 
 		</div>
 	
-		<img class="line-bottom"  src="../../../../assets/images/lineEnd.svg" alt="svg">
+		<img class="line-bottom"  src="../../../assets/images/lineEnd.svg" alt="svg">
 	</div>
 </template>
 
@@ -189,11 +189,11 @@
 
 .solutions_section::before {
 
-	@apply top-[-110px] bg-[url('../../../../assets/images/Vector.svg')] bg-[top_center] dark:bg-[url('../../../../assets/images/blackTop.svg')]
+	@apply top-[-110px] bg-[url('../../../assets/images/Vector.svg')] bg-[top_center] dark:bg-[url('../../../assets/images/blackTop.svg')]
 }
 
 .solutions_section::after {
-	@apply bottom-[-110px] bg-[bottom_center] bg-[url('../../../../assets/images/Vector1.svg')] dark:bg-[url('../../../../assets/images/blackDown.svg')]
+	@apply bottom-[-110px] bg-[bottom_center] bg-[url('../../../assets/images/Vector1.svg')] dark:bg-[url('../../../assets/images/blackDown.svg')]
 }
 
 .solutions_section .line-top {

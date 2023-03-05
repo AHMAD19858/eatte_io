@@ -53,7 +53,7 @@
                 </a>
             </div>
             <div class="features_side img_side">
-                <img src="../../../../assets/images/demo.png" alt="img">
+                <img src="../../../assets/images/demo.png" alt="img">
             </div>
         </div>
 
@@ -102,7 +102,7 @@
                 </a>
             </div>
             <div class="features_side img_side">
-                <img src="../../../../assets/images/demo.png" alt="img">
+                <img src="../../../assets/images/demo.png" alt="img">
             </div>
         </div>
 
@@ -151,7 +151,7 @@
                 </a>
             </div>
             <div class="features_side img_side">
-                <img src="../../../../assets/images/demo.png" alt="img">
+                <img src="../../../assets/images/demo.png" alt="img">
             </div>
         </div>
 
@@ -200,7 +200,7 @@
                 </a>
             </div>
             <div class="features_side img_side">
-                <img src="../../../../assets/images/demo.png" alt="img">
+                <img src="../../../assets/images/demo.png" alt="img">
             </div>
         </div>
 
@@ -249,7 +249,7 @@
                 </a>
             </div>
             <div class="features_side img_side">
-                <img src="../../../../assets/images/demo.png" alt="img">
+                <img src="../../../assets/images/demo.png" alt="img">
             </div>
         </div>
 
