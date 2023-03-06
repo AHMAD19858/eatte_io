@@ -8,6 +8,7 @@
 
         <IoAboutEatteHeader/>
 		<IoAboutEatteWhoWeAre/>
+		<IoAboutEatteOurValues/>
 		<IoAboutEatteWhyChooseUs/>
 		<IoLandingContactForm />
 		<IoLandingFooter />

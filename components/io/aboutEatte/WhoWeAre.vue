@@ -55,7 +55,7 @@ const select_pay = ref(false)
 
 <style scoped>
 .container {
-    @apply w-full max-w-[1200px] py-0 px-[15px] mt-28 mx-auto z-10
+    @apply  w-full max-w-[1200px] py-0 px-[15px] mx-auto z-10 my-28
 }
 
 
