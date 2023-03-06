@@ -146,7 +146,7 @@ article {
 }
 
 .plan_section .plan_side p {
-    @apply text-lg  
+    @apply text-lg  font-montse
 }
 
 .plan_section .plan_side ul {
