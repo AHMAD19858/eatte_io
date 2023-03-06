@@ -7,8 +7,8 @@
 <template>
     <div class="container">
         
-        <div class="plan_section">
-            <div class="plan_side">
+        <div class="values_section">
+            <div class="side_section pt-24">
                 <p class=" font-bold text-lg text-primary-color">Our Values</p>
                 <h4 class=" text-4xl font-bold text-font-color dark:text-white">We're Always Looking For The Right Ingredients</h4>
                 <p class="mt-[35px]">
@@ -16,7 +16,7 @@
                 </p>
 
             </div>
-            <div class="plan_side">
+            <div class="side_section">
    
                 <div class="cards_container">
                     <article>
@@ -132,91 +132,91 @@ article {
 }
 
 
-.plan_section {
+.values_section {
 
     @apply flex justify-between items-start flex-wrap mb-[50px] gap-[50px]
 }
 
-.plan_section .plan_side {
+.values_section .side_section {
     width: calc(100%/2 - 25px);
 }
 
-.plan_section .plan_side h1 {
+.values_section .side_section h1 {
     @apply mb-[15px] font-bold text-6xl 
 }
 
-.plan_section .plan_side p {
+.values_section .side_section p {
     @apply text-lg  font-montse
 }
 
-.plan_section .plan_side ul {
+.values_section .side_section ul {
 
     @apply list-none p-0 flex justify-between items-start flex-wrap gap-5 mt-10
 }
 
-.plan_section .plan_side ul li {
+.values_section .side_section ul li {
     @apply flex items-center w-full gap-[10px]
 }
 
-.plan_section .plan_side ul li i {
+.values_section .side_section ul li i {
     @apply text-primary-color text-[20px]
 }
 
-.plan_section .plan_side ul li p {
+.values_section .side_section ul li p {
     @apply text-base font-semibold mb-0 font-montse
 }
 
-.plan_section .plan_side .plan {
+.values_section .side_section .plan {
     @apply cursor-pointer py-[25px] border-[3px] px-[15px] border-white border-solid h-[110px] bg-white gap-[20px] rounded-[15px] flex w-full mb-10 items-center justify-start relative hover:border-primary-color hover:border-solid
 }
 
-.plan_section .plan_side .plan .plan_icon {
+.values_section .side_section .plan .plan_icon {
 
     @apply flex w-[55px] rounded-lg h-[55px] bg-[#93A3B029] justify-center items-center
 }
 
-.plan_section .plan_side .plan .plan_icon i {
+.values_section .side_section .plan .plan_icon i {
     @apply text-[40px]
 }
 
-.plan_section .plan_side .plan .plan_info h4 {
+.values_section .side_section .plan .plan_info h4 {
     @apply font-bold mb-[5px] text-font-color text-lg font-montse
 }
 
-.plan_section .plan_side .plan .plan_info p {
+.values_section .side_section .plan .plan_info p {
     @apply text-base m-0 text-[#3F4440] font-montse
 }
 
-.plan_section .plan_side .plan .plan_best {
+.values_section .side_section .plan .plan_best {
     @apply font-montse absolute m-0 text-white rounded-[20px] font-bold text-xs top-[50%] right-[15px] translate-y-[-50%] py-[5px] px-[10px] bg-gradient-to-r from-primary-color to-[#CC4D2C]
 }
 
-.plan_section .plan_side .plan.active_plan {
+.values_section .side_section .plan.active_plan {
     @apply border-primary-color cursor-pointer
 }
 
-.plan_section .plan_side .plan.active_plan .plan_icon {
+.values_section .side_section .plan.active_plan .plan_icon {
     @apply bg-primary-color 
 }
 
-.plan_section .plan_side .plan.active_plan .plan_icon i {
+.values_section .side_section .plan.active_plan .plan_icon i {
     @apply text-white
 }
 
-.plan_section .plan_btn {
+.values_section .plan_btn {
     @apply gap-[15px] w-full flex h-[55px] bg-gradient-to-r from-primary-color to-[#CC4D2C] justify-center rounded-[10px] items-center
 }
 
-.plan_section .plan_btn p {
+.values_section .plan_btn p {
     @apply m-0 text-white font-bold text-lg
 }
 
-.plan_section .plan_btn i {
+.values_section .plan_btn i {
     @apply text-[26px] text-white
 }
 
 @media (max-width:992px) {
-    .plan_section .plan_side {
+    .values_section .side_section {
         @apply w-full
     }
 }
@@ -251,11 +251,11 @@ article {
     .container {
         max-width: 100%;
     }
-    .plan_section .plan_side .plan .plan_best{
+    .values_section .side_section .plan .plan_best{
         top: 25%;
         font-family: "Montserrat";
     }
-    .plan_side{
+    .side_section{
         margin-left: 20px;
     }
     article {

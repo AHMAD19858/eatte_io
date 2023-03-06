@@ -204,13 +204,11 @@ const select_pay = ref(false)
 
 @media (max-width: 992px) {
     .container {
-        max-width: 768px;
+        @apply max-w-3xl
     }
     .about_section .left_side img{
         position: initial;
-        display: block;
-        object-fit: contain;
-        height: auto;
+        @apply h-auto block object-contain
     }
     .about_section .left_side img.mobile{
         margin: auto;
@@ -237,14 +235,14 @@ const select_pay = ref(false)
         font-family: "Montserrat";
     }
     .main_text{
-        text-align: center;
-        font-size: 25px;
+        @apply text-center text-2xl
     }
     .sub_text{
-        text-align: center;
+        @apply text-center
     }
     .right_section{
-        text-align: center;
+
+        @apply text-center
     }
 }
 
