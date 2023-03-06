@@ -93,7 +93,7 @@ article {
 }
 
 .card_container {
-	@apply   flex items-center m-4
+	@apply   flex items-center m-4 justify-center
 }
 
 .main_card_text {
@@ -111,7 +111,7 @@ article {
 @media (max-width: 576px) {
 
     article {
-    margin-top: 1.75rem;
+        @apply mt-7 
     }
 }
 </style>

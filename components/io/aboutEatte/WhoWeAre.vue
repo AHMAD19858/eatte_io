@@ -8,8 +8,8 @@ const select_pay = ref(false)
 <template>
     <div class="container">
 
-        <div class="plan_section">
-            <div class="plan_side">
+        <div class="about_section">
+            <div class="left_side">
                 <h1 class="main_text">Who We Are?</h1>
                 <p class="sub_text">
                     EATTE is all about enabling and empowering restaurants to utilize todays technology to provide all avenues of food service and business development with a focus on the highest level of customer satisfaction.
@@ -41,7 +41,7 @@ const select_pay = ref(false)
             
                 </button>
             </div>
-            <div class="plan_side plan_shapes">
+            <div class="left_side devices_shapes">
                 <img class="mobile" src="~/assets/images/mobileScreen.svg" alt="mobile">
                 <img src="~/assets/images/webScreen.svg" alt="web">
             </div>
@@ -66,108 +66,103 @@ const select_pay = ref(false)
     .title{
         @apply text-[#3F4440] font-normal dark:text-[#F5F6FA]
         }
-.plan_section {
+.about_section {
 
     @apply flex justify-between items-start flex-wrap mb-[100px] gap-[50px]
 }
 
-.plan_section .plan_side {
+.about_section .left_side {
     position: relative;
     width: calc(100%/2 - 25px);
 }
 
-.plan_section .plan_side.plan_shapes {
+.about_section .left_side.devices_shapes {
     left: 10%;
 }
 
-.plan_section .plan_side img{
-    position: absolute;
-    right: -10%;
-    object-fit: cover;
-    object-position: left bottom;
-    height: 500px;
+.about_section .left_side img{
+     @apply absolute right-[-10%] object-cover object-left-bottom h-[500px]
+  
 }
-.plan_section .plan_side img.mobile{
+.about_section .left_side img.mobile{
     right: unset;
-    left: -100px;
-    top: -100px;
-    z-index: 10;
     object-fit: unset;
     object-position: unset;
     height: auto;
+    @apply h-auto z-10 -top-[100px] -left-[100px] 
 }
 
-.plan_section .plan_side h1 {
+.about_section .left_side h1 {
     @apply mb-[15px] font-bold text-6xl font-montse
 }
 
-.plan_section .plan_side p {
+.about_section .left_side p {
     @apply text-lg mb-[30px] font-montse 
 }
 
-.plan_section .plan_side ul {
+.about_section .left_side ul {
 
     @apply list-none p-0 flex justify-between items-start flex-wrap gap-5 mt-10
 }
 
-.plan_section .plan_side ul li {
+.about_section .left_side ul li {
     @apply flex items-center w-full gap-[10px]
 }
 
-.plan_section .plan_side ul li i {
+.about_section .left_side ul li i {
     @apply text-primary-color text-[20px]
 }
 
-.plan_section .plan_side ul li p {
+.about_section .left_side ul li p {
     @apply text-base font-semibold mb-0 font-montse
 }
 
-.plan_section .plan_side .plan {
+.about_section .left_side .plan {
     @apply cursor-pointer py-[25px] border-[3px] px-[15px] border-white border-solid h-[110px] bg-white gap-[20px] rounded-[15px] flex w-full mb-10 items-center justify-start relative hover:border-primary-color hover:border-solid
 }
 
-.plan_section .plan_side .plan .plan_icon {
+.about_section .left_side .plan .plan_icon {
 
     @apply flex w-[55px] rounded-lg h-[55px] bg-[#93A3B029] justify-center items-center
 }
 
-.plan_section .plan_side .plan .plan_icon i {
+.about_section .left_side .plan .plan_icon i {
     @apply text-[40px]
 }
 
-.plan_section .plan_side .plan .plan_info h4 {
+.about_section .left_side .plan .plan_info h4 {
     @apply font-bold mb-[5px] text-font-color text-lg font-montse
 }
 
-.plan_section .plan_side .plan .plan_info p {
+.about_section .left_side .plan .plan_info p {
     @apply text-base m-0 text-[#3F4440] font-montse
 }
 
-.plan_section .plan_side .plan .plan_best {
+.about_section .left_side .plan .plan_best {
     @apply font-montse absolute m-0 text-white rounded-[20px] font-bold text-xs top-[50%] right-[15px] translate-y-[-50%] py-[5px] px-[10px] bg-gradient-to-r from-primary-color to-[#CC4D2C]
 }
 
-.plan_section .plan_side .plan.active_plan {
+.about_section .left_side .plan.active_plan {
     @apply border-primary-color cursor-pointer
 }
 
-.plan_section .plan_side .plan.active_plan .plan_icon {
+.about_section .left_side .plan.active_plan .plan_icon {
     @apply bg-primary-color 
 }
 
-.plan_section .plan_side .plan.active_plan .plan_icon i {
+.about_section .left_side .plan.active_plan .plan_icon i {
     @apply text-white
 }
 
-.plan_section .plan_btn {
+.about_section .plan_btn {
     @apply gap-[15px] w-full flex h-[55px] bg-gradient-to-r from-primary-color to-[#CC4D2C] justify-between rounded-[10px] items-center p-5
 }
 
-.plan_section .plan_btn p {
+.about_section .plan_btn p {
     @apply m-0 text-white font-bold text-lg
 }
 
-.plan_section .plan_btn i {
+.about_section .plan_btn i {
     @apply text-[26px] text-white
 }
 
@@ -175,18 +170,12 @@ const select_pay = ref(false)
     @apply flex justify-between gap-8 my-10
 }
 .line {
-  
-
   @apply  mt-2 h-20 border-solid border-font-color self-center border dark:border-white
 }
 @media (max-width:992px) {
-    .plan_section .plan_side {
+    .about_section .left_side {
         @apply w-full
     }
-}
-
-.header_container {
-	@apply space-y-2 text-center mb-16
 }
 
 .main_text {
@@ -194,21 +183,22 @@ const select_pay = ref(false)
 }
 
 @media (min-width: 1440px) {
-    .plan_section .plan_side.plan_shapes {
+    .about_section .left_side.devices_shapes {
         left: 20%;
     }
 }
 @media (max-width: 1200px) {
     .container {
-        max-width: 992px;
+        @apply max-w-[992px]
     }
-    .plan_section .plan_side img.mobile{
+    .about_section .left_side img.mobile{
         transform: scale(0.8);
         left: -140px;
         top: -120px;
     }
-    .plan_section .plan_side.plan_shapes {
-        left: 5%;
+    .about_section .left_side.devices_shapes {
+       
+        @apply left-[5%]
     }
 }
 
@@ -216,18 +206,18 @@ const select_pay = ref(false)
     .container {
         max-width: 768px;
     }
-    .plan_section .plan_side img{
+    .about_section .left_side img{
         position: initial;
         display: block;
         object-fit: contain;
         height: auto;
     }
-    .plan_section .plan_side img.mobile{
+    .about_section .left_side img.mobile{
         margin: auto;
         transform: translateX(45px);
         
     }
-    .plan_section .plan_side.plan_shapes {
+    .about_section .left_side.devices_shapes {
         left: unset;
     }
 }
@@ -242,7 +232,7 @@ const select_pay = ref(false)
     .container {
         max-width: 100%;
     }
-    .plan_section .plan_side .plan .plan_best{
+    .about_section .left_side .plan .plan_best{
         top: 25%;
         font-family: "Montserrat";
     }
