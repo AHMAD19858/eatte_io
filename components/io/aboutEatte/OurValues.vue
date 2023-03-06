@@ -255,6 +255,12 @@ article {
         top: 25%;
         font-family: "Montserrat";
     }
+    .plan_side{
+        margin-left: 20px;
+    }
+    article {
+    margin-top: 2.75rem;
+    }
 }
 
 </style>

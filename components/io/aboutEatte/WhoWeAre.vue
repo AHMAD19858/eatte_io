@@ -10,12 +10,12 @@ const select_pay = ref(false)
 
         <div class="plan_section">
             <div class="plan_side">
-                <h1>Who We Are?</h1>
-                <p>
+                <h1 class="main_text">Who We Are?</h1>
+                <p class="sub_text">
                     EATTE is all about enabling and empowering restaurants to utilize todays technology to provide all avenues of food service and business development with a focus on the highest level of customer satisfaction.
                 </p>
 
-                <div class="flex justify-between gap-8 my-10">
+                <div class="right_section">
          
                     <div class="col">
                       <h3 class="number">5,910+</h3>
@@ -171,6 +171,9 @@ const select_pay = ref(false)
     @apply text-[26px] text-white
 }
 
+.right_section{
+    @apply flex justify-between gap-8 my-10
+}
 .line {
   
 
@@ -242,6 +245,16 @@ const select_pay = ref(false)
     .plan_section .plan_side .plan .plan_best{
         top: 25%;
         font-family: "Montserrat";
+    }
+    .main_text{
+        text-align: center;
+        font-size: 25px;
+    }
+    .sub_text{
+        text-align: center;
+    }
+    .right_section{
+        text-align: center;
     }
 }
 

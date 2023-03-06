@@ -283,7 +283,7 @@ const showMenu = ref(false)
 
 @media (max-width: 690px) {
 .nav_container{
-    padding-left: 6rem;
+    padding-left: 1rem;
 }
 }
 @media (max-width: 576px) {

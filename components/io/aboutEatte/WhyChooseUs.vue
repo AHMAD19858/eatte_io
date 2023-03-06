@@ -106,4 +106,12 @@ article {
 .question {
 	@apply  text-base  font-semibold text-primary-color
 }
+
+
+@media (max-width: 576px) {
+
+    article {
+    margin-top: 1.75rem;
+    }
+}
 </style>

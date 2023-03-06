@@ -167,7 +167,7 @@
 		width: unset;
 		text-align: center;
 		position: unset;
-		 margin-bottom: -20px;
+		 margin-bottom: -15px;
 	}
 
 	.slogan p {
@@ -180,7 +180,7 @@
 	font-weight: 300;
 }
 .get_started{
-	margin-inline: 77px;
+	margin-inline: 70px;
 	width: unset;
 }
 
