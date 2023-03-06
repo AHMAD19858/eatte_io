@@ -1,10 +1,8 @@
 <script setup>
-
-const colorMode = useColorMode()
-console.log(colorMode.preference)
 </script>
 
 <template>
+    	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <div class="flex flex-col min-h-screen ">
         <IoNavbar />
         <slot />

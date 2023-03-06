@@ -9,40 +9,47 @@
 
         <div class="about_section">
             <div class="left_side">
-                <h1 class="main_text">Who We Are?</h1>
+              <div >
+                <h1 class="main_text">EA<span class=" text-primary-color">TT</span>E POS</h1>
+                
+              </div>
                 <p class="sub_text">
-                    EATTE is all about enabling and empowering restaurants to utilize todays technology to provide all avenues of food service and business development with a focus on the highest level of customer satisfaction.
+                    Welcome to EATTE POS, the innovative omni-channel point of sale system designed to connect everything in your restaurant together. Our platform is the perfect solution for restaurant owners who want to streamline their operations, improve efficiency, and increase profitability.
                 </p>
 
                 <div class="right_section">
          
                     <div class="col">
-                      <h3 class="number">5,910+</h3>
-                       <p class="title">Customers are using & it’s growing everyday</p>
-                     </div>
+                        <button class="get_started">Get
+					started
+					<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+						stroke="currentColor" class="w-6 h-6">
+						<path stroke-linecap="round" stroke-linejoin="round"
+							d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
+					</svg>
+				</button>
+                    </div>
 
-            <div class="col ">
-  
-              <div class="line"></div>
-
-                </div>
+ 
 
                     <div class="col">
-                     <h3 class="number">5,910+</h3>
-                      <p class="title">Customers are using & it’s growing everyday</p>
+                        <button class="get_demo">
+					Get a demo
+					<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+						stroke="currentColor" class="w-6 h-6">
+						<path stroke-linecap="round" stroke-linejoin="round"
+							d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.348a1.125 1.125 0 010 1.971l-11.54 6.347a1.125 1.125 0 01-1.667-.985V5.653z" />
+					</svg>
+
+				</button>
                     </div>
                
                 </div>
-                <button class="plan_btn">
              
-                <p class="font-montse">Get Started</p>
-                    <i class='bx bx-right-arrow-alt'></i>
-            
-                </button>
             </div>
             <div class="left_side devices_shapes">
-                <img class="mobile" src="~/assets/images/mobileScreen.svg" alt="mobile">
-                <img src="~/assets/images/webScreen.svg" alt="web">
+                <img class="mobile" src="~/assets/images/pos.svg" alt="mobile">
+               
             </div>
         </div>
 
@@ -53,6 +60,19 @@
 
 
 <style scoped>
+.header_buttons {
+	@apply flex flex-wrap justify-center pt-16
+}
+
+
+.get_started {
+	@apply z-10 font-montse flex w-72 self-baseline items-center justify-evenly rounded-lg px-8 py-3  text-lg font-semibold text-white bg-gradient-to-r from-[#FF6137] to-[#CC4D2C]
+}
+
+
+.get_demo {
+	@apply  z-10 font-montse dark:text-white dark:border-white flex w-72 self-baseline items-center justify-evenly rounded-lg px-8 py-3  text-lg text-font-color border-font-color border-2
+}
 .container {
     @apply  w-full max-w-[1200px] py-0 px-[15px] mx-auto z-10 my-28
 }
@@ -178,7 +198,7 @@
 }
 
 .main_text {
-	@apply text-[35px] font-bold text-primary-color leading-7 font-montse
+	@apply text-[35px] font-bold text-font-color leading-7 font-montse
 }
 
 @media (min-width: 1440px) {
