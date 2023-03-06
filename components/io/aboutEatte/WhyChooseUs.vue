@@ -97,7 +97,7 @@ article {
 }
 
 .main_card_text {
-	@apply flex-1 leading-snug text-2xl font-bold font-montse text-center mb-2
+	@apply flex-1 leading-snug text-2xl font-bold font-montse text-center text-primary-color mb-2 dark:text-primary-color
 }
 
 .sub_title{
