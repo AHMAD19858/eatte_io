@@ -23,7 +23,7 @@ import PosImage from '../assets/images/pos.svg'
 			/>
         </div>
 
-            <div class=" bg-white">
+            <div class=" py-12 bg-white">
 				<div class="cards_container">
 				<article>
 					<a rel="noopener noreferrer" href="#" class="self-center" aria-label="Te nulla oportere reprimique his dolorum">
@@ -80,7 +80,7 @@ import PosImage from '../assets/images/pos.svg'
 			</div>
 			</div>
 	
-			<div class=" bg-background-color">
+			<div class=" py-10 bg-background-color">
 				<IoHeadersTripleLines 
 			:first_line="'POS Features'"
 			:main="'Everything You Need To Run Your Restaurant'"

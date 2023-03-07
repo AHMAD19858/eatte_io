@@ -102,7 +102,8 @@
 
 <style  scoped>
 .footer_container {
-	padding-top: 48px
+	
+	@apply bg-background-color pt-[48px]
 }
 
 .card {
