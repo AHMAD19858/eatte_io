@@ -6,7 +6,7 @@
 	<div class="right">
 		<div class="slogan">
 
-			<img src="../../../assets/images/icons/svg.svg" alt="">
+			<img src="../../assets/images/icons/svg.svg" alt="">
 			<p class="font-montse">Start selling with EATTE</p>
 		</div>
 		<p class="sub">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
@@ -81,7 +81,7 @@
 			<div class="flex-grow border-t border-[#F5F6FA] m-5"></div>
 			<div class="flex items-center justify-between px-6  text-sm">
 				<div class=" grid gap-4">
-					<img src="../../../assets/images/icons/logo.svg" alt="svg">
+					<img src="../../assets/images/icons/logo.svg" alt="svg">
 					<span class="text-white font-semibold text-[12px] font-montse ">© 2023 EATTE</span>
 				</div>
 
