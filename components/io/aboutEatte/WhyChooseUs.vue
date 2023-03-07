@@ -1,16 +1,12 @@
 <template>
 	<section class="section_container">
 		<div class="services_container">
-			<div class="header_container">
-                <p class="question">Why Choose Us?</p>
-				<h2 class="main_text">Built To Make Your Restaurant Better</h2>
-				<p class="sub_text">
-					EATTE connects employees, operations, and guests on a reliable, easy-to-use platform so restaurateurs can 
-                </p>
-                <p class="sub_text">
-					stay one step ahead of a rapidly evolving hospitality market.
-                </p>
-			</div>
+			<IoHeadersTripleLines 
+			:first_line="'Why Choose Us?'"
+			:main="'Built To Make Your Restaurant Better'"
+			:first_sub_main="'EATTE connects employees, operations, and guests on a reliable, easy-to-use platform so restaurateurs can'"
+			:second_sub_main="'stay one step ahead of a rapidly evolving hospitality market.'"
+			/>
 			<div class="cards_container">
 				<article>
 					
@@ -72,18 +68,6 @@
 	@apply container p-6 mx-auto space-y-8
 }
 
-.header_container {
-	@apply space-y-2 text-center
-}
-
-.main_text {
-	@apply text-3xl font-bold text-primary-color font-montse dark:text-white
-}
-
-.sub_text {
-	@apply  text-sm  font-montse dark:text-background-color
-}
-
 .cards_container {
 	@apply  md:grid grid-cols-3 gap-3 md:grid-cols-2 lg:grid-cols-3 
 }
@@ -103,10 +87,6 @@ article {
 .sub_title{
     @apply font-montse font-normal text-[#3F4440] text-base text-center dark:text-white
 }
-.question {
-	@apply  text-base  font-semibold text-primary-color
-}
-
 
 @media (max-width: 576px) {
 
