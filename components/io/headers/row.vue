@@ -1,6 +1,11 @@
 <script setup>
-
-
+const props = defineProps({
+    service: String,
+    sub_text:String,
+    start_btn:String,
+    demo_btn:String,
+    row_img:String
+})
 </script>
 
 
@@ -10,18 +15,18 @@
         <div class="about_section">
             <div class="left_side">
               <div >
-                <h1 class="main_text">EA<span class=" text-primary-color">TT</span>E POS</h1>
+                <h1 class="main_text">EA<span class=" text-primary-color">TT</span>E {{ service }}</h1>
                 
               </div>
                 <p class="sub_text">
-                    Welcome to EATTE POS, the innovative omni-channel point of sale system designed to connect everything in your restaurant together. Our platform is the perfect solution for restaurant owners who want to streamline their operations, improve efficiency, and increase profitability.
+                   {{ sub_text }}
                 </p>
 
                 <div class="right_section">
          
                     <div class="col">
-                        <button class="get_started">Get
-					started
+                        <button class="get_started">
+                            {{ start_btn }}
 					<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
 						stroke="currentColor" class="w-6 h-6">
 						<path stroke-linecap="round" stroke-linejoin="round"
@@ -34,7 +39,7 @@
 
                     <div class="col">
                         <button class="get_demo">
-					Get a demo
+				            {{ demo_btn }}
 					<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
 						stroke="currentColor" class="w-6 h-6">
 						<path stroke-linecap="round" stroke-linejoin="round"
@@ -48,7 +53,7 @@
              
             </div>
             <div class="left_side devices_shapes">
-                <img class="mobile" src="~/assets/images/pos.svg" alt="mobile">
+                <img class="mobile" :src="row_img" alt="POS">
                
             </div>
         </div>
