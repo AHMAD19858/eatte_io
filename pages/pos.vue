@@ -1,5 +1,5 @@
 <script setup>
-
+import PosImage from '../assets/images/pos.svg'
 </script>
 
 <template>
