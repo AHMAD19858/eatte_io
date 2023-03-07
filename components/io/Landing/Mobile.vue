@@ -11,7 +11,7 @@
                             single platform can empower your staff to deliver amazing dining experiences From KDS to
                             multi-location and inventory management.</p>
                         <div class="flex justify-between ">
-                            <div class="x">
+                            <div class="download_container">
                                 <div class="flex justify-between gap-2 pl-2">
                                     <i class='bx bxl-apple self-center text-5xl '></i>
 
@@ -27,7 +27,7 @@
 
 
 
-                                <div class="x">
+                                <div class="download_container">
                                     <div class="flex justify-between gap-2 pl-2">
                                         <i class='bx bxl-play-store self-center text-5xl '></i>
 
@@ -58,7 +58,7 @@
                             delight your guests. Our app developed to keep your business moving, streamline your
                             ordering, and keep service hustling.</p>
                         <div class="flex justify-between">
-                            <div class="x">
+                            <div class="download_container">
                                 <div class="flex justify-between gap-2 pl-2">
                                     <i class='bx bxl-apple self-center text-5xl '></i>
 
@@ -75,7 +75,7 @@
 
 
 
-<div class="x">
+<div class="download_container">
     <div class="flex justify-between gap-2 pl-2">
         <i class='bx bxl-play-store self-center text-5xl '></i>
 
@@ -164,17 +164,11 @@
 	@apply flex flex-wrap justify-center my-8
 }
 
-.x{
+.download_container{
     border: 1px solid;
-    border-radius: 10px;
-    background-color: #F5F6FA;
-    border-color: white;
-    width: 185px;
-    display: flex;
-    padding-top: 5px;
-    padding-bottom: 0px;
 
-    @apply dark:bg-[#272727] hover:border-primary-color hover:border-solid
+
+    @apply w-[185px] border-solid border-white flex pb-0 rounded-[10px] pt-[5px] bg-background-color dark:bg-[#272727] hover:border-primary-color hover:border-solid
 }
 
 .get_started {
@@ -224,7 +218,7 @@
         width: 285px;
     }
 
-    .x {
+    .download_container {
         width: unset;
         padding: 4px 6px 7px;
     }

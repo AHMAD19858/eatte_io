@@ -17,7 +17,7 @@
 		<IoLandingMobile />
 		<IoLandingFaq />
 		<IoLandingContactForm />
-		<IoLandingFooter />
+	
 
 	</div>
 </template>

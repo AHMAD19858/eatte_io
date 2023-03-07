@@ -7,7 +7,7 @@
 
 
         <IoServicesPosHeader />
-        <IoLandingFooter />
+ 
 
     </div>
 </template>

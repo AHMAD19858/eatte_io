@@ -6,6 +6,7 @@
     <div class="flex flex-col min-h-screen ">
         <IoNavbar />
         <slot />
+        <IoFooter/>
     </div>
 </template>
 

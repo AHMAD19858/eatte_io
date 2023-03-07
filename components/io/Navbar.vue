@@ -7,8 +7,8 @@
             <NuxtLink to="/">
 
 
-             <img  v-show="$colorMode.value === 'dark'" src="../../../assets/images/icons/eatteLogo.svg" class="darak_img" alt="svg">
-             <img  v-show="$colorMode.value === 'light'" src="../../../assets/images/icons/eatteLogo.svg"  alt="svg">
+             <img  v-show="$colorMode.value === 'dark'" src="../../assets/images/icons/eatteLogo.svg" class="darak_img" alt="svg">
+             <img  v-show="$colorMode.value === 'light'" src="../../assets/images/icons/eatteLogo.svg"  alt="svg">
                 </NuxtLink>
             <ul class="nav_ul_container"  :class="showMenu ? 'block' : 'hidden'">
 

@@ -11,7 +11,7 @@
 		<IoAboutEatteOurValues/>
 		<IoAboutEatteWhyChooseUs/>
 		<IoLandingContactForm />
-		<IoLandingFooter />
+
 
 	</div>
 </template>
