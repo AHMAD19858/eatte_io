@@ -4,14 +4,20 @@ const props = defineProps({
     shadow_slogan:String,
     sub_header:String,
     start_btn:String,
-    demo_btn:String
+    demo_btn:String,
+    about:Boolean
 })
 </script>
 
 <template>
 	<section>
 		<div class="header_container">
-			<h1 class="slogan">
+            <img  v-if="about === true" src="~/assets/images/shadow/Ellipse.svg" alt="" class="shadow_color">
+			<h1 v-if="about === true" class="slogan ">{{ shadow_slogan }}</h1>
+            <h1 v-if="about === true" class="slogan">
+                exclusively for restaurants, we're on a mission to enrich the food experience for all.
+			</h1>
+            <h1 class="slogan" v-if="about !== true">
 				<span class=" text_glow shadow_text">{{ shadow_slogan }}</span>
 				{{ slogan }}
 			</h1>
@@ -44,8 +50,8 @@ const props = defineProps({
 
 
 <style  scoped>
-.section_container {
-	@apply bg-background-color
+.shadow_color{
+    @apply absolute top-[41px] w-[600px]
 }
 
 
