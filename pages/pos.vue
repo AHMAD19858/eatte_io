@@ -6,7 +6,7 @@
     <div class="screen_container">
 
 
-        <IoServicesPosHeader />
+        <IoPosHeader />
  
 
     </div>

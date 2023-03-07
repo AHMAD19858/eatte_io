@@ -7,7 +7,13 @@
 	<div class="screen_container">
 
 
-		<IoLandingHeader />
+		<IoHeadersCentred 
+	:shadow_slogan="'All-in-One'"
+	:slogan="'Restaurant Management & Ordering System'" 
+	:sub_header="`Elevate your restaurant's guest experience and business operations with our solutions.`"
+	:start_btn="'Get Started'"
+	:demo_btn="'Get a demo'"
+	/>
 		<IoLandingFeatures />
 		<IoLandingServices />
 		<IoLandingBannerCard />

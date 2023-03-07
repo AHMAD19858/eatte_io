@@ -1,16 +1,44 @@
 <script setup>
-
+const props = defineProps({
+    slogan: String,
+    shadow_slogan:String,
+    sub_header:String,
+    start_btn:String,
+    demo_btn:String
+})
 </script>
 
 <template>
-	<IoHeadersCentred 
-	:shadow_slogan="'All-in-One'"
-	:slogan="'Restaurant Management & Ordering System'" 
-	:sub_header="`Elevate your restaurant's guest experience and business operations with our solutions.`"
-	:start_btn="'Get Started'"
-	:demo_btn="'Get a demo'"
-	/>
+	<section>
+		<div class="header_container">
+			<h1 class="slogan">
+				<span class=" text_glow shadow_text">{{ shadow_slogan }}</span>
+				{{ slogan }}
+			</h1>
 
+			<p class="sub_header ">
+				{{ sub_header }}
+			</p>
+			<div class="header_buttons">
+				<button class="get_started">{{ start_btn }}
+					<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+						stroke="currentColor" class="w-6 h-6">
+						<path stroke-linecap="round" stroke-linejoin="round"
+							d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
+					</svg>
+				</button>
+				<button class="get_demo">
+					{{demo_btn}}
+					<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+						stroke="currentColor" class="w-6 h-6">
+						<path stroke-linecap="round" stroke-linejoin="round"
+							d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.348a1.125 1.125 0 010 1.971l-11.54 6.347a1.125 1.125 0 01-1.667-.985V5.653z" />
+					</svg>
+
+				</button>
+			</div>
+		</div>
+	</section>
 </template>
 
 
