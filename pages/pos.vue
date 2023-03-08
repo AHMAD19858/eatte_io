@@ -255,7 +255,7 @@ import PosImage from '../assets/images/pos.svg'
 			 :secondary="true"
 			 :title="'View All Services'"/>
 
-			<div class=" py-10 bg-background-color">
+		<div class=" py-10 bg-background-color">
 				<IoHeadersTripleLines 
 			:first_line="'Overall,'"
 			:main="'EATTE POS is the perfect tool for restaurant owners who want to take their operations to the next level. With our platform, you can streamline your operations, increase efficiency, and boost profitability.'"
@@ -294,7 +294,7 @@ import PosImage from '../assets/images/pos.svg'
 }
 
 .cards_container {
-	@apply max-w-[300px] px-5 bg-white md:grid grid-cols-3 gap-3 md:grid-cols-2 lg:grid-cols-3 
+	@apply max-w-[1200px] px-5 bg-white md:grid grid-cols-3 gap-3 md:grid-cols-2 lg:grid-cols-3 
 }
 
 article {
