@@ -4,7 +4,7 @@ export default defineNuxtConfig({
     '@nuxtjs/tailwindcss',
     '@nuxtjs/i18n',
     '@nuxtjs/color-mode',
-
+    'nuxt-swiper',
   ],
 
   app: {
