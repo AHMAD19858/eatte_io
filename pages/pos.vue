@@ -182,6 +182,66 @@ import PosImage from '../assets/images/pos.svg'
 		</div>
 	</div>
 	</div>
+
+	<div class="header_container flex gap-12 mx-12">
+	    <div >
+                <h1 class="main_text">EA<span class=" text-primary-color">TT</span>E </h1>
+                <h1 class="main_text pt-3">Payments</h1>
+              </div>
+		<div>
+			<p class="font-montse">One of the most powerful features of EATTE POS is its ability to split payments for each order by number of people, item, or seat. This means that you can easily manage complex orders and split payments between multiple customers, improving the customer experience and increasing customer satisfaction.</p>
+		</div>
+	</div>
+
+	<div class="header_container">
+	<div class=" mt-9">
+		<p class="font-montse">Our platform also accepts all kinds of:</p>
+		<ul class="accepts_container">
+				<li class="accepts_featurs">
+					<i class='bx bx-check-circle'></i>
+					<p class="font-montse">
+						credit cards
+					</p>
+					
+				</li>
+		
+
+				<li class="accepts_featurs">
+					<i class='bx bx-check-circle'></i>
+					<p class="font-montse">
+						Apple Pay
+					</p>
+				</li>
+
+				<li class="accepts_featurs">
+					<i class='bx bx-check-circle'></i>
+					<p class="font-montse">
+						Google Pay
+					</p>
+				</li>
+
+				<li class="accepts_featurs">
+					<i class='bx bx-check-circle'></i>
+					<p class="font-montse">
+						gift cards
+					</p>
+				</li>
+
+				<li class="accepts_featurs">
+					<i class='bx bx-check-circle'></i>
+					<p class="font-montse">
+						QR pay
+					</p>
+				</li>
+				
+				<!-- 	<i class='bx bx-check-circle'></i> -->
+					<p class="font-montse pt-2">
+						and many more, making it easy for your customers to pay using their preferred payment method.
+					</p>
+				
+			</ul>
+	</div>
+	</div>
     </div>
 </template>
 
@@ -200,6 +260,12 @@ import PosImage from '../assets/images/pos.svg'
     padding: 0 70px;
     margin: 0 auto;
     background-color: white;
+}
+
+.header_container{
+	width: 100%;
+    padding: 0 70px;
+    margin: 0 auto;
 }
 .screen_container {
     @apply bg-background-color min-h-full dark:text-white dark:bg-dark-background-color
@@ -227,7 +293,9 @@ article {
 .sub_text{
     @apply font-montse text-center text-[#3F4440] font-normal text-base dark:text-white 
 }
-
+.main_text {
+	@apply text-[35px] font-bold text-font-color leading-7 font-montse
+}
 .features_section {
     display: flex;
     justify-content: space-between;
@@ -258,7 +326,29 @@ article {
 .features_section .features_side p {
     font-size: 18px;
 }
+.accepts_container{
+	
+    list-style: none;
+    padding: 0;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 20px 0px;
 
+}
+
+.accepts_featurs{
+	width: calc(100% / 2 - 25px);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+	
+}
+.accepts_featurs  i {
+	font-size: 20px;
+    color: var(--primary);
+}
 .features_section .features_side ul {
     list-style: none;
     padding: 0;
