@@ -251,21 +251,23 @@ import PosImage from '../assets/images/pos.svg'
 .container {
     width: 100%;
     max-width: 1200px;
-    padding: 0 15px;
+    padding: 0 70px;
     margin: 0 auto;
 	margin-top: 160px;
 }
 .pos_helps{
     width: 100%;
-    padding: 0 70px;
+    padding: 0 80px;
     margin: 0 auto;
     background-color: white;
+	
 }
 
 .header_container{
 	width: 100%;
     padding: 0 70px;
     margin: 0 auto;
+	max-width: 1200px;
 }
 .screen_container {
     @apply bg-background-color min-h-full dark:text-white dark:bg-dark-background-color
