@@ -23,7 +23,8 @@ import PosImage from '../assets/images/pos.svg'
 			/>
         </div>
 
-            <div class=" py-12 bg-white">
+       <div class="pos_helps">
+		<div class="  py-12 bg-white">
 				<div class="cards_container">
 				<article>
 					<a rel="noopener noreferrer" href="#" class="self-center" aria-label="Te nulla oportere reprimique his dolorum">
@@ -79,6 +80,7 @@ import PosImage from '../assets/images/pos.svg'
 			 :title="'See Pricing'"/>
 			</div>
 			</div>
+	   </div>
 	
 			<div class=" py-10 bg-background-color">
 				<IoHeadersTripleLines 
@@ -191,7 +193,13 @@ import PosImage from '../assets/images/pos.svg'
     max-width: 1200px;
     padding: 0 15px;
     margin: 0 auto;
-	margin-top: 70px;
+	margin-top: 160px;
+}
+.pos_helps{
+    width: 100%;
+    padding: 0 70px;
+    margin: 0 auto;
+    background-color: white;
 }
 .screen_container {
     @apply bg-background-color min-h-full dark:text-white dark:bg-dark-background-color
@@ -202,7 +210,7 @@ import PosImage from '../assets/images/pos.svg'
 }
 
 article {
-	@apply flex flex-col bg-background-color rounded-2xl my-3 dark:bg-[#272727] h-[280px]
+	@apply flex flex-col bg-background-color rounded-2xl my-3 dark:bg-[#272727] h-[300px]
 }
 
 .card_container {
