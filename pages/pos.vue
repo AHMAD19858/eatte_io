@@ -326,6 +326,10 @@ const cardData =[
 	
 			/>
 		</div>
+
+		<IoButtonsDouble
+			:start_btn="'Get Started'"
+			:demo_btn="'Get a demo'"/>
     </div>
 </template>
 
