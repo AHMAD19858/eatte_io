@@ -29,7 +29,7 @@ const props = defineProps({
 }
 
 .main_text {
-	@apply text-3xl font-bold text-primary-color font-montse dark:text-white
+	@apply text-3xl font-bold text-font-color font-montse dark:text-white
 }
 
 .sub_text {

@@ -4,7 +4,9 @@ const props = defineProps({
     sub_text:String,
     start_btn:String,
     demo_btn:String,
-    row_img:String
+    row_img:String,
+    without_btn:Boolean,
+    small_paragraph:String
 })
 </script>
 
@@ -14,15 +16,43 @@ const props = defineProps({
 
         <div class="about_section">
             <div class="left_side">
-              <div >
+                <h6 v-if="without_btn === true" class=" font-montse font-bold text-lg mb-0 text-primary-color">POS In The Palm Of Your Hand</h6>
+                <h2 v-if="without_btn === true" class=" font-montse text-3xl text-font-color">Mobile Handheld POS To Keep Your Business Moving</h2>
+              
+                <div v-if="without_btn !== true">
                 <h1 class="main_text">EA<span class=" text-primary-color">TT</span>E {{ service }}</h1>
                 
               </div>
                 <p class="sub_text">
                    {{ sub_text }}
                 </p>
+                <ul v-if="without_btn === true">
+				<li>
+					<i class='bx bx-check-circle'></i>
+					<p class="font-montse">
+						Deliver faster, safer service, and be ready to pivot on the fly.
+					</p>
+					
+				</li>
 
-                <div class="right_section">
+
+				
+				<li>
+					<i class='bx bx-check-circle'></i>
+					<p class="font-montse">
+						Tucks easily into your back pocket or apron.
+					</p>
+				</li>
+
+				<li class="font-montse">
+					<i class='bx bx-check-circle'></i>
+					<p class="font-montse">
+						Give guests the convenience of contactless tap payments with cards and digital wallets, alongside chip or swipe.
+					</p>
+				</li>
+
+			</ul>
+                <div class="right_section" v-if="without_btn !== true">
          
                     <div class="col">
                         <button class="get_started">
@@ -37,7 +67,7 @@ const props = defineProps({
 
  
 
-                    <div class="col">
+                    <div class="col" >
                         <button class="get_demo">
 				            {{ demo_btn }}
 					<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
@@ -65,10 +95,6 @@ const props = defineProps({
 
 
 <style scoped>
-.header_buttons {
-	@apply flex flex-wrap justify-center pt-16
-}
-
 
 .get_started {
 	@apply z-10 font-montse flex w-72 self-baseline items-center justify-evenly rounded-lg px-8 py-3  text-lg font-semibold text-white bg-gradient-to-r from-[#FF6137] to-[#CC4D2C]
@@ -84,12 +110,6 @@ const props = defineProps({
 
 
 
-.number{
-    @apply font-bold text-3xl mb-3
-}
-    .title{
-        @apply text-[#3F4440] font-normal dark:text-[#F5F6FA]
-        }
 .about_section {
 
     @apply flex justify-between items-start flex-wrap mb-[100px] gap-[50px]
@@ -113,7 +133,7 @@ const props = defineProps({
     object-fit: unset;
     object-position: unset;
     height: auto;
-    @apply h-auto z-10 -top-[100px] -left-[100px] 
+    @apply h-auto z-10 -top-[70px] -left-[100px] 
 }
 
 .about_section .left_side h1 {
@@ -126,7 +146,7 @@ const props = defineProps({
 
 .about_section .left_side ul {
 
-    @apply list-none p-0 flex justify-between items-start flex-wrap gap-5 mt-10
+    @apply list-none p-0 flex justify-between items-start flex-wrap gap-5 
 }
 
 .about_section .left_side ul li {
@@ -141,61 +161,10 @@ const props = defineProps({
     @apply text-base font-semibold mb-0 font-montse
 }
 
-.about_section .left_side .plan {
-    @apply cursor-pointer py-[25px] border-[3px] px-[15px] border-white border-solid h-[110px] bg-white gap-[20px] rounded-[15px] flex w-full mb-10 items-center justify-start relative hover:border-primary-color hover:border-solid
-}
-
-.about_section .left_side .plan .plan_icon {
-
-    @apply flex w-[55px] rounded-lg h-[55px] bg-[#93A3B029] justify-center items-center
-}
-
-.about_section .left_side .plan .plan_icon i {
-    @apply text-[40px]
-}
-
-.about_section .left_side .plan .plan_info h4 {
-    @apply font-bold mb-[5px] text-font-color text-lg font-montse
-}
-
-.about_section .left_side .plan .plan_info p {
-    @apply text-base m-0 text-[#3F4440] font-montse
-}
-
-.about_section .left_side .plan .plan_best {
-    @apply font-montse absolute m-0 text-white rounded-[20px] font-bold text-xs top-[50%] right-[15px] translate-y-[-50%] py-[5px] px-[10px] bg-gradient-to-r from-primary-color to-[#CC4D2C]
-}
-
-.about_section .left_side .plan.active_plan {
-    @apply border-primary-color cursor-pointer
-}
-
-.about_section .left_side .plan.active_plan .plan_icon {
-    @apply bg-primary-color 
-}
-
-.about_section .left_side .plan.active_plan .plan_icon i {
-    @apply text-white
-}
-
-.about_section .plan_btn {
-    @apply gap-[15px] w-full flex h-[55px] bg-gradient-to-r from-primary-color to-[#CC4D2C] justify-between rounded-[10px] items-center p-5
-}
-
-.about_section .plan_btn p {
-    @apply m-0 text-white font-bold text-lg
-}
-
-.about_section .plan_btn i {
-    @apply text-[26px] text-white
-}
-
 .right_section{
     @apply flex justify-between gap-8 my-10
 }
-.line {
-  @apply  mt-2 h-20 border-solid border-font-color self-center border dark:border-white
-}
+
 @media (max-width:992px) {
     .about_section .left_side {
         @apply w-full
@@ -254,10 +223,7 @@ const props = defineProps({
     .container {
         max-width: 100%;
     }
-    .about_section .left_side .plan .plan_best{
-        top: 25%;
-        font-family: "Montserrat";
-    }
+
     .main_text{
         @apply text-center text-2xl
     }

@@ -1,16 +1,3 @@
-<!-- 
-    Items : array of objects that contains 
-     - img: image
-     - label: String (optional)
-     - title: String (optional)
-     ** EX : 
-     [
-        {img:img1,lable:'pay with',title:'Google pay'},
-        {img:img2,lable:'pay with',title:'QR Pay'},
-        {img:img3,lable:'pay with',title:'Apple Pay'},
-        {img:img3,lable:'pay with',title:'Credit Card'},
-     ]
- -->
 <script setup>
 defineProps({
   items: Array,

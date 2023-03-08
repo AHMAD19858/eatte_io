@@ -1,5 +1,7 @@
 <script setup>
 import PosImage from '../assets/images/pos.svg'
+import pos_devices from '../assets/images/pos_devices.svg'
+
 import pay1 from '../assets/images/backgrounds/pay1.png'
 import pay2 from '../assets/images/backgrounds/pay2.png'
 import pay3 from '../assets/images/backgrounds/pay3.png'
@@ -269,6 +271,15 @@ const data =[
 	</div>
 
 	<IoCarouselSingle :items="data"/>
+
+	<IoHeadersRow 
+            :service="'POS'"
+            :sub_text="' Take contactless payments, streamline your ordering, and keep service hustling. The next generation of our handheld POS is ready for inside, outside, drive-through, curbside and more.'"
+            :start_btn="'Get Started'"
+			:demo_btn="'Get a demo'"
+            :row_img="pos_devices"
+			:without_btn="true"
+            />
 	</div>
 
 			<div class=" py-10 bg-background-color">
@@ -378,13 +389,13 @@ article {
     font-size: 18px;
 }
 .accepts_container{
-	
+	display: grid;
     list-style: none;
     padding: 0;
     justify-content: space-between;
     align-items: flex-start;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 10px;
     margin: 20px 0px;
 
 }
