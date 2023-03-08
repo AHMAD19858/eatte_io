@@ -1,6 +1,7 @@
 <script setup>
 import PosImage from '../assets/images/pos.svg'
 import pos_devices from '../assets/images/pos_devices.svg'
+import dash from '../assets/images/dashboard.svg'
 
 import pay1 from '../assets/images/backgrounds/pay1.png'
 import pay2 from '../assets/images/backgrounds/pay2.png'
@@ -28,6 +29,29 @@ const data =[
 		label:'pay with',
 		title:'Credit pay'
 	}
+]
+
+const cardData =[
+	{
+		img:dash,
+		label:'Customer Engagement',
+		learn_text:'LEARN MORE'
+	},
+	{
+		img:dash,
+		label:'Employee Management',
+		learn_text:'LEARN MORE'
+	},
+	{
+		img:dash,
+		label:'Back-Office Management',
+		learn_text:'LEARN MORE'
+	},
+	{
+		img:dash,
+		label:'Kitchen Display System (KDS)',
+		learn_text:'LEARN MORE'
+	},
 ]
 </script>
 
@@ -290,7 +314,7 @@ const data =[
 			:second_sub_main="'integrated software suite, providing unbeatable convenience.'"
 			/>
 		</div>
-
+		<IoCard :items="cardData"/>
 		<IoButton 
 			 :secondary="true"
 			 :title="'View All Services'"/>
@@ -308,6 +332,7 @@ const data =[
 
 
 <style scoped>
+
 .container {
     width: 100%;
     max-width: 1200px;
