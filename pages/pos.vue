@@ -1,5 +1,32 @@
 <script setup>
 import PosImage from '../assets/images/pos.svg'
+import pay1 from '../assets/images/backgrounds/pay1.png'
+import pay2 from '../assets/images/backgrounds/pay2.png'
+import pay3 from '../assets/images/backgrounds/pay3.png'
+import pay4 from '../assets/images/backgrounds/pay4.png'
+
+const data =[
+	{
+		img:pay1,
+		label:'pay with',
+		title:'Google pay'
+	},
+	{
+		img:pay2,
+		label:'pay with',
+		title:'QR pay'
+	},
+	{
+		img:pay3,
+		label:'pay with',
+		title:'Apple pay'
+	},
+	{
+		img:pay4,
+		label:'pay with',
+		title:'Credit pay'
+	}
+]
 </script>
 
 <template>
@@ -240,9 +267,11 @@ import PosImage from '../assets/images/pos.svg'
 				
 			</ul>
 	</div>
+
+	<IoCarouselSingle :items="data"/>
 	</div>
 
-	<div class=" py-10 bg-background-color">
+			<div class=" py-10 bg-background-color">
 				<IoHeadersTripleLines 
 			:first_line="'Discover More'"
 			:main="'All You Require, Conveniently Located in One Place.'"
@@ -294,7 +323,7 @@ import PosImage from '../assets/images/pos.svg'
 }
 
 .cards_container {
-	@apply max-w-[1200px] px-5 bg-white md:grid grid-cols-3 gap-3 md:grid-cols-2 lg:grid-cols-3 
+	@apply max-w-[1200px] mx-auto px-5 bg-white md:grid grid-cols-3 gap-3 md:grid-cols-2 lg:grid-cols-3 
 }
 
 article {

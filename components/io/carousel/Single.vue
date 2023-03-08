@@ -63,13 +63,13 @@ defineProps({
         >
           <p
             v-if="item.label"
-            class="mb-0 ml-[-12px] dark:text-zinc-900 text-white dark:md:text-white md:text-zinc-900"
+            class=" font-montse mb-0 ml-[-12px] dark:text-zinc-900 text-white dark:md:text-white md:text-zinc-900"
           >
             {{ item.label }}
           </p>
           <h1
             v-if="item.title"
-            class="text-[36pt] font-bold mt-0 leading-[.9] dark:text-zinc-900 md:text-white text-white"
+            class="font-montse text-[36pt] font-bold mt-0 leading-[.9] dark:text-zinc-900 md:text-white text-white"
           >
             {{ item.title }}
           </h1>
