@@ -50,6 +50,7 @@ const props = defineProps({
 }
 
 article {
+    margin: 0 auto;
 	@apply flex  flex-col bg-white rounded-2xl my-3 dark:bg-[#272727] w-[280px]
 }
 
