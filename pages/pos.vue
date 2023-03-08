@@ -234,7 +234,6 @@ import PosImage from '../assets/images/pos.svg'
 					</p>
 				</li>
 				
-				<!-- 	<i class='bx bx-check-circle'></i> -->
 					<p class="font-montse pt-2">
 						and many more, making it easy for your customers to pay using their preferred payment method.
 					</p>
@@ -242,6 +241,27 @@ import PosImage from '../assets/images/pos.svg'
 			</ul>
 	</div>
 	</div>
+
+	<div class=" py-10 bg-background-color">
+				<IoHeadersTripleLines 
+			:first_line="'Discover More'"
+			:main="'All You Require, Conveniently Located in One Place.'"
+			:first_sub_main="'Find all the restaurant management solutions you need in one place with our seamlessly '"
+			:second_sub_main="'integrated software suite, providing unbeatable convenience.'"
+			/>
+		</div>
+
+		<IoButton 
+			 :secondary="true"
+			 :title="'View All Services'"/>
+
+			<div class=" py-10 bg-background-color">
+				<IoHeadersTripleLines 
+			:first_line="'Overall,'"
+			:main="'EATTE POS is the perfect tool for restaurant owners who want to take their operations to the next level. With our platform, you can streamline your operations, increase efficiency, and boost profitability.'"
+	
+			/>
+		</div>
     </div>
 </template>
 
@@ -274,7 +294,7 @@ import PosImage from '../assets/images/pos.svg'
 }
 
 .cards_container {
-	@apply px-5 bg-white md:grid grid-cols-3 gap-3 md:grid-cols-2 lg:grid-cols-3 
+	@apply max-w-[300px] px-5 bg-white md:grid grid-cols-3 gap-3 md:grid-cols-2 lg:grid-cols-3 
 }
 
 article {
@@ -374,7 +394,7 @@ article {
 }
 
 .features_section .features_side ul li p {
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 600;
 }
 
