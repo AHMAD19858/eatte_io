@@ -1,7 +1,7 @@
 <script setup>
 import kdsImage from '../assets/images/kds.svg'
 import dash from '../assets/images/dashboard.svg'
-
+import demo from '../assets/images/demo.png'
 import service1 from '../assets/images/icons/hand.svg'
 import service3 from '../assets/images/icons/code.svg'
 import service2 from '../assets/images/icons/charts.svg'
@@ -42,6 +42,67 @@ const serviceData =[
 		img:service3,
 		label:'Insights into Kitchen Performance',
 		desc:`Monitor your kitchen's service speed and track your staff's performance.`
+	},
+]
+
+const featuresData =[
+	{
+		position:'right',
+		img:demo,
+		title:'Our Kitchen Display System can help you save time and money by improving communication and increasing efficiency.',
+		sub_title:`Manage your restaurant from anywhere. Dynamic reports in the cloud, accessed from any device, put you in control of your restaurant. Track everything in real time, including weekly category sales, wages and more.`,
+		details:[
+			{main:'Order Ready Notifications',
+			details:'Take payments (EMV or Card) tableside.'},
+			{main:'Tableside Payments',
+			details:'Take tap, dip, or swipe payments tableside.'},
+			{main:'Guest Feedback',
+			details:'Collect and respond to guest feedback immediately.'},
+		]
+	},
+	{
+		position:'left',
+		img:demo,
+		title:'Online Ordering & Delivery',
+		sub_title:`Grow your business online with your own commission-free ordering channels for takeout and delivery. EATTE point of sale lets you maximize off-premise sales while minimizing any costly 3rd party commissions.`,
+		details:[
+			{
+			main:'Restaurant-grade hardware',
+			details:'Our Kitchen Display System (KDS) comes equipped with restaurant-grade hardware that boasts a higher temperature rating and greater durability than standard iPad screens.'
+		},
+			{
+			main:'Multiple screen sizes',
+			details:'Choose from various screen sizes to mount your KDS anywhere in the kitchen without compromising visibility.'
+		},
+		{
+			main:'Digital ordering built-in integration',
+			details:'With digital ordering integration, items are sent directly to the KDS as soon as the customer orders, enabling the kitchen staff to start preparing the items almost immediately. This seamless integration helps to reduce wait times and improve order accuracy.'
+		},
+		]
+	},
+	{
+		position:'right',
+		img:demo,
+		title:'confirm availability, cost, and delivery estimated dates',
+		sub_title:`Vendors are able to confirm availability, cost, and delivery estimated dates, providing you with all the information you need to make informed decisions about your inventory`,
+		details:[
+			{main:'streamline the purchasing process',
+			details:`This also means that you can streamline the purchasing process and ensure that you're always getting the best deals on the items you need.`},
+		]
+	},
+	{
+		position:'left',
+		img:demo,
+		title:`Customize Your Kitchen Workflow`,
+		sub_title:`Empower your kitchen staff with the visibility they need to effortlessly prepare top-notch meals, while enabling waitstaff to send orders as soon as they're taken and dedicate more time to providing customer recommendations.`,
+		details:[
+			{main:'Streamline your kitchen operations with our features',
+			details:'such as all-day display and production item counts, enabling your staff to focus on preparing food instead of counting tickets.'},
+			{main:'Advance prep station routing',
+			details:'ensures that orders are routed to the correct station - dine-in, takeout, or delivery - for efficient preparation.'},
+			{main:'Track your kitchen productivity with detailed reporting',
+			details:'including ticket times by prep station, to identify bottlenecks and optimize your workflow'},
+		]
 	},
 ]
 </script>
@@ -87,97 +148,7 @@ const serviceData =[
 			/>
 		</div>
 
-	<div class="container">
-		<div class="features_section">
-		<div class="features_side">
-			<h3 class="font-montse">Our Kitchen Display System can help you save time and money by improving communication and increasing efficiency.</h3>
-			<p class="font-montse">
-                Manage your restaurant from anywhere. Dynamic reports in the cloud, accessed from any device, put you in control of your restaurant. Track everything in real time, including weekly category sales, wages and more.
-			</p>
-			<ul>
-				<li>
-					<i class='bx bx-check-circle'></i>
-					<p class="font-montse">
-						Order Ready Notifications
-					</p>
-					
-				</li>
-				<p class="  pl-8 py-1">
-					Take payments (EMV or Card) tableside.
-				</p>
-
-				
-				<li>
-					<i class='bx bx-check-circle'></i>
-					<p class="font-montse">
-						Tableside Payments
-					</p>
-				</li>
-				<p class="  pl-8 py-1">
-					Take tap, dip, or swipe payments tableside.
-				</p>
-				<li class="font-montse">
-					<i class='bx bx-check-circle'></i>
-					<p class="font-montse">
-						Guest Feedback
-					</p>
-				</li>
-				<p class="  pl-8 py-1">
-					Collect and respond to guest feedback immediately.
-				</p>
-			</ul>
-
-		</div>
-		<div class="features_side img_side">
-			<img src="../assets/images/demo.png" alt="img">
-		</div>
-	</div>
-
-	<div class="features_section reverse">
-		<div class="features_side">
-			<h3 class="font-montse">Online Ordering & Delivery</h3>
-			<p class="font-montse">
-				Grow your business online with your own commission-free ordering channels for takeout and delivery. EATTE point of sale lets you maximize off-premise sales while minimizing any costly 3rd party commissions.
-			</p>
-			<ul>
-				<li>
-					<i class='bx bx-check-circle'></i>
-					<p class="font-montse">
-						Order Ready Notifications
-					</p>
-					
-				</li>
-				<p class="  pl-8 py-1">
-					Take payments (EMV or Card) tableside.
-				</p>
-
-				
-				<li>
-					<i class='bx bx-check-circle'></i>
-					<p class="font-montse">
-						Tableside Payments
-					</p>
-				</li>
-				<p class="  pl-8 py-1">
-					Take tap, dip, or swipe payments tableside.
-				</p>
-				<li class="font-montse">
-					<i class='bx bx-check-circle'></i>
-					<p class="font-montse">
-						Guest Feedback
-					</p>
-				</li>
-				<p class="  pl-8 py-1">
-					Collect and respond to guest feedback immediately.
-				</p>
-			</ul>
-		
-		</div>
-		<div class="features_side img_side">
-			<img src="../assets/images/demo.png" alt="img">
-		</div>
-	</div>
-	</div>
+		<IoFeatures :items="featuresData"/>
 
 			<div class=" py-10 bg-background-color">
 				<IoHeadersTripleLines 
@@ -206,7 +177,7 @@ const serviceData =[
     max-width: 1200px;
     padding: 0 70px;
     margin: 0 auto;
-	margin-top: 160px;
+
 }
 .pos_helps{
     width: 100%;

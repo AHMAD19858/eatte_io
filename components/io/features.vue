@@ -35,51 +35,6 @@ const props = defineProps({
 			<img :src="item.img" alt="img">
 		</div>
 	</div>
-
-<!-- 	<div class="features_section reverse">
-		<div class="features_side">
-			<h3 class="font-montse">Online Ordering & Delivery</h3>
-			<p class="font-montse">
-				Grow your business online with your own commission-free ordering channels for takeout and delivery. EATTE point of sale lets you maximize off-premise sales while minimizing any costly 3rd party commissions.
-			</p>
-			<ul>
-				<li>
-					<i class='bx bx-check-circle'></i>
-					<p class="font-montse">
-						Order Ready Notifications
-					</p>
-					
-				</li>
-				<p class="  pl-8 py-1">
-					Take payments (EMV or Card) tableside.
-				</p>
-
-				
-				<li>
-					<i class='bx bx-check-circle'></i>
-					<p class="font-montse">
-						Tableside Payments
-					</p>
-				</li>
-				<p class="  pl-8 py-1">
-					Take tap, dip, or swipe payments tableside.
-				</p>
-				<li class="font-montse">
-					<i class='bx bx-check-circle'></i>
-					<p class="font-montse">
-						Guest Feedback
-					</p>
-				</li>
-				<p class="  pl-8 py-1">
-					Collect and respond to guest feedback immediately.
-				</p>
-			</ul>
-		
-		</div>
-		<div class="features_side img_side">
-			<img src="../assets/images/demo.png" alt="img">
-		</div>
-	</div> -->
 	</div>
 </template>
 
@@ -132,7 +87,7 @@ const props = defineProps({
     align-items: flex-start;
     flex-wrap: wrap;
     gap: 20px;
-    margin: 40px 0px;
+    margin: 15px 0px;
 }
 
 .features_section .features_side ul li {
