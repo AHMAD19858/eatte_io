@@ -11,7 +11,7 @@
              <img  v-show="$colorMode.value === 'light'" src="../../assets/images/icons/eatteLogo.svg"  alt="svg">
                 </NuxtLink>
             <ul class="nav_ul_container"  :class="showMenu ? 'block' : 'hidden'">
-
+             
                 <li>
                     <NuxtLink to="/about-eatte">
                     <a href="#" class="nav_element">
@@ -19,11 +19,35 @@
                     </a>
                 </NuxtLink>
                 </li>
-                <li>
-                    <a href="#" class="nav_element">
-                        <span class="nav_text">Why EATTE</span>
+                
+                <li class="relative parent">
+                    <a href="#" class="nav_parent_element">
+                        <span class=" nav_text">Services</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="dropDown_icon" viewBox="0 0 24 24">
+                            <path d="M0 7.33l2.829-2.83 9.175 9.339 9.167-9.339 2.829 2.83-11.996 12.17z" />
+                        </svg>
                     </a>
+       <!--              <ul
+                        class="nav_child_container child">
+                        <li>
+                            <a href="#" class="nav_child_element">
+                                data
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav_child_element">
+                                data
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav_child_element">
+                                data
+                            </a>
+                        </li>
+                    </ul> -->
                 </li>
+          
+           
                 <li class="relative parent">
                     <a href="#" class="nav_parent_element">
                         <span class="nav_text">Features</span>
@@ -50,32 +74,7 @@
                         </li>
                     </ul> -->
                 </li>
-                <li class="relative parent">
-                    <a href="#" class="nav_parent_element">
-                        <span class=" nav_text">Restaurant Types</span>
-                        <svg xmlns="http://www.w3.org/2000/svg" class="dropDown_icon" viewBox="0 0 24 24">
-                            <path d="M0 7.33l2.829-2.83 9.175 9.339 9.167-9.339 2.829 2.83-11.996 12.17z" />
-                        </svg>
-                    </a>
-       <!--              <ul
-                        class="nav_child_container child">
-                        <li>
-                            <a href="#" class="nav_child_element">
-                                data
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="nav_child_element">
-                                data
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="nav_child_element">
-                                data
-                            </a>
-                        </li>
-                    </ul> -->
-                </li>
+
                 <li>
                     <a href="#" class="nav_element">
                         <span class=" nav_text">Pricing</span>
