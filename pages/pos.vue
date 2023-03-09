@@ -7,6 +7,9 @@ import pay1 from '../assets/images/backgrounds/pay1.png'
 import pay2 from '../assets/images/backgrounds/pay2.png'
 import pay3 from '../assets/images/backgrounds/pay3.png'
 import pay4 from '../assets/images/backgrounds/pay4.png'
+import service1 from '../assets/images/icons/hand.svg'
+import service3 from '../assets/images/icons/code.svg'
+import service2 from '../assets/images/icons/charts.svg'
 
 const data =[
 	{
@@ -53,6 +56,24 @@ const cardData =[
 		learn_text:'LEARN MORE'
 	},
 ]
+
+const serviceData =[
+	{
+		img:service2,
+		label:'Increase sales',
+		desc:'Increase sales with built-in tools that help you boost average check size, speed up table turnover, and promote your most profitable menu items.'
+	},
+	{
+		img:service1,
+		label:'Deliver Great Guest Experience',
+		desc:'Deliver better service with a mobile POS that helps you seat guests faster, minimize order errors, keep lines moving, and process payments without a hitch.'
+	},
+	{
+		img:service3,
+		label:'Save Time and Money',
+		desc:`Manage staff, floor plans, and costs with on-the-go tools that help you spot ways to save time and money - whether you're in-venue or out of office.`
+	},
+]
 </script>
 
 <template>
@@ -78,55 +99,7 @@ const cardData =[
 
        <div class="pos_helps">
 		<div class="  py-12 bg-white">
-				<div class="cards_container">
-				<article>
-					<a rel="noopener noreferrer" href="#" class="self-center" aria-label="Te nulla oportere reprimique his dolorum">
-						<div class="card_container ">
-							<img src="../assets/images/icons/charts.svg" class="phone_icon" alt="svg">
-						</div>
-					</a>
-					<div class="p-4">
-
-
-						<h3 class="main_card_text">Increase sales</h3>
-						<h6 class="sub_text">
-                            Increase sales with built-in tools that help you boost average check size, speed up table turnover, and promote your most profitable menu items.
-						</h6>
-					</div>
-				</article>
-
-				<article>
-					<a rel="noopener noreferrer" class="self-center" href="#" aria-label="Te nulla oportere reprimique his dolorum">
-						<div class="card_container ">
-							<img src="../assets/images/icons/hand.svg" class="phone_icon" alt="svg">
-						</div>
-					</a>
-					<div class="p-4">
-						<h3 class="main_card_text">Deliver Great Guest Experience</h3>
-						<h6 class="sub_text">
-							Deliver better service with a mobile POS that helps you seat guests faster, minimize order errors, keep lines moving, and process payments without a hitch.
-						</h6>
-					</div>
-				</article>
-
-				<article>
-					<a rel="noopener noreferrer" class="self-center" href="#" aria-label="Te nulla oportere reprimique his dolorum">
-						<div class="card_container ">
-
-							<img src="../assets/images/icons/code.svg" class="phone_icon" alt="svg">
-						</div>
-					</a>
-					<div class="p-4">
-
-
-						<h3 class="main_card_text">Save Time and Money</h3>
-						<h6 class="sub_text">
-                            Manage staff, floor plans, and costs with on-the-go tools that help you spot ways to save time and money - whether you're in-venue or out of office.
-                        </h6>
-					</div>
-				</article>
-
-			</div>
+		<IoServices :items="serviceData" :numbers="3"/>
 			<div class="bg-white col">
 			 <IoButton 
 			 :secondary="true"
@@ -319,10 +292,6 @@ const cardData =[
 			 :secondary="true"
 			 :title="'View All Services'"/>
 
-<!--   subTitle: String,
-  title: String,
-  desc: String,
-  img: String, -->
 			 <IoLandingLineCard 
 			 :sub-title="'POYNT POS Hardware'"
 			 :title="'Integrations To Supercharge Your Business'"

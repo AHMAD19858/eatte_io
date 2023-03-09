@@ -2,33 +2,11 @@
 import kdsImage from '../assets/images/kds.svg'
 import dash from '../assets/images/dashboard.svg'
 
-import pay1 from '../assets/images/backgrounds/pay1.png'
-import pay2 from '../assets/images/backgrounds/pay2.png'
-import pay3 from '../assets/images/backgrounds/pay3.png'
-import pay4 from '../assets/images/backgrounds/pay4.png'
+import service1 from '../assets/images/icons/hand.svg'
+import service3 from '../assets/images/icons/code.svg'
+import service2 from '../assets/images/icons/charts.svg'
 
-const data =[
-	{
-		img:pay1,
-		label:'pay with',
-		title:'Google pay'
-	},
-	{
-		img:pay2,
-		label:'pay with',
-		title:'QR pay'
-	},
-	{
-		img:pay3,
-		label:'pay with',
-		title:'Apple pay'
-	},
-	{
-		img:pay4,
-		label:'pay with',
-		title:'Credit pay'
-	}
-]
+
 
 const cardData =[
 	{
@@ -47,6 +25,24 @@ const cardData =[
 		learn_text:'LEARN MORE'
 	},
 
+]
+
+const serviceData =[
+	{
+		img:service2,
+		label:'Improve Your Management',
+		desc:`Streamline your kitchen management system and simplify your staff's workload.`
+	},
+	{
+		img:service1,
+		label:'Efficient Order Management',
+		desc:'Guarantee the precision of every order and automatically route them to their respective stations.'
+	},
+	{
+		img:service3,
+		label:'Insights into Kitchen Performance',
+		desc:`Monitor your kitchen's service speed and track your staff's performance.`
+	},
 ]
 </script>
 
@@ -71,57 +67,9 @@ const cardData =[
 			/>
         </div>
 
-       <div class="pos_helps">
+        <div class="pos_helps">
 		<div class="  py-12 bg-white">
-				<div class="cards_container">
-				<article>
-					<a rel="noopener noreferrer" href="#" class="self-center" aria-label="Te nulla oportere reprimique his dolorum">
-						<div class="card_container ">
-							<img src="../assets/images/icons/charts.svg" class="phone_icon" alt="svg">
-						</div>
-					</a>
-					<div class="p-4">
-
-
-						<h3 class="main_card_text">Improve Your Management</h3>
-						<h6 class="sub_text">
-                            Streamline your kitchen management system and simplify your staff's workload.
-						</h6>
-					</div>
-				</article>
-
-				<article>
-					<a rel="noopener noreferrer" class="self-center" href="#" aria-label="Te nulla oportere reprimique his dolorum">
-						<div class="card_container ">
-							<img src="../assets/images/icons/hand.svg" class="phone_icon" alt="svg">
-						</div>
-					</a>
-					<div class="p-4">
-						<h3 class="main_card_text">Efficient Order Management</h3>
-						<h6 class="sub_text">
-                            Guarantee the precision of every order and automatically route them to their respective stations. errors, keep lines moving, and process payments without a hitch.
-						</h6>
-					</div>
-				</article>
-
-				<article>
-					<a rel="noopener noreferrer" class="self-center" href="#" aria-label="Te nulla oportere reprimique his dolorum">
-						<div class="card_container ">
-
-							<img src="../assets/images/icons/code.svg" class="phone_icon" alt="svg">
-						</div>
-					</a>
-					<div class="p-4">
-
-
-						<h3 class="main_card_text">Gain Insights into Your Kitchen Performance</h3>
-						<h6 class="sub_text">
-                            Monitor your kitchen's service speed and track your staff's performance.
-                        </h6>
-					</div>
-				</article>
-
-			</div>
+		<IoServices :items="serviceData" :numbers="3"/>
 			<div class="bg-white col">
 			 <IoButton 
 			 :secondary="true"
