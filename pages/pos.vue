@@ -10,6 +10,7 @@ import pay4 from '../assets/images/backgrounds/pay4.png'
 import service1 from '../assets/images/icons/hand.svg'
 import service3 from '../assets/images/icons/code.svg'
 import service2 from '../assets/images/icons/charts.svg'
+import demo from '../assets/images/demo.png'
 
 const data =[
 	{
@@ -74,6 +75,52 @@ const serviceData =[
 		desc:`Manage staff, floor plans, and costs with on-the-go tools that help you spot ways to save time and money - whether you're in-venue or out of office.`
 	},
 ]
+
+const featuresData =[
+	{
+		position:'right',
+		img:demo,
+		title:'Tableside Service',
+		sub_title:`With handheld technology designed for the restaurant environment, you can enable your team to spend more time with guests, accelerate service, and speed up checkout through tableside ordering and payments.`,
+		details:[
+			{main:'Order Ready Notifications',
+			details:'Take payments (EMV or Card) tableside.'},
+			{main:'Tableside Payments',
+			details:'Take tap, dip, or swipe payments tableside.'},
+			{main:'Guest Feedback',
+			details:'Collect and respond to guest feedback immediately.'},
+		]
+	},
+	{
+		position:'left',
+		img:demo,
+		title:'Online Ordering & Delivery',
+		sub_title:`Grow your business online with your own commission-free ordering channels for takeout and delivery. EATTE point of sale lets you maximize off-premise sales while minimizing any costly 3rd party commissions.`,
+		details:[
+			{
+			main:'Commission Free',
+			details:'Increase sales and allow guests to easily & more safely order directly from you.'
+		},
+			{
+			main:'Flat Rate Delivery',
+			details:'Maintain your margins & guest data when you dispatch local drivers through an on-demand network to offer safer, contactless delivery.'
+		},
+		]
+	},
+	{
+		position:'right',
+		img:demo,
+		title:'Analytics & Reporting',
+		sub_title:`Manage your restaurant from anywhere. Dynamic reports in the cloud, accessed from any device, put you in control of your restaurant. Track everything in real time, including weekly category sales, wages and more.`,
+		details:[
+			{main:'Location Overview',
+			details:`A unified view of net sales and labor costs across one location or hundreds.`},
+		
+			{main:'Sales Summary',
+			details:`Monitor performance over any time period.`},
+		]
+	}
+]
 </script>
 
 <template>
@@ -116,97 +163,9 @@ const serviceData =[
 			:second_sub_main="'stay one step ahead of a rapidly evolving hospitality market.'"
 			/>
 		</div>
-
-	<div class="container">
-		<div class="features_section">
-		<div class="features_side">
-			<h3 class="font-montse">Tableside Service</h3>
-			<p class="font-montse">
-				With handheld technology designed for the restaurant environment, you can enable your team to spend more time with guests, accelerate service, and speed up checkout through tableside ordering and payments.
-			</p>
-			<ul>
-				<li>
-					<i class='bx bx-check-circle'></i>
-					<p class="font-montse">
-						Order Ready Notifications
-					</p>
-					
-				</li>
-				<p class="  pl-8 py-1">
-					Take payments (EMV or Card) tableside.
-				</p>
-
-				
-				<li>
-					<i class='bx bx-check-circle'></i>
-					<p class="font-montse">
-						Tableside Payments
-					</p>
-				</li>
-				<p class="  pl-8 py-1">
-					Take tap, dip, or swipe payments tableside.
-				</p>
-				<li class="font-montse">
-					<i class='bx bx-check-circle'></i>
-					<p class="font-montse">
-						Guest Feedback
-					</p>
-				</li>
-				<p class="  pl-8 py-1">
-					Collect and respond to guest feedback immediately.
-				</p>
-			</ul>
-
-		</div>
-		<div class="features_side img_side">
-			<img src="../assets/images/demo.png" alt="img">
-		</div>
-	</div>
-
-	<div class="features_section reverse">
-		<div class="features_side">
-			<h3 class="font-montse">Online Ordering & Delivery</h3>
-			<p class="font-montse">
-				Grow your business online with your own commission-free ordering channels for takeout and delivery. EATTE point of sale lets you maximize off-premise sales while minimizing any costly 3rd party commissions.
-			</p>
-			<ul>
-				<li>
-					<i class='bx bx-check-circle'></i>
-					<p class="font-montse">
-						Order Ready Notifications
-					</p>
-					
-				</li>
-				<p class="  pl-8 py-1">
-					Take payments (EMV or Card) tableside.
-				</p>
-
-				
-				<li>
-					<i class='bx bx-check-circle'></i>
-					<p class="font-montse">
-						Tableside Payments
-					</p>
-				</li>
-				<p class="  pl-8 py-1">
-					Take tap, dip, or swipe payments tableside.
-				</p>
-				<li class="font-montse">
-					<i class='bx bx-check-circle'></i>
-					<p class="font-montse">
-						Guest Feedback
-					</p>
-				</li>
-				<p class="  pl-8 py-1">
-					Collect and respond to guest feedback immediately.
-				</p>
-			</ul>
-		
-		</div>
-		<div class="features_side img_side">
-			<img src="../assets/images/demo.png" alt="img">
-		</div>
-	</div>
+		<div class="container">
+		<IoFeatures :items="featuresData"/>
+	
 	</div>
 
 	<div class="header_container flex gap-12 mx-12">
@@ -322,7 +281,6 @@ const serviceData =[
     max-width: 1200px;
     padding: 0 70px;
     margin: 0 auto;
-	margin-top: 160px;
 }
 .pos_helps{
     width: 100%;

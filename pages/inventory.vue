@@ -146,7 +146,6 @@ const featuresData =[
 
 <style scoped>
 
-
 .pos_helps{
     width: 100%;
     padding: 0 80px;
@@ -154,7 +153,6 @@ const featuresData =[
     background-color: white;
 	
 }
-
 
 .screen_container {
     @apply bg-background-color min-h-full dark:text-white dark:bg-dark-background-color
