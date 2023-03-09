@@ -6,7 +6,7 @@ const props = defineProps({
 </script>
 
 <template>
-	<section class="section_container">
+	<section >
 		<div class="services_container">
 
 			<div  :class="numbers === 4? 'cards_container':'small_container'">
@@ -38,9 +38,7 @@ const props = defineProps({
 
 
 <style  scoped>
-.section_container {
-	@apply py-6 sm:py-12
-}
+
 
 .services_container {
 	@apply container  max-w-fit p-6 mx-auto space-y-8

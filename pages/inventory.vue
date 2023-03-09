@@ -171,7 +171,7 @@ const serviceData =[
 	</div>
 	</div>
 
-			<div class=" py-10 bg-background-color">
+			<div class="  bg-background-color">
 				<IoHeadersTripleLines 
 			:first_line="'Discover More'"
 			:main="'All You Require, Conveniently Located in One Place.'"
@@ -186,6 +186,16 @@ const serviceData =[
 			 :secondary="true"
 			 :title="'View All Services'"/>
 
+		<div class="py-5">
+			<IoHeadersTripleLines 
+			:first_line="'Overall, EATTE Inventory is the perfect tool for restaurant owners who want to automate their inventory management process and avoid the hassle of manual stock tracking. With our platform, you can save time and money while also improving the customer experience by ensuring that all menu items are always available'"
+			:main="'So why wait? Sign up for EATTE today and take your restaurant to the next level!'"
+			/>
+		</div>
+
+			<IoButtonsDouble
+			:start_btn="'Get Started'"
+			:demo_btn="'Get a demo'"/>
     </div>
 </template>
 
