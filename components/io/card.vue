@@ -1,6 +1,7 @@
 <script setup>
 const props = defineProps({
     items: Array,
+	numbers:Number
 })
 </script>
 
@@ -8,7 +9,7 @@ const props = defineProps({
 	<section class="section_container">
 		<div class="services_container">
 
-			<div class="cards_container">
+			<div  :class="numbers === 4? 'cards_container':'small_container'">
 				<article   v-for="(item, index) in items"
                 :key="index">
 					
@@ -42,9 +43,11 @@ const props = defineProps({
 }
 
 .services_container {
-	@apply container p-6 mx-auto space-y-8
+	@apply container  max-w-fit p-6 mx-auto space-y-8
 }
-
+.small_container {
+	@apply  md:grid grid-cols-3 gap-3 md:grid-cols-2 lg:grid-cols-3 
+}
 .cards_container {
 	@apply  md:grid grid-cols-3 gap-3 md:grid-cols-2 lg:grid-cols-4 
 }

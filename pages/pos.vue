@@ -2,7 +2,7 @@
 import PosImage from '../assets/images/pos.svg'
 import pos_devices from '../assets/images/pos_devices.svg'
 import dash from '../assets/images/dashboard.svg'
-
+import hardware from '../assets/images/hardware.png'
 import pay1 from '../assets/images/backgrounds/pay1.png'
 import pay2 from '../assets/images/backgrounds/pay2.png'
 import pay3 from '../assets/images/backgrounds/pay3.png'
@@ -314,10 +314,21 @@ const cardData =[
 			:second_sub_main="'integrated software suite, providing unbeatable convenience.'"
 			/>
 		</div>
-		<IoCard :items="cardData"/>
+		<IoCard :items="cardData" :numbers="4"/>
 		<IoButton 
 			 :secondary="true"
 			 :title="'View All Services'"/>
+
+<!--   subTitle: String,
+  title: String,
+  desc: String,
+  img: String, -->
+			 <IoLandingLineCard 
+			 :sub-title="'POYNT POS Hardware'"
+			 :title="'Integrations To Supercharge Your Business'"
+			 :desc="`From software to hardware, our integration with POYNT lets you source a full suite of hardware to meet the needs of your growing restaurant, providing you with the most reliable and flexible technology. EATTE will work with you every step of the way to implement and configure a flawless system that saves you time, money and headaches.`"
+			:img="hardware"
+			 />
 
 		<div class=" py-10 bg-background-color">
 				<IoHeadersTripleLines 

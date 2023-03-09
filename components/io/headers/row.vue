@@ -137,7 +137,7 @@ const props = defineProps({
 }
 
 .about_section .left_side h1 {
-    @apply mb-[15px] font-bold text-6xl font-montse
+    @apply mb-[15px] font-bold text-5xl font-montse
 }
 
 .about_section .left_side p {

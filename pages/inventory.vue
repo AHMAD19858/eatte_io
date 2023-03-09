@@ -1,5 +1,5 @@
 <script setup>
-import kdsImage from '../assets/images/kds.svg'
+import inventory from '../assets/images/inventory.svg'
 import dash from '../assets/images/dashboard.svg'
 
 import pay1 from '../assets/images/backgrounds/pay1.png'
@@ -55,19 +55,18 @@ const cardData =[
 
 
         <IoHeadersRow 
-            :service="'KDS'"
+            :service="'Inventory'"
             :sub_text="'Improve communication between your kitchen and wait staff with our Kitchen Display Screen, enabling your cooks to effortlessly read orders and notes, streamlining the process.'"
             :start_btn="'Get Started'"
 			:demo_btn="'Get a demo'"
-            :row_img="kdsImage"
+            :row_img="inventory"
             />
 
         <div class=" bg-white pt-12 pb-12">
             <IoHeadersTripleLines 
-			:first_line="'How EATTE KDS helps you?'"
-			:main="'Key features that can simplify your life'"
-			:first_sub_main="`The Kitchen Display System (KDS) facilitates a seamless connection between your front`"
-			:second_sub_main="'-of-house and kitchen staff, enabling them to serve exceptional meals..'"
+			:first_line="'How EATTE Inventory helps you?'"
+			:main="'With EATTE Inventory, you can automatically keep track of all your restaurant inventory in real time'"
+
 			/>
         </div>
 
@@ -90,19 +89,7 @@ const cardData =[
 					</div>
 				</article>
 
-				<article>
-					<a rel="noopener noreferrer" class="self-center" href="#" aria-label="Te nulla oportere reprimique his dolorum">
-						<div class="card_container ">
-							<img src="../assets/images/icons/hand.svg" class="phone_icon" alt="svg">
-						</div>
-					</a>
-					<div class="p-4">
-						<h3 class="main_card_text">Efficient Order Management</h3>
-						<h6 class="sub_text">
-                            Guarantee the precision of every order and automatically route them to their respective stations. errors, keep lines moving, and process payments without a hitch.
-						</h6>
-					</div>
-				</article>
+	
 
 				<article>
 					<a rel="noopener noreferrer" class="self-center" href="#" aria-label="Te nulla oportere reprimique his dolorum">
@@ -241,7 +228,7 @@ const cardData =[
 		</div>
 
 		<IoCard :items="cardData" :numbers="3"/>
-
+        
 		<IoButton 
 			 :secondary="true"
 			 :title="'View All Services'"/>

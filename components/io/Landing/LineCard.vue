@@ -17,9 +17,9 @@ defineProps({
       alt=""
     />
     <div class="relative z-[2]">
-      <h3 class="text-primary-color font-bold">{{ subTitle }}</h3>
-      <h1 class="text-3xl mb-4">{{ title }}</h1>
-      <p class="text-xl">{{ desc }}</p>
+      <h3 class=" font-montse text-primary-color font-bold">{{ subTitle }}</h3>
+      <h1 class="font-montse text-3xl mb-4">{{ title }}</h1>
+      <p class="font-montse text-xl">{{ desc }}</p>
       <div class="ambient-effect relative">
         <img
           class="w-full max-w-2xl mx-auto py-8 relative z-[2]"
