@@ -2,8 +2,8 @@
 import inventory from '../assets/images/inventory.svg'
 import dash from '../assets/images/dashboard.svg'
 import service1 from '../assets/images/icons/hand.svg'
-import service3 from '../assets/images/icons/code.svg'
 import service2 from '../assets/images/icons/charts.svg'
+import demo from '../assets/images/demo.png'
 
 const cardData =[
 	{
@@ -34,6 +34,40 @@ const serviceData =[
 		img:service1,
 		label:'Efficient Order Management',
 		desc:'Guarantee the precision of every order and automatically route them to their respective stations.'
+	},
+
+]
+
+const featuresData =[
+	{
+		position:'right',
+		img:demo,
+		title:'automatic alerts',
+		sub_title:`Our platform also includes automatic alerts when items are running low, so you can take action before it's too late`,
+		details:[
+			{main:'avoid disappointing your customers',
+			details:'avoid disappointing your customers by ensuring that all menu items are always available, even during busy periods.'},
+		]
+	},
+	{
+		position:'left',
+		img:demo,
+		title:'automatically place orders with vendors',
+		sub_title:`In addition to these features, EATTE Inventory also has the ability to automatically place orders with vendors when items stock goes below a certain threshold`,
+		details:[
+			{main:'completely automates',
+			details:'This completely automates the ordering process, saving you time and ensuring that you always have the ingredients you need to keep your customers happy.'},
+		]
+	},
+	{
+		position:'right',
+		img:demo,
+		title:'confirm availability, cost, and delivery estimated dates',
+		sub_title:`Vendors are able to confirm availability, cost, and delivery estimated dates, providing you with all the information you need to make informed decisions about your inventory`,
+		details:[
+			{main:'streamline the purchasing process',
+			details:`This also means that you can streamline the purchasing process and ensure that you're always getting the best deals on the items you need.`},
+		]
 	},
 
 ]
@@ -78,98 +112,7 @@ const serviceData =[
 			:second_sub_main="'process, and ensure courses are timed perfectly.'"
 			/>
 		</div>
-
-	<div class="container">
-		<div class="features_section">
-		<div class="features_side">
-			<h3 class="font-montse">Our Kitchen Display System can help you save time and money by improving communication and increasing efficiency.</h3>
-			<p class="font-montse">
-                Manage your restaurant from anywhere. Dynamic reports in the cloud, accessed from any device, put you in control of your restaurant. Track everything in real time, including weekly category sales, wages and more.
-			</p>
-			<ul>
-				<li>
-					<i class='bx bx-check-circle'></i>
-					<p class="font-montse">
-						Order Ready Notifications
-					</p>
-					
-				</li>
-				<p class="  pl-8 py-1">
-					Take payments (EMV or Card) tableside.
-				</p>
-
-				
-				<li>
-					<i class='bx bx-check-circle'></i>
-					<p class="font-montse">
-						Tableside Payments
-					</p>
-				</li>
-				<p class="  pl-8 py-1">
-					Take tap, dip, or swipe payments tableside.
-				</p>
-				<li class="font-montse">
-					<i class='bx bx-check-circle'></i>
-					<p class="font-montse">
-						Guest Feedback
-					</p>
-				</li>
-				<p class="  pl-8 py-1">
-					Collect and respond to guest feedback immediately.
-				</p>
-			</ul>
-
-		</div>
-		<div class="features_side img_side">
-			<img src="../assets/images/demo.png" alt="img">
-		</div>
-	</div>
-
-	<div class="features_section reverse">
-		<div class="features_side">
-			<h3 class="font-montse">Online Ordering & Delivery</h3>
-			<p class="font-montse">
-				Grow your business online with your own commission-free ordering channels for takeout and delivery. EATTE point of sale lets you maximize off-premise sales while minimizing any costly 3rd party commissions.
-			</p>
-			<ul>
-				<li>
-					<i class='bx bx-check-circle'></i>
-					<p class="font-montse">
-						Order Ready Notifications
-					</p>
-					
-				</li>
-				<p class="  pl-8 py-1">
-					Take payments (EMV or Card) tableside.
-				</p>
-
-				
-				<li>
-					<i class='bx bx-check-circle'></i>
-					<p class="font-montse">
-						Tableside Payments
-					</p>
-				</li>
-				<p class="  pl-8 py-1">
-					Take tap, dip, or swipe payments tableside.
-				</p>
-				<li class="font-montse">
-					<i class='bx bx-check-circle'></i>
-					<p class="font-montse">
-						Guest Feedback
-					</p>
-				</li>
-				<p class="  pl-8 py-1">
-					Collect and respond to guest feedback immediately.
-				</p>
-			</ul>
-		
-		</div>
-		<div class="features_side img_side">
-			<img src="../assets/images/demo.png" alt="img">
-		</div>
-	</div>
-	</div>
+		<IoFeatures :items="featuresData"/>
 
 			<div class="  bg-background-color">
 				<IoHeadersTripleLines 
@@ -186,7 +129,7 @@ const serviceData =[
 			 :secondary="true"
 			 :title="'View All Services'"/>
 
-		<div class="py-5">
+		<div class=" mx-[200px] py-5">
 			<IoHeadersTripleLines 
 			:first_line="'Overall, EATTE Inventory is the perfect tool for restaurant owners who want to automate their inventory management process and avoid the hassle of manual stock tracking. With our platform, you can save time and money while also improving the customer experience by ensuring that all menu items are always available'"
 			:main="'So why wait? Sign up for EATTE today and take your restaurant to the next level!'"
@@ -203,13 +146,7 @@ const serviceData =[
 
 <style scoped>
 
-.container {
-    width: 100%;
-    max-width: 1200px;
-    padding: 0 70px;
-    margin: 0 auto;
-	margin-top: 160px;
-}
+
 .pos_helps{
     width: 100%;
     padding: 0 80px;
@@ -218,152 +155,9 @@ const serviceData =[
 	
 }
 
-.header_container{
-	width: 100%;
-    padding: 0 70px;
-    margin: 0 auto;
-	max-width: 1200px;
-}
+
 .screen_container {
     @apply bg-background-color min-h-full dark:text-white dark:bg-dark-background-color
 }
 
-.cards_container {
-	@apply max-w-[1200px] mx-auto px-5 bg-white md:grid grid-cols-3 gap-3 md:grid-cols-2 lg:grid-cols-3 
-}
-
-article {
-	@apply flex flex-col bg-background-color rounded-2xl my-3 dark:bg-[#272727] h-[300px]
-}
-
-.card_container {
-	@apply w-12 h-12 bg-[#ff613729] rounded-lg flex items-center m-4
-}
-
-.main_card_text {
-	@apply flex-1 leading-snug text-2xl font-bold font-montse text-center text-primary-color
-}
-
-.phone_icon {
-	@apply stroke-primary-color w-12 h-6 text-center text-3xl text-primary-color
-}
-.sub_text{
-    @apply font-montse text-center text-[#3F4440] font-normal text-base dark:text-white 
-}
-.main_text {
-	@apply text-[35px] font-bold text-font-color leading-7 font-montse
-}
-.features_section {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 50px;
-    margin-bottom: 100px;
-    z-index: 1;
-	
-}
-
-.features_section.reverse {
-    flex-direction: row-reverse;
-}
-
-.features_section .features_side {
-    position: relative;
-    width: calc(100%/2 - 25px);
-}
-
-.features_section .features_side h3 {
-    font-size: 22px;
-    font-weight: 700;
-    margin-bottom: 15px;
-}
-
-.features_section .features_side p {
-    font-size: 18px;
-}
-.accepts_container{
-	display: grid;
-    list-style: none;
-    padding: 0;
-    justify-content: space-between;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    gap: 10px;
-    margin: 20px 0px;
-
-}
-
-.accepts_featurs{
-	width: calc(100% / 2 - 25px);
-    display: flex;
-    align-items: center;
-    gap: 10px;
-	
-}
-.accepts_featurs  i {
-	font-size: 20px;
-    color: var(--primary);
-}
-.features_section .features_side ul {
-    list-style: none;
-    padding: 0;
-    justify-content: space-between;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    gap: 20px;
-    margin: 40px 0px;
-}
-
-.features_section .features_side ul li {
-    width: calc(100% / 2 - 25px);
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.features_section .features_side ul li i {
-    font-size: 20px;
-    color: var(--primary);
-}
-
-.features_section .features_side ul li p {
-    font-size: 14px;
-    font-weight: 600;
-}
-
-.features_section .features_side a {
-    font-size: 18px;
-    font-weight: 700;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.features_section .features_side.img_side::before {
-    content: '';
-    position: absolute;
-    width: 70%;
-    height: 110%;
-    top: -5%;
-    left: -3%;
-    border-radius: 20px;
-    background-image: linear-gradient(-90deg, #FF6137, #CC4D2C);
-    z-index: 1;
-}
-
-.features_section .features_side.img_side img {
-    position: relative;
-    width: 80%;
-    height: auto;
-    object-fit: contain;
-    z-index: 10;
-}
-
-@media (max-width:992px) {
-    .features_section .features_side {
-        width: 100%;
-    }
-}
 </style>
