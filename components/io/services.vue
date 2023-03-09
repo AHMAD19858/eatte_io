@@ -10,7 +10,7 @@ const props = defineProps({
 <div >
     <div class="pos_helps">
 		<div class="bg-white">
-				<div class="" :class="numbers===3?'cards_container':'small_container'">
+            <div  :class="numbers === 3? 'cards_container':'small_container'">
 					<article  
                      v-for="(item, index) in items"
                         :key="index"
