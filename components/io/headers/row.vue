@@ -29,7 +29,7 @@ const props = defineProps({
         </h2>
 
         <div v-if="without_btn !== true">
-          <h1 class="main_text">
+          <h1 class="main_text ">
             EA<span class="text-primary-color">TT</span>E {{ service }}
           </h1>
         </div>
@@ -190,7 +190,7 @@ const props = defineProps({
 }
 
 .main_text {
-  @apply text-[35px] font-bold text-font-color leading-7 font-montse;
+  @apply text-[35px] font-bold text-font-color leading-7 font-montse dark:text-white
 }
 
 @media (min-width: 1440px) {

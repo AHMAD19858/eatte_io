@@ -166,7 +166,7 @@
 
 <style scoped>
 .footer_container {
-  @apply bg-background-color pt-[48px];
+  @apply bg-background-color pt-[48px] dark:bg-dark-background-color
 }
 
 .card {

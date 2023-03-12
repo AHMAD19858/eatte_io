@@ -22,7 +22,7 @@ const props = defineProps({
 
 <style scoped>
 .header_container {
-  @apply space-y-2 text-center mx-[100px] mb-12;
+  @apply space-y-2 text-center mx-[100px] mb-12 dark:bg-dark-background-color
 }
 
 .main_text {

@@ -165,7 +165,7 @@ const featuresData = [
       :row_img="PosImage"
     />
 
-    <div class="bg-white pt-12 pb-12">
+    <div class="bg-white pt-12 pb-12 dark:bg-dark-background-color">
       <IoHeadersTripleLines
         :first_line="'How EATTE POS helps you?'"
         :main="'The Heartbeat Of Your Business'"
@@ -175,7 +175,7 @@ const featuresData = [
     </div>
 
     <div class="pos_helps">
-      <div class="py-12 bg-white">
+      <div class="py-12 bg-white dark:bg-dark-background-color">
         <IoServices :items="serviceData" :numbers="3" />
         <div class="bg-white col">
           <IoButton :secondary="true" :title="'See Pricing'" />
@@ -183,7 +183,7 @@ const featuresData = [
       </div>
     </div>
 
-    <div class="py-10 bg-background-color">
+    <div class="py-10 bg-background-color dark:bg-dark-background-color">
       <IoHeadersTripleLines
         :first_line="'POS Features'"
         :main="'Everything You Need To Run Your Restaurant'"
@@ -260,7 +260,7 @@ const featuresData = [
       />
     </div>
 
-    <div class="py-10 bg-background-color">
+    <div class="py-10 bg-background-color dark:bg-dark-background-color">
       <IoHeadersTripleLines
         :first_line="'Discover More'"
         :main="'All You Require, Conveniently Located in One Place.'"
@@ -280,7 +280,7 @@ const featuresData = [
     />
  </div>
 
-    <div class="py-10 bg-background-color">
+    <div class="py-10 bg-background-color dark:bg-dark-background-color">
       <IoHeadersTripleLines
         :first_line="'Overall,'"
         :main="'EATTE POS is the perfect tool for restaurant owners who want to take their operations to the next level. With our platform, you can streamline your operations, increase efficiency, and boost profitability.'"
@@ -304,6 +304,7 @@ const featuresData = [
   padding: 0 80px;
   margin: 0 auto;
   background-color: white;
+  @apply dark:bg-dark-background-color
 }
 
 .header_container {

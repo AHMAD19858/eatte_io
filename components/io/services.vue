@@ -46,12 +46,13 @@ const props = defineProps({
   padding: 0 80px;
   margin: 0 auto;
   background-color: white;
+  @apply dark:bg-dark-background-color
 }
 .small_container {
   @apply max-w-[1200px] mx-auto px-5 bg-white md:grid grid-cols-2 gap-3 md:grid-cols-2 lg:grid-cols-2 w-[66%];
 }
 .cards_container {
-  @apply max-w-[1200px] mx-auto px-5 bg-white md:grid grid-cols-3 gap-3 md:grid-cols-2 lg:grid-cols-3;
+  @apply max-w-[1200px] mx-auto px-5 bg-white md:grid grid-cols-3 gap-3 md:grid-cols-2 lg:grid-cols-3 dark:bg-dark-background-color
 }
 
 article {
