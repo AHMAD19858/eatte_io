@@ -281,6 +281,7 @@ const featuresData =[
     max-width: 1200px;
     padding: 0 70px;
     margin: 0 auto;
+	/* padding-top: 150px; */
 }
 .pos_helps{
     width: 100%;
@@ -297,7 +298,7 @@ const featuresData =[
 	max-width: 1200px;
 }
 .screen_container {
-    @apply bg-background-color min-h-full dark:text-white dark:bg-dark-background-color
+    @apply bg-background-color min-h-full dark:text-white dark:bg-dark-background-color pt-[100px]
 }
 
 .cards_container {

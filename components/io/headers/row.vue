@@ -133,7 +133,7 @@ const props = defineProps({
     object-fit: unset;
     object-position: unset;
     height: auto;
-    @apply h-auto z-10 
+    @apply h-auto z-10 top-[-70px]
 }
 
 .about_section .left_side h1 {

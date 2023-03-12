@@ -5,6 +5,7 @@ defineProps({
 </script>
 <template>
   <Swiper
+  class=" mb-9"
     :modules="[SwiperAutoplay, SwiperEffectCreative]"
     :autoplay="{
       delay: 2500,
