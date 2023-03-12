@@ -83,6 +83,7 @@ const featuresData =[
             :start_btn="'Get Started'"
 			:demo_btn="'Get a demo'"
             :row_img="inventory"
+			:another_device="true"
             />
 
         <div class=" bg-white pt-12 pb-12">
