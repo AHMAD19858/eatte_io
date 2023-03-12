@@ -29,7 +29,7 @@ const featuresData =[
 	{
 		position:'right',
 		img:one,
-		title:'make reservations and order food in advance',
+		title:'Make reservations and order food in advance',
 		sub_title:`With our system, customers can make reservations and order food in advance, all from the convenience of their own devices`,
 		details:[
 			{main:'accessible from any device with an internet connection',
@@ -39,21 +39,21 @@ const featuresData =[
 	{
 		position:'left',
 		img:two,
-		title:'automatically place orders with vendors',
-		sub_title:`In addition to these features, EATTE Inventory also has the ability to automatically place orders with vendors when items stock goes below a certain threshold`,
+		title:'Integration with point of sale (POS) systems',
+		sub_title:`One of the key features of our system is its integration with point of sale (POS) systems`,
 		details:[
-			{main:'completely automates',
-			details:'This completely automates the ordering process, saving you time and ensuring that you always have the ingredients you need to keep your customers happy.'},
+			{main:`automatically sent to the restaurant's POS`,
+			details:`This means that when a customer places an order or makes a reservation, that information is automatically sent to the restaurant's POS, helping to streamline operations and reduce errors.`},
 		]
 	},
 	{
 		position:'right',
 		img:three,
-		title:'confirm availability, cost, and delivery estimated dates',
-		sub_title:`Vendors are able to confirm availability, cost, and delivery estimated dates, providing you with all the information you need to make informed decisions about your inventory`,
+		title:'highly customizable',
+		sub_title:`Our system is also highly customizable, allowing restaurants to set their own rules around reservations and ordering`,
 		details:[
-			{main:'streamline the purchasing process',
-			details:`This also means that you can streamline the purchasing process and ensure that you're always getting the best deals on the items you need.`},
+			{main:'our platform can accommodate your needs',
+			details:`Whether you want to limit the number of orders per day or require a minimum spend per table, our platform can accommodate your needs`},
 		]
 	},
 
@@ -83,7 +83,7 @@ const featuresData =[
 		</div>
 		<IoFeatures :items="featuresData"/>
 
-			<div class="  bg-background-color">
+			<div class="bg-background-color">
 				<IoHeadersTripleLines 
 			:first_line="'Discover More'"
 			:main="'All You Require, Conveniently Located in One Place.'"
@@ -100,8 +100,8 @@ const featuresData =[
 
 		<div class=" mx-[200px] py-5">
 			<IoHeadersTripleLines 
-			:first_line="'Overall, EATTE Inventory is the perfect tool for restaurant owners who want to automate their inventory management process and avoid the hassle of manual stock tracking. With our platform, you can save time and money while also improving the customer experience by ensuring that all menu items are always available'"
-			:main="'So why wait? Sign up for EATTE today and take your restaurant to the next level!'"
+			:first_line="`Finally, our system is designed to be user-friendly and easy to navigate, both for restaurant owners and their customers. We understand that managing reservations and orders can be a complex process, but our platform simplifies the process, making it easier than ever before to manage your restaurant's operations.`"
+			:main="'We look forward to helping you streamline your operations and provide a better dining experience for your customers.'"
 			/>
 		</div>
 

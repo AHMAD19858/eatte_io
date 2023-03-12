@@ -25,7 +25,7 @@ const props = defineProps({
 
 
 .header_container {
-	@apply space-y-2 text-center mx-[200px] mb-12
+	@apply space-y-2 text-center mx-[100px] mb-12
 }
 
 .main_text {
