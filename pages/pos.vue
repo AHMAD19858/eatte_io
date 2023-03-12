@@ -10,7 +10,11 @@ import pay4 from '../assets/images/backgrounds/pay4.png'
 import service1 from '../assets/images/icons/hand.svg'
 import service3 from '../assets/images/icons/code.svg'
 import service2 from '../assets/images/icons/charts.svg'
-import demo from '../assets/images/demo.png'
+import one from '../assets/images/features/pos/one.svg'
+import two from '../assets/images/features/pos/two.svg'
+import three from '../assets/images/features/pos/three.svg'
+import four from '../assets/images/features/pos/four.svg'
+
 
 const data =[
 	{
@@ -79,7 +83,7 @@ const serviceData =[
 const featuresData =[
 	{
 		position:'right',
-		img:demo,
+		img:one,
 		title:'Tableside Service',
 		sub_title:`With handheld technology designed for the restaurant environment, you can enable your team to spend more time with guests, accelerate service, and speed up checkout through tableside ordering and payments.`,
 		details:[
@@ -93,7 +97,7 @@ const featuresData =[
 	},
 	{
 		position:'left',
-		img:demo,
+		img:two,
 		title:'Online Ordering & Delivery',
 		sub_title:`Grow your business online with your own commission-free ordering channels for takeout and delivery. EATTE point of sale lets you maximize off-premise sales while minimizing any costly 3rd party commissions.`,
 		details:[
@@ -109,9 +113,22 @@ const featuresData =[
 	},
 	{
 		position:'right',
-		img:demo,
+		img:three,
 		title:'Analytics & Reporting',
 		sub_title:`Manage your restaurant from anywhere. Dynamic reports in the cloud, accessed from any device, put you in control of your restaurant. Track everything in real time, including weekly category sales, wages and more.`,
+		details:[
+			{main:'Location Overview',
+			details:`A unified view of net sales and labor costs across one location or hundreds.`},
+		
+			{main:'Sales Summary',
+			details:`Monitor performance over any time period.`},
+		]
+	},
+	{
+		position:'left',
+		img:four,
+		title:'Menu Managment',
+		sub_title:`Make menu updates from any terminal at your restaurant or anywhere else on your smartphone. Avoid an awkward 86 with real time item countdowns so your servers and your kitchen are in sync.`,
 		details:[
 			{main:'Location Overview',
 			details:`A unified view of net sales and labor costs across one location or hundreds.`},
@@ -283,11 +300,6 @@ const featuresData =[
     margin: 0 auto;
 	/* padding-top: 150px; */
 }
-@media (max-width:768px) {
-  .container{
-    padding:0 15px;
-  }
-}
 .pos_helps{
     width: 100%;
     padding: 0 80px;
@@ -445,6 +457,11 @@ article {
     }
 }
 
+@media (max-width:768px) {
+  .container{
+    padding:0 15px;
+  }
+}
 @media (max-width: 576px) {
 
 	.pos_helps{

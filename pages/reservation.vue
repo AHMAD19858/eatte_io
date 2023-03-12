@@ -1,11 +1,9 @@
 <script setup>
-import inventory from '../assets/images/inventory.svg'
+import reservation from '../assets/images/reservation.svg'
 import dash from '../assets/images/dashboard.svg'
-import service1 from '../assets/images/icons/hand.svg'
-import service2 from '../assets/images/icons/charts.svg'
-import one from '../assets/images/features/inventory/one.svg'
-import two from '../assets/images/features/inventory/two.svg'
-import three from '../assets/images/features/inventory/three.svg'
+import one from '../assets/images/features/reservation/one.svg'
+import two from '../assets/images/features/reservation/two.svg'
+import three from '../assets/images/features/reservation/three.svg'
 const cardData =[
 	{
 		img:dash,
@@ -25,29 +23,17 @@ const cardData =[
 
 ]
 
-const serviceData =[
-	{
-		img:service2,
-		label:'Improve Your Management',
-		desc:`Streamline your kitchen management system and simplify your staff's workload.`
-	},
-	{
-		img:service1,
-		label:'Efficient Order Management',
-		desc:'Guarantee the precision of every order and automatically route them to their respective stations.'
-	},
 
-]
 
 const featuresData =[
 	{
 		position:'right',
 		img:one,
-		title:'automatic alerts',
-		sub_title:`Our platform also includes automatic alerts when items are running low, so you can take action before it's too late`,
+		title:'make reservations and order food in advance',
+		sub_title:`With our system, customers can make reservations and order food in advance, all from the convenience of their own devices`,
 		details:[
-			{main:'avoid disappointing your customers',
-			details:'avoid disappointing your customers by ensuring that all menu items are always available, even during busy periods.'},
+			{main:'accessible from any device with an internet connection',
+			details:`Whether they're using a smartphone, tablet, or computer`},
 		]
 	},
 	{
@@ -79,39 +65,20 @@ const featuresData =[
 
 
         <IoHeadersRow 
-            :service="'Inventory'"
-            :sub_text="'Improve communication between your kitchen and wait staff with our Kitchen Display Screen, enabling your cooks to effortlessly read orders and notes, streamlining the process.'"
+            :service="'Reservations'"
+            :sub_text="'Our platform is designed to make it easy for restaurant owners to manage their reservations, while also allowing customers to order ahead and streamline their dining experience.'"
             :start_btn="'Get Started'"
 			:demo_btn="'Get a demo'"
-            :row_img="inventory"
+            :row_img="reservation"
 			:another_device="true"
             />
 
-        <div class=" bg-white pt-12 pb-12">
-            <IoHeadersTripleLines 
-			:first_line="'How EATTE Inventory helps you?'"
-			:main="'With EATTE Inventory, you can automatically keep track of all your restaurant inventory in real time'"
-
-			/>
-        </div>
-
-		<div class="pos_helps">
-		<div class="  py-12 bg-white">
-		<IoServices :items="serviceData" :numbers="2"/>
-			<div class="bg-white col">
-			 <IoButton 
-			 :secondary="true"
-			 :title="'See Pricing'"/>
-			</div>
-			</div>
-	   </div>
 	
 			<div class=" py-10 bg-background-color">
 				<IoHeadersTripleLines 
-			:first_line="'Save Money & Time'"
-			:main="'Our Kitchen Display System can help you save time and money by improving communication and increasing efficiency.'"
-			:first_sub_main="'With this system, you can enhance order accuracy, streamline the meal preparation'"
-			:second_sub_main="'process, and ensure courses are timed perfectly.'"
+			:first_line="'make reservations and order food in advance'"
+			:main="`Whether they're using a smartphone, tablet, or computer, our platform is accessible from any device with an internet connection`"
+
 			/>
 		</div>
 		<IoFeatures :items="featuresData"/>

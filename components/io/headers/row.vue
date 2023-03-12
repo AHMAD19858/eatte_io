@@ -131,7 +131,7 @@ const props = defineProps({
 } */
 .mobile{
     right: unset;
-    object-fit: unset;
+    object-fit: contain;
     object-position: unset;
     height: auto;
     @apply  z-10 top-[-70px] absolute right-[-10%] object-cover object-left-bottom h-[500px]
@@ -141,7 +141,7 @@ const props = defineProps({
     object-fit: unset;
     object-position: unset;
     height: auto;
-    @apply  z-10 top-[-170px]  absolute right-[-10%] object-cover object-left-bottom h-[500px]
+    @apply  z-10 top-[-170px]  absolute right-[0%] object-cover object-left-bottom h-[500px]
 }
 .about_section .left_side h1 {
     @apply mb-[15px] font-bold text-5xl font-montse

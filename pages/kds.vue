@@ -1,7 +1,10 @@
 <script setup>
 import kdsImage from '../assets/images/kds.svg'
 import dash from '../assets/images/dashboard.svg'
-import demo from '../assets/images/demo.png'
+import one from '../assets/images/features/kds/one.svg'
+import two from '../assets/images/features/kds/two.svg'
+import three from '../assets/images/features/kds/three.svg'
+import four from '../assets/images/features/kds/four.svg'
 import service1 from '../assets/images/icons/hand.svg'
 import service3 from '../assets/images/icons/code.svg'
 import service2 from '../assets/images/icons/charts.svg'
@@ -46,7 +49,7 @@ const serviceData =[
 const featuresData =[
 	{
 		position:'right',
-		img:demo,
+		img:one,
 		title:'Our Kitchen Display System can help you save time and money by improving communication and increasing efficiency.',
 		sub_title:`Manage your restaurant from anywhere. Dynamic reports in the cloud, accessed from any device, put you in control of your restaurant. Track everything in real time, including weekly category sales, wages and more.`,
 		details:[
@@ -60,7 +63,7 @@ const featuresData =[
 	},
 	{
 		position:'left',
-		img:demo,
+		img:two,
 		title:'Online Ordering & Delivery',
 		sub_title:`Grow your business online with your own commission-free ordering channels for takeout and delivery. EATTE point of sale lets you maximize off-premise sales while minimizing any costly 3rd party commissions.`,
 		details:[
@@ -80,7 +83,7 @@ const featuresData =[
 	},
 	{
 		position:'right',
-		img:demo,
+		img:three,
 		title:'confirm availability, cost, and delivery estimated dates',
 		sub_title:`Vendors are able to confirm availability, cost, and delivery estimated dates, providing you with all the information you need to make informed decisions about your inventory`,
 		details:[
@@ -90,7 +93,7 @@ const featuresData =[
 	},
 	{
 		position:'left',
-		img:demo,
+		img:four,
 		title:`Customize Your Kitchen Workflow`,
 		sub_title:`Empower your kitchen staff with the visibility they need to effortlessly prepare top-notch meals, while enabling waitstaff to send orders as soon as they're taken and dedicate more time to providing customer recommendations.`,
 		details:[

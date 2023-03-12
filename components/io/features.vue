@@ -56,9 +56,9 @@ const props = defineProps({
     flex-direction: row;
     flex-wrap: wrap;
     gap: 50px;
-    margin-bottom: 100px;
+  /*   margin-bottom: 100px; */
     z-index: 1;
-	
+	padding-block: 50px;
 }
 
 .features_section.reverse {
@@ -133,6 +133,7 @@ const props = defineProps({
     height: auto;
     object-fit: contain;
     z-index: 10;
+    border-radius: 10px;
 }
 
 @media (max-width:992px) {
