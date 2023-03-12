@@ -73,7 +73,7 @@ const featuresData = [
       :another_device="true"
     />
 
-    <div class="py-10 bg-background-color">
+    <div class="py-10 bg-background-color dark:bg-dark-background-color">
       <IoHeadersTripleLines
         :first_line="'make reservations and order food in advance'"
         :main="`Whether they're using a smartphone, tablet, or computer, our platform is accessible from any device with an internet connection`"
@@ -81,7 +81,7 @@ const featuresData = [
     </div>
     <IoFeatures :items="featuresData" />
 
-    <div class="bg-background-color">
+    <div class="bg-background-color dark:bg-dark-background-color">
       <IoHeadersTripleLines
         :first_line="'Discover More'"
         :main="'All You Require, Conveniently Located in One Place.'"
@@ -106,22 +106,9 @@ const featuresData = [
 </template>
 
 <style scoped>
-.pos_helps {
-  width: 100%;
-  padding: 0 80px;
-  margin: 0 auto;
-  background-color: white;
-}
+
 
 .screen_container {
   @apply bg-background-color min-h-full dark:text-white dark:bg-dark-background-color;
-}
-@media (max-width: 576px) {
-  .small_container {
-    width: unset;
-  }
-  .pos_helps {
-    padding: 0 30px;
-  }
 }
 </style>
