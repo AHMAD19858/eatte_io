@@ -6,7 +6,8 @@ const props = defineProps({
     demo_btn:String,
     row_img:String,
     without_btn:Boolean,
-    small_paragraph:String
+    small_paragraph:String,
+    another_device:Boolean
 })
 </script>
 
@@ -83,7 +84,7 @@ const props = defineProps({
              
             </div>
             <div class="left_side devices_shapes">
-                <img class="mobile" :src="row_img" alt="POS">
+                <img :class="another_device == true ? 'another_device':'mobile'" :src="row_img" alt="img">
                
             </div>
         </div>
@@ -124,18 +125,24 @@ const props = defineProps({
     left: 10%;
 }
 
-.about_section .left_side img{
+/* .about_section .left_side img{
      @apply absolute right-[-10%] object-cover object-left-bottom h-[500px]
   
-}
-.about_section .left_side img.mobile{
+} */
+.mobile{
     right: unset;
     object-fit: unset;
     object-position: unset;
     height: auto;
-    @apply h-auto z-10 top-[-70px]
+    @apply  z-10 top-[-70px] absolute right-[-10%] object-cover object-left-bottom h-[500px]
 }
-
+.another_device{
+    right: unset;
+    object-fit: unset;
+    object-position: unset;
+    height: auto;
+    @apply  z-10 top-[-170px]  absolute right-[-10%] object-cover object-left-bottom h-[500px]
+}
 .about_section .left_side h1 {
     @apply mb-[15px] font-bold text-5xl font-montse
 }

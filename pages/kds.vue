@@ -115,6 +115,7 @@ const featuresData =[
             :start_btn="'Get Started'"
 			:demo_btn="'Get a demo'"
             :row_img="kdsImage"
+			:another_device="true"
             />
 
         <div class=" bg-white pt-12 pb-12">
@@ -186,7 +187,7 @@ const featuresData =[
 
 
 .screen_container {
-    @apply bg-background-color min-h-full dark:text-white dark:bg-dark-background-color
+    @apply pt-[100px] bg-background-color min-h-full dark:text-white dark:bg-dark-background-color
 }
 
 </style>
