@@ -231,7 +231,7 @@ const props = defineProps({
     .about_section .left_side img.mobile{
         margin: auto;
         transform:unset;
-        
+        margin-inline: 50px;
     }
 
     .demo_container{
@@ -251,7 +251,7 @@ const props = defineProps({
         @apply text-center
     }
     .right_section{
-
+        margin-inline: 50px;
         @apply text-center
     }
 }

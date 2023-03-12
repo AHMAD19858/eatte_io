@@ -83,7 +83,7 @@ article {
 @media (max-width: 576px) {
 
 	.cards_container {
-	@apply max-w-[1200px] mx-auto px-0 bg-white md:grid grid-cols-3 gap-3 md:grid-cols-2 lg:grid-cols-3 
+	@apply max-w-[1200px] mx-auto  bg-white md:grid grid-cols-3 gap-3 md:grid-cols-2 lg:grid-cols-3 
 }
 
 article {

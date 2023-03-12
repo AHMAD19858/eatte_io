@@ -189,5 +189,12 @@ const featuresData =[
 .screen_container {
     @apply pt-[100px] bg-background-color min-h-full dark:text-white dark:bg-dark-background-color
 }
-
+@media (max-width: 576px) {
+.small_container{
+   		 width: unset;
+	}
+.pos_helps{
+padding: 0 30px;
+}
+}
 </style>
