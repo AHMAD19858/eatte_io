@@ -23,12 +23,12 @@ const props = defineProps({
         exclusively for restaurants, we're on a mission to enrich the food
         experience for all.
       </h1>
-      <h1 class="slogan" v-if="about !== true">
+      <h1 class="slogan animate-slideDown" v-if="about !== true">
         <span class="text_glow shadow_text">{{ shadow_slogan }}</span>
         {{ slogan }}
       </h1>
 
-      <p class="sub_header">
+      <p class="sub_header ">
         {{ sub_header }}
       </p>
       <div class="header_buttons">
