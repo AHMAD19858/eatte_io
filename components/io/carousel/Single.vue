@@ -5,7 +5,7 @@ defineProps({
 </script>
 <template>
   <Swiper
-  class=" mb-9"
+    class="mb-9"
     :modules="[SwiperAutoplay, SwiperEffectCreative]"
     :autoplay="{
       delay: 2500,
@@ -51,7 +51,7 @@ defineProps({
         >
           <p
             v-if="item.label"
-            class=" font-montse mb-0 ml-[-12px] dark:text-zinc-900 text-white dark:md:text-white md:text-zinc-900"
+            class="font-montse mb-0 ml-[-12px] dark:text-zinc-900 text-white dark:md:text-white md:text-zinc-900"
           >
             {{ item.label }}
           </p>

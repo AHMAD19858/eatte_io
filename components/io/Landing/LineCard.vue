@@ -17,7 +17,7 @@ defineProps({
       alt=""
     />
     <div class="relative z-[2]">
-      <h3 class=" font-montse text-primary-color font-bold">{{ subTitle }}</h3>
+      <h3 class="font-montse text-primary-color font-bold">{{ subTitle }}</h3>
       <h1 class="font-montse text-3xl mb-4">{{ title }}</h1>
       <p class="font-montse text-xl">{{ desc }}</p>
       <div class="ambient-effect relative">
