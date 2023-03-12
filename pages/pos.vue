@@ -283,6 +283,11 @@ const featuresData =[
     margin: 0 auto;
 	/* padding-top: 150px; */
 }
+@media (max-width:768px) {
+  .container{
+    padding:0 15px;
+  }
+}
 .pos_helps{
     width: 100%;
     padding: 0 80px;
