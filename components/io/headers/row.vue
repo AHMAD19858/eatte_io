@@ -16,7 +16,7 @@ const props = defineProps({
 
         <div class="about_section">
             <div class="left_side">
-                <h6 v-if="without_btn === true" class=" font-montse font-bold text-lg mb-0 text-primary-color">POS In The Palm Of Your Hand</h6>
+                <h6 v-if="without_btn === true" class=" font-montse font-bold text-lg mb-0 text-primary-color mt-10">POS In The Palm Of Your Hand</h6>
                 <h2 v-if="without_btn === true" class=" font-montse text-3xl text-font-color">Mobile Handheld POS To Keep Your Business Moving</h2>
               
                 <div v-if="without_btn !== true">
@@ -67,7 +67,7 @@ const props = defineProps({
 
  
 
-                    <div class="col" >
+                    <div class="col demo_container" >
                         <button class="get_demo">
 				            {{ demo_btn }}
 					<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
@@ -133,7 +133,7 @@ const props = defineProps({
     object-fit: unset;
     object-position: unset;
     height: auto;
-    @apply h-auto z-10 -top-[100px]
+    @apply h-auto z-10 
 }
 
 .about_section .left_side h1 {
@@ -220,6 +220,19 @@ const props = defineProps({
 }
 
 @media (max-width: 576px) {
+
+    .about_section .left_side img.mobile{
+        margin: auto;
+        transform:unset;
+        
+    }
+
+    .demo_container{
+        margin-top: 20px;
+    }
+    .right_section{
+    @apply block justify-between gap-8 my-10
+}
     .container {
         max-width: 100%;
     }
