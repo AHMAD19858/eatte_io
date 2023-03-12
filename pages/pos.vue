@@ -256,6 +256,7 @@ const featuresData = [
         :demo_btn="'Get a demo'"
         :row_img="pos_devices"
         :without_btn="true"
+        
       />
     </div>
 
@@ -270,12 +271,14 @@ const featuresData = [
     <IoCard :items="cardData" :numbers="4" />
     <IoButton :secondary="true" :title="'View All Services'" />
 
-    <IoLandingLineCard
+ <div class="container">
+  <IoLandingLineCard
       :sub-title="'POYNT POS Hardware'"
       :title="'Integrations To Supercharge Your Business'"
       :desc="`From software to hardware, our integration with POYNT lets you source a full suite of hardware to meet the needs of your growing restaurant, providing you with the most reliable and flexible technology. EATTE will work with you every step of the way to implement and configure a flawless system that saves you time, money and headaches.`"
       :img="hardware"
     />
+ </div>
 
     <div class="py-10 bg-background-color">
       <IoHeadersTripleLines
