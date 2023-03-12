@@ -16,9 +16,11 @@
 // ];
 // Image SRC
 // [img] from "@/assets/images/phone-case.png";
+// [figure] from "@/assets/images/mobile-figure.png";
 let props = defineProps({
   data: Array,
   img: String,
+  figure: String,
 });
 
 function drawThatShit(cards) {
@@ -67,7 +69,14 @@ onMounted(() => {
     <div class="grid grid-cols-12 gap-4 items-center">
       <div class="col-span-6">
         <div class="relative z-[2]" id="start">
-          <img :src="img" id="" class="w-[280px]" alt="" />
+          <img :src="img" id="" class="w-[280px] relative z-[2]" alt="" />
+          <img
+            :src="figure"
+            v-if="figure"
+            id=""
+            class="mobile-figure z-[1] absolute w-[200px] bottom-0 left-[250px]"
+            alt=""
+          />
         </div>
       </div>
       <div class="col-span-6">
