@@ -438,4 +438,14 @@ article {
         width: 100%;
     }
 }
+
+@media (max-width: 576px) {
+
+	.pos_helps{
+
+    padding: 0 30px;
+
+	
+}
+}
 </style>

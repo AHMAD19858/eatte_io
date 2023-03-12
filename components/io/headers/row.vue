@@ -67,7 +67,7 @@ const props = defineProps({
 
  
 
-                    <div class="col" >
+                    <div class="col demo_container" >
                         <button class="get_demo">
 				            {{ demo_btn }}
 					<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
@@ -220,6 +220,19 @@ const props = defineProps({
 }
 
 @media (max-width: 576px) {
+
+    .about_section .left_side img.mobile{
+        margin: auto;
+        transform:unset;
+        
+    }
+
+    .demo_container{
+        margin-top: 20px;
+    }
+    .right_section{
+    @apply block justify-between gap-8 my-10
+}
     .container {
         max-width: 100%;
     }

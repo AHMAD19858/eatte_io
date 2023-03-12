@@ -79,4 +79,29 @@ article {
 .sub_text{
     @apply  mt-4 font-montse text-center text-[#3F4440] font-normal text-base dark:text-white 
 }
+
+@media (max-width: 576px) {
+
+	.cards_container {
+	@apply max-w-[1200px] mx-auto px-0 bg-white md:grid grid-cols-3 gap-3 md:grid-cols-2 lg:grid-cols-3 
+}
+
+article {
+    background-color: var(--background);
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    height: 330px;
+    margin-bottom: .75rem;
+    margin-top: .75rem;
+    width: 300px;
+}
+
+.pos_helps{
+ 
+    padding: unset;
+
+	
+}
+}
 </style>
