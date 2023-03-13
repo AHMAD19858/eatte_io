@@ -32,7 +32,8 @@ const props = defineProps({
         {{ sub_header }}
       </p>
       <div class="header_buttons ">
-        <button class="get_started">
+        <NuxtLink to="https://eatte.io/new_wizard/" target="_blank">
+          <button class="get_started">
           {{ start_btn }}
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -49,6 +50,8 @@ const props = defineProps({
             />
           </svg>
         </button>
+          </NuxtLink>
+   
         <button class="get_demo">
           {{ demo_btn }}
           <svg

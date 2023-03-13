@@ -99,10 +99,11 @@
       <div class="right_side">
         <div class="right_container">
           <NuxtLink to="/login"><p class="login_btn login">Login</p></NuxtLink>
-
-          <button class="get_started">
-            <p class="w-max font-montse font-normal text-[14px]">Get Started</p>
-          </button>
+          <NuxtLink to="https://eatte.io/new_wizard/" target="_blank">
+            <button class="get_started">
+              <p class="w-max font-montse font-normal text-[14px]">Get Started</p>
+            </button>
+            </NuxtLink>
           <div class="contact_container">
             <div class="card_container">
               <a href="tel:010-123-4567">
