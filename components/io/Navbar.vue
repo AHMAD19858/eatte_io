@@ -188,7 +188,7 @@ const showMenu = ref(false);
 }
 
 .section_container {
-  @apply z-10 bg-background-color dark:bg-dark-background-color;
+  @apply z-50 bg-background-color dark:bg-dark-background-color;
 }
 .nav_container {
   @apply relative flex items-center px-4;
