@@ -37,27 +37,27 @@
             </svg>
           </a>
           <ul class="nav_child_container child">
-            <NuxtLink to="/inventory">
+            <NuxtLink to="/inventory" class="nav_child_element">
               <li>
-                <a href="#" class="nav_child_element"> Inventory </a>
+                Inventory
               </li>
             </NuxtLink>
-            <NuxtLink to="/marketing">
+            <NuxtLink to="/marketing" class="nav_child_element">
               <li>
-                <a href="#" class="nav_child_element"> Marketing </a>
+                Marketing 
               </li>
             </NuxtLink>
 
-            <NuxtLink to="/reservation">
+            <NuxtLink to="/reservation" class="nav_child_element">
               <li>
-                <a href="#" class="nav_child_element"> Reservation </a>
+               Reservation
               </li>
             </NuxtLink>
           </ul>
         </li>
 
         <li class="relative parent">
-          <a href="#" class="nav_parent_element">
+          <a  class="nav_parent_element">
             <span class="nav_text">Features</span>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -70,14 +70,14 @@
             </svg>
           </a>
           <ul class="nav_child_container child">
-            <NuxtLink to="/pos">
+            <NuxtLink to="/pos" class="nav_child_element">
               <li>
-                <a href="#" class="nav_child_element"> POS </a>
+                POS
               </li>
             </NuxtLink>
-            <NuxtLink to="/kds">
+            <NuxtLink to="/kds" class="nav_child_element">
               <li>
-                <a href="#" class="nav_child_element"> KDS </a>
+                KDS
               </li>
             </NuxtLink>
           </ul>
