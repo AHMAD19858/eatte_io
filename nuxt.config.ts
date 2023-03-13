@@ -1,4 +1,5 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+const NODE_ENV:String = 'dev';
 export default defineNuxtConfig({
   modules: [
     '@nuxtjs/tailwindcss',
@@ -14,7 +15,7 @@ export default defineNuxtConfig({
     },
     // buildAssetsDir:'/new-design/',
     //baseURL:'/new-design/',
-    baseURL: process.env.NODE_ENV === 'production' ? '/new-design/' : '/'
+    baseURL: NODE_ENV === 'production' ? '/new-design/' : '/'
 
   },
   colorMode: {
