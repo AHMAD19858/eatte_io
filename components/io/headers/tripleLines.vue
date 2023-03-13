@@ -1,7 +1,7 @@
 <template>
   <div class="header_container">
     <p class="question">{{ first_line }}</p>
-    <h2 class="main_text">{{ main }}</h2>
+    <p class="main_text">{{ main }}</p>
     <p class="sub_text">
       {{ first_sub_main }}
     </p>

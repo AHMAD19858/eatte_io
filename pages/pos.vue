@@ -197,11 +197,15 @@ const featuresData = [
 
     <div class="header_container flex gap-12 mx-12">
       <div>
-        <h1 class="main_text">EA<span class="text-primary-color">TT</span>E</h1>
+        <h1 class="main_text">
+          EA<span class="text-primary-color dark:bg-dark-background-color"
+            >TT</span
+          >E
+        </h1>
         <h1 class="main_text pt-3">Payments</h1>
       </div>
       <div>
-        <p class="font-montse">
+        <p class="font-montse detail">
           One of the most powerful features of EATTE POS is its ability to split
           payments for each order by number of people, item, or seat. This means
           that you can easily manage complex orders and split payments between
@@ -256,7 +260,6 @@ const featuresData = [
         :demo_btn="'Get a demo'"
         :row_img="pos_devices"
         :without_btn="true"
-        
       />
     </div>
 
@@ -271,14 +274,14 @@ const featuresData = [
     <IoCard :items="cardData" :numbers="4" />
     <IoButton :secondary="true" :title="'View All Services'" />
 
- <div class="container">
-  <IoLandingLineCard
-      :sub-title="'POYNT POS Hardware'"
-      :title="'Integrations To Supercharge Your Business'"
-      :desc="`From software to hardware, our integration with POYNT lets you source a full suite of hardware to meet the needs of your growing restaurant, providing you with the most reliable and flexible technology. EATTE will work with you every step of the way to implement and configure a flawless system that saves you time, money and headaches.`"
-      :img="hardware"
-    />
- </div>
+    <div class="container">
+      <IoLandingLineCard
+        :sub-title="'POYNT POS Hardware'"
+        :title="'Integrations To Supercharge Your Business'"
+        :desc="`From software to hardware, our integration with POYNT lets you source a full suite of hardware to meet the needs of your growing restaurant, providing you with the most reliable and flexible technology. EATTE will work with you every step of the way to implement and configure a flawless system that saves you time, money and headaches.`"
+        :img="hardware"
+      />
+    </div>
 
     <div class="py-10 bg-background-color dark:bg-dark-background-color">
       <IoHeadersTripleLines
@@ -304,7 +307,7 @@ const featuresData = [
   padding: 0 80px;
   margin: 0 auto;
   background-color: white;
-  @apply dark:bg-dark-background-color
+  @apply dark:bg-dark-background-color;
 }
 
 .header_container {
@@ -340,7 +343,7 @@ article {
   @apply font-montse text-center text-[#3F4440] font-normal text-base dark:text-white;
 }
 .main_text {
-  @apply text-[35px] font-bold text-font-color leading-7 font-montse;
+  @apply text-[35px] font-bold text-font-color leading-7 font-montse dark:text-white;
 }
 .features_section {
   display: flex;
@@ -458,8 +461,21 @@ article {
   }
 }
 @media (max-width: 576px) {
+  .header_container {
+    padding: 0 15px;
+    display: block;
+    margin-block: 10px;
+  }
+
+  .main_text{
+    text-align: center;
+  }
   .pos_helps {
-    padding: 0 30px;
+    padding: 0 15px;
+  }
+
+  .detail{
+    @apply mt-5 text-center
   }
 }
 </style>

@@ -239,12 +239,9 @@ const props = defineProps({
   .about_section .left_side img.mobile {
     margin: auto;
     transform: unset;
-    margin-inline: 50px;
+    /* margin-inline: 50px; */
   }
 
-  .demo_container {
-    margin-top: 20px;
-  }
   .right_section {
     @apply block justify-between gap-8 my-10;
   }
@@ -259,8 +256,7 @@ const props = defineProps({
     @apply text-center;
   }
   .right_section {
-    margin-inline: 50px;
-    @apply text-center;
+    @apply flex items-center flex-col text-center;
   }
 }
 </style>
