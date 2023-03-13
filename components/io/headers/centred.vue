@@ -18,8 +18,8 @@ const props = defineProps({
         alt=""
         class="shadow_color"
       />
-      <h1 v-if="about === true" class="slogan">{{ shadow_slogan }}</h1>
-      <h1 v-if="about === true" class="slogan">
+      <h1 v-if="about === true" class="slogan animate-slideDown">{{ shadow_slogan }}</h1>
+      <h1 v-if="about === true" class="slogan animate-slideDown">
         exclusively for restaurants, we're on a mission to enrich the food
         experience for all.
       </h1>
@@ -31,7 +31,7 @@ const props = defineProps({
       <p class="sub_header ">
         {{ sub_header }}
       </p>
-      <div class="header_buttons">
+      <div class="header_buttons ">
         <button class="get_started">
           {{ start_btn }}
           <svg

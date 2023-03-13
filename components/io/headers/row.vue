@@ -30,10 +30,10 @@ const props = defineProps({
 
         <div v-if="without_btn !== true">
           <h1 class="main_text ">
-            EA<span class="text-primary-color">TT</span>E {{ service }}
+            EA<span class="text-primary-color ">TT</span>E {{ service }}
           </h1>
         </div>
-        <p class="sub_text">
+        <p class="sub_text ">
           {{ sub_text }}
         </p>
         <ul v-if="without_btn === true">
@@ -59,7 +59,7 @@ const props = defineProps({
             </p>
           </li>
         </ul>
-        <div class="right_section" v-if="without_btn !== true">
+        <div class="right_section animate-slideDown" v-if="without_btn !== true">
           <div class="col">
             <button class="get_started">
               {{ start_btn }}
@@ -101,7 +101,7 @@ const props = defineProps({
           </div>
         </div>
       </div>
-      <div class="left_side devices_shapes">
+      <div class="left_side devices_shapes animate-fade">
         <img
           :class="another_device == true ? 'another_device' : 'mobile'"
           :src="row_img"
