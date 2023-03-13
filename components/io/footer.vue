@@ -53,12 +53,16 @@
             <a rel="noopener noreferrer" href="#" class="footer_element"
               >Customer Support</a
             >
-            <a rel="noopener noreferrer" href="#" class="footer_element"
-              >Point Of Sale (POS)</a
-            >
-            <a rel="noopener noreferrer" href="#" class="footer_element"
-              >Kitchen Display System (KDS)</a
-            >
+            <NuxtLink to="/pos">
+              <a rel="noopener noreferrer" href="#" class="footer_element"
+                >Point Of Sale (POS)</a
+              >
+            </NuxtLink>
+            <NuxtLink to="/kds">
+              <a rel="noopener noreferrer" href="#" class="footer_element"
+                >Kitchen Display System (KDS)</a
+              >
+            </NuxtLink>
           </div>
         </div>
         <div class="flex flex-col space-y-4">
@@ -114,15 +118,27 @@
             <a rel="noopener noreferrer" href="#" class="footer_element"
               >Pricing</a
             >
-            <a rel="noopener noreferrer" href="#" class="footer_element"
-              >Testimonials</a
+            <NuxtLink
+              to="https://support.eatte.io/knowledgebase/eatte-privacy-and-policy/"
+              target="_blank"
             >
-            <a rel="noopener noreferrer" href="#" class="footer_element"
-              >Contact us</a
+              <p  class="footer_element"
+                >Privacy agreement</p
+              >
+            </NuxtLink>
+            <NuxtLink
+              to="https://support.eatte.io/knowledgebase/terms-and-conditions/"
+              target="_blank"
             >
-            <a rel="noopener noreferrer" href="#" class="footer_element"
-              >Support</a
-            >
+              <p  class="footer_element"
+                >Terms and conditions</p
+              >
+            </NuxtLink>
+            <NuxtLink to="https://support.eatte.io/" target="_blank">
+              <p  class="footer_element"
+                >Support</p
+              >
+            </NuxtLink>
           </div>
         </div>
         <div class="flex flex-col space-y-4">
@@ -166,7 +182,7 @@
 
 <style scoped>
 .footer_container {
-  @apply bg-background-color pt-[48px] dark:bg-dark-background-color
+  @apply bg-background-color pt-[48px] dark:bg-dark-background-color;
 }
 
 .card {

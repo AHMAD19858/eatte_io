@@ -36,24 +36,24 @@
               />
             </svg>
           </a>
-          <!--              <ul
-                        class="nav_child_container child">
-                        <li>
-                            <a href="#" class="nav_child_element">
-                                data
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="nav_child_element">
-                                data
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="nav_child_element">
-                                data
-                            </a>
-                        </li>
-                    </ul> -->
+          <ul class="nav_child_container child">
+            <NuxtLink to="/inventory">
+              <li>
+                <a href="#" class="nav_child_element"> Inventory </a>
+              </li>
+            </NuxtLink>
+            <NuxtLink to="/marketing">
+              <li>
+                <a href="#" class="nav_child_element"> Marketing </a>
+              </li>
+            </NuxtLink>
+
+            <NuxtLink to="/reservation">
+              <li>
+                <a href="#" class="nav_child_element"> Reservation </a>
+              </li>
+            </NuxtLink>
+          </ul>
         </li>
 
         <li class="relative parent">
@@ -69,24 +69,18 @@
               />
             </svg>
           </a>
-          <!--        <ul
-                        class="nav_child_container child">
-                        <li>
-                            <a href="#" class="nav_child_element">
-                                data
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="nav_child_element">
-                                data
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="nav_child_element">
-                                data
-                            </a>
-                        </li>
-                    </ul> -->
+          <ul class="nav_child_container child">
+            <NuxtLink to="/pos">
+              <li>
+                <a href="#" class="nav_child_element"> POS </a>
+              </li>
+            </NuxtLink>
+            <NuxtLink to="/kds">
+              <li>
+                <a href="#" class="nav_child_element"> KDS </a>
+              </li>
+            </NuxtLink>
+          </ul>
         </li>
 
         <li>
@@ -101,9 +95,11 @@
           <NuxtLink to="/login"><p class="login_btn login">Login</p></NuxtLink>
           <NuxtLink to="https://eatte.io/new_wizard/" target="_blank">
             <button class="get_started">
-              <p class="w-max font-montse font-normal text-[14px]">Get Started</p>
+              <p class="w-max font-montse font-normal text-[14px]">
+                Get Started
+              </p>
             </button>
-            </NuxtLink>
+          </NuxtLink>
           <div class="contact_container">
             <div class="card_container">
               <a href="tel:010-123-4567">

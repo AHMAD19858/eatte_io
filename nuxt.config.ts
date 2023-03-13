@@ -13,7 +13,8 @@ export default defineNuxtConfig({
       link: [{ rel: 'icon', type: 'image/x-icon', href: 'https://eatte.io/img/png/logo.png' }],
     },
     // buildAssetsDir:'/new-design/',
-    baseURL:'/new-design/'
+    //baseURL:'/new-design/',
+    baseURL: process.env.NODE_ENV === 'production' ? '/new-design/' : '/'
 
   },
   colorMode: {
