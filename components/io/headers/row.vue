@@ -117,11 +117,11 @@ const props = defineProps({
 
 <style scoped>
 .get_started {
-  @apply z-10 font-montse flex w-72 self-baseline items-center justify-evenly rounded-lg px-8 py-3  text-lg font-semibold text-white bg-gradient-to-r from-[#FF6137] to-[#CC4D2C];
+  @apply z-10 h-[52px] font-montse flex w-72 self-baseline items-center justify-evenly rounded-lg px-8 py-3  text-lg font-semibold text-white bg-gradient-to-r from-[#FF6137] to-[#CC4D2C];
 }
 
 .get_demo {
-  @apply z-10 font-montse dark:text-white dark:border-white flex w-72 self-baseline items-center justify-evenly rounded-lg px-8 py-3  text-lg text-font-color border-font-color border-2;
+  @apply z-10 h-[52px] font-montse dark:text-white dark:border-white flex w-72 self-baseline items-center justify-evenly rounded-lg px-8 py-3  text-lg text-font-color border-font-color border-2;
 }
 .container {
   @apply w-full max-w-[1200px] py-0 px-[15px] mx-auto z-10 my-28;
