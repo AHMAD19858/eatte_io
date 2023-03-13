@@ -1,5 +1,5 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
-const NODE_ENV:String = 'dev';
+const NODE_ENV:String = 'production';
 export default defineNuxtConfig({
   modules: [
     '@nuxtjs/tailwindcss',
@@ -14,7 +14,7 @@ export default defineNuxtConfig({
       link: [{ rel: 'icon', type: 'image/x-icon', href: 'https://eatte.io/img/png/logo.png' }],
       meta: [
         // <meta name="description" content="My amazing site">
-        { hid: 'og-url', property: 'og:https://eatte.io/img/png/logo.png', content: 'https://eatte.io/img/png/logo.png' },
+        { hid: 'og-url', property: 'https://eatte.io/img/png/logo.png', content: 'https://eatte.io/img/png/logo.png' },
       ],
     },
     // buildAssetsDir:'/new-design/',
