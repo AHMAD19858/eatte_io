@@ -12,6 +12,10 @@ export default defineNuxtConfig({
     head: {
       title: 'EATTE-All-in-One Restaurant Management & Ordering System',
       link: [{ rel: 'icon', type: 'image/x-icon', href: 'https://eatte.io/img/png/logo.png' }],
+      meta: [
+        // <meta name="description" content="My amazing site">
+        { hid: 'og-url', property: 'og:https://eatte.io/img/png/logo.png', content: 'https://eatte.io/img/png/logo.png' },
+      ],
     },
     // buildAssetsDir:'/new-design/',
     //baseURL:'/new-design/',

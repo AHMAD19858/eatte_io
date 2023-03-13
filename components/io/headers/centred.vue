@@ -18,7 +18,9 @@ const props = defineProps({
         alt=""
         class="shadow_color"
       />
-      <h1 v-if="about === true" class="slogan animate-slideDown">{{ shadow_slogan }}</h1>
+      <h1 v-if="about === true" class="slogan animate-slideDown">
+        {{ shadow_slogan }}
+      </h1>
       <h1 v-if="about === true" class="slogan animate-slideDown">
         exclusively for restaurants, we're on a mission to enrich the food
         experience for all.
@@ -28,47 +30,48 @@ const props = defineProps({
         {{ slogan }}
       </h1>
 
-      <p class="sub_header ">
+      <p class="sub_header">
         {{ sub_header }}
       </p>
-      <div class="header_buttons ">
+      <div class="header_buttons">
         <NuxtLink to="https://eatte.io/new_wizard/" target="_blank">
           <button class="get_started">
-          {{ start_btn }}
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-            stroke="currentColor"
-            class="w-6 h-6"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
-            />
-          </svg>
-        </button>
-          </NuxtLink>
-   
-        <button class="get_demo">
-          {{ demo_btn }}
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-            stroke="currentColor"
-            class="w-6 h-6"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.348a1.125 1.125 0 010 1.971l-11.54 6.347a1.125 1.125 0 01-1.667-.985V5.653z"
-            />
-          </svg>
-        </button>
+            {{ start_btn }}
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
+              />
+            </svg>
+          </button>
+        </NuxtLink>
+        <NuxtLink to="https://eatte.io/request-demo" target="_blank">
+          <button class="get_demo">
+            {{ demo_btn }}
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.348a1.125 1.125 0 010 1.971l-11.54 6.347a1.125 1.125 0 01-1.667-.985V5.653z"
+              />
+            </svg>
+          </button>
+        </NuxtLink>
       </div>
     </div>
   </section>
@@ -114,7 +117,7 @@ const props = defineProps({
 }
 
 .get_demo {
-  @apply  h-[52px] font-montse dark:text-white dark:border-white flex w-72 self-baseline items-center justify-evenly rounded-lg px-8 py-3 m-2 text-lg text-font-color border-font-color border-2;
+  @apply h-[52px] font-montse dark:text-white dark:border-white flex w-72 self-baseline items-center justify-evenly rounded-lg px-8 py-3 m-2 text-lg text-font-color border-font-color border-2;
 }
 
 .screen_container {
