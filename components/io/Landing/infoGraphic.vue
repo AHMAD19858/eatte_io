@@ -19,7 +19,8 @@ let props = defineProps({
 });
 </script>
 <template>
-  <div class="container mx-auto p-[15px] md:p-[70px]" v-if="data && data.lenth">
+
+  <div class="container mx-auto p-[15px] md:p-[70px]" >
     <div class="info-graphic relative pb-[100px] mb-10">
       <div class="bg-circle absolute h-[280px] w-[280px] rounded-full">
         <span

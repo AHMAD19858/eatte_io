@@ -56,6 +56,12 @@
             >
               <li>Reservation</li>
             </NuxtLink>
+            <NuxtLink
+              to="/gift-card"
+              class="nav_child_element dark:bg-dark-background-color dark:text-white"
+            >
+              <li>Gift cards</li>
+            </NuxtLink>
           </ul>
         </li>
 
