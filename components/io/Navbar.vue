@@ -62,6 +62,13 @@
             >
               <li>Gift cards</li>
             </NuxtLink>
+
+            <NuxtLink
+              to="/reports"
+              class="nav_child_element dark:bg-dark-background-color dark:text-white"
+            >
+              <li>Reports</li>
+            </NuxtLink>
           </ul>
         </li>
 
@@ -111,6 +118,13 @@
               class="nav_child_element dark:bg-dark-background-color dark:text-white"
             >
               <li>Payment</li>
+            </NuxtLink>
+
+            <NuxtLink
+              to="/delivery"
+              class="nav_child_element dark:bg-dark-background-color dark:text-white"
+            >
+              <li>Takeout & Delivery</li>
             </NuxtLink>
           </ul>
         </li>
