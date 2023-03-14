@@ -105,6 +105,13 @@
             >
               <li>Online-Ordering</li>
             </NuxtLink>
+
+            <NuxtLink
+              to="/payment"
+              class="nav_child_element dark:bg-dark-background-color dark:text-white"
+            >
+              <li>Payment</li>
+            </NuxtLink>
           </ul>
         </li>
 
