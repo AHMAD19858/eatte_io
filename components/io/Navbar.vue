@@ -72,7 +72,7 @@
           </ul>
         </li>
 
-        <li class="relative parent">
+         <li class="relative parent">
           <a class="nav_parent_element">
             <span class="nav_text">Features</span>
             <svg
@@ -127,7 +127,7 @@
               <li>Takeout & Delivery</li>
             </NuxtLink>
           </ul>
-        </li>
+        </li> 
 
         <li>
           <a href="#" class="nav_element">
@@ -357,7 +357,7 @@ const showMenu = ref(false);
     justify-content: right;
   }
   .get_started_mobile {
-    @apply inline w-52 self-end items-center justify-evenly rounded-lg px-8 py-3 m-28 text-lg font-semibold text-white bg-gradient-to-r from-[#FF6137] to-[#CC4D2C];
+    @apply inline w-52 self-end items-center justify-evenly rounded-lg px-8 py-3 m-20 text-lg font-semibold text-white bg-gradient-to-r from-[#FF6137] to-[#CC4D2C] mt-[395px]
   }
   .login_mobile {
     margin-bottom: 20px;

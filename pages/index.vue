@@ -27,6 +27,6 @@
 
 <style scoped>
 .screen_container {
-  @apply bg-background-color min-h-full dark:text-white dark:bg-dark-background-color;
+  @apply bg-background-color min-h-full dark:text-white dark:bg-dark-background-color pt-[100px];
 }
 </style>

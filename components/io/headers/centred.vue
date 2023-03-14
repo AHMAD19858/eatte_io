@@ -87,9 +87,9 @@ const props = defineProps({
 }
 
 @media (max-width: 576px) {
-  /* 	.header_container {
-	padding-top: 300px;
-	} */
+  .header_container {
+    padding-top: 3rem;
+  }
 }
 
 .slogan {

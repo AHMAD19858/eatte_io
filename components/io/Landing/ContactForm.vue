@@ -229,7 +229,7 @@
   .container {
     max-width: 100%;
     margin-top: 150px;
-    margin-inline: 20px;
+    padding: 0 15px;
   }
 
   .plan_section .plan_side .plan {
