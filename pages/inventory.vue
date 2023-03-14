@@ -129,7 +129,7 @@ const featuresData = [
 
     <IoButton :secondary="true" :title="'View All Services'" />
 
-    <div class="mx-[200px] py-5">
+    <div class="triple_section">
       <IoHeadersTripleLines
         :first_line="'Overall, EATTE Inventory is the perfect tool for restaurant owners who want to automate their inventory management process and avoid the hassle of manual stock tracking. With our platform, you can save time and money while also improving the customer experience by ensuring that all menu items are always available'"
         :main="'So why wait? Sign up for EATTE today and take your restaurant to the next level!'"
@@ -148,7 +148,9 @@ const featuresData = [
   background-color: white;
   @apply dark:bg-dark-background-color;
 }
-
+.triple_section {
+  @apply mx-[200px] py-5;
+}
 .screen_container {
   @apply bg-background-color min-h-full dark:text-white dark:bg-dark-background-color pt-[100px];
 }
@@ -159,6 +161,9 @@ const featuresData = [
   }
   .pos_helps {
     padding: 0 15px;
+  }
+  .triple_section {
+    @apply mx-0;
   }
 }
 </style>

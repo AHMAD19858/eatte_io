@@ -467,15 +467,15 @@ article {
     margin-block: 10px;
   }
 
-  .main_text{
+  .main_text {
     text-align: center;
   }
   .pos_helps {
     padding: 0 15px;
   }
 
-  .detail{
-    @apply mt-5 text-center
+  .detail {
+    @apply mt-5 text-center;
   }
 }
 </style>

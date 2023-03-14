@@ -94,7 +94,7 @@ const featuresData = [
 
     <IoButton :secondary="true" :title="'View All Services'" />
 
-    <div class="mx-[200px] py-5">
+    <div class="triple_section">
       <IoHeadersTripleLines
         :first_line="`Finally, our system is designed to be user-friendly and easy to navigate, both for restaurant owners and their customers. We understand that managing reservations and orders can be a complex process, but our platform simplifies the process, making it easier than ever before to manage your restaurant's operations.`"
         :main="'We look forward to helping you streamline your operations and provide a better dining experience for your customers.'"
@@ -106,9 +106,16 @@ const featuresData = [
 </template>
 
 <style scoped>
-
-
 .screen_container {
   @apply bg-background-color min-h-full dark:text-white dark:bg-dark-background-color;
+}
+.triple_section {
+  @apply mx-[200px] py-5;
+}
+
+@media (max-width: 576px) {
+  .triple_section {
+    @apply mx-0;
+  }
 }
 </style>
