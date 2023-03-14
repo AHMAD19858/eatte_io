@@ -1,12 +1,12 @@
 <script setup>
-import GiftCard from "../assets/images/giftCard.svg";
+import loyalty from "../assets/images/loyalty.svg";
 import dash from "../assets/images/dashboard.svg";
 import service1 from "../assets/images/icons/hand.svg";
 import service3 from "../assets/images/icons/code.svg";
 import service2 from "../assets/images/icons/charts.svg";
-import one from "../assets/images/features/gift/one.svg";
-import four from "../assets/images/features/kds/four.svg";
-import phoneCase from "../assets/images/phone-case.png";
+import one from "../assets/images/features/loyalty/one.svg";
+import two from "../assets/images/features/loyalty/two.svg";
+import three from "../assets/images/features/loyalty/three.svg";
 
 const cardData = [
   {
@@ -24,43 +24,38 @@ const cardData = [
     label: "Back-Office Management",
     learn_text: "LEARN MORE",
   },
-  {
-    img: dash,
-    label: "Kitchen Display System (KDS)",
-    learn_text: "LEARN MORE",
-  },
 ];
 
 const serviceData = [
   {
     img: service2,
-    label: "Multi-Channel",
-    desc: "Allow guests to text or email e-gift cards. Physical gift cards are also available.",
+    label: "Intuitive",
+    desc: "Seamless experiences for your guests.",
   },
   {
     img: service1,
-    label: "Integrated",
-    desc: "E-gift cards can be used when ordering online as well as in-store.",
+    label: "Flexible",
+    desc: "A loyalty program that fits your business.",
   },
   {
     img: service3,
-    label: "Easy to Use",
-    desc: `Guests can check their e-gift card balance easily online from your website.`,
+    label: "Compatible",
+    desc: `A program for any type of payment method.`,
   },
 ];
 
 const graphData = [
   {
-    title: "Improve Your Cash Flow",
-    desc: "Sell gift cards at your restaurant and utilize them as prepaid sales.",
+    title: "Deliver an Exceptional Guest Experience",
+    desc: "Get to know your customers by a direct line of communication with your customers gives you valuable insight.",
   },
   {
-    title: "Payment Methods",
-    desc: "Accept gift cards in-store as a viable and secure payment option.",
+    title: "Increase Sales",
+    desc: "Keep customerss you already have and give new ones a solid reason to ditch your competition.",
   },
   {
-    title: "Attract Customers With Promotions",
-    desc: "Widen your customer base by introducing promotional gift cards.",
+    title: "Increase Guest Engagement",
+    desc: "Easily customizable Customer Web App lets diners keep track of all of their rewards and see promotions all in one place.",
   },
 ];
 
@@ -68,18 +63,16 @@ const featuresData = [
   {
     position: "right",
     img: one,
-    title: "Increase Revenue With Gift Card Sales",
-    sub_title: `Create multiple gift cards for your customers to boost your profit and further engage with your customers`,
+    title: "Earn your points in moments",
+    sub_title: `Swipe credit card, opt in, earn points. No extra steps needed`,
     details: [
       {
-        main: "Give the Gift of Convenience with Digital Gift Cards",
-        details:
-          "Digital gift cards make it easy for diners to access and redeem gift cards from their smartphones.",
+        main: "Opt-in on checkout screen",
+        details: "Enter an email when checking out to sign up.",
       },
       {
-        main: "Drive short-term cash flow for your long-term plan",
-        details:
-          "guests who make a purchase using a gift card spend more than the value of the gift card.",
+        main: "Rewards points lookup",
+        details: "Diners can log in to check loyalty progress anytime.",
       },
       {
         main: "Access detailed reports on gift card sales",
@@ -90,24 +83,37 @@ const featuresData = [
   },
   {
     position: "left",
-    img: four,
-    title: "Guests Can Easily Manage Their Own Gift Cards",
-    sub_title: `Guests can check their e-gift card balance easily online from your website.`,
+    img: two,
+    title: "Give customers a reason to spend more",
+    sub_title: `Get up and running quickly with our easy-to-implement rewards program.`,
     details: [
       {
-        main: "Email and text gift cards are easy to buy and sell",
+        main: "Points-based rewards",
         details:
-          "Allow guests to buy email gift cards and send via email or SMS, with a message of their choice.",
+          "Customize sign up bonuses, set accrual and redemption rates, and offer birthday rewards.",
       },
       {
-        main: "Gift card redemption is simple and easy",
+        main: "One flat fee per month",
+        details: "Don't be surprised by your loyalty program fees.",
+      },
+    ],
+  },
+
+  {
+    position: "right",
+    img: three,
+    title: "Gcustomer order history",
+    sub_title: `When customers return, our program shows their order history so you know exactly what they want`,
+    details: [
+      {
+        main: "Credit card-linked program",
         details:
-          "Allow guests to pay with a gift card over the phone, when ordering online or in person at the POS system.",
+          "Guests seamlessly accrue points with each swipe of their credit card. No need to carry a loyalty card or sign-in on every visit.",
       },
       {
-        main: "Online balance management is intuitive.",
+        main: "Loyalty reporting",
         details:
-          "Allow guests to look up their gift card balance online, and even add more value to it, whenever they want.",
+          "Get a clear picture of your regulars with loyalty program reporting.",
       },
     ],
   },
@@ -117,18 +123,18 @@ const featuresData = [
 <template>
   <div class="screen_container">
     <IoHeadersRow
-      :service="'Gift Cards'"
+      :service="'Loyalty Program'"
       :sub_text="'Create and sell gift cards to your customers, track balances, and use gift cards as a payment method at your restaurant.'"
       :start_btn="'Get Started'"
       :demo_btn="'Get a demo'"
-      :row_img="GiftCard"
+      :row_img="loyalty"
     />
 
     <div class="bg-white pt-12 pb-12 dark:bg-dark-background-color">
       <IoHeadersTripleLines
         :first_line="'Grow Your Business'"
-        :main="'Deliver a Standout Guest Experience'"
-        :first_sub_main="`Give your guests a way to support your business with modern gift cards.`"
+        :main="'Delight your guests with a loyalty program that just works'"
+        :first_sub_main="`Turn every guest into a regular with our Loyalty program.`"
       />
     </div>
 
@@ -153,19 +159,19 @@ const featuresData = [
       <IoFeatures :items="featuresData" />
     </div>
 
-    <div class="container">
-      <IoLandingMobileShowCase :data="graphData" :img="phoneCase" />
-    </div>
-
     <div class="py-10 bg-background-color dark:bg-dark-background-color">
       <IoHeadersTripleLines
-        :first_line="'Discover More'"
-        :main="'All You Require, Conveniently Located in One Place.'"
-        :first_sub_main="'Find all the restaurant management solutions you need in one place with our seamlessly '"
-        :second_sub_main="'integrated software suite, providing unbeatable convenience.'"
+        :first_line="'Increase Profitability'"
+        :main="'create personalized and rewarding experiences for every guest'"
+        :first_sub_main="'Drive repeat business and build long-term relationships with your customers online and'"
+        :second_sub_main="'in store.'"
       />
     </div>
-    <IoCard :items="cardData" :numbers="4" />
+    <div class="container">
+      <IoLandingInfoGraphic :data="graphData" />
+    </div>
+
+    <IoCard :items="cardData" :numbers="3" />
     <IoButton :secondary="true" :title="'View All Services'" />
 
     <div class="py-10 bg-background-color dark:bg-dark-background-color">

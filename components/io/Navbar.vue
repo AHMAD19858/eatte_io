@@ -91,6 +91,13 @@
             >
               <li>KDS</li>
             </NuxtLink>
+
+            <NuxtLink
+              to="/loyalty"
+              class="nav_child_element dark:bg-dark-background-color dark:text-white"
+            >
+              <li>Loyalty</li>
+            </NuxtLink>
           </ul>
         </li>
 
