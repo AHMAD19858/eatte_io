@@ -122,6 +122,7 @@ const featuresData = [
       :start_btn="'Get Started'"
       :demo_btn="'Get a demo'"
       :row_img="GiftCard"
+      :another_device="true"
     />
 
     <div class="bg-white pt-12 pb-12 dark:bg-dark-background-color">

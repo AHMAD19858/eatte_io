@@ -1,13 +1,14 @@
 <script setup>
-import loyalty from "../assets/images/loyalty.svg";
+import ordering from "../assets/images/ordering.svg";
 import dash from "../assets/images/dashboard.svg";
 import service1 from "../assets/images/icons/hand.svg";
 import service3 from "../assets/images/icons/code.svg";
 import service2 from "../assets/images/icons/charts.svg";
-import one from "../assets/images/features/loyalty/one.svg";
-import two from "../assets/images/features/loyalty/two.svg";
-import three from "../assets/images/features/loyalty/three.svg";
-
+import one from "../assets/images/features/ordering/one.svg";
+import two from "../assets/images/features/ordering/two.svg";
+import three from "../assets/images/features/ordering/three.svg";
+import phoneCase from "../assets/images/phone-case.png";
+import figure from "../assets/images/mobile-figure.png";
 const cardData = [
   {
     img: dash,
@@ -29,18 +30,18 @@ const cardData = [
 const serviceData = [
   {
     img: service2,
-    label: "Intuitive",
-    desc: "Seamless experiences for your guests.",
+    label: "Reduce Order Errors",
+    desc: "Eliminate the need to enter orders twice and send food straight to the kitchen.",
   },
   {
     img: service1,
-    label: "Flexible",
-    desc: "A loyalty program that fits your business.",
+    label: "Increase Takeout Revenue",
+    desc: "Online Ordering can increase your AOV with suggested items for upselling at checkout.",
   },
   {
     img: service3,
-    label: "Compatible",
-    desc: `A program for any type of payment method.`,
+    label: "Curbside Management",
+    desc: `Manage all your orders in one place, with a low-risk option to keep your guests safe.`,
   },
 ];
 
@@ -63,38 +64,48 @@ const featuresData = [
   {
     position: "right",
     img: one,
-    title: "Earn your points in moments",
-    sub_title: `Swipe credit card, opt in, earn points. No extra steps needed`,
+    title: "A Commission-Free Online Ordering System",
+    sub_title: `A Commission-Free Online Ordering System`,
     details: [
       {
-        main: "Opt-in on checkout screen",
-        details: "Enter an email when checking out to sign up.",
-      },
-      {
-        main: "Rewards points lookup",
-        details: "Diners can log in to check loyalty progress anytime.",
-      },
-      {
-        main: "Access detailed reports on gift card sales",
+        main: "Increase sales",
         details:
-          "Analyze gift card sales by day, week, month, or more and see detailed order history on each gift card transaction",
+          "Offer your guests new ways to enjoy the food they love. Drive guests to your site.",
+      },
+      {
+        main: "No commissions or hidden fees",
+        details:
+          "Maintain your margins by allowing guests to order curbside pickup, takeout and contactless delivery directly from you.",
+      },
+      {
+        main: "Boost check size",
+        details:
+          "Easily feature popular menu items or suggest upsell recommendations based on real data science.",
       },
     ],
   },
   {
     position: "left",
     img: two,
-    title: "Give customers a reason to spend more",
-    sub_title: `Get up and running quickly with our easy-to-implement rewards program.`,
+    title: "Create a Custom Ordering Experience",
+    sub_title: `Create a Custom Ordering Experience`,
     details: [
       {
-        main: "Points-based rewards",
+        main: "Seamless ordering experience",
         details:
-          "Customize sign up bonuses, set accrual and redemption rates, and offer birthday rewards.",
+          "Guests enjoy a mobile friendly experience from any device and can easily reorder their favorites or schedule orders ahead of time.",
       },
       {
-        main: "One flat fee per month",
-        details: "Don't be surprised by your loyalty program fees.",
+        main: "Offer commission-free delivery",
+        details: "Offer your own delivery and meet your guests wherever they are.",
+      },
+      {
+        main: "Convenient payment options",
+        details: "Make guest checkout easy no matter how they pay with options such as Apple Pay and EATTE Gift Cards.",
+      },
+      {
+        main: "Customize with your branding",
+        details: "Upload your logo and pictures of menu items so your digital presence looks and feels like your restaurant.",
       },
     ],
   },
@@ -102,8 +113,8 @@ const featuresData = [
   {
     position: "right",
     img: three,
-    title: "Gcustomer order history",
-    sub_title: `When customers return, our program shows their order history so you know exactly what they want`,
+    title: "Completely Integrated With Your Point Of Sale",
+    sub_title: `Completely Integrated With Your Ooint Of Sale`,
     details: [
       {
         main: "Credit card-linked program",
@@ -123,19 +134,19 @@ const featuresData = [
 <template>
   <div class="screen_container">
     <IoHeadersRow
-      :service="'Loyalty Program'"
+      :service="'Online-ordering'"
       :sub_text="'Create and sell gift cards to your customers, track balances, and use gift cards as a payment method at your restaurant.'"
       :start_btn="'Get Started'"
       :demo_btn="'Get a demo'"
-      :row_img="loyalty"
+      :row_img="ordering"
       :another_device="true"
     />
 
     <div class="bg-white pt-12 pb-12 dark:bg-dark-background-color">
       <IoHeadersTripleLines
         :first_line="'Grow Your Business'"
-        :main="'Delight your guests with a loyalty program that just works'"
-        :first_sub_main="`Turn every guest into a regular with our Loyalty program.`"
+        :main="'Streamline Your Online Ordering & Curbside Pickup'"
+        :first_sub_main="`Give your customers more ways to order your food with a direct online ordering system that allows you to create a safe guest experience with contactless curbside pickup, delivery, and payment options.`"
       />
     </div>
 
@@ -150,10 +161,10 @@ const featuresData = [
 
     <div class="py-10 bg-background-color dark:bg-dark-background-color">
       <IoHeadersTripleLines
-        :first_line="'Delight Guests and Secure Future Revenue'"
-        :main="'Everything You Need To Run Your Restaurant'"
-        :first_sub_main="'Drive immediate cash flow and repeat business with physical '"
-        :second_sub_main="'and digital gift cards for your restaurant.'"
+        :first_line="'Online-ordering Features'"
+        :main="'Increase Takeout & Delivery Revenue'"
+        :first_sub_main="'Stop paying third-party commission fees and keep 100% of your profits with a POS-'"
+        :second_sub_main="`integrated online ordering solution that lets you accept orders directly through your restaurant's website.`"
       />
     </div>
     <div class="container">
@@ -163,13 +174,22 @@ const featuresData = [
     <div class="py-10 bg-background-color dark:bg-dark-background-color">
       <IoHeadersTripleLines
         :first_line="'Increase Profitability'"
-        :main="'create personalized and rewarding experiences for every guest'"
-        :first_sub_main="'Drive repeat business and build long-term relationships with your customers online and'"
-        :second_sub_main="'in store.'"
+        :main="'Easy-to-Use Restaurant Online Ordering System'"
+        :first_sub_main="'A restaurant online ordering system that allows guests to order takeout and delivery'"
+        :second_sub_main="'directly from you.'"
       />
     </div>
     <div class="container">
-      <IoLandingInfoGraphic :data="graphData" />
+      <IoLandingMobileShowCase :data="graphData" :img="phoneCase" :figure="figure"/>
+    </div>
+
+    <div class="py-10 bg-background-color dark:bg-dark-background-color">
+      <IoHeadersTripleLines
+        :first_line="'Discover More'"
+        :main="'All You Require, Conveniently Located in One Place.'"
+        :first_sub_main="'Find all the restaurant management solutions you need in one place with our seamlessly '"
+        :second_sub_main="'integrated software suite, providing unbeatable convenience.'"
+      />
     </div>
 
     <IoCard :items="cardData" :numbers="3" />

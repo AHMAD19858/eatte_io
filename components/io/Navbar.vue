@@ -98,6 +98,13 @@
             >
               <li>Loyalty</li>
             </NuxtLink>
+
+            <NuxtLink
+              to="/ordering"
+              class="nav_child_element dark:bg-dark-background-color dark:text-white"
+            >
+              <li>Online-Ordering</li>
+            </NuxtLink>
           </ul>
         </li>
 
