@@ -87,9 +87,11 @@ article {
     height: 330px;
     margin-bottom: 0.75rem;
     margin-top: 0.75rem;
-    width: 300px;
+    
   }
-
+  .small_container {
+    width: unset;
+  }
   .pos_helps {
     padding: unset;
   }

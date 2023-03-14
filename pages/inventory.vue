@@ -150,14 +150,15 @@ const featuresData = [
 }
 
 .screen_container {
-  @apply bg-background-color min-h-full dark:text-white dark:bg-dark-background-color;
+  @apply bg-background-color min-h-full dark:text-white dark:bg-dark-background-color pt-[100px];
 }
+
 @media (max-width: 576px) {
   .small_container {
     width: unset;
   }
   .pos_helps {
-    padding: 0 30px;
+    padding: 0 15px;
   }
 }
 </style>

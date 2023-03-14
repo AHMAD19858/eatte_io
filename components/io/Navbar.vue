@@ -37,18 +37,18 @@
             </svg>
           </a>
           <ul class="nav_child_container child">
-            <NuxtLink to="/inventory" class="nav_child_element">
-              <li>
+            <NuxtLink to="/inventory" class="nav_child_element dark:bg-dark-background-color  dark:text-white">
+              <li >
                 Inventory
               </li>
             </NuxtLink>
-            <NuxtLink to="/marketing" class="nav_child_element">
+            <NuxtLink to="/marketing" class="nav_child_element dark:bg-dark-background-color  dark:text-white">
               <li>
                 Marketing 
               </li>
             </NuxtLink>
 
-            <NuxtLink to="/reservation" class="nav_child_element">
+            <NuxtLink to="/reservation" class="nav_child_element dark:bg-dark-background-color  dark:text-white">
               <li>
                Reservation
               </li>
@@ -69,13 +69,13 @@
               />
             </svg>
           </a>
-          <ul class="nav_child_container child">
-            <NuxtLink to="/pos" class="nav_child_element">
+          <ul class="nav_child_container child ">
+            <NuxtLink to="/pos" class="nav_child_element  dark:bg-dark-background-color  dark:text-white">
               <li>
                 POS
               </li>
             </NuxtLink>
-            <NuxtLink to="/kds" class="nav_child_element">
+            <NuxtLink to="/kds" class="nav_child_element dark:bg-dark-background-color  dark:text-white" >
               <li>
                 KDS
               </li>
@@ -221,7 +221,7 @@ const showMenu = ref(false);
   @apply right-0 transition duration-300 bg-white child md:absolute top-full md:w-48 md:shadow-lg md:rounded-b;
 }
 .nav_child_element {
-  @apply flex px-4 py-3 hover:bg-gray-50;
+  @apply flex px-4 py-3 ;
 }
 
 .right_side {
@@ -311,7 +311,7 @@ const showMenu = ref(false);
     justify-content: right;
   }
   .get_started_mobile {
-    @apply inline w-52 self-end items-center justify-evenly rounded-lg px-8 py-3 m-2 text-lg font-semibold text-white bg-gradient-to-r from-[#FF6137] to-[#CC4D2C];
+    @apply inline w-52 self-end items-center justify-evenly rounded-lg px-8 py-3 m-28 text-lg font-semibold text-white bg-gradient-to-r from-[#FF6137] to-[#CC4D2C];
   }
   .login_mobile {
     margin-bottom: 20px;

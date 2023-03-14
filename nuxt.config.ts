@@ -1,5 +1,5 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
-const NODE_ENV:String = 'production';
+const NODE_ENV:String = 'dev';
 export default defineNuxtConfig({
   modules: [
     '@nuxtjs/tailwindcss',
