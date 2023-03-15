@@ -152,7 +152,7 @@ const featuresData = [
   @apply mx-[200px] py-5;
 }
 .screen_container {
-  @apply bg-background-color min-h-full dark:text-white dark:bg-dark-background-color pt-[100px];
+  @apply bg-background-color min-h-full dark:text-white dark:bg-dark-background-color pt-[15px];
 }
 
 @media (max-width: 576px) {
