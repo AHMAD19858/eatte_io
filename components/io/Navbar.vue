@@ -72,46 +72,61 @@
             <div
               class="flex md:w-[90%] justify-center py-10 items-center bg-background-color dark:bg-dark-background-color"
             >
-          <div class="grid grid-cols-3 gap-3 md:grid-cols-3">
-            <div class=" grid-flow-col">
-              <p class=" text-primary-color font-bold text-base">Restaurant Operations</p>
-              <p>___________________</p>
-              <p>Point of sale</p>
-              <p>Point of sale</p>
-              <p>Reports & Analytics</p>
-            </div>
+              <div class="grid grid-cols-3 gap-7 md:grid-cols-3">
+                <div class="grid-flow-col">
+                  <p class="text-primary-color font-bold text-sm">
+                    Restaurant Operations
+                  </p>
+                  <hr />
+                  <p>Point of sale</p>
+                  <p>Point of sale</p>
+                  <p>Reports & Analytics</p>
+                  <p>Point of sale</p>
+                  <p>Point of sale</p>
+                  <p>Reports & Analytics</p>
+                  <p>Point of sale</p>
+                  <p>Point of sale</p>
+                  <p>Reports & Analytics</p>
+                  <p>Point of sale</p>
+                  <p>Point of sale</p>
+                  <p>Reports & Analytics</p>
+                </div>
 
-            <div class=" grid-flow-col">
-              <p class=" text-primary-color font-bold text-lg">Attract & Retain Your Guests</p>
-              <p>___________________</p>
-              <p>Point of sale</p>
-              <p>Point of sale</p>
-              <p>Reports & Analytics</p>
-            </div>
+                <div class="grid-flow-col">
+                  <p class="text-primary-color font-bold text-sm">
+                    Attract & Retain Your Guests
+                  </p>
+                  <hr />
+                  <p>Point of sale</p>
+                  <p>Point of sale</p>
+                  <p>Reports & Analytics</p>
+                </div>
 
-          
-            <div class=" grid-flow-col">
-              <p class=" text-primary-color font-bold text-lg">Online Services</p>
-              <p>___________________</p>
-              <p>Point of sale</p>
-              <p>Point of sale</p>
-              <p>Reports & Analytics</p>
+                <div class="grid-flow-col">
+                  <p class="text-primary-color font-bold text-sm">
+                    Online Services
+                  </p>
+                  <hr />
+                  <p>Point of sale</p>
+                  <p>Point of sale</p>
+                  <p>Reports & Analytics</p>
+                </div>
+                <div class="grid-flow-col">
+                  <p class="text-primary-color font-bold text-sm">
+                    Team Performance
+                  </p>
+                  <hr />
+                  <p>Point of sale</p>
+                  <p>Point of sale</p>
+                  <p>Reports & Analytics</p>
+                </div>
+              </div>
             </div>
-            <div class=" grid-flow-col">
-              <p class=" text-primary-color font-bold text-lg">Team Performance</p>
-              <p>___________________</p>
-              <p>Point of sale</p>
-              <p>Point of sale</p>
-              <p>Reports & Analytics</p>
-            </div>
-        
-
-
-          </div>
-          </div>
             <div
               class="relative overflow-hidden md:flex w-1/2 bg-gradient-to-tr from-primary-color to-[#CC4D2C] justify-around items-center hidden"
-            ></div>
+            >
+          <p class=" relative bottom-[100px] px-9 text-white font-montse">Sign up for EATTE today and transform the way you run your restaurant!</p>
+          </div>
           </ul>
         </li>
 
