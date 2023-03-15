@@ -1,7 +1,7 @@
 <template>
   <div class="section_container">
     <nav class="nav_container" :class="showMenu ? ' mb-[325px]' : 'mb-1'">
-      <NuxtLink to="/">
+      <NuxtLink to="/" class="h-[60px]">
         <img
           v-show="$colorMode.value === 'dark'"
           src="../../assets/images/icons/eatteLogo.svg"
@@ -36,8 +36,8 @@
               />
             </svg>
           </a>
-          <ul class="nav_child_container child">
-            <NuxtLink
+          <ul class="nav_child_container child flex">
+            <!--        <NuxtLink
               to="/inventory"
               class="nav_child_element dark:bg-dark-background-color dark:text-white"
             >
@@ -68,7 +68,50 @@
               class="nav_child_element dark:bg-dark-background-color dark:text-white"
             >
               <li>Reports</li>
-            </NuxtLink>
+            </NuxtLink> -->
+            <div
+              class="flex md:w-[90%] justify-center py-10 items-center bg-background-color dark:bg-dark-background-color"
+            >
+          <div class="grid grid-cols-3 gap-3 md:grid-cols-3">
+            <div class=" grid-flow-col">
+              <p class=" text-primary-color font-bold text-base">Restaurant Operations</p>
+              <p>___________________</p>
+              <p>Point of sale</p>
+              <p>Point of sale</p>
+              <p>Reports & Analytics</p>
+            </div>
+
+            <div class=" grid-flow-col">
+              <p class=" text-primary-color font-bold text-lg">Attract & Retain Your Guests</p>
+              <p>___________________</p>
+              <p>Point of sale</p>
+              <p>Point of sale</p>
+              <p>Reports & Analytics</p>
+            </div>
+
+          
+            <div class=" grid-flow-col">
+              <p class=" text-primary-color font-bold text-lg">Online Services</p>
+              <p>___________________</p>
+              <p>Point of sale</p>
+              <p>Point of sale</p>
+              <p>Reports & Analytics</p>
+            </div>
+            <div class=" grid-flow-col">
+              <p class=" text-primary-color font-bold text-lg">Team Performance</p>
+              <p>___________________</p>
+              <p>Point of sale</p>
+              <p>Point of sale</p>
+              <p>Reports & Analytics</p>
+            </div>
+        
+
+
+          </div>
+          </div>
+            <div
+              class="relative overflow-hidden md:flex w-1/2 bg-gradient-to-tr from-primary-color to-[#CC4D2C] justify-around items-center hidden"
+            ></div>
           </ul>
         </li>
 
@@ -249,7 +292,7 @@ const showMenu = ref(false);
 }
 
 .nav_parent_element {
-  @apply flex items-center justify-between p-4 space-x-2 md:inline-flex;
+  @apply flex items-center justify-between p-5 space-x-2 md:inline-flex;
 }
 
 .nav_text {
