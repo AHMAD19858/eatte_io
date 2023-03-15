@@ -23,7 +23,7 @@
           </NuxtLink>
         </li>
 
-        <li class="relative parent">
+        <li class="static parent">
           <a href="#" class="nav_parent_element">
             <span class="nav_text">Services</span>
             <svg
@@ -72,7 +72,7 @@
           </ul>
         </li>
 
-         <li class="relative parent">
+        <li class="relative parent">
           <a class="nav_parent_element">
             <span class="nav_text">Features</span>
             <svg
@@ -127,7 +127,7 @@
               <li>Takeout & Delivery</li>
             </NuxtLink>
           </ul>
-        </li> 
+        </li>
 
         <li>
           <a href="#" class="nav_element">
@@ -241,7 +241,7 @@ const showMenu = ref(false);
 }
 
 .nav_ul_container {
-  @apply items-center absolute left-0 right-0 mr-auto md:px-2 md:flex md:space-x-2 md:relative top-full;
+  @apply items-center absolute left-0 right-0 mr-auto md:px-2 md:flex md:space-x-2 md:static top-full;
 }
 
 .nav_element {
@@ -264,7 +264,13 @@ const showMenu = ref(false);
 }
 
 .nav_child_container {
-  @apply right-0 transition duration-300 bg-white child md:absolute top-full md:w-48 md:shadow-lg md:rounded-b;
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+  transform: translateY(-10%);
+  z-index: 999;
+  left: 0;
+  @apply transition duration-300 bg-white child md:absolute top-full md:w-full md:shadow-lg md:rounded-b;
 }
 .nav_child_element {
   @apply flex px-4 py-3;
@@ -314,14 +320,7 @@ const showMenu = ref(false);
     height: auto;
     overflow: none;
     transform: translateY(0);
-  }
-
-  .child {
-    opacity: 0;
-    height: 0;
-    overflow: hidden;
-    transform: translateY(-10%);
-    z-index: 999;
+    /* width: 100vw; */
   }
 
   .mobile_mode {
@@ -357,7 +356,7 @@ const showMenu = ref(false);
     justify-content: right;
   }
   .get_started_mobile {
-    @apply inline w-52 self-end items-center justify-evenly rounded-lg px-8 py-3 m-20 text-lg font-semibold text-white bg-gradient-to-r from-[#FF6137] to-[#CC4D2C] mt-[395px]
+    @apply inline w-52 self-end items-center justify-evenly rounded-lg px-8 py-3 m-20 text-lg font-semibold text-white bg-gradient-to-r from-[#FF6137] to-[#CC4D2C] mt-[395px];
   }
   .login_mobile {
     margin-bottom: 20px;
