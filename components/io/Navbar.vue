@@ -69,9 +69,7 @@
             >
               <li>Reports</li>
             </NuxtLink> -->
-            <div
-              class="flex md:w-[90%] justify-center py-10 items-center bg-background-color dark:bg-dark-background-color"
-            >
+            <div class="dropdown_left">
               <div class="grid grid-cols-3 gap-7 md:grid-cols-3">
                 <div class="grid-flow-col">
                   <p class="text-primary-color font-bold text-sm">
@@ -100,6 +98,15 @@
                   <p>Point of sale</p>
                   <p>Point of sale</p>
                   <p>Reports & Analytics</p>
+                  <div class="pt-9">
+                    <p class="text-primary-color font-bold text-sm">
+                      Team Performance
+                    </p>
+                    <hr />
+                    <p>Point of sale</p>
+                    <p>Point of sale</p>
+                    <p>Reports & Analytics</p>
+                  </div>
                 </div>
 
                 <div class="grid-flow-col">
@@ -111,22 +118,42 @@
                   <p>Point of sale</p>
                   <p>Reports & Analytics</p>
                 </div>
-                <div class="grid-flow-col">
-                  <p class="text-primary-color font-bold text-sm">
-                    Team Performance
-                  </p>
-                  <hr />
-                  <p>Point of sale</p>
-                  <p>Point of sale</p>
-                  <p>Reports & Analytics</p>
+              </div>
+            </div>
+            <div class="dropdown_right">
+              <div class="block">
+                <p
+                  class="relative top-12 px-9 text-white font-montse text-center"
+                >
+                  Sign up for EATTE today and transform the way you run your
+                  restaurant!
+                </p>
+                <img
+                  class="relative top-12"
+                  src="../../assets/images/nav.svg"
+                  alt=""
+                />
+                <div class="view_button">
+                  <button class="get_demo">
+                    get a demo
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="w-6 h-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.348a1.125 1.125 0 010 1.971l-11.54 6.347a1.125 1.125 0 01-1.667-.985V5.653z"
+                      />
+                    </svg>
+                  </button>
                 </div>
               </div>
             </div>
-            <div
-              class="relative overflow-hidden md:flex w-1/2 bg-gradient-to-tr from-primary-color to-[#CC4D2C] justify-around items-center hidden"
-            >
-          <p class=" relative bottom-[100px] px-9 text-white font-montse">Sign up for EATTE today and transform the way you run your restaurant!</p>
-          </div>
           </ul>
         </li>
 
@@ -286,6 +313,19 @@ const showMenu = ref(false);
 </script>
 
 <style scoped>
+.dropdown_left {
+  @apply flex md:w-full justify-center pb-10 items-center bg-background-color dark:bg-dark-background-color;
+}
+.dropdown_right {
+  @apply relative overflow-hidden md:grid w-[30%] bg-gradient-to-tr from-primary-color to-[#CC4D2C] justify-around items-center hidden;
+}
+.view_button {
+  @apply flex flex-wrap justify-center my-8 dark:bg-dark-background-color text-white;
+}
+
+.get_demo {
+  @apply font-montse md:text-white md:border-white  dark:text-white dark:border-white flex  self-baseline items-center justify-evenly rounded-lg px-8 py-1 m-2 text-lg text-font-color border-font-color border-2;
+}
 .darak_img {
   filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(70deg)
     brightness(99%) contrast(107%);
