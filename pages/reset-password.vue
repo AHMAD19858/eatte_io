@@ -6,7 +6,7 @@
         <p class="sub_slogan">
           What you need to manage your business in one software!
         </p>
-        <div class="mt-[185px] ml-[120px]">
+        <div class="mt-[185px] ml-[0px]">
           <div class="flex">
             <img src="../assets/images/star.svg" alt="" />
             <img src="../assets/images/star.svg" alt="" />
@@ -16,10 +16,9 @@
           </div>
           <div>
             <p class="testmonial">
-              At vero eos et accusamus et iusto odio dignissimos ducimus qui
-              blanditiis praesentium voluptatum deleniti atque corrupti quos
-              dolores
+              “Very happy with the service. Would definitely
             </p>
+            <p class="testmonial">buy from again.”</p>
           </div>
           <div class="person_div">
             <img
@@ -28,8 +27,7 @@
               class="w-12 h-12 bg-center bg-cover rounded-full dark:bg-gray-500"
             />
             <div>
-              <p class="name">Ahmed</p>
-              <p class="title">Co-Founder, Eatte.io</p>
+              <p class="name">Jose Adam</p>
             </div>
           </div>
         </div>
@@ -41,10 +39,6 @@
       <form class="form_section">
         <h1 class="welcome">Set new</h1>
         <h1 class="welcome">password?</h1>
-        <p class="sub_text">
-          At vero eos et accusamus et iusto odio dignissimos ducimus qui
-          blanditiis praesentium voluptatum deleniti atque corrupti quos dolores
-        </p>
 
         <p class="label">New password</p>
         <div class="input_div">
@@ -84,7 +78,7 @@ definePageMeta({
 }
 
 .testmonial {
-  @apply text-white mt-1 text-left;
+  @apply text-white mt-1 text-left font-montse text-xl font-medium;
 }
 .person_div {
   @apply flex items-center mt-4 space-x-4;
@@ -118,12 +112,8 @@ definePageMeta({
   @apply pb-4 text-gray-800  text-2xl mb-1  font-montse font-semibold text-[45px] text-left dark:text-white;
 }
 
-.sub_text {
-  @apply mb-[50px] text-sm font-normal   text-left mt-5 font-montse text-[#3F4440] dark:text-white;
-}
-
 .label {
-  @apply font-montse text-[#93A3B0CC] text-base my-1;
+  @apply font-montse text-[#93A3B0CC] text-base my-1 mt-[100px];
 }
 
 .input_div {

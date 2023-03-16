@@ -6,7 +6,7 @@
         <p class="sub_slogan">
           What you need to manage your business in one software!
         </p>
-        <div class="mt-[185px] ml-[120px]">
+        <div class="mt-[185px] ml-[0px]">
           <div class="flex">
             <img src="../assets/images/star.svg" alt="" />
             <img src="../assets/images/star.svg" alt="" />
@@ -16,9 +16,10 @@
           </div>
           <div>
             <p class="testmonial">
-              At vero eos et accusamus et iusto odio dignissimos ducimus qui
-              blanditiis praesentium voluptatum deleniti atque corrupti quos
-              dolores
+              “Very happy with the service. Would definitely 
+            </p>
+            <p class="testmonial">
+              buy from again.”
             </p>
           </div>
           <div class="person_div">
@@ -28,8 +29,8 @@
               class="w-12 h-12 bg-center bg-cover rounded-full dark:bg-gray-500"
             />
             <div>
-              <p class="name">Ahmed</p>
-              <p class="title">Co-Founder, Eatte.io</p>
+              <p class="name">Jose Adam</p>
+           
             </div>
           </div>
         </div>
@@ -41,8 +42,7 @@
       <form class="form_section">
         <h1 class="welcome">Welcome Back!</h1>
         <p class="sub_text">
-          At vero eos et accusamus et iusto odio dignissimos ducimus qui
-          blanditiis praesentium voluptatum deleniti atque corrupti quos dolores
+          Login to eatte, just the best.
         </p>
 
         <p class="label">Email Address</p>
@@ -112,7 +112,7 @@ definePageMeta({
 }
 
 .testmonial {
-  @apply text-white mt-1 text-left;
+  @apply text-white mt-1 text-left font-montse text-xl font-medium;
 }
 .person_div {
   @apply flex items-center mt-4 space-x-4;
@@ -143,7 +143,7 @@ definePageMeta({
 }
 
 .welcome {
-  @apply pb-4 text-gray-800  text-2xl mb-1 text-center font-montse font-semibold text-[45px] w-max dark:text-white;
+  @apply text-gray-800  text-2xl mb-1 text-center font-montse font-semibold text-[45px] w-max dark:text-white;
 }
 
 .sub_text {
