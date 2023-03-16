@@ -193,7 +193,7 @@
                   </p>
 
                   <div class="pt-9">
-                    <h1 class="text-primary-color font-bold text-sm">
+                    <h1 class="text-primary-color font-montse font-bold">
                       Team Performance
                     </h1>
                     <hr />
@@ -262,6 +262,7 @@
                   alt=""
                 />
                 <div class="view_button">
+                  <NuxtLink to="https://eatte.io/request-demo" target="_blank">
                   <button class="get_demo">
                     get a demo
                     <svg
@@ -279,6 +280,7 @@
                       />
                     </svg>
                   </button>
+                  </NuxtLink>
                 </div>
               </div>
             </div>
