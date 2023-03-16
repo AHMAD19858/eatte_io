@@ -47,7 +47,7 @@
                   <hr />
                   <NuxtLink to="/pos">
                     <p
-                      class="font-medium font-montse dark:text-white cursor-pointer"
+                      class="megaNav_content"
                     >
                       <span class="dot"></span> Point of sale
                     </p>
@@ -55,14 +55,14 @@
 
                   <NuxtLink to="/inventory">
                     <p
-                      class="font-medium font-montse dark:text-white cursor-pointer"
+                      class="megaNav_content"
                     >
                       <span class="dot"></span> Inventory Management
                     </p>
                   </NuxtLink>
                   <NuxtLink to="/">
                     <p
-                      class="font-medium font-montse dark:text-white cursor-pointer"
+                      class="megaNav_content"
                     >
                       <span class="dot"></span> Kitchen Display System
                     </p>
@@ -70,21 +70,21 @@
 
                   <NuxtLink to="/reports">
                     <p
-                      class="font-medium font-montse dark:text-white cursor-pointer"
+                      class="megaNav_content"
                     >
                       <span class="dot"></span> Reports & Analytics
                     </p>
                   </NuxtLink>
                   <NuxtLink to="/reservation">
                     <p
-                      class="font-medium font-montse dark:text-white cursor-pointer"
+                      class="megaNav_content"
                     >
                       <span class="dot"></span> Reservation
                     </p>
                   </NuxtLink>
                   <NuxtLink to="/payment">
                     <p
-                      class="font-medium font-montse dark:text-white cursor-pointer"
+                      class="megaNav_content"
                     >
                       <span class="dot"></span> Payment
                     </p>
@@ -92,7 +92,7 @@
 
                   <NuxtLink to="/">
                     <p
-                      class="font-medium font-montse dark:text-white cursor-pointer"
+                      class="megaNav_content"
                     >
                       <span class="dot"></span> Ingredients Management
                     </p>
@@ -100,14 +100,14 @@
 
                   <NuxtLink to="/">
                     <p
-                      class="font-medium font-montse dark:text-white cursor-pointer"
+                      class="megaNav_content"
                     >
                       <span class="dot"></span> Back-Office Management
                     </p>
                   </NuxtLink>
                   <NuxtLink to="/">
                     <p
-                      class="font-medium font-montse dark:text-white cursor-pointer"
+                      class="megaNav_content"
                     >
                       <span class="dot"></span> Floor Management
                     </p>
@@ -115,7 +115,7 @@
 
                   <NuxtLink to="/">
                     <p
-                      class="font-medium font-montse dark:text-white cursor-pointer"
+                      class="megaNav_content"
                     >
                       <span class="dot"></span> Table Management with Server
                       Rotation
@@ -130,7 +130,7 @@
                   <hr />
                   <NuxtLink to="/loyalty">
                     <p
-                      class="font-medium font-montse dark:text-white cursor-pointer"
+                      class="megaNav_content"
                     >
                       <span class="dot"></span> Loyalty
                     </p>
@@ -139,24 +139,24 @@
                   <NuxtLink to="/gift-card">
 
                     <p
-                      class="font-medium font-montse dark:text-white cursor-pointer"
+                      class="megaNav_content"
                     >
                       <span class="dot"></span> Gift Cards
                     </p>
                   </NuxtLink>
 
                   <p
-                    class="font-medium font-montse dark:text-white cursor-pointer"
+                    class="megaNav_content"
                   >
                     <span class="dot"></span> Guest feedback
                   </p>
                   <p
-                    class="font-medium font-montse dark:text-white cursor-pointer"
+                    class="megaNav_content"
                   >
                     <span class="dot"></span> Coupons
                   </p>
                   <p
-                    class="font-medium font-montse dark:text-white cursor-pointer"
+                    class="megaNav_content"
                   >
                     <span class="dot"></span> SMS Marketing
                   </p>
@@ -167,17 +167,17 @@
                     </h1>
                     <hr />
                     <p
-                      class="font-medium font-montse dark:text-white cursor-pointer"
+                      class="megaNav_content"
                     >
                       <span class="dot"></span> Employee Management
                     </p>
                     <p
-                      class="font-medium font-montse dark:text-white cursor-pointer"
+                      class="megaNav_content"
                     >
                       <span class="dot"></span> Payroll
                     </p>
                     <p
-                      class="font-medium font-montse dark:text-white cursor-pointer"
+                      class="megaNav_content"
                     >
                       <span class="dot"></span> Tips management
                     </p>
@@ -190,14 +190,14 @@
                   </h1>
                   <hr />
                   <p
-                    class="font-medium font-montse dark:text-white cursor-pointer"
+                    class="megaNav_content"
                   >
                     <span class="dot"></span> Online Ordering
                   </p>
                   <NuxtLink to="/delivery">
 
                     <p
-                      class="font-medium font-montse dark:text-white cursor-pointer"
+                      class="megaNav_content"
                     >
                       <span class="dot"></span> Takeout & Delivery
                     </p>
@@ -205,12 +205,12 @@
 
 
                   <p
-                    class="font-medium font-montse dark:text-white cursor-pointer"
+                    class="megaNav_content"
                   >
                     <span class="dot"></span> Customer Online Reservations
                   </p>
                   <p
-                    class="font-medium font-montse dark:text-white cursor-pointer"
+                    class="megaNav_content"
                   >
                     <span class="dot"></span> Customer Support
                   </p>
@@ -412,6 +412,9 @@ const showMenu = ref(false);
 </script>
 
 <style scoped>
+.megaNav_content{
+  @apply font-medium font-montse dark:text-white cursor-pointer py-[5px]
+}
 .dot {
   height: 5px;
   width: 5px;
