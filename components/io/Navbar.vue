@@ -72,7 +72,7 @@
             <div class="dropdown_left">
               <div class="grid grid-cols-3 gap-7 md:grid-cols-3">
                 <div class="grid-flow-col">
-                  <h1 class="text-primary-color font-bold text-sm">
+                  <h1 class="text-primary-color  font-montse font-bold">
                     Restaurant Operations
                   </h1>
                   <hr />
@@ -146,7 +146,7 @@
                 </div>
 
                 <div class="grid-flow-col">
-                  <h1 class="text-primary-color font-bold text-sm">
+                  <h1 class="text-primary-color  font-montse font-bold">
                     Online Services
                   </h1>
                   <hr />
@@ -165,13 +165,13 @@
             <div class="dropdown_right">
               <div class="block">
                 <p
-                  class="relative top-12 px-9 text-white font-montse text-center"
+                  class="relative top-12 px-9 text-white font-montse text-left"
                 >
                   Sign up for EATTE today and transform the way you run your
                   restaurant!
                 </p>
                 <img
-                  class="relative top-12"
+                  class="relative top-12 ml-[-50px]"
                   src="../../assets/images/nav.svg"
                   alt=""
                 />
@@ -359,7 +359,7 @@ const showMenu = ref(false);
   @apply flex md:w-full justify-center pb-10 items-center bg-background-color dark:bg-dark-background-color;
 }
 .dropdown_right {
-  @apply relative overflow-hidden md:grid w-[30%] bg-gradient-to-tr from-primary-color to-[#CC4D2C] justify-around items-center hidden;
+  @apply relative  md:grid w-[20%] bg-gradient-to-tr from-primary-color to-[#CC4D2C] justify-around items-center hidden;
 }
 .view_button {
   @apply flex flex-wrap justify-center my-8 dark:bg-dark-background-color text-white;
