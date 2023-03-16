@@ -72,92 +72,178 @@
             <div class="dropdown_left">
               <div class="grid grid-cols-3 gap-7 md:grid-cols-3">
                 <div class="grid-flow-col">
-                  <h1 class="text-primary-color  font-montse font-bold">
+                  <h1 class="text-primary-color font-montse font-bold">
                     Restaurant Operations
                   </h1>
                   <hr />
-                  <p class="font-medium font-montse dark:text-white">
-                    Point of sale
-                  </p>
-                  <p class="font-medium font-montse dark:text-white">
-                    Point of sale
-                  </p>
-                  <p class="font-medium font-montse dark:text-white">
-                    Reports & Analytics
-                  </p>
-                  <p class="font-medium font-montse dark:text-white">
-                    Point of sale
-                  </p>
-                  <p class="font-medium font-montse dark:text-white">
-                    Point of sale
-                  </p>
-                  <p class="font-medium font-montse dark:text-white">
-                    Reports & Analytics
-                  </p>
-                  <p class="font-medium font-montse dark:text-white">
-                    Point of sale
-                  </p>
-                  <p class="font-medium font-montse dark:text-white">
-                    Point of sale
-                  </p>
-                  <p class="font-medium font-montse dark:text-white">
-                    Reports & Analytics
-                  </p>
-                  <p class="font-medium font-montse dark:text-white">
-                    Point of sale
-                  </p>
-                  <p class="font-medium font-montse dark:text-white">
-                    Point of sale
-                  </p>
-                  <p class="font-medium font-montse dark:text-white">
-                    Reports & Analytics
-                  </p>
+                  <NuxtLink to="/pos">
+                    <p
+                      class="font-medium font-montse dark:text-white cursor-pointer"
+                    >
+                      <span class="dot"></span> Point of sale
+                    </p>
+                  </NuxtLink>
+
+                  <NuxtLink to="/inventory">
+                    <p
+                      class="font-medium font-montse dark:text-white cursor-pointer"
+                    >
+                      <span class="dot"></span> Inventory Management
+                    </p>
+                  </NuxtLink>
+                  <NuxtLink to="/">
+                    <p
+                      class="font-medium font-montse dark:text-white cursor-pointer"
+                    >
+                      <span class="dot"></span> Kitchen Display System
+                    </p>
+                  </NuxtLink>
+
+                  <NuxtLink to="/reports">
+                    <p
+                      class="font-medium font-montse dark:text-white cursor-pointer"
+                    >
+                      <span class="dot"></span> Reports & Analytics
+                    </p>
+                  </NuxtLink>
+                  <NuxtLink to="/reservation">
+                    <p
+                      class="font-medium font-montse dark:text-white cursor-pointer"
+                    >
+                      <span class="dot"></span> Reservation
+                    </p>
+                  </NuxtLink>
+                  <NuxtLink to="/payment">
+                    <p
+                      class="font-medium font-montse dark:text-white cursor-pointer"
+                    >
+                      <span class="dot"></span> Payment
+                    </p>
+                  </NuxtLink>
+
+                  <NuxtLink to="/">
+                    <p
+                      class="font-medium font-montse dark:text-white cursor-pointer"
+                    >
+                      <span class="dot"></span> Ingredients Management
+                    </p>
+                  </NuxtLink>
+
+                  <NuxtLink to="/">
+                    <p
+                      class="font-medium font-montse dark:text-white cursor-pointer"
+                    >
+                      <span class="dot"></span> Back-Office Management
+                    </p>
+                  </NuxtLink>
+                  <NuxtLink to="/">
+                    <p
+                      class="font-medium font-montse dark:text-white cursor-pointer"
+                    >
+                      <span class="dot"></span> Floor Management
+                    </p>
+                  </NuxtLink>
+
+                  <NuxtLink to="/">
+                    <p
+                      class="font-medium font-montse dark:text-white cursor-pointer"
+                    >
+                      <span class="dot"></span> Table Management with Server
+                      Rotation
+                    </p>
+                  </NuxtLink>
                 </div>
 
                 <div class="grid-flow-col">
-                  <h1 class="text-primary-color  font-montse font-bold">
+                  <h1 class="text-primary-color font-montse font-bold">
                     Attract & Retain Your Guests
                   </h1>
                   <hr />
-                  <p class="font-medium font-montse dark:text-white">
-                    Point of sale
+                  <NuxtLink to="/loyalty">
+                    <p
+                      class="font-medium font-montse dark:text-white cursor-pointer"
+                    >
+                      <span class="dot"></span> Loyalty
+                    </p>
+                  </NuxtLink>
+
+                  <NuxtLink to="/gift-card">
+
+                    <p
+                      class="font-medium font-montse dark:text-white cursor-pointer"
+                    >
+                      <span class="dot"></span> Gift Cards
+                    </p>
+                  </NuxtLink>
+
+                  <p
+                    class="font-medium font-montse dark:text-white cursor-pointer"
+                  >
+                    <span class="dot"></span> Guest feedback
                   </p>
-                  <p class="font-medium font-montse dark:text-white">
-                    Point of sale
+                  <p
+                    class="font-medium font-montse dark:text-white cursor-pointer"
+                  >
+                    <span class="dot"></span> Coupons
                   </p>
-                  <p class="font-medium font-montse dark:text-white">
-                    Reports & Analytics
+                  <p
+                    class="font-medium font-montse dark:text-white cursor-pointer"
+                  >
+                    <span class="dot"></span> SMS Marketing
                   </p>
+
                   <div class="pt-9">
                     <h1 class="text-primary-color font-bold text-sm">
                       Team Performance
                     </h1>
                     <hr />
-                    <p class="font-medium font-montse dark:text-white">
-                      Point of sale
+                    <p
+                      class="font-medium font-montse dark:text-white cursor-pointer"
+                    >
+                      <span class="dot"></span> Employee Management
                     </p>
-                    <p class="font-medium font-montse dark:text-white">
-                      Point of sale
+                    <p
+                      class="font-medium font-montse dark:text-white cursor-pointer"
+                    >
+                      <span class="dot"></span> Payroll
                     </p>
-                    <p class="font-medium font-montse dark:text-white">
-                      Reports & Analytics
+                    <p
+                      class="font-medium font-montse dark:text-white cursor-pointer"
+                    >
+                      <span class="dot"></span> Tips management
                     </p>
                   </div>
                 </div>
 
                 <div class="grid-flow-col">
-                  <h1 class="text-primary-color  font-montse font-bold">
+                  <h1 class="text-primary-color font-montse font-bold">
                     Online Services
                   </h1>
                   <hr />
-                  <p class="font-medium font-montse dark:text-white">
-                    Point of sale
+                  <p
+                    class="font-medium font-montse dark:text-white cursor-pointer"
+                  >
+                    <span class="dot"></span> Online Ordering
                   </p>
-                  <p class="font-medium font-montse dark:text-white">
-                    Point of sale
+                  <NuxtLink to="/delivery">
+
+                    <p
+                      class="font-medium font-montse dark:text-white cursor-pointer"
+                    >
+                      <span class="dot"></span> Takeout & Delivery
+                    </p>
+                  </NuxtLink>
+
+
+                  <p
+                    class="font-medium font-montse dark:text-white cursor-pointer"
+                  >
+                    <span class="dot"></span> Customer Online Reservations
                   </p>
-                  <p class="font-medium font-montse dark:text-white">
-                    Reports & Analytics
+                  <p
+                    class="font-medium font-montse dark:text-white cursor-pointer"
+                  >
+                    <span class="dot"></span> Customer Support
                   </p>
                 </div>
               </div>
@@ -355,6 +441,15 @@ const showMenu = ref(false);
 </script>
 
 <style scoped>
+.dot {
+  height: 5px;
+  width: 5px;
+  background-color: #3f4440;
+  border-radius: 50%;
+  display: inline-block;
+  vertical-align: middle;
+  @apply dark:bg-white
+}
 .dropdown_left {
   @apply flex md:w-full justify-center pb-10 items-center bg-background-color dark:bg-dark-background-color;
 }
@@ -362,7 +457,7 @@ const showMenu = ref(false);
   @apply relative  md:grid w-[20%] bg-gradient-to-tr from-primary-color to-[#CC4D2C] justify-around items-center hidden;
 }
 .view_button {
-  @apply flex flex-wrap justify-center my-8 dark:bg-dark-background-color text-white;
+  @apply flex flex-wrap justify-center my-8  text-white;
 }
 
 .get_demo {
