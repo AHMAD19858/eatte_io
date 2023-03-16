@@ -115,7 +115,7 @@
                 </div>
 
                 <div class="grid-flow-col">
-                  <h1 class="text-primary-color font-bold text-sm">
+                  <h1 class="text-primary-color  font-montse font-bold">
                     Attract & Retain Your Guests
                   </h1>
                   <hr />
