@@ -165,7 +165,7 @@ input {
 }
 
 .tab-label::after {
-  content: "❯";
+  content: url("../../../assets/images/icons/minus.svg");
   width: 1em;
   height: 1em;
   text-align: center;
@@ -201,7 +201,7 @@ input {
   background: red;
 } */
 input:checked + .tab-label::after {
-  transform: rotate(90deg);
+  content: url("../../../assets/images/icons/plus.svg");
 }
 
 input:checked ~ .tab-content {

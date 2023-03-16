@@ -37,38 +37,7 @@
             </svg>
           </a>
           <ul class="nav_child_container child flex">
-            <!--        <NuxtLink
-              to="/inventory"
-              class="nav_child_element dark:bg-dark-background-color dark:text-white"
-            >
-              <li>Inventory</li>
-            </NuxtLink>
-            <NuxtLink
-              to="/marketing"
-              class="nav_child_element dark:bg-dark-background-color dark:text-white"
-            >
-              <li>Marketing</li>
-            </NuxtLink>
 
-            <NuxtLink
-              to="/reservation"
-              class="nav_child_element dark:bg-dark-background-color dark:text-white"
-            >
-              <li>Reservation</li>
-            </NuxtLink>
-            <NuxtLink
-              to="/gift-card"
-              class="nav_child_element dark:bg-dark-background-color dark:text-white"
-            >
-              <li>Gift cards</li>
-            </NuxtLink>
-
-            <NuxtLink
-              to="/reports"
-              class="nav_child_element dark:bg-dark-background-color dark:text-white"
-            >
-              <li>Reports</li>
-            </NuxtLink> -->
             <div class="dropdown_left">
               <div class="grid grid-cols-3 gap-7 md:grid-cols-3">
                 <div class="grid-flow-col">
