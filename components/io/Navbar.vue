@@ -72,51 +72,93 @@
             <div class="dropdown_left">
               <div class="grid grid-cols-3 gap-7 md:grid-cols-3">
                 <div class="grid-flow-col">
-                  <p class="text-primary-color font-bold text-sm">
+                  <h1 class="text-primary-color font-bold text-sm">
                     Restaurant Operations
-                  </p>
+                  </h1>
                   <hr />
-                  <p>Point of sale</p>
-                  <p>Point of sale</p>
-                  <p>Reports & Analytics</p>
-                  <p>Point of sale</p>
-                  <p>Point of sale</p>
-                  <p>Reports & Analytics</p>
-                  <p>Point of sale</p>
-                  <p>Point of sale</p>
-                  <p>Reports & Analytics</p>
-                  <p>Point of sale</p>
-                  <p>Point of sale</p>
-                  <p>Reports & Analytics</p>
+                  <p class="font-medium font-montse dark:text-white">
+                    Point of sale
+                  </p>
+                  <p class="font-medium font-montse dark:text-white">
+                    Point of sale
+                  </p>
+                  <p class="font-medium font-montse dark:text-white">
+                    Reports & Analytics
+                  </p>
+                  <p class="font-medium font-montse dark:text-white">
+                    Point of sale
+                  </p>
+                  <p class="font-medium font-montse dark:text-white">
+                    Point of sale
+                  </p>
+                  <p class="font-medium font-montse dark:text-white">
+                    Reports & Analytics
+                  </p>
+                  <p class="font-medium font-montse dark:text-white">
+                    Point of sale
+                  </p>
+                  <p class="font-medium font-montse dark:text-white">
+                    Point of sale
+                  </p>
+                  <p class="font-medium font-montse dark:text-white">
+                    Reports & Analytics
+                  </p>
+                  <p class="font-medium font-montse dark:text-white">
+                    Point of sale
+                  </p>
+                  <p class="font-medium font-montse dark:text-white">
+                    Point of sale
+                  </p>
+                  <p class="font-medium font-montse dark:text-white">
+                    Reports & Analytics
+                  </p>
                 </div>
 
                 <div class="grid-flow-col">
-                  <p class="text-primary-color font-bold text-sm">
+                  <h1 class="text-primary-color font-bold text-sm">
                     Attract & Retain Your Guests
-                  </p>
+                  </h1>
                   <hr />
-                  <p>Point of sale</p>
-                  <p>Point of sale</p>
-                  <p>Reports & Analytics</p>
+                  <p class="font-medium font-montse dark:text-white">
+                    Point of sale
+                  </p>
+                  <p class="font-medium font-montse dark:text-white">
+                    Point of sale
+                  </p>
+                  <p class="font-medium font-montse dark:text-white">
+                    Reports & Analytics
+                  </p>
                   <div class="pt-9">
-                    <p class="text-primary-color font-bold text-sm">
+                    <h1 class="text-primary-color font-bold text-sm">
                       Team Performance
-                    </p>
+                    </h1>
                     <hr />
-                    <p>Point of sale</p>
-                    <p>Point of sale</p>
-                    <p>Reports & Analytics</p>
+                    <p class="font-medium font-montse dark:text-white">
+                      Point of sale
+                    </p>
+                    <p class="font-medium font-montse dark:text-white">
+                      Point of sale
+                    </p>
+                    <p class="font-medium font-montse dark:text-white">
+                      Reports & Analytics
+                    </p>
                   </div>
                 </div>
 
                 <div class="grid-flow-col">
-                  <p class="text-primary-color font-bold text-sm">
+                  <h1 class="text-primary-color font-bold text-sm">
                     Online Services
-                  </p>
+                  </h1>
                   <hr />
-                  <p>Point of sale</p>
-                  <p>Point of sale</p>
-                  <p>Reports & Analytics</p>
+                  <p class="font-medium font-montse dark:text-white">
+                    Point of sale
+                  </p>
+                  <p class="font-medium font-montse dark:text-white">
+                    Point of sale
+                  </p>
+                  <p class="font-medium font-montse dark:text-white">
+                    Reports & Analytics
+                  </p>
                 </div>
               </div>
             </div>
