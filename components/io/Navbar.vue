@@ -118,10 +118,11 @@
                       <span class="dot"></span> Gift Cards
                     </p>
                   </NuxtLink>
-
+                  <NuxtLink to="/feedback">
                   <p class="megaNav_content">
                     <span class="dot"></span> Guest feedback
                   </p>
+                  </NuxtLink>
                   <p class="megaNav_content">
                     <span class="dot"></span> Coupons
                   </p>
@@ -227,7 +228,7 @@
               />
             </svg>
           </a>
-          <ul class="nav_child_container child">
+       <!--    <ul class="nav_child_container child">
             <NuxtLink
               to="/pos"
               class="nav_child_element dark:bg-dark-background-color dark:text-white"
@@ -268,7 +269,7 @@
             >
               <li>Takeout & Delivery</li>
             </NuxtLink>
-          </ul>
+          </ul> -->
         </li>
 
         <li>
