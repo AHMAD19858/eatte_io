@@ -1,55 +1,48 @@
 <script setup>
- import { ref } from 'vue'
-  import {
-    Dialog,
-    DialogPanel,
-    DialogTitle,
-    DialogDescription,
-  } from '@headlessui/vue'
-
-  const isOpen = ref(true)
-
-  function setIsOpen(value) {
-    isOpen.value = value
-  }
-
+import { ref } from "vue";
+import {
+  TransitionRoot,
+  TransitionChild,
+  Dialog,
+  DialogPanel,
+  DialogTitle,
+} from "@headlessui/vue";
 const colorMode = useColorMode();
 definePageMeta({
   layout: "outside",
 });
 
+const isOpen = ref(true);
+
+function closeModal() {
+  isOpen.value = false;
+}
+function openModal() {
+  isOpen.value = true;
+}
 const url = "https://reqres.in/api/login";
 const isLoading = ref(false);
 const _error = ref(null);
 const form = reactive({
-    email: "",
-    password: "",
+  email: "",
+  password: "",
 });
 async function onSubmit() {
+  if (isLoading.value) return;
+  isLoading.value = true;
+  const { data, error } = await useFetch(url, {
+    method: "post",
+    body: form,
+  });
+  isLoading.value = false;
+  if (error.value) {
+    _error.value = error.value.data.error;
+    return;
+  }
 
-    if (isLoading.value) return;
-    isLoading.value = true;
-    const { data, error } = await useFetch(url, {
-        method: "post",
-        body: form,
-    });
-    isLoading.value = false;
-    if (error.value) {
-        _error.value = error.value.data.error;
-        return;
-    }
-
-
-    navigateTo("/");
+  navigateTo("/");
 }
-
-function login (){
-  setIsOpen(true)
-  console.log('isOpen', isOpen)
-}
-
 </script>
-
 
 <template>
   <div class="h-screen md:flex">
@@ -69,11 +62,9 @@ function login (){
           </div>
           <div>
             <p class="testmonial">
-              “Very happy with the service. Would definitely 
+              “Very happy with the service. Would definitely
             </p>
-            <p class="testmonial">
-              buy from again.”
-            </p>
+            <p class="testmonial">buy from again.”</p>
           </div>
           <div class="person_div">
             <img
@@ -83,7 +74,6 @@ function login (){
             />
             <div>
               <p class="name">Jose Adam</p>
-           
             </div>
           </div>
         </div>
@@ -94,26 +84,76 @@ function login (){
     <div class="right_side">
       <form class="form_section">
         <h1 class="welcome">Welcome Back!</h1>
-        <p class="sub_text">
-          Login to eatte, just the best.
-        </p>
-        <Dialog :open="isOpen" @close="setIsOpen">
-    <DialogPanel>
-      <DialogTitle>Deactivate account</DialogTitle>
-      <DialogDescription>
-        This will permanently deactivate your account
-      </DialogDescription>
+        <p class="sub_text">Login to eatte, just the best.</p>
 
-      <p>
-        Are you sure you want to deactivate your account? All of your data will be
-        permanently removed. This action cannot be undone.
-      </p>
+        <TransitionRoot appear :show="isOpen" as="template">
+          <Dialog as="div" @close="closeModal" class="relative z-10">
+            <TransitionChild
+              as="template"
+              enter="duration-300 ease-out"
+              enter-from="opacity-0"
+              enter-to="opacity-100"
+              leave="duration-200 ease-in"
+              leave-from="opacity-100"
+              leave-to="opacity-0"
+            >
+              <div class="fixed inset-0 bg-black bg-opacity-25" />
+            </TransitionChild>
 
-      <button @click="setIsOpen(false)">Deactivate</button>
-      <button @click="setIsOpen(false)">Cancel</button>
-    </DialogPanel>
-  </Dialog>
-  <button  class="login_btn" @click="login()">Login</button>
+            <div class="fixed inset-0 overflow-y-auto">
+              <div
+                class="flex min-h-full items-center justify-center p-4 text-center"
+              >
+                <TransitionChild
+                  as="template"
+                  enter="duration-300 ease-out"
+                  enter-from="opacity-0 scale-95"
+                  enter-to="opacity-100 scale-100"
+                  leave="duration-200 ease-in"
+                  leave-from="opacity-100 scale-100"
+                  leave-to="opacity-0 scale-95"
+                >
+                  <DialogPanel
+                    class="w-full max-w-md transform overflow-hidden rounded-2xl bg-white p-6 text-left align-middle shadow-xl transition-all"
+                  >
+                    <DialogTitle
+                      as="h1"
+                      class="text-lg font-medium leading-6 font-montse"
+                    >
+                      Select your restaurant
+                    </DialogTitle>
+                    <div class="mt-2">
+                      <div class="list_container">
+                        <img
+                          src="https://eatte.io/img/png/logo.png"
+                          class="restaurant_img"
+                        />
+                        <p class="font-montse">Name restaurant</p>
+                      </div>
+                      <div class="list_container">
+                        <img
+                          src="https://eatte.io/img/png/logo.png"
+                          class="restaurant_img"
+                        />
+                        <p class="font-montse">Name restaurant</p>
+                      </div>
+                    </div>
+
+                    <!--    <div class="mt-4">
+                      <button
+                        type="button"
+                        class="inline-flex justify-center rounded-md border border-transparent bg-blue-100 px-4 py-2 text-sm font-medium text-blue-900 hover:bg-blue-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2"
+                        @click="closeModal"
+                      >
+                        Got it, thanks!
+                      </button>
+                    </div> -->
+                  </DialogPanel>
+                </TransitionChild>
+              </div>
+            </div>
+          </Dialog>
+        </TransitionRoot>
         <p class="label">Email Address</p>
         <div class="input_div">
           <input
@@ -153,17 +193,32 @@ function login (){
           </NuxtLink>
         </div>
 
-        <NuxtLink to="/">
-          <button type="submit" class="login_btn">Login</button>
-        </NuxtLink>
+        <!-- <NuxtLink to="/"> -->
+        <button type="submit" class="login_btn" @click="openModal()">
+          Login
+        </button>
+        <!--  </NuxtLink> -->
       </form>
     </div>
   </div>
 </template>
 
-
-
 <style scoped>
+.restaurant_img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+.list_container {
+  display: flex;
+  border: 4px solid transparent;
+  background-color: #f5f6fa;
+  align-items: center;
+  gap: 16px;
+  border-radius: 5px;
+  margin-block: 20px;
+  padding-block: 5px;
+}
 .left_side {
   @apply relative overflow-hidden md:flex w-1/2 bg-gradient-to-tr from-primary-color to-[#CC4D2C]  justify-around items-center hidden;
 }
