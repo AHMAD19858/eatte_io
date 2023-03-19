@@ -55,7 +55,7 @@
 
             <!-- -------------------- -->
 
-            <div class="tab">
+   <!--          <div class="tab">
               <input type="checkbox" id="chck1" />
               <label class="tab-label" for="chck1"
                 >Can EATTE Gift Cards be used across multiple locations?</label
@@ -76,7 +76,7 @@
                 the Online Ordering Visible To settings outlined while creating
                 the menu from menu builder
               </div>
-            </div>
+            </div> -->
 
        <!--      <div class="tab">
               <input type="checkbox" id="chck3" />
