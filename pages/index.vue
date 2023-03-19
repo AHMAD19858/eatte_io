@@ -12,7 +12,9 @@
       :sub_header="`Elevate your restaurant's guest experience and business operations with our solutions.`"
       :start_btn="'Get Started'"
       :demo_btn="'Get a demo'"
+      :landing="true"
     />
+   
     <IoLandingFeatures />
     <IoLandingServices />
     <IoLandingBannerCard />

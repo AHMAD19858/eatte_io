@@ -6,6 +6,7 @@ const props = defineProps({
   start_btn: String,
   demo_btn: String,
   about: Boolean,
+  landing:false
 });
 </script>
 
@@ -73,6 +74,7 @@ const props = defineProps({
           </button>
         </NuxtLink>
       </div>
+      <p v-if="landing === true" class=" font-montse text-[#3F4440] dark:text-white">Support available 24/7   .    Paying in different ways</p>
     </div>
   </section>
 </template>

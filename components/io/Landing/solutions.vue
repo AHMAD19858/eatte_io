@@ -8,10 +8,8 @@
           Solution sets for every business type and size.
         </h2>
         <p class="sub_text">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat.
+          We understand that every business is different and our goal is to
+          provide tailored solutions for businesses of all types and sizes.
         </p>
       </div>
 
@@ -35,34 +33,37 @@
                   Full Service Restaurant
                 </h3>
                 <p
-                  class="dark:text-[#93A3B0CC] font-montse font-normal text-base text-[#3F4440]"
+                  class="dark:text-[#93A3B0CC] text-center h-[100px] w-[300px] font-montse font-normal text-base text-[#3F4440]"
                 >
-                  Lorem ipsum dolor sit amet, consectetur adipis elit. Sit enim
-                  nec, proin faucibus nibh et sagittis a. Lacinia purus ac amet.
+                  Elevate the dining experience or keep it casual -- Everything
+                  you need for quality tableside and off-premise service in one
+                  easy-to-use platform.
                 </p>
               </div>
               <div class="item_section">
                 <img
                   v-show="$colorMode.value === 'dark'"
-                  src="../../../assets/images/icons/location.svg"
+                  src="../../../assets/images/icons/room-service.svg"
                   class="darak_img"
                   alt="svg"
                 />
                 <img
                   v-show="$colorMode.value === 'light'"
-                  src="../../../assets/images/icons/location.svg"
+                  src="../../../assets/images/icons/room-service.svg"
                   alt=""
                 />
                 <h3 class="font-montse font-bold text-xl dark:text-white">
-                  Food Truck
+                  Catering
                 </h3>
                 <p
-                  class="dark:text-[#93A3B0CC] font-montse font-normal text-base text-[#3F4440]"
+                  class="dark:text-[#93A3B0CC] text-center h-[100px] w-[300px] font-montse font-normal text-base text-[#3F4440]"
                 >
-                  Lorem ipsum dolor sit amet, consectetur adipis elit. Sit enim
-                  nec, proin faucibus nibh et sagittis a. Lacinia purus ac amet.
+                  Using a POS system will help streamline your catering business
+                  operations, improve customer service, and reduce overall
+                  costs.
                 </p>
               </div>
+              <!-- fooooooooooooooooood -->
               <div class="item_section"></div>
             </div>
             <div class="divide_section">
@@ -82,10 +83,10 @@
                   Family Style
                 </h3>
                 <p
-                  class="dark:text-[#93A3B0CC] font-montse font-normal text-base text-[#3F4440]"
+                  class="dark:text-[#93A3B0CC] text-center h-[100px] w-[300px] font-montse font-normal text-base text-[#3F4440]"
                 >
-                  Lorem ipsum dolor sit amet, consectetur adipis elit. Sit enim
-                  nec, proin faucibus nibh et sagittis a. Lacinia purus ac amet.
+                  Our POS: easy-to-use, fast, will never let you down. Together,
+                  we make an unstoppable team.
                 </p>
               </div>
               <div class="item_section">
@@ -104,10 +105,10 @@
                   Fine Dining
                 </h3>
                 <p
-                  class="dark:text-[#93A3B0CC] font-montse font-normal text-base text-[#3F4440]"
+                  class="dark:text-[#93A3B0CC] text-center h-[100px] w-[300px] font-montse font-normal text-base text-[#3F4440]"
                 >
-                  Lorem ipsum dolor sit amet, consectetur adipis elit. Sit enim
-                  nec, proin faucibus nibh et sagittis a. Lacinia purus ac amet.
+                  All-in-one fine dining restaurant POS has the tools you need
+                  to deliver an elevated hospitality experience for your guests.
                 </p>
               </div>
               <div class="item_section">
@@ -126,10 +127,13 @@
                   Quick Service Restaurant
                 </h3>
                 <p
-                  class="dark:text-[#93A3B0CC] font-montse font-normal text-base text-[#3F4440]"
+                  class="dark:text-[#93A3B0CC]  text-center h-[100px] w-[300px] font-montse font-normal text-base text-[#3F4440]"
                 >
-                  Lorem ipsum dolor sit amet, consectetur adipis elit. Sit enim
-                  nec, proin faucibus nibh et sagittis a. Lacinia purus ac amet.
+                  At our restaurants, you don't have to wait in line for long
+                  periods of time. Our staff will greet you with a smile and
+                  have your order taken quickly. We also offer takeout options,
+                  so you can take your order to go and enjoy it in the comfort
+                  of your own home.
                 </p>
               </div>
             </div>
@@ -150,10 +154,11 @@
                   Coffee Shop
                 </h3>
                 <p
-                  class="dark:text-[#93A3B0CC] font-montse font-normal text-base text-[#3F4440]"
+                  class="dark:text-[#93A3B0CC] text-center h-[100px] w-[300px] font-montse font-normal text-base text-[#3F4440]"
                 >
-                  Lorem ipsum dolor sit amet, consectetur adipis elit. Sit enim
-                  nec, proin faucibus nibh et sagittis a. Lacinia purus ac amet.
+                  Our coffee shop POS makes it easier for you to conquer the
+                  morning rush, increase profit margins, and crush the
+                  competition.
                 </p>
               </div>
               <div class="item_section">
@@ -172,32 +177,36 @@
                   Fast Casual
                 </h3>
                 <p
-                  class="dark:text-[#93A3B0CC] font-montse font-normal text-base text-[#3F4440]"
+                  class="dark:text-[#93A3B0CC] text-center h-[100px] w-[300px] font-montse font-normal text-base text-[#3F4440]"
                 >
-                  Lorem ipsum dolor sit amet, consectetur adipis elit. Sit enim
-                  nec, proin faucibus nibh et sagittis a. Lacinia purus ac amet.
+                  Our full-service POS system offers a variety of features that
+                  make ordering, tracking, and reporting easier and more
+                  efficient.
                 </p>
               </div>
+
               <div class="item_section">
                 <img
                   v-show="$colorMode.value === 'dark'"
-                  src="../../../assets/images/icons/room-service.svg"
+                  src="../../../assets/images/icons/location.svg"
                   class="darak_img"
                   alt="svg"
                 />
                 <img
                   v-show="$colorMode.value === 'light'"
-                  src="../../../assets/images/icons/room-service.svg"
+                  src="../../../assets/images/icons/location.svg"
                   alt=""
                 />
                 <h3 class="font-montse font-bold text-xl dark:text-white">
-                  Catering
+                  Food Truck
                 </h3>
                 <p
-                  class="dark:text-[#93A3B0CC] font-montse font-normal text-base text-[#3F4440]"
+                  class="dark:text-[#93A3B0CC] text-center h-[100px] w-[300px] font-montse font-normal text-base text-[#3F4440]"
                 >
-                  Lorem ipsum dolor sit amet, consectetur adipis elit. Sit enim
-                  nec, proin faucibus nibh et sagittis a. Lacinia purus ac amet.
+                  We’re here to provide you with some of the tastiest dishes on
+                  the go. Our menu is ever growing and expanding, offering
+                  something for everyone. Whether you’re looking for a quick
+                  bite to eat or a more substantial meal, we’ve got you covered.
                 </p>
               </div>
             </div>
@@ -220,10 +229,10 @@
                   Bakery
                 </h3>
                 <p
-                  class="dark:text-[#93A3B0CC] font-montse font-normal text-base text-[#3F4440]"
+                  class="dark:text-[#93A3B0CC] text-center h-[100px] w-[300px] font-montse font-normal text-base text-[#3F4440]"
                 >
-                  Lorem ipsum dolor sit amet, consectetur adipis elit. Sit enim
-                  nec, proin faucibus nibh et sagittis a. Lacinia purus ac amet.
+                  Our POS system allows you to quickly create orders, process
+                  payments, and keep track of inventory.
                 </p>
               </div>
               <div class="item_section">
@@ -242,10 +251,10 @@
                   Cafe
                 </h3>
                 <p
-                  class="dark:text-[#93A3B0CC] font-montse font-normal text-base text-[#3F4440]"
+                  class="dark:text-[#93A3B0CC] text-center h-[100px] w-[300px] font-montse font-normal text-base text-[#3F4440]"
                 >
-                  Lorem ipsum dolor sit amet, consectetur adipis elit. Sit enim
-                  nec, proin faucibus nibh et sagittis a. Lacinia purus ac amet.
+                  EATTE has the software, hardware, and support to help you
+                  achieve your goals.
                 </p>
               </div>
               <div class="item_section"></div>
@@ -283,7 +292,7 @@
 }
 
 .container {
-  @apply w-full max-w-[1200px] py-0 px-[15px] my-0 mx-auto;
+  @apply w-full  py-0 px-[15px] ;
 }
 
 .solutions_section {

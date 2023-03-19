@@ -37,7 +37,6 @@
             </svg>
           </a>
           <ul class="nav_child_container child flex">
-
             <div class="dropdown_left">
               <div class="grid grid-cols-3 gap-7 md:grid-cols-3">
                 <div class="grid-flow-col">
@@ -46,77 +45,57 @@
                   </h1>
                   <hr />
                   <NuxtLink to="/pos">
-                    <p
-                      class="megaNav_content"
-                    >
+                    <p class="megaNav_content">
                       <span class="dot"></span> Point of sale
                     </p>
                   </NuxtLink>
 
                   <NuxtLink to="/inventory">
-                    <p
-                      class="megaNav_content"
-                    >
+                    <p class="megaNav_content">
                       <span class="dot"></span> Inventory Management
                     </p>
                   </NuxtLink>
                   <NuxtLink to="/">
-                    <p
-                      class="megaNav_content"
-                    >
+                    <p class="megaNav_content">
                       <span class="dot"></span> Kitchen Display System
                     </p>
                   </NuxtLink>
 
                   <NuxtLink to="/reports">
-                    <p
-                      class="megaNav_content"
-                    >
+                    <p class="megaNav_content">
                       <span class="dot"></span> Reports & Analytics
                     </p>
                   </NuxtLink>
                   <NuxtLink to="/reservation">
-                    <p
-                      class="megaNav_content"
-                    >
+                    <p class="megaNav_content">
                       <span class="dot"></span> Reservation
                     </p>
                   </NuxtLink>
                   <NuxtLink to="/payment">
-                    <p
-                      class="megaNav_content"
-                    >
+                    <p class="megaNav_content">
                       <span class="dot"></span> Payment
                     </p>
                   </NuxtLink>
 
                   <NuxtLink to="/">
-                    <p
-                      class="megaNav_content"
-                    >
+                    <p class="megaNav_content">
                       <span class="dot"></span> Ingredients Management
                     </p>
                   </NuxtLink>
 
-                  <NuxtLink to="/">
-                    <p
-                      class="megaNav_content"
-                    >
+                  <NuxtLink to="/back-office-managment">
+                    <p class="megaNav_content">
                       <span class="dot"></span> Back-Office Management
                     </p>
                   </NuxtLink>
-                  <NuxtLink to="/">
-                    <p
-                      class="megaNav_content"
-                    >
+                  <NuxtLink to="/floor-managment">
+                    <p class="megaNav_content">
                       <span class="dot"></span> Floor Management
                     </p>
                   </NuxtLink>
 
-                  <NuxtLink to="/">
-                    <p
-                      class="megaNav_content"
-                    >
+                  <NuxtLink to="/table-managment">
+                    <p class="megaNav_content">
                       <span class="dot"></span> Table Management with Server
                       Rotation
                     </p>
@@ -129,35 +108,24 @@
                   </h1>
                   <hr />
                   <NuxtLink to="/loyalty">
-                    <p
-                      class="megaNav_content"
-                    >
+                    <p class="megaNav_content">
                       <span class="dot"></span> Loyalty
                     </p>
                   </NuxtLink>
 
                   <NuxtLink to="/gift-card">
-
-                    <p
-                      class="megaNav_content"
-                    >
+                    <p class="megaNav_content">
                       <span class="dot"></span> Gift Cards
                     </p>
                   </NuxtLink>
 
-                  <p
-                    class="megaNav_content"
-                  >
+                  <p class="megaNav_content">
                     <span class="dot"></span> Guest feedback
                   </p>
-                  <p
-                    class="megaNav_content"
-                  >
+                  <p class="megaNav_content">
                     <span class="dot"></span> Coupons
                   </p>
-                  <p
-                    class="megaNav_content"
-                  >
+                  <p class="megaNav_content">
                     <span class="dot"></span> SMS Marketing
                   </p>
 
@@ -166,19 +134,13 @@
                       Team Performance
                     </h1>
                     <hr />
-                    <p
-                      class="megaNav_content"
-                    >
+                    <p class="megaNav_content">
                       <span class="dot"></span> Employee Management
                     </p>
-                    <p
-                      class="megaNav_content"
-                    >
+                    <p class="megaNav_content">
                       <span class="dot"></span> Payroll
                     </p>
-                    <p
-                      class="megaNav_content"
-                    >
+                    <p class="megaNav_content">
                       <span class="dot"></span> Tips management
                     </p>
                   </div>
@@ -189,31 +151,27 @@
                     Online Services
                   </h1>
                   <hr />
-                  <p
-                    class="megaNav_content"
-                  >
-                    <span class="dot"></span> Online Ordering
-                  </p>
+                  <NuxtLink to="/ordering">
+                    <p class="megaNav_content">
+                      <span class="dot"></span> Online Ordering
+                    </p>
+                  </NuxtLink>
                   <NuxtLink to="/delivery">
-
-                    <p
-                      class="megaNav_content"
-                    >
+                    <p class="megaNav_content">
                       <span class="dot"></span> Takeout & Delivery
                     </p>
                   </NuxtLink>
 
-
-                  <p
-                    class="megaNav_content"
-                  >
-                    <span class="dot"></span> Customer Online Reservations
-                  </p>
-                  <p
-                    class="megaNav_content"
-                  >
-                    <span class="dot"></span> Customer Support
-                  </p>
+                  <NuxtLink to="/reservation">
+                    <p class="megaNav_content">
+                      <span class="dot"></span> Customer Online Reservations
+                    </p>
+                  </NuxtLink>
+                  <NuxtLink to="/customer-support">
+                    <p class="megaNav_content">
+                      <span class="dot"></span> Customer Support
+                    </p>
+                  </NuxtLink>
                 </div>
               </div>
             </div>
@@ -232,23 +190,23 @@
                 />
                 <div class="view_button">
                   <NuxtLink to="https://eatte.io/request-demo" target="_blank">
-                  <button class="get_demo">
-                    get a demo
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke-width="1.5"
-                      stroke="currentColor"
-                      class="w-6 h-6"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.348a1.125 1.125 0 010 1.971l-11.54 6.347a1.125 1.125 0 01-1.667-.985V5.653z"
-                      />
-                    </svg>
-                  </button>
+                    <button class="get_demo">
+                      get a demo
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="w-6 h-6"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.348a1.125 1.125 0 010 1.971l-11.54 6.347a1.125 1.125 0 01-1.667-.985V5.653z"
+                        />
+                      </svg>
+                    </button>
                   </NuxtLink>
                 </div>
               </div>
@@ -352,18 +310,10 @@
             <div class="col">
               <p class="contact_text">contact access</p>
 
-              <a href="tel:010-123-4567">
-                <p class="number_text">010-123-4567</p>
+              <a href="tel:13053609462">
+                <p class="number_text">+13053609462</p>
               </a>
             </div>
-
-            <!--  <div class="col web_mode">
-
-                                <i class=' bx bx-sun cursor-pointer dark:text-white' v-if="colorMode.value == 'light'"
-                                @click="$colorMode.preference = 'dark'"></i>
-                                <i class='bx bx-moon cursor-pointer dark:text-white' v-if="colorMode.value == 'dark'" 
-                                @click="$colorMode.preference = 'light'"></i>
-                        </div> -->
           </div>
         </div>
       </div>
@@ -412,8 +362,8 @@ const showMenu = ref(false);
 </script>
 
 <style scoped>
-.megaNav_content{
-  @apply font-medium font-montse dark:text-white cursor-pointer py-[5px]
+.megaNav_content {
+  @apply font-medium font-montse dark:text-white cursor-pointer py-[5px];
 }
 .dot {
   height: 5px;
@@ -422,7 +372,7 @@ const showMenu = ref(false);
   border-radius: 50%;
   display: inline-block;
   vertical-align: middle;
-  @apply dark:bg-white
+  @apply dark:bg-white;
 }
 .dropdown_left {
   @apply flex md:w-full justify-center pb-10 items-center bg-background-color dark:bg-dark-background-color;

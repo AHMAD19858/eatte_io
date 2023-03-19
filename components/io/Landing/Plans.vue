@@ -8,23 +8,40 @@ const select_pay = ref(false);
     <h3 class="plan_title">Pricing that works for you.</h3>
     <div class="plan_section">
       <div class="plan_side">
-        <h1>Try EATTE</h1>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-          varius enim in eros elemen.
-        </p>
+        <h1 class="font-montse">Pay as you go</h1>
+        <h6 class="font-montse font-normal text-base mt-0">
+          <span class="dot"></span> Point of sale software
+        </h6>
+        <h6 class="font-montse font-normal text-base mt-0">
+          <span class="dot"></span> One smart countertop erminal
+        </h6>
+        <h6 class="font-montse font-normal text-base mt-0">
+          <span class="dot"></span> Kitchen management software
+        </h6>
+        <h6 class="font-montse font-normal text-base mt-0">
+          <span class="dot"></span> Inventory management
+        </h6>
+        <h6 class="font-montse font-normal text-base mt-0">
+          <span class="dot"></span> Real-time Analytics & reports
+        </h6>
+        <h6 class="font-montse font-normal text-base mt-0">
+          <span class="dot"></span> Point of sale software
+        </h6>
+        <h6 class="font-montse font-normal text-base mt-0">
+          <span class="dot"></span> Point of sale software
+        </h6>
         <ul>
           <li>
             <i class="bx bx-check-circle"></i>
-            <p>Loyalty</p>
+            <p>$0 up front</p>
           </li>
           <li>
             <i class="bx bx-check-circle"></i>
-            <p>Gift Cards</p>
+            <p>$0/mo</p>
           </li>
           <li>
             <i class="bx bx-check-circle"></i>
-            <p>SMS Marketing</p>
+            <p>2.85% + $0.10 Processing fee</p>
           </li>
         </ul>
       </div>
@@ -72,6 +89,11 @@ const select_pay = ref(false);
     <div class="header_container">
       <h2 class="main_text">Built To Handle The Details, The Rush</h2>
       <h2 class="main_text">And Everything In-Between</h2>
+      <p class=" text-center font-montse text-black dark:text-white">
+        We help you bridge the divide between point of sale, payment processing,
+        marketing, labor management, online ordering, and more - functions that
+        are usually disconnected in restaurant operations.
+      </p>
     </div>
   </div>
 </template>
@@ -205,5 +227,14 @@ const select_pay = ref(false);
     top: 25%;
     font-family: "Montserrat";
   }
+}
+.dot {
+  height: 5px;
+  width: 5px;
+  background-color: #3f4440;
+  border-radius: 50%;
+  display: inline-block;
+  vertical-align: middle;
+  @apply dark:bg-white;
 }
 </style>

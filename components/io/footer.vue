@@ -8,8 +8,8 @@
             <p class="font-montse">Start selling with EATTE</p>
           </div>
           <p class="sub">
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-            accusantium doloremque laudantium
+            With no minimums and no setup fees, you can start selling shirts
+            without any risk or upfront investment.
           </p>
         </div>
         <div class="left">
@@ -24,44 +24,40 @@
         class="mt-20 container grid grid-cols-2 mx-auto gap-x-3 gap-y-8 sm:grid-cols-3 md:grid-cols-4"
       >
         <div class="flex flex-col space-y-4">
-          <h2 class="font-semibold text-[26px] text-[#F5F6FA]">FEATURES</h2>
+          <h2 class="font-semibold text-[26px] text-[#F5F6FA]">PRODUCT</h2>
           <div class="flex flex-col space-y-2 text-sm text-white">
-            <a rel="noopener noreferrer" href="#" class="footer_element"
-              >Order Management</a
-            >
-            <a rel="noopener noreferrer" href="#" class="footer_element"
-              >Takeout & Delivery Services</a
-            >
-            <a rel="noopener noreferrer" href="#" class="footer_element"
-              >Inventory Management</a
-            >
-            <a rel="noopener noreferrer" href="#" class="footer_element"
-              >Ingredients Management</a
-            >
-            <a rel="noopener noreferrer" href="#" class="footer_element"
-              >Customer Engagement</a
-            >
-            <a rel="noopener noreferrer" href="#" class="footer_element"
-              >Employee Management</a
-            >
-            <a rel="noopener noreferrer" href="#" class="footer_element"
-              >Back-Office Management</a
-            >
-            <a rel="noopener noreferrer" href="#" class="footer_element"
-              >Payment Processing</a
-            >
-            <a rel="noopener noreferrer" href="#" class="footer_element"
-              >Customer Support</a
-            >
+            <NuxtLink to="/ordering">
+              <a class="footer_element">Order Management</a>
+            </NuxtLink>
+            <NuxtLink to="/delivery">
+              <a class="footer_element">Takeout & Delivery Services</a>
+            </NuxtLink>
+            <NuxtLink to="/inventory">
+              <a class="footer_element">Inventory Management</a>
+            </NuxtLink>
+            <NuxtLink to="/floor-managment">
+              <a class="footer_element">Floor Management</a>
+            </NuxtLink>
+            <NuxtLink to="/customert-engagement">
+              <a class="footer_element">Customer Engagement</a>
+            </NuxtLink>
+            <NuxtLink to="/employee-managment">
+              <a class="footer_element">Employee Management</a>
+            </NuxtLink>
+            <NuxtLink to="/back-office-managment">
+              <a class="footer_element">Back-Office Management</a>
+            </NuxtLink>
+            <NuxtLink to="/payment">
+              <a class="footer_element">Payment Processing</a>
+            </NuxtLink>
+            <NuxtLink to="/customer-support">
+              <a class="footer_element">Customer Support</a>
+            </NuxtLink>
             <NuxtLink to="/pos">
-              <a rel="noopener noreferrer" href="#" class="footer_element"
-                >Point Of Sale (POS)</a
-              >
+              <a class="footer_element">Point Of Sale (POS)</a>
             </NuxtLink>
             <NuxtLink to="/kds">
-              <a rel="noopener noreferrer" href="#" class="footer_element"
-                >Kitchen Display System (KDS)</a
-              >
+              <a class="footer_element">Kitchen Display System (KDS)</a>
             </NuxtLink>
           </div>
         </div>
@@ -122,22 +118,16 @@
               to="https://support.eatte.io/knowledgebase/eatte-privacy-and-policy/"
               target="_blank"
             >
-              <p  class="footer_element"
-                >Privacy agreement</p
-              >
+              <p class="footer_element">Privacy agreement</p>
             </NuxtLink>
             <NuxtLink
               to="https://support.eatte.io/knowledgebase/terms-and-conditions/"
               target="_blank"
             >
-              <p  class="footer_element"
-                >Terms and conditions</p
-              >
+              <p class="footer_element">Terms and conditions</p>
             </NuxtLink>
             <NuxtLink to="https://support.eatte.io/" target="_blank">
-              <p  class="footer_element"
-                >Support</p
-              >
+              <p class="footer_element">Support</p>
             </NuxtLink>
           </div>
         </div>

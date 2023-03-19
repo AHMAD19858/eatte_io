@@ -19,34 +19,82 @@
             <div class="tab">
               <input type="checkbox" id="chck1" />
               <label class="tab-label" for="chck1"
-                >Lorem ipsum dolor sit amet, consectetur adipiscing elit?</label
+                >Why can’t I sign in to my account?</label
               >
               <div class="tab-content">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum,
-                reiciendis!
+                There are a number of reasons why you may not be able to sign
+                in. Resetting your password is the first step towards regaining
+                access to your account. Click Forgot Password, confirm the email
+                address used to register for EATTE, and follow the instructions
+                in the email sent to that address.If you still have the same
+                issue don't histate to contact our support team.
               </div>
             </div>
             <div class="tab">
               <input type="checkbox" id="chck2" />
               <label class="tab-label" for="chck2"
-                >Duis aute irure dolor in reprehenderit in voluptate velit esse
-                cillum?</label
+                >I'm interested in EATTE, what happens after we sign up?</label
               >
               <div class="tab-content">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. A, in!
+                Once the onboarding process is completed, we have streamlined
+                our process and provide you with a login to EATTE to set up your
+                restaurant preferences, hours, and menu. You can then take
+                yourself live and start accepting orders all on your own time!
               </div>
             </div>
 
             <div class="tab">
               <input type="checkbox" id="chck3" />
               <label class="tab-label" for="chck3"
-                >Duis aute irure dolor in reprehenderit in voluptate velit esse
-                cillum?</label
+                >Is the guest feedback feature available for EATTE?</label
               >
               <div class="tab-content">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. A, in!
+                Yes, guests can send their feedbacks.
               </div>
             </div>
+
+            <!-- -------------------- -->
+
+            <div class="tab">
+              <input type="checkbox" id="chck1" />
+              <label class="tab-label" for="chck1"
+                >Can EATTE Gift Cards be used across multiple locations?</label
+              >
+              <div class="tab-content">
+                Yes, as long as the EATTE locations are members of the same
+                Loyalty/Gift Card restaurant group.
+              </div>
+            </div>
+            <div class="tab">
+              <input type="checkbox" id="chck2" />
+              <label class="tab-label" for="chck2"
+                >Do I have to create a separate menu for online ordering?</label
+              >
+              <div class="tab-content">
+                No, not unless you think it's necessary or your pricing is
+                different for items sold in-store vs online. We recommend using
+                the Online Ordering Visible To settings outlined while creating
+                the menu from menu builder
+              </div>
+            </div>
+
+       <!--      <div class="tab">
+              <input type="checkbox" id="chck3" />
+              <label class="tab-label" for="chck3"
+                >How do I create a "Featured Items" menu that appears at the top
+                of other menus and show my specials?</label
+              >
+              <div class="tab-content">
+                Create a menu titled "Specials Menu" and add your desired menu
+                items with images to show off your specials. Alternatively, you
+                can create a menu group titled "Specials" within an existing
+                menu, that includes a description indicating that the items
+                within the group are discounted or seasonal for your restaurant.
+                In order to ensure that the menu or group is placed at the top,
+                use the order tool to rearrange that menu or menu group above
+                the others in EATTE's back-end.
+              </div>
+            </div> -->
           </div>
         </div>
       </div>
