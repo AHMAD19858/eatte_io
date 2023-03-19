@@ -16,7 +16,7 @@ const props = defineProps({
       "
     >
       <div class="features_side">
-        <h3 class="font-montse">{{ item.title }}</h3>
+        <h3 class="font-montse"> <span class="dot"></span> {{ item.title }}</h3>
         <p class="font-montse">
           {{ item.sub_title }}
         </p>
@@ -40,6 +40,15 @@ const props = defineProps({
 </template>
 
 <style scoped>
+.dot {
+  height: 20px;
+  width: 20px;
+  background-color: var(--primary);
+  border-radius: 50%;
+  display: inline-block;
+  vertical-align: middle;
+  @apply dark:bg-primary-color;
+}
 .container {
   width: 100%;
   max-width: 1200px;
