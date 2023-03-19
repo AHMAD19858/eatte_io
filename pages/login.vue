@@ -1,3 +1,56 @@
+<script setup>
+ import { ref } from 'vue'
+  import {
+    Dialog,
+    DialogPanel,
+    DialogTitle,
+    DialogDescription,
+  } from '@headlessui/vue'
+
+  const isOpen = ref(true)
+
+  function setIsOpen(value) {
+    isOpen.value = value
+  }
+
+const colorMode = useColorMode();
+definePageMeta({
+  layout: "outside",
+});
+
+const url = "https://reqres.in/api/login";
+const isLoading = ref(false);
+const _error = ref(null);
+const form = reactive({
+    email: "",
+    password: "",
+});
+async function onSubmit() {
+
+    if (isLoading.value) return;
+    isLoading.value = true;
+    const { data, error } = await useFetch(url, {
+        method: "post",
+        body: form,
+    });
+    isLoading.value = false;
+    if (error.value) {
+        _error.value = error.value.data.error;
+        return;
+    }
+
+
+    navigateTo("/");
+}
+
+function login (){
+  setIsOpen(true)
+  console.log('isOpen', isOpen)
+}
+
+</script>
+
+
 <template>
   <div class="h-screen md:flex">
     <div class="left_side">
@@ -44,7 +97,23 @@
         <p class="sub_text">
           Login to eatte, just the best.
         </p>
+        <Dialog :open="isOpen" @close="setIsOpen">
+    <DialogPanel>
+      <DialogTitle>Deactivate account</DialogTitle>
+      <DialogDescription>
+        This will permanently deactivate your account
+      </DialogDescription>
 
+      <p>
+        Are you sure you want to deactivate your account? All of your data will be
+        permanently removed. This action cannot be undone.
+      </p>
+
+      <button @click="setIsOpen(false)">Deactivate</button>
+      <button @click="setIsOpen(false)">Cancel</button>
+    </DialogPanel>
+  </Dialog>
+  <button  class="login_btn" @click="login()">Login</button>
         <p class="label">Email Address</p>
         <div class="input_div">
           <input
@@ -92,12 +161,7 @@
   </div>
 </template>
 
-<script setup>
-const colorMode = useColorMode();
-definePageMeta({
-  layout: "outside",
-});
-</script>
+
 
 <style scoped>
 .left_side {

@@ -6,6 +6,7 @@ export default defineNuxtConfig({
     '@nuxtjs/i18n',
     '@nuxtjs/color-mode',
     'nuxt-swiper',
+    'nuxt-headlessui'
   ],
 
   app: {
@@ -22,6 +23,9 @@ export default defineNuxtConfig({
     baseURL: NODE_ENV === 'production' ? '/new-design/' : '/'
 
   },
+  headlessui: {
+    prefix: 'Headless'
+},
   colorMode: {
     classSuffix: '',
 
@@ -33,4 +37,5 @@ export default defineNuxtConfig({
     injectPosition: 0,
     viewer: true,
   },
+
 })

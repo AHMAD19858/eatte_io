@@ -314,7 +314,7 @@
   "resolved" "https://registry.npmjs.org/@esbuild/win32-x64/-/win32-x64-0.17.7.tgz"
   "version" "0.17.7"
 
-"@headlessui/vue@^1.7.9":
+"@headlessui/vue@^1.0.0", "@headlessui/vue@^1.7.9":
   "integrity" "sha512-vgLBKszj+m2ozaPOnjWMGnspoLJcU/06vygdEAyAS4nDjp72yA7AYbOIEgdaspUhaMs585ApyiSm3jPTuIxAzg=="
   "resolved" "https://registry.npmjs.org/@headlessui/vue/-/vue-1.7.9.tgz"
   "version" "1.7.9"
@@ -3867,6 +3867,15 @@
   "version" "3.2.0"
   optionalDependencies:
     "fsevents" "~2.3.2"
+
+"nuxt-headlessui@^1.1.1":
+  "integrity" "sha512-sf8qZQvGDaI+uNnKuynFGY+VXScDNEj3W0LMjv2XH4jO4ksQzbliCB9Hl5cdd/VIFPVmnZm+dnneURSI4/1fXw=="
+  "resolved" "https://registry.npmjs.org/nuxt-headlessui/-/nuxt-headlessui-1.1.1.tgz"
+  "version" "1.1.1"
+  dependencies:
+    "@headlessui/vue" "^1.0.0"
+    "@nuxt/kit" "^3.0.0"
+    "pathe" "^1.0.0"
 
 "nuxt-swiper@^1.0.1":
   "integrity" "sha512-NHrPnnxJtM9asKkvxJlyKUhgO/1o3p4ghX+j6xAq1+A2qm8C7l/7WntklQf5t3H7Y7OZXS9e763MXgrCrnZOww=="
