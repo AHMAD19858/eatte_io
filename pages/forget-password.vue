@@ -53,11 +53,12 @@
             name=""
             id=""
             placeholder="enter your email address"
+            v-model="form.email"
           />
         </div>
-        <NuxtLink to="/reset-password">
-          <button type="submit" class="login_btn">Send me the link</button>
-        </NuxtLink>
+        
+          <button type="button" @click="onSubmit()" class="login_btn">Send me the link</button>
+        
 
         <div class="flex my-3 justify-center gap-1">
           <p class="text-sm font-montse dark:text-white">or</p>
@@ -74,6 +75,38 @@
 definePageMeta({
   layout: "outside",
 });
+
+
+const url = "/api/forget-Password";
+
+const isLoading = ref(false);
+let userCompanies = reactive([]);
+let loginData = reactive({});
+const form = reactive({
+  email: "",
+});
+
+
+async function onSubmit() {
+  if (isLoading.value) return;
+  isLoading.value = true;
+  const { data } = await useFetch(
+    `${url}?email=${form.email}`,
+    {
+      method: "POST",
+    }
+  );
+  loginData.value = data;
+  isLoading.value = false;
+  console.log("this is data", data._rawValue);
+  console.log("loginDatad", loginData.value);
+  if (data._rawValue.status === true) {
+    userCompanies = data._rawValue.res.companies;
+    userToken = data._rawValue.res.token;
+    console.log("userCompanies", userCompanies);
+    openModal();
+  }
+}
 </script>
 
 <style scoped>
