@@ -41,6 +41,7 @@ async function onSubmit() {
     }
   );
   loginData.value = data;
+  isLoading.value = false;
   console.log("this is data", data._rawValue);
   console.log("loginDatad", loginData.value);
   if (data._rawValue.status === true) {
