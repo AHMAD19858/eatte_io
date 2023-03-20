@@ -354,11 +354,14 @@
 }
 
 @media (max-width: 576px) {
+  .divide_section{
+    margin-top: 70px;
+  }
   .container {
     @apply max-w-full;
   }
   .solutions_section {
-    height: 2060px;
+    height: 2357px;
     margin-bottom: 150px;
   }
 
