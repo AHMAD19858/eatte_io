@@ -11,8 +11,11 @@ const colorMode = useColorMode();
 definePageMeta({
   layout: "outside",
 });
-
-const isOpen = ref(true);
+/* const {data} = await useFetch('/api/login',{
+  method:'POST'
+}) */
+/* console.log("message",data.value.message) */
+const isOpen = ref(false);
 
 function closeModal() {
   isOpen.value = false;
@@ -42,6 +45,7 @@ async function onSubmit() {
 
   navigateTo("/");
 }
+
 </script>
 
 <template>
@@ -139,7 +143,7 @@ async function onSubmit() {
                       </div>
                     </div>
 
-                    <!--    <div class="mt-4">
+                       <div class="mt-4">
                       <button
                         type="button"
                         class="inline-flex justify-center rounded-md border border-transparent bg-blue-100 px-4 py-2 text-sm font-medium text-blue-900 hover:bg-blue-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2"
@@ -147,7 +151,7 @@ async function onSubmit() {
                       >
                         Got it, thanks!
                       </button>
-                    </div> -->
+                    </div>
                   </DialogPanel>
                 </TransitionChild>
               </div>
@@ -192,10 +196,10 @@ async function onSubmit() {
             <span class="forgot_text">Forgot Password ?</span>
           </NuxtLink>
         </div>
-
+<!-- @click="openModal()" -->
         <!-- <NuxtLink to="/"> -->
-        <button type="submit" class="login_btn" @click="openModal()">
-          Login
+        <button  @click="data">
+          Login'
         </button>
         <!--  </NuxtLink> -->
       </form>
