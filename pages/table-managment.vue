@@ -4,7 +4,7 @@ import dash from "../assets/images/dashboard.svg";
 import service1 from "../assets/images/icons/hand.svg";
 import service3 from "../assets/images/icons/code.svg";
 import service2 from "../assets/images/icons/charts.svg";
-import one from "../assets/images/features/pos/one.svg";
+import one from "../assets/images/features/table/one.svg";
 
 const cardData = [
   {

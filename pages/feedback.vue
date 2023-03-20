@@ -2,6 +2,9 @@
 import PosImage from "../assets/images/pos.svg";
 import dash from "../assets/images/dashboard.svg";
 import hardware from "../assets/images/hardware.png";
+import one from "../assets/images/features/feedback/one.svg";
+import two from "../assets/images/features/feedback/two.svg";
+import three from "../assets/images/features/feedback/three.svg";
 
 const cardData = [
   {
@@ -25,6 +28,28 @@ const cardData = [
     learn_text: "LEARN MORE",
   },
 ];
+
+const featuresData = [
+  {
+    position: "right",
+    img: one,
+    title: "Keep your customers happy with EATTE!",
+    sub_title: `Our guest feedback app allows you to quickly measure customer satisfaction and sentiment with ease. With our intuitive interface, you can easily create surveys or polls tailored to your needs. Get the honest answers you need to continuously improve your business for ultimate customer satisfaction. Try EATTE today and get the insights you need to make the changes that will keep them coming back!
+. We take feedback seriously, so if there is ever anything that we can do to improve our services, let us know. We truly value your opinion and want to create a better experience for you.`,
+  },
+  {
+    position: "left",
+    img: two,
+    title: "Get the most out of your customers' feedback with EATTE! ",
+    sub_title: `AOur state-of-the-art customer feedback solutions enable you to track, analyze, and act on customer experiences in real-time. Make the feedback process more efficient and reliable with our automated surveys, real-time alerts, and advanced analytics. Deliver an exceptional customer experience every time and boost your restaurant's reputation with EATTE!`,
+  },
+  {
+    position: "left",
+    img: three,
+    title: "Get an accurate picture of your guests' experience with EATTE! ",
+    sub_title: `Our easy-to-use guest feedback solution provides the insights you need to deliver unforgettable experiences and make customers come back for more. With EATTE, you can quickly measure customer satisfaction, identify areas of improvement and make sure that each guest leaves happy. No more guessing - get real-time visibility into your guests’ experience!""`,
+  },
+];
 </script>
 
 <template>
@@ -36,6 +61,19 @@ const cardData = [
       :demo_btn="'Get a demo'"
       :row_img="PosImage"
     />
+
+    <div class="bg-white pt-12 pb-12 dark:bg-dark-background-color">
+      <IoHeadersTripleLines
+        :first_line="'Our smart guest feedback system allows you to quickly gather valuable feedback from your guests, helping you improve the dining experience for everyone. '"
+        :main="'With EATTE'"
+        :first_sub_main="`you can make sure that everyone leaves your restaurant feeling satisfied! Get started today`"
+        :second_sub_main="' advantage of our powerful features to start gathering feedback and get the most out of every guest experience..'"
+      />
+    </div>
+
+    <div class="container">
+      <IoFeatures :items="featuresData" />
+    </div>
 
     <div class="py-10 bg-background-color dark:bg-dark-background-color">
       <IoHeadersTripleLines

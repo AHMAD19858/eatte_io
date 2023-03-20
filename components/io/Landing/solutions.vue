@@ -2,7 +2,7 @@
   <div class="solutions_section">
     <img class="line-top" src="../../../assets/images/line.svg" alt="svg" />
 
-    <div class="container">
+    <div class="container mx-auto">
       <div class="header_container">
         <h2 class="main_text">
           Solution sets for every business type and size.
@@ -14,7 +14,7 @@
       </div>
 
       <section class="text-black">
-        <div class="container flex flex-col items-center p-4 mx-auto md:p-8">
+        <div class="flex flex-col items-center p-4 mx-auto md:p-8">
           <div class="sol_container">
             <div class="divide_section">
               <div class="item_section">

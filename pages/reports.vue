@@ -4,8 +4,8 @@ import dash from "../assets/images/dashboard.svg";
 import service1 from "../assets/images/icons/hand.svg";
 import service3 from "../assets/images/icons/code.svg";
 import service2 from "../assets/images/icons/charts.svg";
-import one from "../assets/images/features/gift/one.svg";
-import four from "../assets/images/features/kds/four.svg";
+import one from "../assets/images/features/reports/one.svg";
+import three from "../assets/images/features/reports/three.svg";
 
 const cardData = [
   {
@@ -46,7 +46,7 @@ const serviceData = [
 const featuresData = [
   {
     position: "right",
-    img: four,
+    img: three,
     title: "Real-Time Reports on Your Restaurant's POS Performance Metrics",
     sub_title: `Our reporting platform was designed with ease of use in mind so that you can spend more time analyzing trends and less time figuring out how to pull up reports.`,
     details: [

@@ -40,20 +40,43 @@
         <h1 class="welcome">Forgot your</h1>
         <h1 class="welcome">password?</h1>
 
-        <div class="bg-red-500 rounded-md my-3 mt-3">
-          <p
-            class="text-center text-white"
-            v-if="loginData.value && loginData.value.status === false"
+        <div
+          v-if="loginData.value && loginData.value.status === false"
+          class="bg-red-500 rounded-md my-3 flex gap-1 h-12 items-center"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            style="fill: #1e1e1e; margin-inline: 5px; transform: ; msfilter: "
           >
+            <path
+              d="m8.5 18 3.5 4 3.5-4H19c1.103 0 2-.897 2-2V4c0-1.103-.897-2-2-2H5c-1.103 0-2 .897-2 2v12c0 1.103.897 2 2 2h3.5zM7.293 6.707l1.414-1.414L12 8.586l3.293-3.293 1.414 1.414L13.414 10l3.293 3.293-1.414 1.414L12 11.414l-3.293 3.293-1.414-1.414L10.586 10 7.293 6.707z"
+            ></path>
+          </svg>
+          <p class="text-center text-white font-montse">
             {{ loginData.value.err }}
           </p>
         </div>
 
-        <div class="bg-green-500 rounded-md my-3 mt-3">
-          <p
-            class="text-center text-white"
-            v-if="loginData.value && loginData.value.status === true"
+        <div
+          v-if="loginData.value && loginData.value.status === true"
+          class="bg-green-500 rounded-md my-3 flex gap-1 mt-3 h-12 items-center"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            style="fill: rgba(0, 0, 0, 1); transform: ; msfilter: "
           >
+            <path
+              d="M20 2H4c-1.103 0-2 .894-2 1.992v12.016C2 17.106 2.897 18 4 18h3v4l6.351-4H20c1.103 0 2-.894 2-1.992V3.992A1.998 1.998 0 0 0 20 2zm-9 11.914-3.707-3.707 1.414-1.414L11 11.086l4.793-4.793 1.414 1.414L11 13.914z"
+            ></path>
+          </svg>
+
+          <p class="text-center text-white">
             {{ loginData.value.res.ForgotPasswordSuccess }}
           </p>
         </div>

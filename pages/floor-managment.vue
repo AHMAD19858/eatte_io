@@ -1,10 +1,9 @@
 <script setup>
 import PosImage from "../assets/images/pos.svg";
 import dash from "../assets/images/dashboard.svg";
-import service1 from "../assets/images/icons/hand.svg";
-import service3 from "../assets/images/icons/code.svg";
-import service2 from "../assets/images/icons/charts.svg";
-import one from "../assets/images/features/pos/one.svg";
+import one from "../assets/images/features/floor/one.svg";
+import two from "../assets/images/features/floor/two.svg";
+import three from "../assets/images/features/floor/three.svg";
 
 const cardData = [
   {
@@ -29,24 +28,6 @@ const cardData = [
   },
 ];
 
-const serviceData = [
-  {
-    img: service2,
-    label: "Increase sales",
-    desc: "Increase sales with built-in tools that help you boost average check size, speed up table turnover, and promote your most profitable menu items.",
-  },
-  {
-    img: service1,
-    label: "Deliver Great Guest Experience",
-    desc: "Deliver better service with a mobile POS that helps you seat guests faster, minimize order errors, keep lines moving, and process payments without a hitch.",
-  },
-  {
-    img: service3,
-    label: "Save Time and Money",
-    desc: `Manage staff, floor plans, and costs with on-the-go tools that help you spot ways to save time and money - whether you're in-venue or out of office.`,
-  },
-];
-
 const featuresData = [
   {
     position: "right",
@@ -56,13 +37,13 @@ const featuresData = [
   },
   {
     position: "left",
-    img: one,
+    img: two,
     title: "encourage customers to stay longer and return in the future.",
     sub_title: `The role of employees in maintaining a clean and tidy floor cannot be overstated. Employees should be trained to keep the floor space clean and organized at all times. They should be responsible for regularly restocking shelves, removing clutter, and ensuring that all products are in their designated areas. By doing so, employees can create a welcoming environment that encourages customers to stay longer and return in the future.`,
   },
   {
     position: "right",
-    img: one,
+    img: three,
     title:
       "Strategies for managing high traffic areas and preventing overcrowding  ",
     sub_title: `Strategies for managing high traffic areas and preventing overcrowding are essential for effective floor management. One strategy is to create designated areas for popular products or services to prevent overcrowding in certain areas of the floor. Another strategy is to implement a queue management system to ensure that customers are served in an orderly and efficient manner. Additionally, businesses can make use of technology to monitor foot traffic and identify areas that require attention."`,

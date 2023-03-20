@@ -1,7 +1,8 @@
 <script setup>
 import PosImage from "../assets/images/pos.svg";
 import dash from "../assets/images/dashboard.svg";
-import one from "../assets/images/features/pos/one.svg";
+import one from "../assets/images/features/customer_engagement/one.svg";
+import two from "../assets/images/features/customer_engagement/two.svg";
 
 const cardData = [
   {
@@ -35,7 +36,7 @@ const featuresData = [
   },
   {
     position: "left",
-    img: one,
+    img: two,
     title: "Feel taken care of and that your experience with us is positive ",
     sub_title: `At EATTE, we strive to create an environment where customers can trust that their needs will be met. We want to ensure that you feel taken care of and that your experience with us is positive and meaningful. So if there’s ever anything that we can do for you, just let us know."`,
   },

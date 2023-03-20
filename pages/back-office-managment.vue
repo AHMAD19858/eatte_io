@@ -1,7 +1,8 @@
 <script setup>
 import PosImage from "../assets/images/pos.svg";
 import dash from "../assets/images/dashboard.svg";
-import one from "../assets/images/features/pos/one.svg";
+import one from "../assets/images/features/back_office/one.svg";
+import two from "../assets/images/features/back_office/two.svg";
 
 const cardData = [
   {
@@ -35,7 +36,7 @@ const featuresData = [
   },
   {
     position: "left",
-    img: one,
+    img: two,
     title: "the best back-office management experience possible",
     sub_title: `At EATTE, we strive to provide you with the best back-office management experience possible. Our team is available to answer any questions you may have and provide you with all the tools you need to make sure your operations are running at peak performance. Feel free to reach out to us via email or phone – we look forward to hearing from you!"`,
   },

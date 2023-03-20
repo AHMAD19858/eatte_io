@@ -4,8 +4,9 @@ import dash from "../assets/images/dashboard.svg";
 import service1 from "../assets/images/icons/hand.svg";
 import service3 from "../assets/images/icons/code.svg";
 import service2 from "../assets/images/icons/charts.svg";
-import one from "../assets/images/features/gift/one.svg";
-import four from "../assets/images/features/kds/four.svg";
+import one from "../assets/images/features/payment/one.svg";
+import two from "../assets/images/features/payment/two.svg";
+import three from "../assets/images/features/payment/three.svg";
 
 const cardData = [
   {
@@ -46,70 +47,79 @@ const serviceData = [
 const featuresData = [
   {
     position: "right",
-    img: four,
-    title: "One Platform to Power Your Restaurant",
-    sub_title: `One Platform to Power Your Restaurant.`,
+    img: one,
+    title: "Easily accept payments online and in-store.",
+    sub_title: `Easily accept payments online and in-store.`,
     details: [
       {
-        main: "Email and text gift cards are easy to buy and sell",
-        details:
-          "Allow guests to buy email gift cards and send via email or SMS, with a message of their choice.",
+        main: "Simple pricing with no hidden fees.",
+        details: "That's right, none! We dislike fees as much as you do.",
       },
       {
-        main: "Gift card redemption is simple and easy",
-        details:
-          "Allow guests to pay with a gift card over the phone, when ordering online or in person at the POS system.",
+        main: "Fast and secure checkout experience.",
+        details: "Built-in PCI compliance and fraud prevention.",
       },
       {
-        main: "Online balance management is intuitive.",
+        main: "No third-party accounts required",
         details:
-          "Allow guests to look up their gift card balance online, and even add more value to it, whenever they want.",
+          "Setup is instant and getting support is simple. Whatever you need, we got you.",
+      },
+      {
+        main: "Manage your entire business and financials in one place",
+        details: "Complete sales and get paid without ever leaving your POS.",
       },
     ],
   },
 
   {
     position: "left",
-    img: one,
-    title: "Easily accept payments online and in-store.",
-    sub_title: `Easily accept payments online and in-store.`,
+    img: two,
+    title: "One Platform to Power Your Restaurant",
+    sub_title: `One Platform to Power Your Restaurant`,
     details: [
       {
-        main: "Simple pricing with no hidden fees.",
+        main: "Single provider for all your restaurant needs",
         details:
-          "Digital gift cards make it easy for diners to access and redeem gift cards from their smartphones.",
+          "Invest in a partner that is continuously innovating and improving its suite of products, not just providing you with statements.",
       },
       {
-        main: "Fast and secure checkout experience.",
+        main: "Insights to better understand your customers",
         details:
-          "guests who make a purchase using a gift card spend more than the value of the gift card.",
+          "Capture guest data that can be used to send targeted marketing campaigns that delight customers and drive revenue.",
       },
       {
-        main: "Manage your entire business and financials in one place",
-        details: "Complete sales and get paid without ever leaving your POS.",
+        main: "Offline mode for payment processing",
+        details:
+          "Reliably accept credit card payments online or offline without skipping a beat.",
+      },
+      {
+        main: "Customize with your branding",
+        details:
+          "Upload your logo and pictures of menu items so your digital presence looks and feels like your restaurant.",
       },
     ],
   },
 
   {
     position: "right",
-    img: one,
-    title: "Easily accept payments online and in-store.",
-    sub_title: `Easily accept payments online and in-store.`,
+    img: three,
+    title: "Partner that Prioritizes Security",
+    sub_title: `Partner that Prioritizes Security`,
     details: [
       {
-        main: "Simple pricing with no hidden fees.",
+        main: "Real-time machine-learning fraud monitoring",
         details:
-          "Digital gift cards make it easy for diners to access and redeem gift cards from their smartphones.",
+          "Our systems help detect and block suspicious online ordering transactions in real-time to prevent resulting chargebacks.",
       },
       {
-        main: "Fast and secure checkout experience.",
+        main: "Hardware equipped with EMV and NFC technology",
         details:
-          "guests who make a purchase using a gift card spend more than the value of the gift card.",
+          "Processing chip cards or mobile payments on our hardware leverages EMV or NFC technology to help prevent fraudulent transactions.",
       },
       {
-        main: "Manage your entire business and financials in one place",
-        details: "Complete sales and get paid without ever leaving your POS.",
+        main: "Encryption to protect payment card data",
+        details:
+          "From the moment a customer pays for their order, payment data is encrypted to prevent payment card data getting into the wrong hands.",
       },
     ],
   },

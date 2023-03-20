@@ -16,10 +16,5 @@ export default defineEventHandler(async (event) => {
       };
     }
     return res;
-  
-    //   return {
-    //     message: `email:${email} | pass:${password}`,
-    //     res: JSON.parse(response),
-    //   };
   });
   

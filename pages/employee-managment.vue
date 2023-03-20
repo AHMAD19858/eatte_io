@@ -1,7 +1,7 @@
 <script setup>
 import PosImage from "../assets/images/pos.svg";
 import dash from "../assets/images/dashboard.svg";
-import one from "../assets/images/features/pos/one.svg";
+import one from "../assets/images/features/managment/one.svg";
 
 const cardData = [
   {
