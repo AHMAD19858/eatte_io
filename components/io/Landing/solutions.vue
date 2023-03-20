@@ -14,7 +14,7 @@
       </div>
 
       <section class="text-black">
-        <div class="flex flex-col items-center p-4 mx-auto md:p-8">
+        <div class="flex flex-col items-center p-4 mx-auto md:p-8 ">
           <div class="sol_container">
             <div class="divide_section">
               <div class="item_section">
@@ -211,7 +211,7 @@
               </div>
             </div>
             <div
-              class="hidden w-full divide-y sm:flex-col sm:flex divide-[#93A3B029]"
+              class="hidden w-full divide-y sm:flex-col sm:flex divide-[#93A3B029] sm:gap-[219px]"
             >
               <div class="item_section">
                 <img
@@ -341,6 +341,9 @@
 @media (max-width: 992px) {
   .container {
     max-width: 768px;
+  }
+  .divide_section{
+    gap: 219px;
   }
 }
 

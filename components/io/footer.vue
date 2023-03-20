@@ -224,7 +224,15 @@
 .get_started {
   @apply font-montse flex w-56 self-end items-center justify-evenly rounded-lg px-8 py-3 m-2 text-lg font-semibold text-white bg-gradient-to-r from-[#FF6137] to-[#CC4D2C];
 }
-
+@media (max-width: 992px) {
+  .card {
+    height: unset;
+    width: unset;
+    text-align: center;
+    position: unset;
+    margin-bottom: -15px;
+  }
+}
 @media (max-width: 576px) {
   .main {
     display: block;
