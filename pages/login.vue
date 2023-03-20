@@ -8,15 +8,9 @@ import {
   DialogPanel,
   DialogTitle,
 } from "@headlessui/vue";
-const colorMode = useColorMode();
 definePageMeta({
   layout: "outside",
 });
-/* const {data} = await useFetch('/api/login',{
-  method:'POST'
-}) */
-/* console.log("message",data.value.message) */
-const isOpen = ref(false);
 
 function closeModal() {
   isOpen.value = false;
@@ -24,9 +18,12 @@ function closeModal() {
 function openModal() {
   isOpen.value = true;
 }
+const colorMode = useColorMode();
 const url = "/api/login";
+const isOpen = ref(false);
 const isLoading = ref(false);
 const _error = ref(null);
+let userCompanies = reactive([]);
 let loginData = reactive({});
 const form = reactive({
   email: "",
@@ -35,20 +32,25 @@ const form = reactive({
 async function onSubmit() {
   if (isLoading.value) return;
   isLoading.value = true;
-  const { data, error } = await useFetch(
+  const { data } = await useFetch(
     `${url}?email=${md5(form.email)}&password=${md5(form.password)}`,
     {
       method: "GET",
     }
   );
   loginData.value = data;
-  console.log(data)
-  console.log(loginData)
-  isLoading.value = false;
+  console.log("this is data", data._rawValue);
+  console.log("loginDatad", loginData.value);
+  if (data._rawValue.status === true) {
+    userCompanies.value = data._rawValue.res.companies;
+    console.log("userCompanies", userCompanies.value);
+    openModal();
+  }
+  /*   isLoading.value = false;
   if (error.value) {
     console.log(error);
     return;
-  }
+  } */
 
   // navigateTo("/");
 }
@@ -62,7 +64,6 @@ async function onSubmit() {
         <p class="sub_slogan">
           What you need to manage your business in one software!
         </p>
-        {{ loginData }}
         <div class="mt-[185px] ml-[0px]">
           <div class="flex">
             <img src="../assets/images/star.svg" alt="" />
@@ -95,7 +96,7 @@ async function onSubmit() {
     <div class="right_side">
       <form class="form_section" @submit.prevent="onSubmit()">
         <h1 class="welcome">Welcome Back!</h1>
-        {{ form }}
+        <!--  {{ form }} -->
         <p class="sub_text">Login to eatte, just the best.</p>
 
         <TransitionRoot appear :show="isOpen" as="template">
@@ -112,7 +113,11 @@ async function onSubmit() {
               <div class="fixed inset-0 bg-black bg-opacity-25" />
             </TransitionChild>
 
-            <div class="fixed inset-0 overflow-y-auto">
+            <div
+              class="fixed inset-0 overflow-y-auto"
+              v-for="(item, index) in userCompanies"
+              :key="index"
+            >
               <div
                 class="flex min-h-full items-center justify-center p-4 text-center"
               >
@@ -140,17 +145,9 @@ async function onSubmit() {
                           src="https://eatte.io/img/png/logo.png"
                           class="restaurant_img"
                         />
-                        <p class="font-montse">Name restaurant</p>
-                      </div>
-                      <div class="list_container">
-                        <img
-                          src="https://eatte.io/img/png/logo.png"
-                          class="restaurant_img"
-                        />
-                        <p class="font-montse">Name restaurant</p>
+                        <p class="font-montse">{{ item.company_name }}</p>
                       </div>
                     </div>
-
                     <div class="mt-4">
                       <button
                         type="button"
@@ -206,10 +203,8 @@ async function onSubmit() {
             <span class="forgot_text">Forgot Password ?</span>
           </NuxtLink>
         </div>
-        <!-- @click="openModal()" -->
-        <!-- <NuxtLink to="/"> -->
-        <button @click="data">Login'</button>
-        <!--  </NuxtLink> -->
+
+        <button class="login_btn">Login'</button>
       </form>
     </div>
   </div>
