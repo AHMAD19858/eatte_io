@@ -1,5 +1,6 @@
 <script setup>
 import { ref } from "vue";
+import md5 from "md5";
 import {
   TransitionRoot,
   TransitionChild,
@@ -23,9 +24,10 @@ function closeModal() {
 function openModal() {
   isOpen.value = true;
 }
-const url = "https://reqres.in/api/login";
+const url = "/api/login";
 const isLoading = ref(false);
 const _error = ref(null);
+let loginData = reactive({});
 const form = reactive({
   email: "",
   password: "",
@@ -33,19 +35,23 @@ const form = reactive({
 async function onSubmit() {
   if (isLoading.value) return;
   isLoading.value = true;
-  const { data, error } = await useFetch(url, {
-    method: "post",
-    body: form,
-  });
+  const { data, error } = await useFetch(
+    `${url}?email=${md5(form.email)}&password=${md5(form.password)}`,
+    {
+      method: "GET",
+    }
+  );
+  loginData.value = data;
+  console.log(data)
+  console.log(loginData)
   isLoading.value = false;
   if (error.value) {
-    _error.value = error.value.data.error;
+    console.log(error);
     return;
   }
 
-  navigateTo("/");
+  // navigateTo("/");
 }
-
 </script>
 
 <template>
@@ -56,6 +62,7 @@ async function onSubmit() {
         <p class="sub_slogan">
           What you need to manage your business in one software!
         </p>
+        {{ loginData }}
         <div class="mt-[185px] ml-[0px]">
           <div class="flex">
             <img src="../assets/images/star.svg" alt="" />
@@ -86,8 +93,9 @@ async function onSubmit() {
       <div class="circle_bottom"></div>
     </div>
     <div class="right_side">
-      <form class="form_section">
+      <form class="form_section" @submit.prevent="onSubmit()">
         <h1 class="welcome">Welcome Back!</h1>
+        {{ form }}
         <p class="sub_text">Login to eatte, just the best.</p>
 
         <TransitionRoot appear :show="isOpen" as="template">
@@ -143,7 +151,7 @@ async function onSubmit() {
                       </div>
                     </div>
 
-                       <div class="mt-4">
+                    <div class="mt-4">
                       <button
                         type="button"
                         class="inline-flex justify-center rounded-md border border-transparent bg-blue-100 px-4 py-2 text-sm font-medium text-blue-900 hover:bg-blue-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2"
@@ -166,6 +174,7 @@ async function onSubmit() {
             class="login_input"
             type="text"
             placeholder="enter your email address"
+            v-model="form.email"
           />
         </div>
         <p class="label">Password</p>
@@ -176,6 +185,7 @@ async function onSubmit() {
             type="password"
             name=""
             id=""
+            v-model="form.password"
             :class="colorMode.value == 'light' ? 'light' : 'dark'"
             placeholder="enter your password"
           />
@@ -196,11 +206,9 @@ async function onSubmit() {
             <span class="forgot_text">Forgot Password ?</span>
           </NuxtLink>
         </div>
-<!-- @click="openModal()" -->
+        <!-- @click="openModal()" -->
         <!-- <NuxtLink to="/"> -->
-        <button  @click="data">
-          Login'
-        </button>
+        <button @click="data">Login'</button>
         <!--  </NuxtLink> -->
       </form>
     </div>
