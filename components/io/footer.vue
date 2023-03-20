@@ -232,7 +232,7 @@
     position: unset;
     margin-bottom: -15px;
   }
-}
+ }
 @media (max-width: 576px) {
   .main {
     display: block;
