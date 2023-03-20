@@ -1,6 +1,5 @@
 export default defineEventHandler(async (event) => {
   const { email, password } = getQuery(event);
-  const runTime = useRuntimeConfig();
   const response = await $fetch(
     `https://hubbucs.com/site/api/eatte/login.php?device_type=2&app_id=1&email=${email}&password=${password}`
   );

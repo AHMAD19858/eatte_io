@@ -5,7 +5,7 @@ import service1 from "../assets/images/icons/hand.svg";
 import service3 from "../assets/images/icons/code.svg";
 import service2 from "../assets/images/icons/charts.svg";
 import one from "../assets/images/features/gift/one.svg";
-import four from "../assets/images/features/kds/four.svg";
+import two from "../assets/images/features/gift/two.svg";
 import phoneCase from "../assets/images/phone-case.png";
 
 const cardData = [
@@ -90,7 +90,7 @@ const featuresData = [
   },
   {
     position: "left",
-    img: four,
+    img: two,
     title: "Guests Can Easily Manage Their Own Gift Cards",
     sub_title: `Guests can check their e-gift card balance easily online from your website.`,
     details: [

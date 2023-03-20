@@ -1,7 +1,7 @@
 <script setup>
 import marketing from "../assets/images/marketing.svg";
 import dash from "../assets/images/dashboard.svg";
-import one from "../assets/images/features/reservation/one.svg";
+import one from "../assets/images/features/marketing/one.svg";
 
 const cardData = [
   {
