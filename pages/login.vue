@@ -91,12 +91,12 @@ async function onSubmit() {
       <div class="circle_bottom"></div>
     </div>
     <div class="right_side">
-      <form class="form_section" >
+      <form class="form_section">
         <h1 class="welcome">Welcome Back!</h1>
         <p class="sub_text">Login to eatte, just the best.</p>
-        <div class="bg-red-500 rounded-md my-3">
+        <div class="bg-red-500 rounded-md my-3 animate-slideDown">
           <p
-            class="text-center"
+            class="text-center text-white"
             v-if="loginData.value && loginData.value.status === false"
           >
             {{ loginData.value.err }}
@@ -207,10 +207,9 @@ async function onSubmit() {
           </NuxtLink>
         </div>
 
-        <button 
-        type="button"
-        @click="onSubmit()"
-        class="login_btn">Login</button>
+        <button type="button" @click="onSubmit()" class="login_btn">
+          Login
+        </button>
       </form>
     </div>
   </div>

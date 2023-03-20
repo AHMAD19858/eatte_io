@@ -16,11 +16,9 @@
           </div>
           <div>
             <p class="testmonial">
-              “Very happy with the service. Would definitely 
+              “Very happy with the service. Would definitely
             </p>
-            <p class="testmonial">
-              buy from again.”
-            </p>
+            <p class="testmonial">buy from again.”</p>
           </div>
           <div class="person_div">
             <img
@@ -30,7 +28,6 @@
             />
             <div>
               <p class="name">Jose Adam</p>
-       
             </div>
           </div>
         </div>
@@ -42,8 +39,24 @@
       <form class="form_section">
         <h1 class="welcome">Forgot your</h1>
         <h1 class="welcome">password?</h1>
-  
 
+        <div class="bg-red-500 rounded-md my-3 mt-3">
+          <p
+            class="text-center text-white"
+            v-if="loginData.value && loginData.value.status === false"
+          >
+            {{ loginData.value.err }}
+          </p>
+        </div>
+
+        <div class="bg-green-500 rounded-md my-3 mt-3">
+          <p
+            class="text-center text-white"
+            v-if="loginData.value && loginData.value.status === true"
+          >
+            {{ loginData.value.res.ForgotPasswordSuccess }}
+          </p>
+        </div>
         <p class="label">Email Address</p>
         <div class="input_div">
           <input
@@ -56,9 +69,10 @@
             v-model="form.email"
           />
         </div>
-        
-          <button type="button" @click="onSubmit()" class="login_btn">Send me the link</button>
-        
+
+        <button type="button" @click="onSubmit()" class="login_btn">
+          Send me the link
+        </button>
 
         <div class="flex my-3 justify-center gap-1">
           <p class="text-sm font-montse dark:text-white">or</p>
@@ -76,7 +90,6 @@ definePageMeta({
   layout: "outside",
 });
 
-
 const url = "/api/forget-Password";
 
 const isLoading = ref(false);
@@ -86,16 +99,12 @@ const form = reactive({
   email: "",
 });
 
-
 async function onSubmit() {
   if (isLoading.value) return;
   isLoading.value = true;
-  const { data } = await useFetch(
-    `${url}?email=${form.email}`,
-    {
-      method: "POST",
-    }
-  );
+  const { data } = await useFetch(`${url}?email=${form.email}`, {
+    method: "POST",
+  });
   loginData.value = data;
   isLoading.value = false;
   console.log("this is data", data._rawValue);
@@ -156,10 +165,8 @@ async function onSubmit() {
   @apply pb-4 text-gray-800  text-2xl mb-1  font-montse font-semibold text-[45px] text-left dark:text-white;
 }
 
-
-
 .label {
-  @apply font-montse text-[#93A3B0CC] text-base my-1 mt-[100px];
+  @apply font-montse text-[#93A3B0CC] text-base my-1 mt-[70px];
 }
 
 .input_div {
