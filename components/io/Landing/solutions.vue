@@ -33,7 +33,7 @@
                   Full Service Restaurant
                 </h3>
                 <p
-                  class="dark:text-[#93A3B0CC] text-center h-[100px] w-[300px] font-montse font-normal text-base text-[#3F4440]"
+                  class="dark:text-[#93A3B0CC] text-center h-[100px] max-max-w-[300px] font-montse font-normal text-base text-[#3F4440]"
                 >
                   Elevate the dining experience or keep it casual -- Everything
                   you need for quality tableside and off-premise service in one
@@ -56,7 +56,7 @@
                   Catering
                 </h3>
                 <p
-                  class="dark:text-[#93A3B0CC] text-center h-[100px] w-[300px] font-montse font-normal text-base text-[#3F4440]"
+                  class="dark:text-[#93A3B0CC] text-center h-[100px] max-w-[300px] font-montse font-normal text-base text-[#3F4440]"
                 >
                   Using a POS system will help streamline your catering business
                   operations, improve customer service, and reduce overall
@@ -83,7 +83,7 @@
                   Family Style
                 </h3>
                 <p
-                  class="dark:text-[#93A3B0CC] text-center h-[100px] w-[300px] font-montse font-normal text-base text-[#3F4440]"
+                  class="dark:text-[#93A3B0CC] text-center h-[100px] max-w-[300px] font-montse font-normal text-base text-[#3F4440]"
                 >
                   Our POS: easy-to-use, fast, will never let you down. Together,
                   we make an unstoppable team.
@@ -105,7 +105,7 @@
                   Fine Dining
                 </h3>
                 <p
-                  class="dark:text-[#93A3B0CC] text-center h-[100px] w-[300px] font-montse font-normal text-base text-[#3F4440]"
+                  class="dark:text-[#93A3B0CC] text-center h-[100px] max-w-[300px] font-montse font-normal text-base text-[#3F4440]"
                 >
                   All-in-one fine dining restaurant POS has the tools you need
                   to deliver an elevated hospitality experience for your guests.
@@ -127,7 +127,7 @@
                   Quick Service Restaurant
                 </h3>
                 <p
-                  class="dark:text-[#93A3B0CC]  text-center h-[100px] w-[300px] font-montse font-normal text-base text-[#3F4440]"
+                  class="dark:text-[#93A3B0CC]  text-center h-[100px] max-w-[300px] font-montse font-normal text-base text-[#3F4440]"
                 >
                   At our restaurants, you don't have to wait in line for long
                   periods of time. Our staff will greet you with a smile and
@@ -154,7 +154,7 @@
                   Coffee Shop
                 </h3>
                 <p
-                  class="dark:text-[#93A3B0CC] text-center h-[100px] w-[300px] font-montse font-normal text-base text-[#3F4440]"
+                  class="dark:text-[#93A3B0CC] text-center h-[100px] max-w-[300px] font-montse font-normal text-base text-[#3F4440]"
                 >
                   Our coffee shop POS makes it easier for you to conquer the
                   morning rush, increase profit margins, and crush the
@@ -177,7 +177,7 @@
                   Fast Casual
                 </h3>
                 <p
-                  class="dark:text-[#93A3B0CC] text-center h-[100px] w-[300px] font-montse font-normal text-base text-[#3F4440]"
+                  class="dark:text-[#93A3B0CC] text-center h-[100px] max-w-[300px] font-montse font-normal text-base text-[#3F4440]"
                 >
                   Our full-service POS system offers a variety of features that
                   make ordering, tracking, and reporting easier and more
@@ -201,7 +201,7 @@
                   Food Truck
                 </h3>
                 <p
-                  class="dark:text-[#93A3B0CC] text-center h-[100px] w-[300px] font-montse font-normal text-base text-[#3F4440]"
+                  class="dark:text-[#93A3B0CC] text-center h-[100px] max-w-[300px] font-montse font-normal text-base text-[#3F4440]"
                 >
                   We’re here to provide you with some of the tastiest dishes on
                   the go. Our menu is ever growing and expanding, offering
@@ -229,7 +229,7 @@
                   Bakery
                 </h3>
                 <p
-                  class="dark:text-[#93A3B0CC] text-center h-[100px] w-[300px] font-montse font-normal text-base text-[#3F4440]"
+                  class="dark:text-[#93A3B0CC] text-center h-[100px] max-w-[300px] font-montse font-normal text-base text-[#3F4440]"
                 >
                   Our POS system allows you to quickly create orders, process
                   payments, and keep track of inventory.
@@ -251,7 +251,7 @@
                   Cafe
                 </h3>
                 <p
-                  class="dark:text-[#93A3B0CC] text-center h-[100px] w-[300px] font-montse font-normal text-base text-[#3F4440]"
+                  class="dark:text-[#93A3B0CC] text-center h-[100px] max-w-[300px] font-montse font-normal text-base text-[#3F4440]"
                 >
                   EATTE has the software, hardware, and support to help you
                   achieve your goals.
