@@ -14,7 +14,7 @@
       </div>
 
       <section class="text-black">
-        <div class="flex flex-col items-center p-4 mx-auto md:p-8 ">
+        <div class="flex flex-col items-center p-4 mx-auto md:p-8">
           <div class="sol_container">
             <div class="divide_section">
               <div class="item_section">
@@ -127,7 +127,7 @@
                   Quick Service Restaurant
                 </h3>
                 <p
-                  class="dark:text-[#93A3B0CC]  text-center h-[100px] max-w-[300px] font-montse font-normal text-base text-[#3F4440]"
+                  class="dark:text-[#93A3B0CC] text-center h-[100px] max-w-[300px] font-montse font-normal text-base text-[#3F4440]"
                 >
                   At our restaurants, you don't have to wait in line for long
                   periods of time. Our staff will greet you with a smile and
@@ -211,7 +211,7 @@
               </div>
             </div>
             <div
-              class="hidden w-full divide-y sm:flex-col sm:flex divide-[#93A3B029] sm:gap-[219px]"
+              class="hidden w-full divide-y sm:flex-col sm:flex divide-[#93A3B029]"
             >
               <div class="item_section">
                 <img
@@ -292,7 +292,7 @@
 }
 
 .container {
-  @apply w-full  py-0 px-[15px] ;
+  @apply w-full  py-0 px-[15px];
 }
 
 .solutions_section {
@@ -342,7 +342,7 @@
   .container {
     max-width: 768px;
   }
-  .divide_section{
+  .divide_section {
     gap: 219px;
   }
 }
@@ -357,7 +357,7 @@
 }
 
 @media (max-width: 576px) {
-  .divide_section{
+  .divide_section {
     margin-top: 70px;
   }
   .container {

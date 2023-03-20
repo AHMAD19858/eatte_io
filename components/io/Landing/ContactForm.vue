@@ -88,9 +88,10 @@
         </button>
       </div>
       <div class="plan_side">
-        <div class="plan">
-          <!-- img -->
-        </div>
+        <!--   <div class="plan">
+          
+        </div> -->
+        <img src="~/assets/images/support.svg" class="plan" alt="" />
       </div>
     </div>
   </div>
@@ -140,7 +141,7 @@
 }
 
 .plan_section .plan_side .plan {
-  @apply py-[25px] border-[3px] px-[15px] border-white border-solid h-[610px] bg-gray-400 gap-[20px] rounded-[15px] flex w-full mb-10 items-center justify-start relative;
+  @apply px-[15px]  relative;
 }
 
 .plan_section .plan_side .plan .plan_icon {
