@@ -12,23 +12,25 @@ definePageMeta({
   layout: "outside",
 });
 
+const colorMode = useColorMode();
+const url = "/api/login";
+const isOpen = ref(false);
+const isLoading = ref(false);
+let userCompanies = reactive([]);
+let loginData = reactive({});
+let userToken = reactive("")
+const form = reactive({
+  email: "",
+  password: "",
+});
+
 function closeModal() {
   isOpen.value = false;
 }
 function openModal() {
   isOpen.value = true;
 }
-const colorMode = useColorMode();
-const url = "/api/login";
-const isOpen = ref(false);
-const isLoading = ref(false);
-const _error = ref(null);
-let userCompanies = reactive([]);
-let loginData = reactive({});
-const form = reactive({
-  email: "",
-  password: "",
-});
+
 async function onSubmit() {
   if (isLoading.value) return;
   isLoading.value = true;
@@ -42,17 +44,11 @@ async function onSubmit() {
   console.log("this is data", data._rawValue);
   console.log("loginDatad", loginData.value);
   if (data._rawValue.status === true) {
-    userCompanies.value = data._rawValue.res.companies;
-    console.log("userCompanies", userCompanies.value);
+    userCompanies = data._rawValue.res.companies;
+    userToken = data._rawValue.res.token;
+    console.log("userCompanies", userCompanies);
     openModal();
   }
-  /*   isLoading.value = false;
-  if (error.value) {
-    console.log(error);
-    return;
-  } */
-
-  // navigateTo("/");
 }
 </script>
 
@@ -96,7 +92,6 @@ async function onSubmit() {
     <div class="right_side">
       <form class="form_section" @submit.prevent="onSubmit()">
         <h1 class="welcome">Welcome Back!</h1>
-        <!--  {{ form }} -->
         <p class="sub_text">Login to eatte, just the best.</p>
 
         <TransitionRoot appear :show="isOpen" as="template">
@@ -113,11 +108,7 @@ async function onSubmit() {
               <div class="fixed inset-0 bg-black bg-opacity-25" />
             </TransitionChild>
 
-            <div
-              class="fixed inset-0 overflow-y-auto"
-              v-for="(item, index) in userCompanies"
-              :key="index"
-            >
+            <div class="fixed inset-0 overflow-y-auto">
               <div
                 class="flex min-h-full items-center justify-center p-4 text-center"
               >
@@ -135,27 +126,27 @@ async function onSubmit() {
                   >
                     <DialogTitle
                       as="h1"
-                      class="text-lg font-medium leading-6 font-montse"
+                      class="text-lg font-medium leading-6 font-montse flex justify-between items-center"
                     >
                       Select your restaurant
-                    </DialogTitle>
-                    <div class="mt-2">
-                      <div class="list_container">
-                        <img
-                          src="https://eatte.io/img/png/logo.png"
-                          class="restaurant_img"
-                        />
-                        <p class="font-montse">{{ item.company_name }}</p>
-                      </div>
-                    </div>
-                    <div class="mt-4">
-                      <button
-                        type="button"
-                        class="inline-flex justify-center rounded-md border border-transparent bg-blue-100 px-4 py-2 text-sm font-medium text-blue-900 hover:bg-blue-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2"
+                      <img
+                        src="~/assets/images/icons/close.svg"
                         @click="closeModal"
-                      >
-                        Got it, thanks!
+                        class="cursor-pointer w-10"
+                      />
+                    </DialogTitle>
+                    <div
+                      class="mt-2"
+                      v-for="(item, index) in userCompanies"
+                      :key="index"
+                    >
+                      <form class="list_container" :action="item.base_url" method="POST">
+                        <input type="hidden" name="xtkn" :value="userToken">
+                      <button class="trigger_btn">
+                        <img :src="item.logo_url" class="restaurant_img" />
+                        <p class="font-montse">{{ item.company_name }}</p>
                       </button>
+                      </form>
                     </div>
                   </DialogPanel>
                 </TransitionChild>
@@ -204,7 +195,7 @@ async function onSubmit() {
           </NuxtLink>
         </div>
 
-        <button class="login_btn">Login'</button>
+        <button class="login_btn">Login</button>
       </form>
     </div>
   </div>
@@ -216,6 +207,13 @@ async function onSubmit() {
   height: 50px;
   object-fit: contain;
 }
+.trigger_btn{
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
 .list_container {
   display: flex;
   border: 4px solid transparent;
@@ -225,6 +223,7 @@ async function onSubmit() {
   border-radius: 5px;
   margin-block: 20px;
   padding-block: 5px;
+  cursor: pointer;
 }
 .left_side {
   @apply relative overflow-hidden md:flex w-1/2 bg-gradient-to-tr from-primary-color to-[#CC4D2C]  justify-around items-center hidden;

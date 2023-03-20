@@ -20,6 +20,7 @@
     "@headlessui/vue": "^1.7.9",
     "@heroicons/vue": "^2.0.15",
     "@vue-hero-icons/outline": "^1.7.2",
+    "md5": "^2.3.0",
     "nuxt-swiper": "^1.0.1"
   }
 }
