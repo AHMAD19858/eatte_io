@@ -18,7 +18,7 @@ const isOpen = ref(false);
 const isLoading = ref(false);
 let userCompanies = reactive([]);
 let loginData = reactive({});
-let userToken = reactive("")
+let userToken = reactive("");
 const form = reactive({
   email: "",
   password: "",
@@ -90,10 +90,17 @@ async function onSubmit() {
       <div class="circle_bottom"></div>
     </div>
     <div class="right_side">
-      <form class="form_section" @submit.prevent="onSubmit()">
+      <form class="form_section" >
         <h1 class="welcome">Welcome Back!</h1>
         <p class="sub_text">Login to eatte, just the best.</p>
-
+        <div class="bg-red-500 rounded-md my-3">
+          <p
+            class="text-center"
+            v-if="loginData.value && loginData.value.status === false"
+          >
+            {{ loginData.value.err }}
+          </p>
+        </div>
         <TransitionRoot appear :show="isOpen" as="template">
           <Dialog as="div" @close="closeModal" class="relative z-10">
             <TransitionChild
@@ -140,12 +147,16 @@ async function onSubmit() {
                       v-for="(item, index) in userCompanies"
                       :key="index"
                     >
-                      <form class="list_container" :action="item.base_url" method="POST">
-                        <input type="hidden" name="xtkn" :value="userToken">
-                      <button class="trigger_btn">
-                        <img :src="item.logo_url" class="restaurant_img" />
-                        <p class="font-montse">{{ item.company_name }}</p>
-                      </button>
+                      <form
+                        class="list_container"
+                        :action="item.base_url"
+                        method="POST"
+                      >
+                        <input type="hidden" name="xtkn" :value="userToken" />
+                        <button class="trigger_btn">
+                          <img :src="item.logo_url" class="restaurant_img" />
+                          <p class="font-montse">{{ item.company_name }}</p>
+                        </button>
                       </form>
                     </div>
                   </DialogPanel>
@@ -195,7 +206,10 @@ async function onSubmit() {
           </NuxtLink>
         </div>
 
-        <button class="login_btn">Login</button>
+        <button 
+        type="button"
+        @click="onSubmit()"
+        class="login_btn">Login</button>
       </form>
     </div>
   </div>
@@ -207,7 +221,7 @@ async function onSubmit() {
   height: 50px;
   object-fit: contain;
 }
-.trigger_btn{
+.trigger_btn {
   display: flex;
   align-items: center;
   gap: 16px;
