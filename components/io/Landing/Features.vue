@@ -2,8 +2,8 @@
   <section>
     <div>
       <img
-        class="w-3/5 border-2 rounded-lg"
-        src="https://medevel.com/content/images/2022/07/Screen-Shot-2022-07-30-at-11.42.40.png"
+        class="w-3/5 rounded-lg object-none"
+        src="~/assets/images/main.svg"
         alt=""
       />
     </div>

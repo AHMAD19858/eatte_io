@@ -49,7 +49,7 @@
         </a>
       </div>
       <div class="features_side img_side">
-        <img src="../../../assets/images/demo.png" alt="img" />
+        <img src="../../../assets/images/features/landing/one.svg" alt="img" />
       </div>
     </div>
 
@@ -70,7 +70,7 @@
         </a>
       </div>
       <div class="features_side img_side">
-        <img src="../../../assets/images/demo.png" alt="img" />
+        <img src="../../../assets/images/features/landing/two.svg" alt="img" />
       </div>
     </div>
 
@@ -103,7 +103,7 @@
         </a>
       </div>
       <div class="features_side img_side">
-        <img src="../../../assets/images/demo.png" alt="img" />
+        <img src="../../../assets/images/features/landing/three.svg" alt="img" />
       </div>
     </div>
 
@@ -125,7 +125,7 @@
         </a>
       </div>
       <div class="features_side img_side">
-        <img src="../../../assets/images/demo.png" alt="img" />
+        <img src="../../../assets/images/features/landing/four.svg" alt="img" />
       </div>
     </div>
 
@@ -143,7 +143,7 @@
         </a>
       </div>
       <div class="features_side img_side">
-        <img src="../../../assets/images/demo.png" alt="img" />
+        <img src="../../../assets/images/features/landing/five.svg" alt="img" />
       </div>
     </div>
 
