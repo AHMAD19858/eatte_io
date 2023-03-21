@@ -16,6 +16,7 @@ const colorMode = useColorMode();
 const url = "/api/login";
 const isOpen = ref(false);
 const isLoading = ref(false);
+const spinner = ref(false);
 let userCompanies = reactive([]);
 let loginData = reactive({});
 let userToken = reactive("");
@@ -34,6 +35,7 @@ function openModal() {
 async function onSubmit() {
   if (isLoading.value) return;
   isLoading.value = true;
+  spinner.value = true;
   const { data } = await useFetch(
     `${url}?email=${md5(form.email)}&password=${md5(form.password)}`,
     {
@@ -42,12 +44,11 @@ async function onSubmit() {
   );
   loginData.value = data;
   isLoading.value = false;
-  console.log("this is data", data._rawValue);
-  console.log("loginDatad", loginData.value);
+  spinner.value = false;
   if (data._rawValue.status === true) {
     userCompanies = data._rawValue.res.companies;
     userToken = data._rawValue.res.token;
-    console.log("userCompanies", userCompanies);
+
     openModal();
   }
 }
@@ -141,7 +142,7 @@ async function onSubmit() {
                   leave-to="opacity-0 scale-95"
                 >
                   <DialogPanel
-                    class=" h-[465px] overflow-y-auto w-full max-w-md transform overflow-hidden rounded-2xl bg-white p-6 text-left align-middle shadow-xl transition-all"
+                    class="h-[465px] overflow-y-auto w-full max-w-md transform overflow-hidden rounded-2xl bg-white p-6 text-left align-middle shadow-xl transition-all"
                   >
                     <DialogTitle
                       as="h1"
@@ -220,6 +221,11 @@ async function onSubmit() {
 
         <button type="button" @click="onSubmit()" class="login_btn">
           Login
+          <img
+            v-show="spinner === true"
+            src="~/assets/images/icons/spinner.svg"
+            class="animate-spin w-[30px]"
+          />
         </button>
       </form>
     </div>
@@ -317,7 +323,9 @@ async function onSubmit() {
 }
 
 .login_btn {
-  @apply font-montse block w-full bg-gradient-to-tr from-primary-color to-[#CC4D2C] mt-4 py-2 rounded-[10px] text-white font-semibold mb-2;
+  justify-content: center;
+  gap: 30px;
+  @apply font-montse flex w-full bg-gradient-to-tr from-primary-color to-[#CC4D2C] mt-4 py-2 rounded-[10px] text-white font-semibold mb-2;
 }
 
 .light {
