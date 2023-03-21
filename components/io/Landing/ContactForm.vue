@@ -6,6 +6,8 @@ definePageMeta({
 const url = "/api/support";
 const isLoading = ref(false);
 const isdisabled = ref(false);
+const spinner = ref(false);
+
 
 let formData = reactive({});
 
@@ -21,20 +23,21 @@ async function onSubmit() {
   if (isLoading.value) return;
   isLoading.value = true;
   isdisabled.value = true;
+  spinner.value = true;
 
-  const { data } = await useFetch(
-    `${url}?email=${form.email}&phone=${form.phone}&fullname=${
-      form.firstName + form.lastName
-    }&ticket_summary=${form.message}`,
-    {
-      method: "GET",
-    }
-  );
-  isLoading.value = false;
-  isdisabled.value = false;
-
-  formData.value = data;
-  console.log("data", data);
+    const { data } = await useFetch(
+      `${url}?email=${form.email}&phone=${form.phone}&fullname=${
+        form.firstName + form.lastName
+      }&ticket_summary=${form.message}`,
+      {
+        method: "GET",
+      }
+    );
+    isLoading.value = false;
+    isdisabled.value = false;
+    spinner.value = false;
+    formData.value = data;
+  
 }
 </script>
 
@@ -65,6 +68,7 @@ async function onSubmit() {
                     class="label_input"
                     v-model="form.firstName"
                   />
+       
                 </div>
                 <div class="input_div">
                   <label
@@ -79,6 +83,7 @@ async function onSubmit() {
                     class="label_input"
                     v-model="form.lastName"
                   />
+          
                 </div>
                 <div class="single_input_div">
                   <label
@@ -93,6 +98,7 @@ async function onSubmit() {
                     class="label_input"
                     v-model="form.email"
                   />
+              
                 </div>
                 <div class="single_input_div">
                   <label
@@ -107,6 +113,7 @@ async function onSubmit() {
                     class="label_input"
                     v-model="form.phone"
                   />
+           
                 </div>
 
                 <div class="single_input_div">
@@ -122,6 +129,7 @@ async function onSubmit() {
                     class="textarea"
                     v-model="form.message"
                   ></textarea>
+
                 </div>
               </div>
             </fieldset>
@@ -129,14 +137,22 @@ async function onSubmit() {
         </section>
         <button :disabled="isdisabled" class="plan_btn" @click="onSubmit()">
           <p class="font-montse">Send message</p>
-          <i class="bx bx-right-arrow-alt"></i>
+          <i class="bx bx-right-arrow-alt" v-show="spinner === false"></i>
+          <img
+            v-show="spinner === true"
+            src="~/assets/images/icons/spinner.svg"
+            class="animate-spin w-[30px]"
+          />
         </button>
+
         <div
-        v-if="formData.value && formData.value.status === true"
+          v-if="formData.value && formData.value.status === true"
           class="flex justify-center rounded-[10px] mt-[40px] bg-green-500 h-12 items-center"
         >
-        <i class='bx bxs-checkbox-checked text-3xl text-white'></i>
-          <h4 class="text-white self-center font-montse">Message sent successfully!</h4>
+          <i class="bx bxs-checkbox-checked text-3xl text-white"></i>
+          <h4 class="text-white self-center font-montse">
+            Message sent successfully!
+          </h4>
         </div>
       </div>
       <div class="plan_side">
@@ -154,6 +170,9 @@ async function onSubmit() {
   @apply w-full max-w-[1200px] py-0  my-0 mx-auto;
 }
 
+.missing_input {
+  @apply text-red-900 font-montse pt-2 text-sm pl-[10px];
+}
 .plan_title {
   @apply font-montse text-[40px] font-bold my-10 text-primary-color w-[285px];
 }

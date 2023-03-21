@@ -17,6 +17,7 @@ module.exports = {
       animation: {
 				fade: "fade 0.4s ease-in-out",
 				slideDown: "slideDown 1s ease-in",
+				spin:"spin 1s linear infinite"
 			},
       keyframes: {
 				fade: {
