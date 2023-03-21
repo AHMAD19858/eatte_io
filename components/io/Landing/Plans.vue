@@ -156,7 +156,7 @@ const select_pay = ref(true);
 }
 
 .plan_section .plan_side .plan .plan_icon i {
-  @apply text-[40px];
+  @apply text-[40px] text-[#93A3B0CC];
 }
 
 .plan_section .plan_side .plan .plan_info h4 {

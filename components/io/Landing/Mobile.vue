@@ -17,26 +17,10 @@
               <div class="download_container">
                 <div class="flex justify-between gap-2 pl-2">
                   <i class="bx bxl-apple self-center text-5xl"></i>
-
-                  <div class="self-center">
-                    <h6
-                      class="text-[#1E1E1E] text-[13px] dark:text-white font-montse"
-                    >
-                      Download on the
-                    </h6>
-                    <h6
-                      class="text-[#1E1E1E] text-[15px] font-bold dark:text-white font-montse"
-                    >
-                      App Store
-                    </h6>
-                  </div>
-                </div>
-              </div>
-              <div class="pl-1">
-                <div class="download_container">
-                  <div class="flex justify-between gap-2 pl-2">
-                    <i class="bx bxl-play-store self-center text-5xl"></i>
-
+                  <NuxtLink
+                    to="https://apps.apple.com/eg/app/eatte-admin/id1550388849"
+                    target="_blank"
+                  >
                     <div class="self-center">
                       <h6
                         class="text-[#1E1E1E] text-[13px] dark:text-white font-montse"
@@ -46,9 +30,33 @@
                       <h6
                         class="text-[#1E1E1E] text-[15px] font-bold dark:text-white font-montse"
                       >
-                        Google Play
+                        App Store
                       </h6>
                     </div>
+                  </NuxtLink>
+                </div>
+              </div>
+              <div class="pl-1">
+                <div class="download_container">
+                  <div class="flex justify-between gap-2 pl-2">
+                    <i class="bx bxl-play-store self-center text-5xl"></i>
+                    <NuxtLink
+                      to="https://play.google.com/store/apps/details?id=com.eatte.admin"
+                      target="_blank"
+                    >
+                      <div class="self-center">
+                        <h6
+                          class="text-[#1E1E1E] text-[13px] dark:text-white font-montse"
+                        >
+                          Download on the
+                        </h6>
+                        <h6
+                          class="text-[#1E1E1E] text-[15px] font-bold dark:text-white font-montse"
+                        >
+                          Google Play
+                        </h6>
+                      </div>
+                    </NuxtLink>
                   </div>
                 </div>
               </div>
@@ -77,27 +85,10 @@
               <div class="download_container">
                 <div class="flex justify-between gap-2 pl-2">
                   <i class="bx bxl-apple self-center text-5xl"></i>
-
-                  <div class="self-center">
-                    <h6
-                      class="text-[#1E1E1E] text-[13px] dark:text-white font-montse"
-                    >
-                      Download on the
-                    </h6>
-                    <h6
-                      class="text-[#1E1E1E] text-[15px] font-bold dark:text-white font-montse"
-                    >
-                      App Store
-                    </h6>
-                  </div>
-                </div>
-              </div>
-
-              <div class="pl-1">
-                <div class="download_container">
-                  <div class="flex justify-between gap-2 pl-2">
-                    <i class="bx bxl-play-store self-center text-5xl"></i>
-
+                  <NuxtLink
+                    to="https://apps.apple.com/eg/app/eatte-pos/id1588867847"
+                    target="_blank"
+                  >
                     <div class="self-center">
                       <h6
                         class="text-[#1E1E1E] text-[13px] dark:text-white font-montse"
@@ -107,9 +98,34 @@
                       <h6
                         class="text-[#1E1E1E] text-[15px] font-bold dark:text-white font-montse"
                       >
-                        Google Play
+                        App Store
                       </h6>
                     </div>
+                  </NuxtLink>
+                </div>
+              </div>
+
+              <div class="pl-1">
+                <div class="download_container">
+                  <div class="flex justify-between gap-2 pl-2">
+                    <i class="bx bxl-play-store self-center text-5xl"></i>
+                    <NuxtLink
+                      to="https://play.google.com/store/apps/details?id=com.eatteapp.poynt"
+                      target="_blank"
+                    >
+                      <div class="self-center">
+                        <h6
+                          class="text-[#1E1E1E] text-[13px] dark:text-white font-montse"
+                        >
+                          Download on the
+                        </h6>
+                        <h6
+                          class="text-[#1E1E1E] text-[15px] font-bold dark:text-white font-montse"
+                        >
+                          Google Play
+                        </h6>
+                      </div>
+                    </NuxtLink>
                   </div>
                 </div>
               </div>
