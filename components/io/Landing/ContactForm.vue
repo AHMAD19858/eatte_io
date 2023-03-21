@@ -264,11 +264,11 @@ async function onSubmit() {
 }
 
 .label_input {
-  @apply p-[10px] mt-[10px] h-[50px] w-full rounded-[8px] focus:ring focus:ring-opacity-75 focus:ring-violet-400;
+  @apply text-black p-[10px] mt-[10px] h-[50px] w-full rounded-[8px] focus:ring focus:ring-opacity-75 focus:ring-violet-400;
 }
 
 .textarea {
-  @apply p-[10px] mt-[10px] h-[100px] w-full rounded-[8px] focus:ring focus:ring-opacity-75 focus:ring-violet-400;
+  @apply p-[10px] mt-[10px] h-[100px] w-full rounded-[8px] focus:ring focus:ring-opacity-75 focus:ring-violet-400 text-black;
 }
 
 .input_div {
