@@ -1,6 +1,6 @@
 <script setup>
 const select_month = ref(false);
-const select_pay = ref(false);
+const select_pay = ref(true);
 </script>
 
 <template>
@@ -9,41 +9,36 @@ const select_pay = ref(false);
     <div class="plan_section">
       <div class="plan_side">
         <h1 class="font-montse">Pay as you go</h1>
-        <h6 class="font-montse font-normal text-base mt-0">
-          <span class="dot"></span> Point of sale software
+
+        <h6 class="text-2xl py-4 font-bold">EATTE Basic Kit</h6>
+        <h6 class="kits">
+          <i class="bx bx-check-circle text-primary-color text-xl"></i> Point of
+          sale software
         </h6>
-        <h6 class="font-montse font-normal text-base mt-0">
-          <span class="dot"></span> One smart countertop erminal
+        <h6 class="kits">
+          <i class="bx bx-check-circle text-primary-color text-xl"></i> One
+          smart countertop erminal
         </h6>
-        <h6 class="font-montse font-normal text-base mt-0">
-          <span class="dot"></span> Kitchen management software
+        <h6 class="kits">
+          <i class="bx bx-check-circle text-primary-color text-xl"></i> Kitchen
+          management software
         </h6>
-        <h6 class="font-montse font-normal text-base mt-0">
-          <span class="dot"></span> Inventory management
+        <h6 class="kits">
+          <i class="bx bx-check-circle text-primary-color text-xl"></i>
+          Inventory management
         </h6>
-        <h6 class="font-montse font-normal text-base mt-0">
-          <span class="dot"></span> Real-time Analytics & reports
+        <h6 class="kits">
+          <i class="bx bx-check-circle text-primary-color text-xl"></i>
+          Real-time Analytics & reports
         </h6>
-        <h6 class="font-montse font-normal text-base mt-0">
-          <span class="dot"></span> Point of sale software
+        <h6 class="kits">
+          <i class="bx bx-check-circle text-primary-color text-xl"></i> Point of
+          sale software
         </h6>
-        <h6 class="font-montse font-normal text-base mt-0">
-          <span class="dot"></span> Point of sale software
+        <h6 class="kits">
+          <i class="bx bx-check-circle text-primary-color text-xl"></i> Point of
+          sale software
         </h6>
-        <ul>
-          <li>
-            <i class="bx bx-check-circle"></i>
-            <p>$0 up front</p>
-          </li>
-          <li>
-            <i class="bx bx-check-circle"></i>
-            <p>$0/mo</p>
-          </li>
-          <li>
-            <i class="bx bx-check-circle"></i>
-            <p>2.85% + $0.10 Processing fee</p>
-          </li>
-        </ul>
       </div>
       <div class="plan_side">
         <div
@@ -60,6 +55,10 @@ const select_pay = ref(false);
           <div class="plan_info">
             <h4>Monthly</h4>
             <p>Pay Monthly for software and devices.</p>
+            <h6 class="details">
+              $500 upfront waived ($0 upfront) . $50/mo . 2.45% + $0.10
+              Processing fee
+            </h6>
           </div>
         </div>
         <div
@@ -76,6 +75,9 @@ const select_pay = ref(false);
           <div class="plan_info">
             <h4>Pay as you go</h4>
             <p>No upfront cost. No monthly subscription</p>
+            <h6 class="details">
+              $0 upfront . $0/mo . 2.85% + $0.10 Processing fee
+            </h6>
           </div>
           <p class="plan_best">Best Value</p>
         </div>
@@ -89,7 +91,7 @@ const select_pay = ref(false);
     <div class="header_container">
       <h2 class="main_text">Built To Handle The Details, The Rush</h2>
       <h2 class="main_text">And Everything In-Between</h2>
-      <p class=" text-center font-montse text-black dark:text-white">
+      <p class="text-center font-montse text-black dark:text-white">
         We help you bridge the divide between point of sale, payment processing,
         marketing, labor management, online ordering, and more - functions that
         are usually disconnected in restaurant operations.
@@ -99,6 +101,12 @@ const select_pay = ref(false);
 </template>
 
 <style scoped>
+.kits {
+  @apply font-montse font-normal text-base mt-0 py-[8px] flex gap-[10px] items-center;
+}
+.details {
+  @apply text-primary-color py-2 font-bold pr-[10px] text-base;
+}
 .container {
   @apply w-full max-w-[1200px] py-0 px-[15px] my-0 mx-auto;
 }
@@ -108,12 +116,12 @@ const select_pay = ref(false);
 }
 
 .plan_section {
-  @apply flex justify-between items-start flex-wrap mb-[100px] gap-[50px];
+  @apply flex justify-between items-start flex-wrap mb-[100px];
 }
 
-.plan_section .plan_side {
+/* .plan_section .plan_side {
   width: calc(100% / 2 - 25px);
-}
+} */
 
 .plan_section .plan_side h1 {
   @apply mb-[15px] font-bold text-6xl font-montse;
