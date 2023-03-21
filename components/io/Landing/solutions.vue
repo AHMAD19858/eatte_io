@@ -280,7 +280,7 @@
     brightness(99%) contrast(107%);
 }
 .header_container {
-  @apply space-y-2 text-center mb-16;
+  @apply space-y-2 text-center mb-1 pt-11;
 }
 
 .main_text {
@@ -296,7 +296,7 @@
 }
 
 .solutions_section {
-  @apply relative bg-white h-[1080px] my-[260px] mx-0 dark:bg-[#272727];
+  @apply relative bg-white h-[1140px] mt-[260px] mb-[175px] mx-0 dark:bg-[#272727];
 }
 .sol_container {
   @apply flex flex-col w-full divide-y sm:flex-row sm:divide-y-0 sm:divide-x  divide-[#93A3B029];
