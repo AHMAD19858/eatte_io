@@ -483,12 +483,12 @@ const showMenu = ref(false);
     /* width: 100vw; */
   }
 
-  .parent:active .child {
+/*   .parent:active .child {
     opacity: 1;
     height: 50px;
     overflow: none;
     transform: translateY(0);
-  }
+  } */
 
   .mobile_mode {
     @apply mx-5 text-gray-800 hover:text-gray-400  focus:outline-none focus:text-gray-400;
