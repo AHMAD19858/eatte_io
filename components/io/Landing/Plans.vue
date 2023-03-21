@@ -40,7 +40,7 @@ const select_pay = ref(true);
           sale software
         </h6>
       </div>
-      <div class="plan_side">
+      <div class="plan_side self-end">
         <div
           class="plan"
           :class="select_month ? 'active_plan' : ''"
