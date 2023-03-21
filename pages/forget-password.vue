@@ -1,3 +1,27 @@
+<script setup>
+definePageMeta({
+  layout: "outside",
+});
+
+const url = "/api/forget-Password";
+const isLoading = ref(false);
+let loginData = reactive({});
+
+const form = reactive({
+  email: "",
+});
+
+async function onSubmit() {
+  if (isLoading.value) return;
+  isLoading.value = true;
+  const { data } = await useFetch(`${url}?email=${form.email}`, {
+    method: "POST",
+  });
+  loginData.value = data;
+  isLoading.value = false;
+}
+</script>
+
 <template>
   <div class="h-screen md:flex">
     <div class="left_side">
@@ -107,39 +131,6 @@
     </div>
   </div>
 </template>
-
-<script setup>
-definePageMeta({
-  layout: "outside",
-});
-
-const url = "/api/forget-Password";
-
-const isLoading = ref(false);
-let userCompanies = reactive([]);
-let loginData = reactive({});
-const form = reactive({
-  email: "",
-});
-
-async function onSubmit() {
-  if (isLoading.value) return;
-  isLoading.value = true;
-  const { data } = await useFetch(`${url}?email=${form.email}`, {
-    method: "POST",
-  });
-  loginData.value = data;
-  isLoading.value = false;
-  console.log("this is data", data._rawValue);
-  console.log("loginDatad", loginData.value);
-  if (data._rawValue.status === true) {
-    userCompanies = data._rawValue.res.companies;
-    userToken = data._rawValue.res.token;
-    console.log("userCompanies", userCompanies);
-    openModal();
-  }
-}
-</script>
 
 <style scoped>
 .left_side {

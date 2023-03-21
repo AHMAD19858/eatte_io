@@ -119,9 +119,9 @@
                     </p>
                   </NuxtLink>
                   <NuxtLink to="/feedback">
-                  <p class="megaNav_content">
-                    <span class="dot"></span> Guest feedback
-                  </p>
+                    <p class="megaNav_content">
+                      <span class="dot"></span> Guest feedback
+                    </p>
                   </NuxtLink>
                   <p class="megaNav_content">
                     <span class="dot"></span> Coupons
@@ -228,7 +228,7 @@
               />
             </svg>
           </a>
-       <!--    <ul class="nav_child_container child">
+          <!--    <ul class="nav_child_container child">
             <NuxtLink
               to="/pos"
               class="nav_child_element dark:bg-dark-background-color dark:text-white"
@@ -481,6 +481,13 @@ const showMenu = ref(false);
     overflow: none;
     transform: translateY(0);
     /* width: 100vw; */
+  }
+
+  .parent:active .child {
+    opacity: 1;
+    height: 50px;
+    overflow: none;
+    transform: translateY(0);
   }
 
   .mobile_mode {

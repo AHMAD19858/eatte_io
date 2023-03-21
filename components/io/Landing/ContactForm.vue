@@ -1,3 +1,43 @@
+<script setup>
+definePageMeta({
+  layout: "outside",
+});
+
+const url = "/api/support";
+const isLoading = ref(false);
+const isdisabled = ref(false);
+
+let formData = reactive({});
+
+const form = reactive({
+  firstName: "",
+  lastName: "",
+  email: "",
+  phone: "",
+  message: "",
+});
+
+async function onSubmit() {
+  if (isLoading.value) return;
+  isLoading.value = true;
+  isdisabled.value = true;
+
+  const { data } = await useFetch(
+    `${url}?email=${form.email}&phone=${form.phone}&fullname=${
+      form.firstName + form.lastName
+    }&ticket_summary=${form.message}`,
+    {
+      method: "GET",
+    }
+  );
+  isLoading.value = false;
+  isdisabled.value = false;
+
+  formData.value = data;
+  console.log("data", data);
+}
+</script>
+
 <template>
   <div class="container">
     <h3 class="plan_title">24/7 real-time support.</h3>
@@ -23,6 +63,7 @@
                     type="text"
                     placeholder="First name"
                     class="label_input"
+                    v-model="form.firstName"
                   />
                 </div>
                 <div class="input_div">
@@ -36,6 +77,7 @@
                     type="text"
                     placeholder="Last name"
                     class="label_input"
+                    v-model="form.lastName"
                   />
                 </div>
                 <div class="single_input_div">
@@ -49,6 +91,7 @@
                     type="email"
                     placeholder="Email Address"
                     class="label_input"
+                    v-model="form.email"
                   />
                 </div>
                 <div class="single_input_div">
@@ -59,9 +102,10 @@
                   >
                   <input
                     id="email"
-                    type="email"
+                    type="number"
                     placeholder="Phone Number"
                     class="label_input"
+                    v-model="form.phone"
                   />
                 </div>
 
@@ -76,16 +120,24 @@
                     cols="50"
                     placeholder="Message"
                     class="textarea"
+                    v-model="form.message"
                   ></textarea>
                 </div>
               </div>
             </fieldset>
           </form>
         </section>
-        <button class="plan_btn">
+        <button :disabled="isdisabled" class="plan_btn" @click="onSubmit()">
           <p class="font-montse">Send message</p>
           <i class="bx bx-right-arrow-alt"></i>
         </button>
+        <div
+        v-if="formData.value && formData.value.status === true"
+          class="flex justify-center rounded-[10px] mt-[40px] bg-green-500 h-12 items-center"
+        >
+        <i class='bx bxs-checkbox-checked text-3xl text-white'></i>
+          <h4 class="text-white self-center font-montse">Message sent successfully!</h4>
+        </div>
       </div>
       <div class="plan_side">
         <!--   <div class="plan">
@@ -96,8 +148,6 @@
     </div>
   </div>
 </template>
-
-<script setup></script>
 
 <style scoped>
 .container {
