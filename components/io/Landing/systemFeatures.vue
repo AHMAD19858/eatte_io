@@ -243,7 +243,7 @@
   list-style: none;
   padding: 0;
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   align-items: flex-start;
   flex-wrap: wrap;
   gap: 10px;
