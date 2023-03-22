@@ -36,6 +36,18 @@
               />
             </svg>
           </a>
+          <div class="mobile_sub">
+            <p class="text-white p-4">pos</p>
+            <p class="text-white p-4">pos</p>
+            <p class="text-white p-4">pos</p>
+            <p class="text-white p-4">pos</p>
+            <p class="text-white p-4">pos</p>
+            <p class="text-white p-4">pos</p>
+            <p class="text-white p-4">pos</p>
+            <p class="text-white p-4">pos</p>
+            <p class="text-white p-4">pos</p>
+          </div>
+
           <ul class="nav_child_container child flex">
             <div class="dropdown_left">
               <div class="grid grid-cols-3 gap-7 md:grid-cols-3">
@@ -55,7 +67,7 @@
                       <span class="dot"></span> Inventory Management
                     </p>
                   </NuxtLink>
-                  <NuxtLink to="/">
+                  <NuxtLink to="/kds">
                     <p class="megaNav_content">
                       <span class="dot"></span> Kitchen Display System
                     </p>
@@ -135,9 +147,11 @@
                       Team Performance
                     </h1>
                     <hr />
-                    <p class="megaNav_content">
-                      <span class="dot"></span> Employee Management
-                    </p>
+                    <NuxtLink to="/employee-managment">
+                      <p class="megaNav_content">
+                        <span class="dot"></span> Employee Management
+                      </p>
+                    </NuxtLink>
                     <p class="megaNav_content">
                       <span class="dot"></span> Payroll
                     </p>
@@ -228,48 +242,14 @@
               />
             </svg>
           </a>
-          <!--    <ul class="nav_child_container child">
-            <NuxtLink
-              to="/pos"
-              class="nav_child_element dark:bg-dark-background-color dark:text-white"
-            >
-              <li>POS</li>
-            </NuxtLink>
-            <NuxtLink
-              to="/kds"
-              class="nav_child_element dark:bg-dark-background-color dark:text-white"
-            >
-              <li>KDS</li>
-            </NuxtLink>
+        </li>
 
-            <NuxtLink
-              to="/loyalty"
-              class="nav_child_element dark:bg-dark-background-color dark:text-white"
-            >
-              <li>Loyalty</li>
-            </NuxtLink>
-
-            <NuxtLink
-              to="/ordering"
-              class="nav_child_element dark:bg-dark-background-color dark:text-white"
-            >
-              <li>Online-Ordering</li>
-            </NuxtLink>
-
-            <NuxtLink
-              to="/payment"
-              class="nav_child_element dark:bg-dark-background-color dark:text-white"
-            >
-              <li>Payment</li>
-            </NuxtLink>
-
-            <NuxtLink
-              to="/delivery"
-              class="nav_child_element dark:bg-dark-background-color dark:text-white"
-            >
-              <li>Takeout & Delivery</li>
-            </NuxtLink>
-          </ul> -->
+        <li>
+          <NuxtLink to="/about-eatte">
+            <a href="#" class="nav_element">
+              <span class="nav_text">Restaurant Types</span>
+            </a>
+          </NuxtLink>
         </li>
 
         <li>
@@ -277,6 +257,11 @@
             <span class="nav_text">Pricing</span>
           </a>
         </li>
+        <div class="btn_div" :class="showMenu ? 'block' : 'hidden'">
+          <NuxtLink to="/login">
+            <p class="login_btn">Login</p>
+          </NuxtLink>
+        </div>
       </ul>
 
       <div class="right_side">
@@ -284,7 +269,7 @@
           <NuxtLink to="/login"><p class="login_btn login">Login</p></NuxtLink>
           <NuxtLink to="https://eatte.io/new_wizard/" target="_blank">
             <button class="get_started">
-              <p class="w-max font-montse font-normal text-[14px]">
+              <p class="text-center font-montse font-normal text-[14px]">
                 Get Started
               </p>
             </button>
@@ -292,20 +277,7 @@
           <div class="contact_container">
             <div class="card_container">
               <a href="tel:010-123-4567">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                  class="phone_icon"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"
-                  />
-                </svg>
+                <img src="~/assets/images/icons/phone.svg" class="phone_icon" />
               </a>
             </div>
             <div class="col">
@@ -322,12 +294,12 @@
       <div class="ham_btn flex">
         <button type="button" class="mobile_mode">
           <i
-            class="bx bx-sun cursor-pointer dark:text-white"
+            class="bx bx-sun cursor-pointer dark:text-white text-xl"
             v-if="colorMode.value == 'light'"
             @click="$colorMode.preference = 'dark'"
           ></i>
           <i
-            class="bx bx-moon cursor-pointer dark:text-white"
+            class="bx bx-moon cursor-pointer dark:text-white text-xl"
             v-if="colorMode.value == 'dark'"
             @click="$colorMode.preference = 'light'"
           ></i>
@@ -347,13 +319,14 @@
         </button>
       </div>
     </nav>
-    <div class="btn_div" :class="showMenu ? 'block' : 'hidden'">
+
+    <!--    <div class="btn_div" :class="showMenu ? 'block' : 'hidden'">
       <NuxtLink to="/login">
-        <p class="login_btn login_mobile">Login</p>
+        <p class="login_btn">Login</p>
       </NuxtLink>
 
       <button class="get_started_mobile">Get Started</button>
-    </div>
+    </div> -->
   </div>
 </template>
 
@@ -363,6 +336,9 @@ const showMenu = ref(false);
 </script>
 
 <style scoped>
+.mobile_sub {
+  display: none;
+}
 .megaNav_content {
   @apply font-medium font-montse dark:text-white cursor-pointer py-[5px];
 }
@@ -394,7 +370,7 @@ const showMenu = ref(false);
 }
 
 .section_container {
-  @apply z-50 bg-background-color dark:bg-dark-background-color;
+  @apply z-50 bg-background-color dark:bg-dark-background-color py-[10px];
 }
 .nav_container {
   @apply relative flex items-center px-4;
@@ -441,16 +417,16 @@ const showMenu = ref(false);
 }
 
 .right_container {
-  @apply flex items-center space-x-10;
+  @apply flex items-center space-x-8;
 }
 .get_started {
-  @apply text-base text-white rounded-lg bg-primary-color sm:px-2 py-3 m-1 pt-1.5;
+  @apply text-base text-white rounded-lg bg-primary-color w-[126px] h-[44px];
 }
 .get_started_mobile {
   display: none;
 }
 .contact_container {
-  @apply flex items-center space-x-5;
+  @apply flex items-center space-x-1;
 }
 .card_container {
   @apply w-12 h-12 bg-[#ff613729] rounded-lg;
@@ -483,7 +459,7 @@ const showMenu = ref(false);
     /* width: 100vw; */
   }
 
-/*   .parent:active .child {
+  /*   .parent:active .child {
     opacity: 1;
     height: 50px;
     overflow: none;
@@ -505,6 +481,12 @@ const showMenu = ref(false);
   }
 }
 @media (max-width: 576px) {
+  .mobile_sub {
+    @apply grid grid-cols-2 gap-2 text-center;
+  }
+  .dropDown_icon {
+    display: none;
+  }
   .btn_div {
     text-align: center;
   }
@@ -525,9 +507,9 @@ const showMenu = ref(false);
   .get_started_mobile {
     @apply inline w-52 self-end items-center justify-evenly rounded-lg px-8 py-3 m-20 text-lg font-semibold text-white bg-gradient-to-r from-[#FF6137] to-[#CC4D2C] mt-[395px];
   }
-  .login_mobile {
+  /*   .login_mobile {
     margin-bottom: 20px;
-  }
+  } */
 
   .mobile_mode {
     @apply mx-5 text-gray-800 hover:text-gray-400  focus:outline-none focus:text-gray-400;

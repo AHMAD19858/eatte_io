@@ -74,7 +74,7 @@ const props = defineProps({
           </button>
         </NuxtLink>
       </div>
-      <p v-if="landing === true" class=" font-montse text-[#3F4440] dark:text-white">Support available 24/7   .    Paying in different ways</p>
+      <p v-if="landing === true" class="support">Support available 24/7   .    Paying in different ways</p>
     </div>
   </section>
 </template>
@@ -85,17 +85,22 @@ const props = defineProps({
 }
 
 .header_container {
-  @apply mb-20 container flex flex-col items-center px-4  pt-[4rem] mx-auto text-center md:px-10 lg:px-32 dark:bg-dark-background-color;
+  @apply mb-10 container flex flex-col items-center px-4  pt-[4rem] mx-auto text-center md:px-10 lg:px-32 dark:bg-dark-background-color;
 }
-
+.support{
+  @apply font-montse text-[#3F4440] dark:text-white
+}
 @media (max-width: 576px) {
   .header_container {
     padding-top: 3rem;
   }
+  .support{
+    @apply mt-5
+  }
 }
 
 .slogan {
-  @apply font-montse text-4xl font-bold leading-none text-font-color sm:text-5xl dark:text-white;
+  @apply font-montse text-[52px] font-bold leading-none text-font-color  dark:text-white;
 }
 
 .sub_header {
@@ -115,11 +120,11 @@ const props = defineProps({
 }
 
 .get_started {
-  @apply h-[52px] font-montse flex w-72 self-baseline items-center justify-evenly rounded-lg px-8 py-3 m-2 text-lg font-semibold text-white bg-gradient-to-r from-[#FF6137] to-[#CC4D2C];
+  @apply h-[52px] font-montse flex w-72 self-baseline items-center justify-evenly rounded-lg px-8 py-3 m-2 text-lg font-bold text-white bg-gradient-to-r from-[#FF6137] to-[#CC4D2C];
 }
 
 .get_demo {
-  @apply h-[52px] font-montse dark:text-white dark:border-white flex w-72 self-baseline items-center justify-evenly rounded-lg px-8 py-3 m-2 text-lg text-font-color border-font-color border-2;
+  @apply h-[52px] font-montse font-bold dark:text-white dark:border-white flex w-72 self-baseline items-center justify-evenly rounded-lg px-8 py-3 m-2 text-lg text-font-color border-font-color border-2;
 }
 
 .screen_container {

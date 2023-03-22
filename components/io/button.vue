@@ -49,7 +49,7 @@ const props = defineProps({
 
 <style scoped>
 .view_button {
-  @apply flex flex-wrap justify-center my-8 dark:bg-dark-background-color
+  @apply flex flex-wrap justify-center mb-12 mt-8 dark:bg-dark-background-color
 }
 
 .get_demo {

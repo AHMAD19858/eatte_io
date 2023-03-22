@@ -23,10 +23,10 @@
               />
             </div>
           </a>
-          <div class="p-4">
+          <div class="pl-5">
             <h3 class="main_card_text">COMPLETE ORDER AND MANAGEMENT SYSTEM</h3>
             <h6
-              class="font-montse font-normal text-[#3F4440] text-base dark:text-white"
+              class="py-3 font-montse font-normal text-[#3F4440] text-base dark:text-white"
             >
               This provides hungry customers the ability to order directly from
               your restaurant's website — whether on desktops or mobile devices.
@@ -48,12 +48,12 @@
               />
             </div>
           </a>
-          <div class="p-4">
+          <div class="pl-5">
             <h3 class="main_card_text">
               CUSTOMER ACQUISITION, RETENTION AND LOYALTY
             </h3>
             <h6
-              class="font-montse font-normal text-[#3F4440] text-base dark:text-white"
+              class="py-3 font-montse font-normal text-[#3F4440] text-base dark:text-white"
             >
               Recruit new customers by taking orders anywhere they find you,
               including Google or social media sites.
@@ -75,12 +75,12 @@
               />
             </div>
           </a>
-          <div class="p-4">
+          <div class="pl-5">
             <h3 class="main_card_text">
               FULL SUITE OF BUSINESS TOOLS (HUBB BOSS)
             </h3>
             <h6
-              class="font-montse font-normal text-[#3F4440] text-base dark:text-white"
+              class="py-3 font-montse font-normal text-[#3F4440] text-base dark:text-white"
             >
               Accept orders and establish delivery times through your tablet,
               mobile phone or desktop device. Use your Dashboard to update your
@@ -104,10 +104,10 @@
               />
             </div>
           </a>
-          <div class="p-4">
+          <div class="pl-5">
             <h3 class="main_card_text">CUSTOMER FEEDBACK</h3>
             <h6
-              class="font-montse font-normal text-[#3F4440] text-base dark:text-white"
+              class="py-3 font-montse font-normal text-[#3F4440] text-base dark:text-white"
             >
               Learn valuable client data. After every order you will receive
               feedback allowing you to understand what your customers felt about
@@ -130,10 +130,10 @@
               />
             </div>
           </a>
-          <div class="p-4">
+          <div class="pl-5">
             <h3 class="main_card_text">MARKETING AND BUSINESS</h3>
             <h6
-              class="font-montse font-normal text-[#3F4440] text-base dark:text-white"
+              class="py-3 font-montse font-normal text-[#3F4440] text-base dark:text-white"
             >
               EATTE will enable restaurants to partner with a dedicated success
               manager, mutually developing strategies that will procure more
@@ -156,10 +156,10 @@
               />
             </div>
           </a>
-          <div class="p-4">
+          <div class="pl-5">
             <h3 class="main_card_text">DEDICATED SUPPORT</h3>
             <h6
-              class="font-montse font-normal text-[#3F4440] text-base dark:text-white"
+              class="py-3 font-montse font-normal text-[#3F4440] text-base dark:text-white"
             >
               Reach EATTE support any day of the week. Our award-winning team is
               on call and proactively monitors orders as they come in. If you
@@ -201,7 +201,7 @@
 }
 
 article {
-  @apply flex flex-col bg-white rounded-2xl my-3 dark:bg-[#272727];
+  @apply flex flex-col bg-white rounded-2xl my-3 py-5 dark:bg-[#272727];
 }
 
 .card_container {

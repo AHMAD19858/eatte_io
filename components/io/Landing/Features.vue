@@ -27,7 +27,11 @@ img {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  /*  box-shadow: 10px 10px 5px 12px #FF6137; */
-  /*  text-shadow: 2px 2px #FF6137; */
+}
+
+@media (max-width: 576px) {
+  img {
+    object-fit: contain;
+  }
 }
 </style>
