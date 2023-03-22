@@ -48,14 +48,14 @@ article {
 }
 
 .main_card_text {
-  @apply  text-primary-color flex-1 leading-snug text-[15px] font-bold font-montse  mb-2 dark:text-primary-color;
+  @apply text-primary-color flex-1 leading-snug text-[15px] font-bold font-montse  mb-2 dark:text-primary-color;
 }
 
 .phone_icon {
   @apply stroke-primary-color w-12 h-6 text-center text-3xl text-primary-color;
 }
 .sub_title {
-  @apply pt-5  underline font-montse font-normal text-[#3F4440] text-sm  dark:text-white;
+  @apply underline font-montse font-normal text-[#3F4440] text-sm  dark:text-white;
 }
 
 @media (max-width: 576px) {
