@@ -1,5 +1,5 @@
 <template>
-  <section class="dark:bg-[#272727] h-[750px] bg-white">
+  <section class="dark:bg-[#272727] h-[1100px] bg-white">
     <div class="container flex flex-col justify-center p-4 mx-auto md:p-8">
       <h2
         class="font-montse mb-6 text-[36px] font-semibold leading-none text-center text-black dark:text-white"
@@ -55,9 +55,9 @@
 
             <!-- -------------------- -->
 
-   <!--          <div class="tab">
-              <input type="checkbox" id="chck1" />
-              <label class="tab-label" for="chck1"
+            <div class="tab">
+              <input type="checkbox" id="chck10" />
+              <label class="tab-label" for="chck10"
                 >Can EATTE Gift Cards be used across multiple locations?</label
               >
               <div class="tab-content">
@@ -66,8 +66,8 @@
               </div>
             </div>
             <div class="tab">
-              <input type="checkbox" id="chck2" />
-              <label class="tab-label" for="chck2"
+              <input type="checkbox" id="chck20" />
+              <label class="tab-label" for="chck20"
                 >Do I have to create a separate menu for online ordering?</label
               >
               <div class="tab-content">
@@ -76,11 +76,11 @@
                 the Online Ordering Visible To settings outlined while creating
                 the menu from menu builder
               </div>
-            </div> -->
+            </div>
 
-       <!--      <div class="tab">
-              <input type="checkbox" id="chck3" />
-              <label class="tab-label" for="chck3"
+     <!--        <div class="tab">
+              <input type="checkbox" id="chck30" />
+              <label class="tab-label" for="chck30"
                 >How do I create a "Featured Items" menu that appears at the top
                 of other menus and show my specials?</label
               >
@@ -135,6 +135,8 @@
       </p>
       <IoButton :primary="true" :title="'Get in touch'" />
     </div>
+
+   <!--  <IoLandingContactForm/> -->
   </section>
 </template>
 
@@ -198,6 +200,7 @@ input {
   width: 100%;
   color: white;
   overflow: hidden;
+  margin-block: 20px;
 }
 
 .tab-label {
