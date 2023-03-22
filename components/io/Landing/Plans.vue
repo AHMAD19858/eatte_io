@@ -10,7 +10,7 @@ const select_pay = ref(true);
       <div class="plan_side">
         <h1 class="font-montse">Pay as you go</h1>
 
-        <h6 class="text-2xl pt-4 font-bold text-[#3F4440] dark:text-white">
+        <h6 class="text-2xl pt-2 font-bold text-[#3F4440] dark:text-white">
           EATTE Basic Kit
         </h6>
         <h6 class="kits">
@@ -49,7 +49,7 @@ const select_pay = ref(true);
         </h6>
       </div>
 
-      <div class="plan_side self-end">
+      <div class="plan_side">
         <div
           class="plan"
           :class="select_month ? 'active_plan' : ''"
@@ -111,7 +111,7 @@ const select_pay = ref(true);
 
 <style scoped>
 .kits {
-  @apply font-montse font-normal text-base mt-0 py-[8px] flex gap-[10px] items-center;
+  @apply font-montse font-normal text-base mt-0 py-[5px] flex gap-[10px] items-center;
 }
 .details {
   @apply text-primary-color py-2 font-bold pr-[10px] text-base;
@@ -193,7 +193,7 @@ const select_pay = ref(true);
 }
 
 .plan_section .plan_btn {
-  @apply gap-[15px] w-full flex h-[55px] bg-gradient-to-r from-primary-color to-[#CC4D2C] justify-center rounded-[10px] items-center;
+  @apply gap-[15px] w-full flex h-[55px] mt-[75px] bg-gradient-to-r from-primary-color to-[#CC4D2C] justify-center rounded-[10px] items-center;
 }
 
 .plan_section .plan_btn p {
