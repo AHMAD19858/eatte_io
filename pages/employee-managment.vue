@@ -47,7 +47,7 @@ const featuresData = [
       :row_img="PosImage"
     />
 
-    <div class="bg-white pt-12 pb-12 dark:bg-dark-background-color">
+    <div class="bg-background-color pt-12 pb-12 dark:bg-dark-background-color">
       <IoHeadersTripleLines
         :first_line="'Our system is easy to use and provides you with a secure platform to store and access data'"
         :main="`You can create employee profiles and assign them to teams, roles, and tasks. You can also utilize our time-tracking feature to accurately monitor productivity and attendance. `"
@@ -91,7 +91,6 @@ const featuresData = [
   width: 100%;
   padding: 0 80px;
   margin: 0 auto;
-  background-color: white;
   @apply dark:bg-dark-background-color;
 }
 

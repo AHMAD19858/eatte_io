@@ -97,15 +97,18 @@ const featuresData = [
       },
       {
         main: "Offer commission-free delivery",
-        details: "Offer your own delivery and meet your guests wherever they are.",
+        details:
+          "Offer your own delivery and meet your guests wherever they are.",
       },
       {
         main: "Convenient payment options",
-        details: "Make guest checkout easy no matter how they pay with options such as Apple Pay and EATTE Gift Cards.",
+        details:
+          "Make guest checkout easy no matter how they pay with options such as Apple Pay and EATTE Gift Cards.",
       },
       {
         main: "Customize with your branding",
-        details: "Upload your logo and pictures of menu items so your digital presence looks and feels like your restaurant.",
+        details:
+          "Upload your logo and pictures of menu items so your digital presence looks and feels like your restaurant.",
       },
     ],
   },
@@ -142,7 +145,7 @@ const featuresData = [
       :another_device="true"
     />
 
-    <div class="bg-white pt-12 pb-12 dark:bg-dark-background-color">
+    <div class="bg-background-color pt-12 pb-12 dark:bg-dark-background-color">
       <IoHeadersTripleLines
         :first_line="'Grow Your Business'"
         :main="'Streamline Your Online Ordering & Curbside Pickup'"
@@ -151,7 +154,7 @@ const featuresData = [
     </div>
 
     <div class="pos_helps">
-      <div class="py-12 bg-white dark:bg-dark-background-color">
+      <div class="py-12 bg-background-color dark:bg-dark-background-color">
         <IoServices :items="serviceData" :numbers="3" />
         <div class="bg-white col">
           <IoButton :secondary="true" :title="'See Pricing'" />
@@ -180,7 +183,11 @@ const featuresData = [
       />
     </div>
     <div class="container">
-      <IoLandingMobileShowCase :data="graphData" :img="phoneCase" :figure="figure"/>
+      <IoLandingMobileShowCase
+        :data="graphData"
+        :img="phoneCase"
+        :figure="figure"
+      />
     </div>
 
     <div class="py-10 bg-background-color dark:bg-dark-background-color">
@@ -218,7 +225,7 @@ const featuresData = [
   width: 100%;
   padding: 0 80px;
   margin: 0 auto;
-  background-color: white;
+
   @apply dark:bg-dark-background-color;
 }
 

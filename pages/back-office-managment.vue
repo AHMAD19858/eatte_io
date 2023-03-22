@@ -53,7 +53,7 @@ const featuresData = [
       :row_img="PosImage"
     />
 
-    <div class="bg-white pt-12 pb-12 dark:bg-dark-background-color">
+    <div class="bg-background-color pt-12 pb-12 dark:bg-dark-background-color">
       <IoHeadersTripleLines
         :first_line="'Ensure your data is kept safe and secure'"
         :main="'We employ a range of encryption and authentication protocols to ensure your data is kept safe and secure. We can assist with data backup and recovery in the event of unexpected outages or emergencies.'"
@@ -98,7 +98,7 @@ const featuresData = [
   width: 100%;
   padding: 0 80px;
   margin: 0 auto;
-  background-color: white;
+
   @apply dark:bg-dark-background-color;
 }
 

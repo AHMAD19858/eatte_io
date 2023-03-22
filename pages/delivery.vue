@@ -7,7 +7,6 @@ import service2 from "../assets/images/icons/charts.svg";
 import one from "../assets/images/features/delivery/one.svg";
 import two from "../assets/images/features/delivery/two.svg";
 
-
 const cardData = [
   {
     img: dash,
@@ -72,7 +71,8 @@ const featuresData = [
   {
     position: "left",
     img: two,
-    title: "A restaurant food delivery service with no commissions or hidden fees",
+    title:
+      "A restaurant food delivery service with no commissions or hidden fees",
     sub_title: `A restaurant food delivery service with no commissions or hidden fees`,
     details: [
       {
@@ -89,7 +89,7 @@ const featuresData = [
         main: "Restaurant food delivery insights to inform how you do business",
         details:
           "See each guest's visit and spend history with average and lifetime spend.",
-      }
+      },
     ],
   },
 ];
@@ -106,7 +106,7 @@ const featuresData = [
       :another_device="true"
     />
 
-    <div class="bg-white pt-12 pb-12 dark:bg-dark-background-color">
+    <div class="bg-background-color pt-12 pb-12 dark:bg-dark-background-color">
       <IoHeadersTripleLines
         :first_line="'How Takeout & Delivery Services Helps You'"
         :main="'Restaurants using Toast Delivery grew sales over 29% relative to their peers.'"
@@ -115,7 +115,7 @@ const featuresData = [
     </div>
 
     <div class="pos_helps">
-      <div class="py-12 bg-white dark:bg-dark-background-color">
+      <div class="py-12 bg-background-color dark:bg-dark-background-color">
         <IoServices :items="serviceData" :numbers="3" />
         <div class="bg-white col">
           <IoButton :secondary="true" :title="'See Pricing'" />

@@ -12,7 +12,7 @@
           satisfaction.
         </p>
 
-        <div class="right_section">
+        <!--         <div class="right_section">
           <div class="col">
             <h3 class="number">5,910+</h3>
             <p class="title">Customers are using & it’s growing everyday</p>
@@ -26,11 +26,13 @@
             <h3 class="number">5,910+</h3>
             <p class="title">Customers are using & it’s growing everyday</p>
           </div>
-        </div>
-        <button class="plan_btn">
-          <p class="font-montse">Get Started</p>
-          <i class="bx bx-right-arrow-alt"></i>
-        </button>
+        </div> -->
+        <NuxtLink to="https://eatte.io/new_wizard/" target="_blank">
+          <button class="plan_btn">
+            <p class="font-montse">Get Started</p>
+            <i class="bx bx-right-arrow-alt"></i>
+          </button>
+        </NuxtLink>
       </div>
       <div class="left_side devices_shapes">
         <img

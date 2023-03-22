@@ -119,7 +119,7 @@
   @apply w-12 h-12 flex items-center m-4 justify-center bg-[#F5F6FA] rounded-full dark:bg-white;
 }
 article {
-  @apply flex  w-[300px] h-[270px] flex-col bg-white rounded-2xl my-3 dark:bg-[#272727];
+  @apply flex  w-[312px] h-[286px] flex-col bg-white rounded-2xl my-3 dark:bg-[#272727];
 }
 
 .card_container {
@@ -130,7 +130,7 @@ article {
   left: 33%;
 }
 .container {
-  @apply w-full max-w-[1200px] py-0 px-[15px] my-0 mx-auto;
+  @apply w-full max-w-[1200px] py-0 px-[15px] mb-0 mt-[330px] mx-auto;
 }
 
 .plan_title {

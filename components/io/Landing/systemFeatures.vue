@@ -51,6 +51,7 @@
       <div class="features_side img_side">
         <img src="../../../assets/images/features/landing/one.svg" alt="img" />
       </div>
+   
     </div>
 
     <div class="features_section reverse">
@@ -242,13 +243,13 @@
   justify-content: space-between;
   align-items: flex-start;
   flex-wrap: wrap;
-  gap: 25px;
+  gap: 16px;
   margin: 40px 0px;
   align-items: center;
 }
 
 .features_section .features_side ul li {
-  width: calc(100% / 2 - 25px);
+  width: calc(100% / 2 - 10px);
   display: flex;
   align-items: center;
   gap: 10px;

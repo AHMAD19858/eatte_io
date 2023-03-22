@@ -62,7 +62,7 @@ const featuresData = [
       :row_img="PosImage"
     />
 
-    <div class="bg-white pt-12 pb-12 dark:bg-dark-background-color">
+    <div class="bg-background-color pt-12 pb-12 dark:bg-dark-background-color">
       <IoHeadersTripleLines
         :first_line="'Our smart guest feedback system allows you to quickly gather valuable feedback from your guests, helping you improve the dining experience for everyone. '"
         :main="'With EATTE'"

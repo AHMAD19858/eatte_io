@@ -61,7 +61,7 @@ const featuresData = [
       :row_img="PosImage"
     />
 
-    <div class="bg-white pt-12 pb-12 dark:bg-dark-background-color">
+    <div class="bg-background-color pt-12 pb-12 dark:bg-dark-background-color">
       <IoHeadersTripleLines
         :first_line="'Floor management is a crucial aspect of maintaining a successful business'"
         :main="'ensure a positive experience for customers and efficient operations for employees'"
@@ -108,7 +108,7 @@ const featuresData = [
   width: 100%;
   padding: 0 80px;
   margin: 0 auto;
-  background-color: white;
+
   @apply dark:bg-dark-background-color;
 }
 

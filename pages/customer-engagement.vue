@@ -53,7 +53,7 @@ const featuresData = [
       :row_img="PosImage"
     />
 
-    <div class="bg-white pt-12 pb-12 dark:bg-dark-background-color">
+    <div class="bg-background-color pt-12 pb-12 dark:bg-dark-background-color">
       <IoHeadersTripleLines
         :first_line="'We are committed to providing helpful, friendly, and professional customer service every time. '"
         :main="'TWe understand that you may have questions and need help'"
@@ -99,7 +99,7 @@ const featuresData = [
   width: 100%;
   padding: 0 80px;
   margin: 0 auto;
-  background-color: white;
+
   @apply dark:bg-dark-background-color;
 }
 

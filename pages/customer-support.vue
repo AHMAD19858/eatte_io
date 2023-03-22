@@ -91,7 +91,7 @@ const featuresData = [
   width: 100%;
   padding: 0 80px;
   margin: 0 auto;
-  background-color: white;
+
   @apply dark:bg-dark-background-color;
 }
 

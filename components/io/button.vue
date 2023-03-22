@@ -49,11 +49,11 @@ const props = defineProps({
 
 <style scoped>
 .view_button {
-  @apply flex flex-wrap justify-center mb-12 mt-8 dark:bg-dark-background-color
+  @apply flex flex-wrap bg-background-color justify-center mb-12 mt-8 dark:bg-dark-background-color
 }
 
 .get_demo {
-  @apply font-montse dark:text-white dark:border-white flex w-72 self-baseline items-center justify-evenly rounded-lg px-8 py-3 m-2 text-lg text-font-color border-font-color border-2;
+  @apply font-montse font-bold dark:text-white dark:border-white flex w-72 self-baseline items-center justify-evenly rounded-lg px-8 py-3 m-2 text-lg text-font-color border-font-color border-2;
 }
 
 .get_started {

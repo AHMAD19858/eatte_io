@@ -18,7 +18,7 @@
       </div>
     </div>
     <footer
-      class="p-6 text-white z-10 relative bg-gradient-to-r from-[#FF6137] to-[#CC4D2C]"
+      class="raduis p-6 text-white z-10 relative bg-gradient-to-r from-[#FF6137] to-[#CC4D2C] "
     >
       <div
         class="mt-20 container grid grid-cols-2 mx-auto gap-x-3 gap-y-8 sm:grid-cols-3 md:grid-cols-4"
@@ -174,7 +174,9 @@
 .footer_container {
   @apply bg-background-color pt-[48px] dark:bg-dark-background-color;
 }
-
+.raduis{
+       border-radius: 69px 40px 0px 0px;
+}
 .card {
   background-color: white;
   border-radius: 16px;

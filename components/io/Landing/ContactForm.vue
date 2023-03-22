@@ -174,7 +174,7 @@ async function onSubmit() {
   @apply text-red-900 font-montse pt-2 text-sm pl-[10px];
 }
 .plan_title {
-  @apply font-montse text-[40px] font-bold my-10 text-primary-color w-[285px];
+  @apply font-montse text-[40px] font-bold my-10 text-primary-color w-[310px];
 }
 
 .plan_section {
@@ -264,7 +264,7 @@ async function onSubmit() {
 }
 
 .label_input {
-  @apply text-black p-[10px] mt-[10px] h-[50px] w-full rounded-[8px] focus:ring focus:ring-opacity-75 focus:ring-violet-400;
+  @apply text-black p-[10px] mt-[10px] h-[50px] w-full rounded-[8px] focus:ring focus:ring-opacity-75 focus:ring-primary-color outline-none;
 }
 
 .textarea {
