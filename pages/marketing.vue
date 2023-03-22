@@ -2,21 +2,30 @@
 import marketing from "../assets/images/marketing.svg";
 import dash from "../assets/images/dashboard.svg";
 import one from "../assets/images/features/marketing/one.svg";
+import cardOne from "../assets/images/icons/services/one.svg";
+import cardTwo from "../assets/images/icons/services/two.svg";
+import cardThree from "../assets/images/icons/services/three.svg";
+import cardFour from "../assets/images/icons/services/four.svg";
 
 const cardData = [
   {
-    img: dash,
-    label: "Point of Sale (POS)",
+    img: cardOne,
+    label: "Reports and analytics",
     learn_text: "LEARN MORE",
   },
   {
-    img: dash,
-    label: "Inventory Management",
+    img: cardTwo,
+    label: "Takeout & Delivery Services",
     learn_text: "LEARN MORE",
   },
   {
-    img: dash,
-    label: "Analytics",
+    img: cardThree,
+    label: "Customer Engagement",
+    learn_text: "LEARN MORE",
+  },
+  {
+    img: cardFour,
+    label: "Employee Management",
     learn_text: "LEARN MORE",
   },
 ];

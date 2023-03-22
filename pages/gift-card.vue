@@ -1,32 +1,35 @@
 <script setup>
 import GiftCard from "../assets/images/giftCard.svg";
-import dash from "../assets/images/dashboard.svg";
 import service1 from "../assets/images/icons/hand.svg";
 import service3 from "../assets/images/icons/code.svg";
 import service2 from "../assets/images/icons/charts.svg";
 import one from "../assets/images/features/gift/one.svg";
 import two from "../assets/images/features/gift/two.svg";
 import phoneCase from "../assets/images/phone-case.png";
+import cardOne from "../assets/images/icons/services/one.svg";
+import cardTwo from "../assets/images/icons/services/two.svg";
+import cardThree from "../assets/images/icons/services/three.svg";
+import cardFour from "../assets/images/icons/services/four.svg";
 
 const cardData = [
   {
-    img: dash,
+    img: cardOne,
+    label: "Reports and analytics",
+    learn_text: "LEARN MORE",
+  },
+  {
+    img: cardTwo,
+    label: "Takeout & Delivery Services",
+    learn_text: "LEARN MORE",
+  },
+  {
+    img: cardThree,
     label: "Customer Engagement",
     learn_text: "LEARN MORE",
   },
   {
-    img: dash,
+    img: cardFour,
     label: "Employee Management",
-    learn_text: "LEARN MORE",
-  },
-  {
-    img: dash,
-    label: "Back-Office Management",
-    learn_text: "LEARN MORE",
-  },
-  {
-    img: dash,
-    label: "Kitchen Display System (KDS)",
     learn_text: "LEARN MORE",
   },
 ];

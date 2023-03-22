@@ -135,13 +135,16 @@
                       <span class="dot"></span> Guest feedback
                     </p>
                   </NuxtLink>
-                  <p class="megaNav_content">
-                    <span class="dot"></span> Coupons
-                  </p>
-                  <p class="megaNav_content">
-                    <span class="dot"></span> SMS Marketing
-                  </p>
-
+                  <NuxtLink to="/coupons">
+                    <p class="megaNav_content">
+                      <span class="dot"></span> Coupons
+                    </p>
+                  </NuxtLink>
+                  <NuxtLink to="/sms-marketing">
+                    <p class="megaNav_content">
+                      <span class="dot"></span> SMS Marketing
+                    </p>
+                  </NuxtLink>
                   <div class="pt-9">
                     <h1 class="text-primary-color font-montse font-bold">
                       Team Performance
@@ -152,12 +155,16 @@
                         <span class="dot"></span> Employee Management
                       </p>
                     </NuxtLink>
-                    <p class="megaNav_content">
-                      <span class="dot"></span> Payroll
-                    </p>
-                    <p class="megaNav_content">
-                      <span class="dot"></span> Tips management
-                    </p>
+                    <NuxtLink to="/payroll">
+                      <p class="megaNav_content">
+                        <span class="dot"></span> Payroll
+                      </p>
+                    </NuxtLink>
+                    <NuxtLink to="/tips-managment">
+                      <p class="megaNav_content">
+                        <span class="dot"></span> Tips management
+                      </p>
+                    </NuxtLink>
                   </div>
                 </div>
 

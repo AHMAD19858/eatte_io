@@ -44,15 +44,18 @@ article {
 }
 
 .card_container {
-  @apply flex items-center m-4 justify-center;
+  @apply w-12 h-12 bg-[#ff613729] rounded-lg flex items-center m-4;
 }
 
 .main_card_text {
-  @apply flex-1 leading-snug text-[15px] font-bold font-montse text-font-color  mb-2 dark:text-primary-color;
+  @apply  text-primary-color flex-1 leading-snug text-[15px] font-bold font-montse  mb-2 dark:text-primary-color;
 }
 
+.phone_icon {
+  @apply stroke-primary-color w-12 h-6 text-center text-3xl text-primary-color;
+}
 .sub_title {
-  @apply py-5  underline font-montse font-normal text-[#3F4440] text-sm text-primary-color dark:text-white;
+  @apply pt-5  underline font-montse font-normal text-[#3F4440] text-sm  dark:text-white;
 }
 
 @media (max-width: 576px) {

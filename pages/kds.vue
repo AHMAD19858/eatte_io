@@ -1,6 +1,5 @@
 <script setup>
 import kdsImage from "../assets/images/kds.svg";
-import dash from "../assets/images/dashboard.svg";
 import one from "../assets/images/features/kds/one.svg";
 import two from "../assets/images/features/kds/two.svg";
 import three from "../assets/images/features/kds/three.svg";
@@ -8,21 +7,30 @@ import four from "../assets/images/features/kds/four.svg";
 import service1 from "../assets/images/icons/hand.svg";
 import service3 from "../assets/images/icons/code.svg";
 import service2 from "../assets/images/icons/charts.svg";
+import cardOne from "../assets/images/icons/services/one.svg";
+import cardTwo from "../assets/images/icons/services/two.svg";
+import cardThree from "../assets/images/icons/services/three.svg";
+import cardFour from "../assets/images/icons/services/four.svg";
 
 const cardData = [
   {
-    img: dash,
-    label: "Point of Sale (POS)",
+    img: cardOne,
+    label: "Reports and analytics",
     learn_text: "LEARN MORE",
   },
   {
-    img: dash,
-    label: "Inventory Management",
+    img: cardTwo,
+    label: "Takeout & Delivery Services",
     learn_text: "LEARN MORE",
   },
   {
-    img: dash,
-    label: "Analytics",
+    img: cardThree,
+    label: "Customer Engagement",
+    learn_text: "LEARN MORE",
+  },
+  {
+    img: cardFour,
+    label: "Employee Management",
     learn_text: "LEARN MORE",
   },
 ];

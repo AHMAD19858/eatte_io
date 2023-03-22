@@ -1,7 +1,6 @@
 <script setup>
 import PosImage from "../assets/images/pos.svg";
 import pos_devices from "../assets/images/pos_devices.svg";
-import dash from "../assets/images/dashboard.svg";
 import hardware from "../assets/images/hardware.png";
 import pay1 from "../assets/images/backgrounds/pay1.png";
 import pay2 from "../assets/images/backgrounds/pay2.png";
@@ -14,6 +13,10 @@ import one from "../assets/images/features/pos/one.svg";
 import two from "../assets/images/features/pos/two.svg";
 import three from "../assets/images/features/pos/three.svg";
 import four from "../assets/images/features/pos/four.svg";
+import cardOne from "../assets/images/icons/services/one.svg";
+import cardTwo from "../assets/images/icons/services/two.svg";
+import cardThree from "../assets/images/icons/services/three.svg";
+import cardFour from "../assets/images/icons/services/four.svg";
 
 const data = [
   {
@@ -40,23 +43,23 @@ const data = [
 
 const cardData = [
   {
-    img: dash,
+    img: cardOne,
+    label: "Reports and analytics",
+    learn_text: "LEARN MORE",
+  },
+  {
+    img: cardTwo,
+    label: "Takeout & Delivery Services",
+    learn_text: "LEARN MORE",
+  },
+  {
+    img: cardThree,
     label: "Customer Engagement",
     learn_text: "LEARN MORE",
   },
   {
-    img: dash,
+    img: cardFour,
     label: "Employee Management",
-    learn_text: "LEARN MORE",
-  },
-  {
-    img: dash,
-    label: "Back-Office Management",
-    learn_text: "LEARN MORE",
-  },
-  {
-    img: dash,
-    label: "Kitchen Display System (KDS)",
     learn_text: "LEARN MORE",
   },
 ];
@@ -310,15 +313,14 @@ const featuresData = [
   @apply dark:bg-dark-background-color;
 }
 
-.small_header{
-  margin-top: 140px !important; 
+.small_header {
+  margin-top: 140px !important;
 }
 .header_container {
   width: 100%;
- /*  padding: 0 70px; */
+  /*  padding: 0 70px; */
   margin: 0 auto;
   max-width: 1200px;
-  
 }
 .screen_container {
   @apply bg-background-color min-h-full dark:text-white dark:bg-dark-background-color pt-[100px];

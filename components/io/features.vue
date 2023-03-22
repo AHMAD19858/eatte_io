@@ -54,6 +54,7 @@ const props = defineProps({
   max-width: 1200px;
   /* padding: 0 70px; */
   margin: 0 auto;
+ /*  @apply bg-white */
 }
 .features_section {
   display: flex;
