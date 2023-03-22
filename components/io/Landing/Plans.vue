@@ -10,7 +10,7 @@ const select_pay = ref(true);
       <div class="plan_side">
         <h1 class="font-montse">Pay as you go</h1>
 
-        <h6 class="text-2xl py-4 font-bold">EATTE Basic Kit</h6>
+        <h6 class="text-2xl pt-4 font-bold text-[#3F4440]">EATTE Basic Kit</h6>
         <h6 class="kits">
           <i class="bx bx-check-circle text-primary-color text-xl"></i> Point of
           sale software
@@ -32,14 +32,16 @@ const select_pay = ref(true);
           Real-time Analytics & reports
         </h6>
         <h6 class="kits">
-          <i class="bx bx-check-circle text-primary-color text-xl"></i> Point of
-          sale software
+          <i class="bx bx-check-circle text-primary-color text-xl"></i> 
+          Setup Support & Customer Care
         </h6>
-        <h6 class="kits">
-          <i class="bx bx-check-circle text-primary-color text-xl"></i> Point of
-          sale software
+        <h6 v-if="select_month===true" class="text-2xl pt-4 font-bold text-[#3F4440]">Customization</h6>
+        <h6 class="kits" v-if="select_month===true">
+          <i class="bx bx-check-circle text-primary-color text-xl"></i> 
+          1 x Countertop Terminal
         </h6>
       </div>
+      
       <div class="plan_side self-end">
         <div
           class="plan"

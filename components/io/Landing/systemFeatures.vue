@@ -84,7 +84,7 @@
           custom integrations, we have the resources and expertise to help you
           streamline your operations.
         </p>
-        <ul>
+        <ul class="unique_section">
           <li>
             <i class="bx bx-check-circle"></i>
             <p class="font-montse">Floor Management</p>
@@ -155,6 +155,9 @@
 <script setup></script>
 
 <style scoped>
+.unique_section{
+  display: block !important;
+}
 .header_container {
   @apply space-y-2 text-center mb-16;
 }
@@ -243,11 +246,14 @@
   justify-content: space-between;
   align-items: flex-start;
   flex-wrap: wrap;
-  gap: 16px;
+  gap: 10px;
   margin: 40px 0px;
   align-items: center;
 }
-
+.unique_section li {
+  width: unset !important;
+  padding-block: 10px;
+}
 .features_section .features_side ul li {
   width: calc(100% / 2 - 10px);
   display: flex;

@@ -85,7 +85,7 @@ const props = defineProps({
 }
 
 .header_container {
-  @apply mb-[201px] container flex flex-col items-center px-4  pt-[4rem] mx-auto text-center md:px-10 lg:px-32 dark:bg-dark-background-color;
+  @apply mb-[201px] container flex flex-col items-center px-4  pt-[9rem] mx-auto text-center md:px-10 lg:px-32 dark:bg-dark-background-color;
 }
 .support{
   @apply font-montse text-[#3F4440] dark:text-white

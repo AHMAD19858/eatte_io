@@ -8,7 +8,7 @@ defineProps({
 </script>
 <template>
   <div
-    class="line-card text-center rounded-[12px] shadow-xl p-12 my-12 relative"
+    class="line-card text-center rounded-[12px]  p-12 my-12 relative"
   >
     <!-- img overlay -->
     <img

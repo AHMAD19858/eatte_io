@@ -195,7 +195,7 @@ const featuresData = [
       <IoFeatures :items="featuresData" />
     </div>
 
-    <div class="header_container flex gap-12 mx-12">
+    <div class="header_container small_header flex gap-12 mx-12">
       <div>
         <h1 class="main_text">
           EA<span class="text-primary-color dark:bg-dark-background-color"
@@ -285,8 +285,8 @@ const featuresData = [
 
     <div class="py-10 bg-background-color dark:bg-dark-background-color">
       <IoHeadersTripleLines
-        :first_line="'Overall,'"
-        :main="'EATTE POS is the perfect tool for restaurant owners who want to take their operations to the next level. With our platform, you can streamline your operations, increase efficiency, and boost profitability.'"
+        :first_line="'Overall, EATTE POS is the perfect tool for restaurant owners who want to take their operations to the next level. With our platform, you can streamline your operations, increase efficiency, and boost profitability.,'"
+        :main="'So why wait? Sign up for EATTE today and transform the way you run your restaurant!'"
       />
     </div>
 
@@ -298,7 +298,7 @@ const featuresData = [
 .container {
   width: 100%;
   max-width: 1200px;
-  padding: 0 70px;
+  /* padding: 0 70px; */
   margin: 0 auto;
   /* padding-top: 150px; */
 }
@@ -310,11 +310,15 @@ const featuresData = [
   @apply dark:bg-dark-background-color;
 }
 
+.small_header{
+  margin-top: 140px !important; 
+}
 .header_container {
   width: 100%;
-  padding: 0 70px;
+ /*  padding: 0 70px; */
   margin: 0 auto;
   max-width: 1200px;
+  
 }
 .screen_container {
   @apply bg-background-color min-h-full dark:text-white dark:bg-dark-background-color pt-[100px];

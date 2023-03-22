@@ -38,7 +38,7 @@ const props = defineProps({
 .container {
   width: 100%;
   max-width: 1200px;
-  padding: 0 70px;
+  /* padding: 0 70px; */
   margin: 0 auto;
 }
 .pos_helps {

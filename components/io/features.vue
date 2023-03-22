@@ -52,7 +52,7 @@ const props = defineProps({
 .container {
   width: 100%;
   max-width: 1200px;
-  padding: 0 70px;
+  /* padding: 0 70px; */
   margin: 0 auto;
 }
 .features_section {
@@ -97,7 +97,7 @@ const props = defineProps({
 }
 
 .features_section .features_side ul li {
-  width: calc(100% / 2 - 25px);
+ /*  width: calc(100% / 2 - 25px); */
   display: flex;
   align-items: center;
   gap: 10px;
@@ -109,8 +109,8 @@ const props = defineProps({
 }
 
 .features_section .features_side ul li p {
-  font-size: 14px;
-  font-weight: 600;
+  font-size: 15px;
+  font-weight: 700;
 }
 
 .features_section .features_side a {
@@ -124,7 +124,7 @@ const props = defineProps({
 .features_section .features_side.img_side::before {
   content: "";
   position: absolute;
-  width: 70%;
+  width: 90%;
   height: 110%;
   top: -5%;
   left: -3%;
@@ -135,7 +135,7 @@ const props = defineProps({
 
 .features_section .features_side.img_side img {
   position: relative;
-  width: 80%;
+  width: 100%;
   height: auto;
   object-fit: contain;
   z-index: 10;
