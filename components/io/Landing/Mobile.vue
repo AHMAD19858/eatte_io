@@ -13,7 +13,7 @@
               staff to deliver amazing dining experiences From KDS to
               multi-location and inventory management.
             </p>
-            <div class="flex justify-between">
+            <div class="store">
               <div class="download_container">
                 <div class="flex justify-between gap-2 pl-2">
                   <i class="bx bxl-apple self-center text-5xl"></i>
@@ -36,7 +36,7 @@
                   </NuxtLink>
                 </div>
               </div>
-              <div class="pl-1">
+              <div class="py-4">
                 <div class="download_container">
                   <div class="flex justify-between gap-2 pl-2">
                     <i class="bx bxl-play-store self-center text-5xl"></i>
@@ -81,7 +81,7 @@
               to keep your business moving, streamline your ordering, and keep
               service hustling.
             </p>
-            <div class="flex justify-between">
+            <div class="store">
               <div class="download_container">
                 <div class="flex justify-between gap-2 pl-2">
                   <i class="bx bxl-apple self-center text-5xl"></i>
@@ -105,7 +105,7 @@
                 </div>
               </div>
 
-              <div class="pl-1">
+              <div class="py-4">
                 <div class="download_container">
                   <div class="flex justify-between gap-2 pl-2">
                     <i class="bx bxl-play-store self-center text-5xl"></i>
@@ -155,7 +155,9 @@
 .plan_section {
   @apply flex justify-between items-end flex-wrap mb-[100px];
 }
-
+.store{
+  @apply flex justify-between
+}
 .plan_section .plan_side h1 {
   @apply mb-[15px] font-bold text-6xl;
 }
@@ -221,6 +223,10 @@
 }
 
 @media (max-width: 576px) {
+
+  .store{
+   @apply block
+  }
   .container {
     max-width: 100%;
     padding-left: unset;

@@ -248,8 +248,11 @@ const select_pay = ref(true);
   .container {
     max-width: 100%;
   }
+  .plan_section .plan_side .plan {
+  @apply  h-[170px] mt-8;
+}
   .plan_section .plan_side .plan .plan_best {
-    top: 25%;
+    top: 15%;
     font-family: "Montserrat";
   }
 }
