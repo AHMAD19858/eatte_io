@@ -110,13 +110,13 @@
           </div>
         </div>
         <div class="flex flex-col space-y-4">
-          <h2 class="font-semibold text-[26px] text-[#F5F6FA]">CALL</h2>
+          <h2 class="font-semibold text-[26px] text-[#F5F6FA]">Call</h2>
           <div class="flex flex-col space-y-2 text-sm text-white">
             <p class="font-montse font-semibold text-base">+13053609462</p>
           </div>
 
           <div class="flex flex-col space-y-4">
-            <h2 class="font-semibold text-[26px]">EMAIL</h2>
+            <h2 class="font-semibold text-[26px] text-[#F5F6FA]">Email</h2>
             <div class="flex flex-col space-y-2 text-sm text-white">
               <p class="font-montse font-semibold text-base">hello@eatte.io</P>
             </div>
