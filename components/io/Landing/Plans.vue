@@ -17,7 +17,7 @@ const select_pay = ref(true);
           <i class="bx bx-check-circle text-primary-color text-xl"></i> Point of
           sale software
         </h6>
-        <h6 class="kits">
+        <h6 class="kits"   v-if="select_month === false">
           <i class="bx bx-check-circle text-primary-color text-xl"></i> One
           smart countertop erminal
         </h6>
