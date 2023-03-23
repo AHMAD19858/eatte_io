@@ -1,6 +1,6 @@
 <template>
-  <div class="section_container">
-    <nav class="nav_container" :class="showMenu ? ' mb-[325px]' : 'mb-1'">
+  <div class="section_container" >
+    <nav class="nav_container" :class="showMenu ? ' mb-[1100px]' : 'mb-1'">
       <NuxtLink to="/" class="h-[60px]">
         <img
           v-show="$colorMode.value === 'dark'"
@@ -37,15 +37,57 @@
             </svg>
           </a>
           <div class="mobile_sub">
-            <p class="text-white p-4">pos</p>
-            <p class="text-white p-4">pos</p>
-            <p class="text-white p-4">pos</p>
-            <p class="text-white p-4">pos</p>
-            <p class="text-white p-4">pos</p>
-            <p class="text-white p-4">pos</p>
-            <p class="text-white p-4">pos</p>
-            <p class="text-white p-4">pos</p>
-            <p class="text-white p-4">pos</p>
+            <NuxtLink to="/pos">
+              <p class="dark:text-white p-4">Point of sale</p>
+            </NuxtLink>
+            <NuxtLink to="/inventory">
+              <p class="dark:text-white p-4">Inventory Management</p>
+            </NuxtLink>
+            <NuxtLink to="/kds">
+              <p class="dark:text-white p-4">Kitchen Display System</p>
+            </NuxtLink>
+            <NuxtLink to="/reports">
+              <p class="dark:text-white p-4">Reports & Analytics</p>
+            </NuxtLink>
+            <NuxtLink to="/reservation">
+              <p class="dark:text-white p-4">Reservation</p>
+            </NuxtLink>
+            <NuxtLink to="/payment">
+              <p class="dark:text-white p-4">Payment</p>
+            </NuxtLink>
+            <NuxtLink to="/marketing">
+              <p class="dark:text-white p-4">Marketing</p>
+            </NuxtLink>
+            <NuxtLink to="/back-office-managment">
+              <p class="dark:text-white p-4">Back-Office Management</p>
+            </NuxtLink>
+            <NuxtLink to="/floor-managment">
+              <p class="dark:text-white p-4">Floor Management</p>
+            </NuxtLink>
+            <NuxtLink to="/tale-managment">
+              <p class="dark:text-white p-4">Table Management with Server</p>
+            </NuxtLink>
+            <NuxtLink to="/loyalty">
+              <p class="dark:text-white p-4">Loyalty</p>
+            </NuxtLink>
+            <NuxtLink to="/gift-card">
+              <p class="dark:text-white p-4">Gift Cards</p>
+            </NuxtLink>
+            <NuxtLink to="/feedback">
+              <p class="dark:text-white p-4">Guest feedback</p>
+            </NuxtLink>
+            <NuxtLink to="/sms-marketing">
+              <p class="dark:text-white p-4">SMS Marketing</p>
+            </NuxtLink>
+            <NuxtLink to="/employee-managment">
+              <p class="dark:text-white p-4">Employee Management</p>
+            </NuxtLink>
+            <NuxtLink to="/payroll">
+              <p class="dark:text-white p-4">Payroll</p>
+            </NuxtLink>
+            <NuxtLink to="/tips-managment">
+              <p class="dark:text-white p-4">Tips management</p>
+            </NuxtLink>
           </div>
 
           <ul class="nav_child_container child flex">
@@ -91,7 +133,7 @@
 
                   <NuxtLink to="/">
                     <p class="megaNav_content">
-                      <span class="dot"></span> Ingredients Management
+                      <span class="dot"></span> Marketing
                     </p>
                   </NuxtLink>
 
@@ -379,6 +421,9 @@ const showMenu = ref(false);
 .section_container {
   @apply z-50 bg-background-color dark:bg-dark-background-color py-[10px];
 }
+.mobile_view_container{
+  display: none
+}
 .nav_container {
   @apply relative flex items-center px-4;
 }
@@ -488,6 +533,9 @@ const showMenu = ref(false);
   }
 }
 @media (max-width: 576px) {
+  .mobile_view_container{
+    @apply z-50 bg-background-color dark:bg-dark-background-color pt-[10px] pb-[700px];
+  }
   .mobile_sub {
     @apply grid grid-cols-2 gap-2 text-center;
   }
