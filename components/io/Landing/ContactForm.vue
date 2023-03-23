@@ -183,6 +183,7 @@ async function onSubmit() {
 
 .plan_section .plan_side {
   width: calc(100% / 2 - 25px);
+  align-self: self-end;
 }
 
 .plan_section .plan_side h1 {

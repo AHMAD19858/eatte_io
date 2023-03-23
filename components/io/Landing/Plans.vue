@@ -17,7 +17,7 @@ const select_pay = ref(true);
           <i class="bx bx-check-circle text-primary-color text-xl"></i> Point of
           sale software
         </h6>
-        <h6 class="kits"   v-if="select_month === false">
+        <h6 class="kits" v-if="select_month === false">
           <i class="bx bx-check-circle text-primary-color text-xl"></i> One
           smart countertop erminal
         </h6>
@@ -43,10 +43,18 @@ const select_pay = ref(true);
         >
           Customization
         </h6>
-        <h6 class="kits" v-if="select_month === true">
-          <i class="bx bx-check-circle text-primary-color text-xl"></i>
-          1 x Countertop Terminal
-        </h6>
+        <div
+          class="flex items-center justify-between"
+          v-if="select_month === true"
+        >
+          <h6 class="kits">
+            <i class="bx bx-check-circle text-primary-color text-xl"></i>
+            1 x Countertop Terminal
+          </h6>
+          <h6 class="text-[#1E1E1E] font-semibold text-base dark:text-white">
+            $70.00/mo
+          </h6>
+        </div>
       </div>
 
       <div class="plan_side">
