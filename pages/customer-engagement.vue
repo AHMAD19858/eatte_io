@@ -2,33 +2,7 @@
 import PosImage from "../assets/images/pos.svg";
 import one from "../assets/images/features/customer_engagement/one.svg";
 import two from "../assets/images/features/customer_engagement/two.svg";
-import cardOne from "../assets/images/icons/services/one.svg";
-import cardTwo from "../assets/images/icons/services/two.svg";
-import cardThree from "../assets/images/icons/services/three.svg";
-import cardFour from "../assets/images/icons/services/four.svg";
 
-const cardData = [
-  {
-    img: cardOne,
-    label: "Reports and analytics",
-    learn_text: "LEARN MORE",
-  },
-  {
-    img: cardTwo,
-    label: "Takeout & Delivery Services",
-    learn_text: "LEARN MORE",
-  },
-  {
-    img: cardThree,
-    label: "Customer Engagement",
-    learn_text: "LEARN MORE",
-  },
-  {
-    img: cardFour,
-    label: "Employee Management",
-    learn_text: "LEARN MORE",
-  },
-];
 const featuresData = [
   {
     position: "right",
@@ -76,7 +50,7 @@ const featuresData = [
         :second_sub_main="'integrated software suite, providing unbeatable convenience.'"
       />
     </div>
-    <IoCard :items="cardData" :numbers="4" />
+    <IoCard  />
     <IoButton :secondary="true" :title="'View All Services'" />
 
     <div class="py-10 bg-background-color dark:bg-dark-background-color">

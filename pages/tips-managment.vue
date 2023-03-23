@@ -1,31 +1,7 @@
 <script setup>
 import PosImage from "../assets/images/pos.svg";
-import dash from "../assets/images/dashboard.svg";
 import one from "../assets/images/features/pos/one.svg";
 import two from "../assets/images/features/pos/two.svg";
-
-const cardData = [
-  {
-    img: dash,
-    label: "Reports and analytics",
-    learn_text: "LEARN MORE",
-  },
-  {
-    img: dash,
-    label: "Takeout & Delivery Services",
-    learn_text: "LEARN MORE",
-  },
-  {
-    img: dash,
-    label: "Customer Engagement",
-    learn_text: "LEARN MORE",
-  },
-  {
-    img: dash,
-    label: "Employee Management",
-    learn_text: "LEARN MORE",
-  },
-];
 
 const featuresData = [
   {
@@ -66,7 +42,7 @@ const featuresData = [
         :second_sub_main="'integrated software suite, providing unbeatable convenience.'"
       />
     </div>
-    <IoCard :items="cardData" :numbers="4" />
+    <IoCard />
     <IoButton :secondary="true" :title="'View All Services'" />
 
     <div class="py-10 bg-background-color dark:bg-dark-background-color">

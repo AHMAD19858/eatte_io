@@ -1,30 +1,187 @@
 <script setup>
-const props = defineProps({
-  items: Array,
-  numbers: Number,
-});
+import cardOne from "~/assets/images/icons/services/one.svg";
+import cardTwo from "~/assets/images/icons/services/two.svg";
+import cardThree from "~/assets/images/icons/services/three.svg";
+import cardFour from "~/assets/images/icons/services/four.svg";
+import pos from "~/assets/images/icons/services/pos.svg";
+import kds from "~/assets/images/icons/services/kds.svg";
+import inventory from "~/assets/images/icons/services/inventory.svg";
+import reservation from "~/assets/images/icons/services/reservation.svg";
+import loyalty from "~/assets/images/icons/services/loyalty.svg";
+import table from "~/assets/images/icons/services/table.svg";
+import marketing from "~/assets/images/icons/services/marketing.svg";
+import floor from "~/assets/images/icons/services/floor.svg";
+import giftCard from "~/assets/images/icons/services/gift-card.svg";
+import backOffice from "~/assets/images/icons/services/backoffice.svg";
+import support from "~/assets/images/icons/services/support.svg";
+import payment from "~/assets/images/icons/services/payment.svg";
+import feedback from "~/assets/images/icons/services/feedback.svg";
+import payroll from "~/assets/images/icons/services/payroll.svg";
+import coupons from "~/assets/images/icons/services/coupons.svg";
+import sms from "~/assets/images/icons/services/sms.svg";
+import tips from "~/assets/images/icons/services/tips.svg";
+import ordering from "~/assets/images/icons/services/ordering.svg";
+
+const cardData = [
+  {
+    img: pos,
+    label: "Point of sale system",
+    learn_text: "LEARN MORE",
+  },
+  {
+    img: kds,
+    label: "Kitchen Display Screen",
+    learn_text: "LEARN MORE",
+  },
+  {
+    img: inventory,
+    label: "Inventory",
+    learn_text: "LEARN MORE",
+  },
+  {
+    img: reservation,
+    label: "Reservations",
+    learn_text: "LEARN MORE",
+  },
+  {
+    img: marketing,
+    label: "Marketing",
+    learn_text: "LEARN MORE",
+  },
+  {
+    img: giftCard,
+    label: "Gift Cards",
+    learn_text: "LEARN MORE",
+  },
+  {
+    img: loyalty,
+    label: "Loyalty Program",
+    learn_text: "LEARN MORE",
+  },
+  {
+    img: payment,
+    label: "Payments",
+    learn_text: "LEARN MORE",
+  },
+
+  {
+    img: ordering,
+    label: "Online-ordering",
+    learn_text: "LEARN MORE",
+  },
+  {
+    img: cardOne,
+    label: "Reports and analytics",
+    learn_text: "LEARN MORE",
+  },
+  {
+    img: cardTwo,
+    label: "Takeout & Delivery Services",
+    learn_text: "LEARN MORE",
+  },
+  {
+    img: cardThree,
+    label: "Customer Engagement",
+    learn_text: "LEARN MORE",
+  },
+  {
+    img: cardFour,
+    label: "Employee Management",
+    learn_text: "LEARN MORE",
+  },
+  {
+    img: backOffice,
+    label: "Back-Office Management",
+    learn_text: "LEARN MORE",
+  },
+  {
+    img: floor,
+    label: "Floor Management",
+    learn_text: "LEARN MORE",
+  },
+  {
+    img: table,
+    label: "Table Management",
+    learn_text: "LEARN MORE",
+  },
+
+  {
+    img: support,
+    label: "Customer Support",
+    learn_text: "LEARN MORE",
+  },
+  {
+    img: feedback,
+    label: "Guest feedback",
+    learn_text: "LEARN MORE",
+  },
+
+  {
+    img: coupons,
+    label: "Coupons",
+    learn_text: "LEARN MORE",
+  },
+  {
+    img: sms,
+    label: "SMS Marketing",
+    learn_text: "LEARN MORE",
+  },
+
+  {
+    img: payroll,
+    label: "Payroll",
+    learn_text: "LEARN MORE",
+  },
+  {
+    img: tips,
+    label: "Tips Management",
+    learn_text: "LEARN MORE",
+  },
+];
 </script>
 
 <template>
-  <section>
-    <div class="services_container">
-      <div :class="numbers === 4 ? 'cards_container' : 'small_container'">
-        <article v-for="(item, index) in items" :key="index">
-          <div class="card_container">
-            <img :src="item.img" class="phone_icon" alt="svg" />
-          </div>
+  <Swiper
+    class="mb-9"
+    :modules="[SwiperAutoplay, SwiperEffectCreative]"
+    :slides-per-view="4"
+    :autoplay="{
+      delay: 2500,
+      disableOnInteraction: false,
+    }"
+    :creative-effect="{
+      prev: {
+        shadow: false,
+        translate: ['-20%', 0, -1],
+      },
+      next: {
+        translate: ['100%', 0, 0],
+      },
+    }"
+  >
+    <SwiperSlide
+      v-for="(item, index) in cardData"
+      :key="index"
+      class="rounded-[12px] overflow-hidden"
+    >
+      <div class="services_container">
+        <div :class="numbers === 4 ? 'cards_container' : 'small_container'">
+          <article>
+            <div class="card_container">
+              <img :src="item.img" class="phone_icon" alt="svg" />
+            </div>
 
-          <div class="p-4">
-            <h3 class="main_card_text">{{ item.label }}</h3>
-            <!--   {{ item.sub_text }} -->
-            <p class="sub_title cursor-pointer">
-              {{ item.learn_text }}
-            </p>
-          </div>
-        </article>
+            <div class="p-4">
+              <h3 class="main_card_text">{{ item.label }}</h3>
+              <p class="sub_title cursor-pointer">
+                {{ item.learn_text }}
+              </p>
+            </div>
+          </article>
+        </div>
       </div>
-    </div>
-  </section>
+    </SwiperSlide>
+  </Swiper>
 </template>
 
 <style scoped>
@@ -35,7 +192,7 @@ const props = defineProps({
   @apply md:grid grid-cols-3 gap-3 md:grid-cols-2 lg:grid-cols-3;
 }
 .cards_container {
-  @apply md:grid grid-cols-3 gap-3 md:grid-cols-2 lg:grid-cols-4;
+  @apply md:flex grid-cols-3 gap-3 md:grid-cols-2 lg:grid-cols-4;
 }
 
 article {
