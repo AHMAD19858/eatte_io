@@ -18,11 +18,26 @@
       </div>
     </div>
     <footer
-      class="raduis p-6 text-white z-10 relative bg-gradient-to-r from-[#FF6137] to-[#CC4D2C] "
+      class="raduis p-6 text-white z-10 relative bg-gradient-to-r from-[#FF6137] to-[#CC4D2C]"
     >
       <div
         class="mt-20 container grid grid-cols-2 mx-auto gap-x-3 gap-y-8 sm:grid-cols-3 md:grid-cols-4"
       >
+        <div class="flex flex-col space-y-4">
+          <h2 class="f font-semibold text-[26px] text-[#F5F6FA]">
+            About EATTE
+          </h2>
+
+          <div class="flex flex-col space-y-2 text-sm text-white">
+            <p class="font-montse font-semibold text-base">
+              EATTE is all about enabling and empowering restaurants to utilize
+              todays technology to provide all avenues of food service and
+              business development with a focus on the highest level of customer
+              satisfaction.
+            </p>
+          </div>
+        </div>
+
         <div class="flex flex-col space-y-4">
           <h2 class="font-semibold text-[26px] text-[#F5F6FA]">PRODUCT</h2>
           <div class="flex flex-col space-y-2 text-sm text-white">
@@ -61,44 +76,7 @@
             </NuxtLink>
           </div>
         </div>
-        <div class="flex flex-col space-y-4">
-          <h2 class="f font-semibold text-[26px] text-[#F5F6FA]">
-            RESTAURANT TYPES
-          </h2>
-          <div class="flex flex-col space-y-2 text-sm text-white">
-            <a rel="noopener noreferrer" href="#" class="footer_element"
-              >Full Service Restaurant</a
-            >
-            <a rel="noopener noreferrer" href="#" class="footer_element"
-              >Food Truck</a
-            >
-            <a rel="noopener noreferrer" href="#" class="footer_element"
-              >Family Style</a
-            >
-            <a rel="noopener noreferrer" href="#" class="footer_element"
-              >Fine Dining</a
-            >
-            <a rel="noopener noreferrer" href="#" class="footer_element"
-              >Quick Service Restaurant</a
-            >
-            <a rel="noopener noreferrer" href="#" class="footer_element"
-              >Coffee Shop</a
-            >
-            <a rel="noopener noreferrer" href="#" class="footer_element"
-              >Fast Casual</a
-            >
 
-            <a rel="noopener noreferrer" href="#" class="footer_element"
-              >Catering</a
-            >
-            <a rel="noopener noreferrer" href="#" class="footer_element"
-              >Bakery</a
-            >
-            <a rel="noopener noreferrer" href="#" class="footer_element"
-              >Cafe</a
-            >
-          </div>
-        </div>
         <div class="flex flex-col space-y-4">
           <h2 class="font-semibold text-[26px] text-[#F5F6FA]">COMPANY</h2>
           <div class="flex flex-col space-y-2 text-sm text-white">
@@ -132,20 +110,16 @@
           </div>
         </div>
         <div class="flex flex-col space-y-4">
-          <h2 class="font-semibold text-[26px]">Compare</h2>
+          <h2 class="font-semibold text-[26px] text-[#F5F6FA]">CALL</h2>
           <div class="flex flex-col space-y-2 text-sm text-white">
-            <a rel="noopener noreferrer" href="#" class="footer_element"
-              >toasttab</a
-            >
-            <a rel="noopener noreferrer" href="#" class="footer_element"
-              >squareup</a
-            >
-            <a rel="noopener noreferrer" href="#" class="footer_element"
-              >lightspeedhq</a
-            >
-            <a rel="noopener noreferrer" href="#" class="footer_element"
-              >touchbistro</a
-            >
+            <p class="font-montse font-semibold text-base">+13053609462</p>
+          </div>
+
+          <div class="flex flex-col space-y-4">
+            <h2 class="font-semibold text-[26px]">EMAIL</h2>
+            <div class="flex flex-col space-y-2 text-sm text-white">
+              <p class="font-montse font-semibold text-base">hello@eatte.io</P>
+            </div>
           </div>
         </div>
       </div>
@@ -174,8 +148,8 @@
 .footer_container {
   @apply bg-background-color pt-[48px] dark:bg-dark-background-color;
 }
-.raduis{
-       border-radius: 69px 40px 0px 0px;
+.raduis {
+  border-radius: 69px 40px 0px 0px;
 }
 .card {
   background-color: white;
@@ -234,7 +208,7 @@
     position: unset;
     margin-bottom: -15px;
   }
- }
+}
 @media (max-width: 576px) {
   .main {
     display: block;
