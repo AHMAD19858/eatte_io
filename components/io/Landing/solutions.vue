@@ -1,6 +1,73 @@
+<script setup>
+// import images
+import hat from "~/assets/images/icons/hat.svg";
+import roomService from "~/assets/images/icons/room-service.svg";
+import users from "~/assets/images/icons/users.svg";
+import restaurant from "~/assets/images/icons/restaurant.svg";
+import shop from "~/assets/images/icons/shop.svg";
+import coffee from "~/assets/images/icons/coffee.svg";
+import food from "~/assets/images/icons/food.svg";
+import mug from "~/assets/images/icons/mug.svg";
+import hamburger from "~/assets/images/icons/hamburger.svg";
+import location from "~/assets/images/icons/location.svg";
+const items = [
+  {
+    image: hat,
+    title: "Full Service Restaurant",
+    desc: " Elevate the dining experience or keep it casual -- Everything you need for quality tableside and off-premise service in one easy-to-use platform.",
+  },
+  {
+    image: users,
+    title: "Family Style",
+    desc: "Our POS: easy-to-use, fast, will never let you down. Together,we make an unstoppable team.",
+  },
+  {
+    image: coffee,
+    title: "Coffee Shop",
+    desc: "Our coffee shop POS makes it easier for you to conquer the morning rush, increase profit margins, and crush the competition.",
+  },
+  {
+    image: food,
+    title: "Bakery",
+    desc: "Our POS system allows you to quickly create orders, process payments, and keep track of inventory.",
+  },
+  // service 2
+  {
+    image: roomService,
+    title: "Catering",
+    desc: "Using a POS system will help streamline your catering business operations, improve customer service, and reduce overall costs.",
+  },
+  {
+    image: restaurant,
+    title: "Fine Dining",
+    desc: "All-in-one fine dining restaurant POS has the tools you need to deliver an elevated hospitality experience for your guests.",
+  },
+  {
+    image: hamburger,
+    title: "Fast Casual",
+    desc: "Our full-service POS system offers a variety of features that make ordering, tracking, and reporting easier and more efficient.",
+  },
+  {
+    image: mug,
+    title: "Cafe",
+    desc: "EATTE has the software, hardware, and support to help you achieve your goals.",
+  },
+  // service 3
+  {
+    image: shop,
+    title: "Quick Service Restaurant",
+    desc: "At our restaurants, you don't have to wait in line for long  periods of time. Our staff will greet you with a smile and  have your order taken quickly. We also offer takeout options, so you can take your order to go and enjoy it in the comfort of your own home.",
+  },
+  {
+    image: location,
+    title: "Food Truck",
+    desc: " We’re here to provide you with some of the tastiest dishes on the go. Our menu is ever-growing and expanding, offering something for everyone. Whether you’re looking for a quick bite to eat or a more substantial meal, we’ve got you covered.",
+  },
+];
+</script>
 <template>
   <div class="solutions_section">
-    <img class="line-top" src="../../../assets/images/line.svg" alt="svg" />
+    <img class="line-top" src="~/assets/images/line.svg" alt="svg" />
 
     <div class="container mx-auto">
       <div class="header_container">
@@ -14,251 +81,31 @@
       </div>
 
       <section class="text-black">
-        <div class="flex flex-col items-center p-4 mx-auto md:p-8">
-          <div class="sol_container">
-            <div class="divide_section">
-              <div class="item_section">
-                <img
-                  v-show="$colorMode.value === 'dark'"
-                  src="../../../assets/images/icons/hat.svg"
-                  class="darak_img"
-                  alt="svg"
-                />
-                <img
-                  v-show="$colorMode.value === 'light'"
-                  src="../../../assets/images/icons/hat.svg"
-                  alt=""
-                />
-                <h3 class="font-montse font-bold text-xl dark:text-white">
-                  Full Service Restaurant
-                </h3>
-                <p
-                  class="dark:text-[#93A3B0CC] text-center h-[100px] max-max-w-[300px] font-montse font-normal text-base text-[#3F4440]"
-                >
-                  Elevate the dining experience or keep it casual -- Everything
-                  you need for quality tableside and off-premise service in one
-                  easy-to-use platform.
-                </p>
-              </div>
-              <div class="item_section">
-                <img
-                  v-show="$colorMode.value === 'dark'"
-                  src="../../../assets/images/icons/room-service.svg"
-                  class="darak_img"
-                  alt="svg"
-                />
-                <img
-                  v-show="$colorMode.value === 'light'"
-                  src="../../../assets/images/icons/room-service.svg"
-                  alt=""
-                />
-                <h3 class="font-montse font-bold text-xl dark:text-white">
-                  Catering
-                </h3>
-                <p
-                  class="dark:text-[#93A3B0CC] text-center h-[100px] max-w-[300px] font-montse font-normal text-base text-[#3F4440]"
-                >
-                  Using a POS system will help streamline your catering business
-                  operations, improve customer service, and reduce overall
-                  costs.
-                </p>
-              </div>
-              <!-- fooooooooooooooooood -->
-              <div class="item_section"></div>
-            </div>
-            <div class="divide_section">
-              <div class="item_section">
-                <img
-                  v-show="$colorMode.value === 'dark'"
-                  src="../../../assets/images/icons/users.svg"
-                  class="darak_img"
-                  alt="svg"
-                />
-                <img
-                  v-show="$colorMode.value === 'light'"
-                  src="../../../assets/images/icons/users.svg"
-                  alt=""
-                />
-                <h3 class="font-montse font-bold text-xl dark:text-white">
-                  Family Style
-                </h3>
-                <p
-                  class="dark:text-[#93A3B0CC] text-center h-[100px] max-w-[300px] font-montse font-normal text-base text-[#3F4440]"
-                >
-                  Our POS: easy-to-use, fast, will never let you down. Together,
-                  we make an unstoppable team.
-                </p>
-              </div>
-              <div class="item_section">
-                <img
-                  v-show="$colorMode.value === 'dark'"
-                  src="../../../assets/images/icons/restaurant.svg"
-                  class="darak_img"
-                  alt="svg"
-                />
-                <img
-                  v-show="$colorMode.value === 'light'"
-                  src="../../../assets/images/icons/restaurant.svg"
-                  alt=""
-                />
-                <h3 class="font-montse font-bold text-xl dark:text-white">
-                  Fine Dining
-                </h3>
-                <p
-                  class="dark:text-[#93A3B0CC] text-center h-[100px] max-w-[300px] font-montse font-normal text-base text-[#3F4440]"
-                >
-                  All-in-one fine dining restaurant POS has the tools you need
-                  to deliver an elevated hospitality experience for your guests.
-                </p>
-              </div>
-              <div class="item_section">
-                <img
-                  v-show="$colorMode.value === 'dark'"
-                  src="../../../assets/images/icons/shop.svg"
-                  class="darak_img"
-                  alt="svg"
-                />
-                <img
-                  v-show="$colorMode.value === 'light'"
-                  src="../../../assets/images/icons/shop.svg"
-                  alt=""
-                />
-                <h3 class="font-bold text-xl dark:text-white">
-                  Quick Service Restaurant
-                </h3>
-                <p
-                  class="dark:text-[#93A3B0CC] text-center h-[100px] max-w-[300px] font-montse font-normal text-base text-[#3F4440]"
-                >
-                  At our restaurants, you don't have to wait in line for long
-                  periods of time. Our staff will greet you with a smile and
-                  have your order taken quickly. We also offer takeout options,
-                  so you can take your order to go and enjoy it in the comfort
-                  of your own home.
-                </p>
-              </div>
-            </div>
-            <div class="divide_section">
-              <div class="item_section">
-                <img
-                  v-show="$colorMode.value === 'dark'"
-                  src="../../../assets/images/icons/coffee.svg"
-                  class="darak_img"
-                  alt="svg"
-                />
-                <img
-                  v-show="$colorMode.value === 'light'"
-                  src="../../../assets/images/icons/coffee.svg"
-                  alt=""
-                />
-                <h3 class="font-montse font-bold text-xl dark:text-white">
-                  Coffee Shop
-                </h3>
-                <p
-                  class="dark:text-[#93A3B0CC] text-center h-[100px] max-w-[300px] font-montse font-normal text-base text-[#3F4440]"
-                >
-                  Our coffee shop POS makes it easier for you to conquer the
-                  morning rush, increase profit margins, and crush the
-                  competition.
-                </p>
-              </div>
-              <div class="item_section">
-                <img
-                  v-show="$colorMode.value === 'dark'"
-                  src="../../../assets/images/icons/hamburger.svg"
-                  class="darak_img"
-                  alt="svg"
-                />
-                <img
-                  v-show="$colorMode.value === 'light'"
-                  src="../../../assets/images/icons/hamburger.svg"
-                  alt="svg"
-                />
-                <h3 class="font-montse font-bold text-xl dark:text-white">
-                  Fast Casual
-                </h3>
-                <p
-                  class="dark:text-[#93A3B0CC] text-center h-[100px] max-w-[300px] font-montse font-normal text-base text-[#3F4440]"
-                >
-                  Our full-service POS system offers a variety of features that
-                  make ordering, tracking, and reporting easier and more
-                  efficient.
-                </p>
-              </div>
-
-              <div class="item_section">
-                <img
-                  v-show="$colorMode.value === 'dark'"
-                  src="../../../assets/images/icons/location.svg"
-                  class="darak_img"
-                  alt="svg"
-                />
-                <img
-                  v-show="$colorMode.value === 'light'"
-                  src="../../../assets/images/icons/location.svg"
-                  alt=""
-                />
-                <h3 class="font-montse font-bold text-xl dark:text-white">
-                  Food Truck
-                </h3>
-                <p
-                  class="dark:text-[#93A3B0CC] text-center h-[100px] max-w-[300px] font-montse font-normal text-base text-[#3F4440]"
-                >
-                  We’re here to provide you with some of the tastiest dishes on
-                  the go. Our menu is ever growing and expanding, offering
-                  something for everyone. Whether you’re looking for a quick
-                  bite to eat or a more substantial meal, we’ve got you covered.
-                </p>
-              </div>
-            </div>
-            <div
-              class="hidden w-full divide-y sm:flex-col sm:flex divide-[#93A3B029]"
+        <div class="flex justify-center p-4 mx-auto md:p-8 flex-wrap">
+          <div
+            class="item_section flex-col w-full xl:w-1/4 lg:w-1/3 md:w-1/2 text-center"
+            v-for="(item, index) in items"
+            :key="index"
+          >
+            <img
+              :src="item.image"
+              v-show="$colorMode.value === 'dark'"
+              class="darak_img"
+              alt="svg"
+            />
+            <img
+              :src="item.image"
+              v-show="$colorMode.value === 'light'"
+              alt="svg"
+            />
+            <h3 class="font-montse font-bold text-xl dark:text-white">
+              {{ item.title }}
+            </h3>
+            <p
+              class="dark:text-[#93A3B0CC] text-center max-max-w-[300px] font-montse font-normal text-base text-[#3F4440]"
             >
-              <div class="item_section">
-                <img
-                  v-show="$colorMode.value === 'dark'"
-                  src="../../../assets/images/icons/food.svg"
-                  class="darak_img"
-                  alt="svg"
-                />
-                <img
-                  v-show="$colorMode.value === 'light'"
-                  src="../../../assets/images/icons/food.svg"
-                  alt=""
-                />
-                <h3 class="font-montse font-bold text-xl dark:text-white">
-                  Bakery
-                </h3>
-                <p
-                  class="dark:text-[#93A3B0CC] text-center h-[100px] max-w-[300px] font-montse font-normal text-base text-[#3F4440]"
-                >
-                  Our POS system allows you to quickly create orders, process
-                  payments, and keep track of inventory.
-                </p>
-              </div>
-              <div class="item_section">
-                <img
-                  v-show="$colorMode.value === 'dark'"
-                  src="../../../assets/images/icons/mug.svg"
-                  class="darak_img"
-                  alt="svg"
-                />
-                <img
-                  v-show="$colorMode.value === 'light'"
-                  src="../../../assets/images/icons/mug.svg"
-                  alt=""
-                />
-                <h3 class="font-montse font-bold text-xl dark:text-white">
-                  Cafe
-                </h3>
-                <p
-                  class="dark:text-[#93A3B0CC] text-center h-[100px] max-w-[300px] font-montse font-normal text-base text-[#3F4440]"
-                >
-                  EATTE has the software, hardware, and support to help you
-                  achieve your goals.
-                </p>
-              </div>
-              <div class="item_section"></div>
-            </div>
+              {{ item.desc }}
+            </p>
           </div>
         </div>
       </section>
@@ -266,14 +113,65 @@
 
     <img
       class="line-bottom"
-      src="../../../assets/images/lineEnd.svg"
+      src="~/assets/images/lineEnd.svg"
       alt="svg"
     />
   </div>
 </template>
 
-<script setup></script>
-
+<style  scoped lang="scss">
+.item_section {
+  border-block-end: 1px solid #93a3b029;
+  border-inline-end: 1px solid #93a3b029;
+  /* Default */
+  &:last-child,
+  &:nth-child(4),
+  &:nth-child(8) {
+    border-inline-end: none;
+  }
+  &:last-child,
+  &:nth-last-child(2) {
+    border-block-end: none;
+  }
+  /* Samll Desktop */
+  @media (max-width: 1280px) {
+    &:nth-child(4),
+    &:nth-child(8) {
+      border-inline-end: 1px solid #93a3b029;
+    }
+    &:nth-child(3),
+    &:nth-child(6),
+    &:nth-child(9) {
+      border-inline-end: none;
+    }
+    &:nth-child(9) {
+      border-block-end: 1px solid #93a3b029;
+    }
+    &:last-child {
+      border-inline-end: 1px solid #93a3b029;
+      border-inline-start: 1px solid #93a3b029;
+    }
+  }
+  @media (max-width: 1024px) {
+    &:nth-child(even) {
+      border-inline-end: none;
+    }
+    &:nth-last-child(2) {
+      border-block-end: none;
+    }
+    &:nth-child(3) {
+      border-inline-end: 1px solid #93a3b029;
+    }
+  }
+  @media (max-width: 768px) {
+    border-inline-end: none !important;
+    border-inline-start: none !important;
+    &:not(:last-child) {
+      border-block-end: 1px solid #93a3b029;
+    }
+  }
+}
+</style>
 <style scoped>
 .darak_img {
   filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(70deg)
@@ -296,7 +194,7 @@
 }
 
 .solutions_section {
-  @apply relative bg-white h-[1140px] mt-[260px] mb-[175px] mx-0 dark:bg-[#272727];
+  @apply relative bg-white mt-[260px] mb-[175px] mx-0 dark:bg-[#272727];
 }
 .sol_container {
   @apply flex flex-col w-full divide-y sm:flex-row sm:divide-y-0 sm:divide-x  divide-[#93A3B029];
@@ -334,7 +232,7 @@
     max-width: 992px;
   }
   .solutions_section {
-    @apply h-[1133px];
+    /* @apply h-[1133px]; */
   }
 }
 
@@ -352,7 +250,7 @@
     @apply max-w-[576px];
   }
   .solutions_section {
-    @apply h-[1675px];
+    /* @apply h-[1675px]; */
   }
 }
 
@@ -364,7 +262,7 @@
     @apply max-w-full;
   }
   .solutions_section {
-    height: 2357px;
+    /* height: 2357px; */
     margin-bottom: 150px;
   }
 
