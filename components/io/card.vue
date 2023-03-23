@@ -143,11 +143,12 @@ const cardData = [
 <template>
   <Swiper
     class="mb-9"
+    :loop="false"
     :modules="[SwiperAutoplay, SwiperEffectCreative]"
     :slides-per-view="4"
     :autoplay="{
-      delay: 2500,
-      disableOnInteraction: false,
+      delay: 8000000000000000000,
+      disableOnInteraction: true,
     }"
     :creative-effect="{
       prev: {
@@ -162,10 +163,10 @@ const cardData = [
     <SwiperSlide
       v-for="(item, index) in cardData"
       :key="index"
-      class="rounded-[12px] overflow-hidden"
+      class="rounded-[12px] overflow-hidden w-[100px]"
     >
       <div class="services_container">
-        <div :class="numbers === 4 ? 'cards_container' : 'small_container'">
+        <div class="cards_container">
           <article>
             <div class="card_container">
               <img :src="item.img" class="phone_icon" alt="svg" />
@@ -186,18 +187,18 @@ const cardData = [
 
 <style scoped>
 .services_container {
-  @apply container  max-w-fit p-6 mx-auto space-y-8;
+  @apply container  max-w-fit p-1 mx-auto space-y-8;
 }
 .small_container {
-  @apply md:grid grid-cols-3 gap-3 md:grid-cols-2 lg:grid-cols-3;
+  @apply md:grid grid-cols-3 gap-1 md:grid-cols-2 lg:grid-cols-3;
 }
 .cards_container {
-  @apply md:flex grid-cols-3 gap-3 md:grid-cols-2 lg:grid-cols-4;
+  @apply md:flex grid-cols-3 gap-1 md:grid-cols-2 lg:grid-cols-4;
 }
 
 article {
   margin: 0 auto;
-  @apply flex  flex-col bg-white rounded-2xl my-3 dark:bg-[#272727] w-[280px];
+  @apply flex  flex-col bg-white rounded-2xl my-3 dark:bg-[#272727] w-[310px];
 }
 
 .card_container {
