@@ -10,13 +10,7 @@ const featuresData = [
     title: "Stop wasting time trying to remember all your tips!",
     sub_title: `With EATTE, you can easily manage all your tips in one place. Whether you're a restaurant manager or a server, EATTE makes it easy to store and manage all your tips in the most organized way. Plus, its intuitive interface ensures you can access your tips quickly and efficiently. Get the hassle-free way to manage all your tips with EATTE!`,
   },
-  {
-    position: "left",
-    img: two,
-    title:
-      "Are you tired of juggling multiple to-do lists and forgetting tasks?",
-    sub_title: `EATTE is the perfect solution for you! It's your one-stop shop for tips management, allowing you to manage all your task lists in one place. Maximize efficiency and productivity with our easy-to-use platform that helps organize and prioritize your tasks so you can always get the job done. Get EATTE today and say goodbye to scattered ideas & goals.`,
-  },
+
 ];
 </script>
 
