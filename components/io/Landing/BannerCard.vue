@@ -28,7 +28,7 @@
   @apply container mx-auto pt-[40px] pl-[23px]
 }
 .banner_container {
-  @apply container max-w-5xl mx-auto mb-20 h-[266px] bg-primary-color text-white rounded-lg;
+  @apply container max-w-5xl mx-auto mb-20 py-3 bg-primary-color text-white rounded-lg;
 }
 
 .row_container {
@@ -77,6 +77,8 @@ right: unset;
   .banner_container {
     margin-left: unset;
     margin-right: unset;
+    height: unset;
+    padding-block: 10px;
   }
 }
 </style>
