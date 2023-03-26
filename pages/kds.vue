@@ -1,5 +1,5 @@
 <script setup>
-import kdsImage from "../assets/images/kds.svg";
+import kdsImage from "../assets/images/heroImages/kds.svg";
 import one from "../assets/images/features/kds/one.svg";
 import two from "../assets/images/features/kds/two.svg";
 import three from "../assets/images/features/kds/three.svg";

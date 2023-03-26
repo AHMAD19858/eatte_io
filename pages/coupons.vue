@@ -1,9 +1,7 @@
 <script setup>
-import PosImage from "../assets/images/pos.svg";
+import PosImage from "../assets/images/heroImages/coupons.svg";
 import one from "../assets/images/features/pos/one.svg";
 import two from "../assets/images/features/pos/two.svg";
-
-
 
 const featuresData = [
   {
@@ -68,7 +66,7 @@ const featuresData = [
   @apply w-12 h-12 bg-[#ff613729] rounded-lg flex items-center m-4;
 } */
 .screen_container {
-  @apply bg-background-color min-h-full dark:text-white dark:bg-dark-background-color pt-[140px];
+  @apply bg-background-color min-h-full dark:text-white dark:bg-dark-background-color pt-[170px];
 }
 
 .accepts_container {

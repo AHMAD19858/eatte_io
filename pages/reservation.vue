@@ -1,5 +1,5 @@
 <script setup>
-import reservation from "../assets/images/reservation.svg";
+import reservation from "../assets/images/heroImages/reservation.svg";
 import one from "../assets/images/features/reservation/one.svg";
 import two from "../assets/images/features/reservation/two.svg";
 import three from "../assets/images/features/reservation/three.svg";

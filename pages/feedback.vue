@@ -1,5 +1,5 @@
 <script setup>
-import PosImage from "../assets/images/pos.svg";
+import PosImage from "../assets/images/heroImages/feedback.svg";
 import hardware from "../assets/images/hardware.png";
 import one from "../assets/images/features/feedback/one.svg";
 import two from "../assets/images/features/feedback/two.svg";
@@ -92,7 +92,7 @@ const featuresData = [
 }
 
 .screen_container {
-  @apply bg-background-color min-h-full dark:text-white dark:bg-dark-background-color pt-[100px];
+  @apply bg-background-color min-h-full dark:text-white dark:bg-dark-background-color pt-[170px];
 }
 
 @media (max-width: 768px) {

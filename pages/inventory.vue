@@ -1,5 +1,5 @@
 <script setup>
-import inventory from "../assets/images/inventory.svg";
+import inventory from "../assets/images/heroImages/inventory.svg";
 import service1 from "../assets/images/icons/hand.svg";
 import service2 from "../assets/images/icons/charts.svg";
 import one from "../assets/images/features/inventory/one.svg";
@@ -107,7 +107,7 @@ const featuresData = [
       />
     </div>
 
-    <IoCard  />
+    <IoCard />
 
     <IoButton :secondary="true" :title="'View All Services'" />
 

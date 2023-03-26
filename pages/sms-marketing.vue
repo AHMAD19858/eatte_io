@@ -1,5 +1,5 @@
 <script setup>
-import PosImage from "../assets/images/pos.svg";
+import PosImage from "../assets/images/heroImages/sms.svg";
 import one from "../assets/images/features/pos/one.svg";
 import two from "../assets/images/features/pos/two.svg";
 
@@ -65,7 +65,7 @@ const featuresData = [
 }
 
 .screen_container {
-  @apply bg-background-color min-h-full dark:text-white dark:bg-dark-background-color pt-[140px];
+  @apply bg-background-color min-h-full dark:text-white dark:bg-dark-background-color pt-[170px];
 }
 
 .accepts_container {

@@ -1,5 +1,5 @@
 <script setup>
-import ordering from "../assets/images/ordering.svg";
+import ordering from "../assets/images/heroImages/ordering.svg";
 import service1 from "../assets/images/icons/hand.svg";
 import service3 from "../assets/images/icons/code.svg";
 import service2 from "../assets/images/icons/charts.svg";
@@ -219,7 +219,7 @@ const featuresData = [
   max-width: 1200px;
 }
 .screen_container {
-  @apply bg-background-color min-h-full dark:text-white dark:bg-dark-background-color pt-[100px];
+  @apply bg-background-color min-h-full dark:text-white dark:bg-dark-background-color pt-[170px];
 }
 
 .cards_container {

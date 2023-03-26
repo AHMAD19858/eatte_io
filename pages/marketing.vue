@@ -1,5 +1,5 @@
 <script setup>
-import marketing from "../assets/images/marketing.svg";
+import marketing from "../assets/images/heroImages/marketing.svg";
 import one from "../assets/images/features/marketing/one.svg";
 
 

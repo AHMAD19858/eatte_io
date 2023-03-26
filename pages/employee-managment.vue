@@ -1,5 +1,5 @@
 <script setup>
-import PosImage from "../assets/images/pos.svg";
+import PosImage from "../assets/images/heroImages/employee-managment.svg";
 import one from "../assets/images/features/managment/one.svg";
 
 

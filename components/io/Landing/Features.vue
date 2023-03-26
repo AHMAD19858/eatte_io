@@ -8,7 +8,7 @@
       />
     </div>
 
-    <IoButton :primary="true" :title="'View all features'" />
+    <IoButton :primary="true" :title="'Get Started'" />
   </section>
 </template>
 

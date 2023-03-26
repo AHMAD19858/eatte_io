@@ -7,6 +7,7 @@ const props = defineProps({
 </script>
 <template>
   <div class="view_button" v-if="primary === true">
+    <NuxtLink to="https://eatte.io/new_wizard/" target="_blank">
     <button class="get_started">
       {{ title }}
       <svg
@@ -24,6 +25,7 @@ const props = defineProps({
         />
       </svg>
     </button>
+  </NuxtLink>
   </div>
 
   <div class="view_button">

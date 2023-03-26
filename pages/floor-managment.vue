@@ -1,5 +1,5 @@
 <script setup>
-import PosImage from "../assets/images/pos.svg";
+import PosImage from "../assets/images/heroImages/floor.svg";
 import one from "../assets/images/features/floor/one.svg";
 import two from "../assets/images/features/floor/two.svg";
 import three from "../assets/images/features/floor/three.svg";
@@ -96,7 +96,7 @@ const featuresData = [
   max-width: 1200px;
 }
 .screen_container {
-  @apply bg-background-color min-h-full dark:text-white dark:bg-dark-background-color pt-[100px];
+  @apply bg-background-color min-h-full dark:text-white dark:bg-dark-background-color pt-[170px];
 }
 
 .cards_container {

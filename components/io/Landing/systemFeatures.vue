@@ -51,7 +51,6 @@
       <div class="features_side img_side">
         <img src="../../../assets/images/features/landing/one.svg" alt="img" />
       </div>
-   
     </div>
 
     <div class="features_section reverse">
@@ -104,7 +103,10 @@
         </a>
       </div>
       <div class="features_side img_side">
-        <img src="../../../assets/images/features/landing/three.svg" alt="img" />
+        <img
+          src="../../../assets/images/features/landing/three.svg"
+          alt="img"
+        />
       </div>
     </div>
 
@@ -148,14 +150,14 @@
       </div>
     </div>
 
-    <IoButton :primary="true" :title="'View all features'" />
+    <IoButton :primary="true" :title="'Get Started'" />
   </div>
 </template>
 
 <script setup></script>
 
 <style scoped>
-.unique_section{
+.unique_section {
   display: block !important;
 }
 .header_container {

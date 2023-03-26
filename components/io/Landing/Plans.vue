@@ -98,10 +98,12 @@ const select_pay = ref(true);
           </div>
           <p class="plan_best">Best Value</p>
         </div>
-        <button class="plan_btn">
-          <p class="font-montse">Try</p>
-          <i class="bx bx-right-arrow-alt"></i>
-        </button>
+        <NuxtLink to="https://eatte.io/new_wizard/" target="_blank">
+          <button class="plan_btn">
+            <p class="font-montse">Try</p>
+            <i class="bx bx-right-arrow-alt"></i>
+          </button>
+        </NuxtLink>
       </div>
     </div>
 
@@ -249,8 +251,8 @@ const select_pay = ref(true);
     max-width: 100%;
   }
   .plan_section .plan_side .plan {
-  @apply  h-[170px] mt-8;
-}
+    @apply h-[170px] mt-8;
+  }
   .plan_section .plan_side .plan .plan_best {
     top: 15%;
     font-family: "Montserrat";

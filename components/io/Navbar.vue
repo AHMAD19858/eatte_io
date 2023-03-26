@@ -123,7 +123,7 @@
                     </p>
                   </NuxtLink>
 
-                  <NuxtLink to="/">
+                  <NuxtLink to="/marketing">
                     <p class="megaNav_content">
                       <span class="dot"></span> Marketing
                     </p>

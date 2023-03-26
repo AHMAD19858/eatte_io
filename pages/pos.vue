@@ -1,5 +1,5 @@
 <script setup>
-import PosImage from "../assets/images/pos.svg";
+import PosImage from "../assets/images/heroImages/pos.svg";
 import pos_devices from "../assets/images/pos_devices.svg";
 import hardware from "../assets/images/hardware.png";
 import pay1 from "../assets/images/backgrounds/pay1.png";
@@ -298,7 +298,7 @@ const featuresData = [
   max-width: 1200px;
 }
 .screen_container {
-  @apply bg-background-color min-h-full dark:text-white dark:bg-dark-background-color pt-[140px];
+  @apply bg-background-color min-h-full dark:text-white dark:bg-dark-background-color pt-[170px];
 }
 
 .cards_container {
