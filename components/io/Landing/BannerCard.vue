@@ -1,7 +1,7 @@
 <template>
   <div class="banner_container">
     <img src="../../../assets/images/shadow/image.png" class="shadow_card" />
-    <div class="container mx-auto pt-[40px] pl-[23px]">
+    <div class="card_content">
       <div class="row_container">
         <div class="">
           <h2 class="slogan">Customized for</h2>
@@ -23,6 +23,10 @@
 <script setup></script>
 
 <style scoped>
+
+.card_content{
+  @apply container mx-auto pt-[40px] pl-[23px]
+}
 .banner_container {
   @apply container max-w-5xl mx-auto mb-20 h-[266px] bg-primary-color text-white rounded-lg;
 }
@@ -47,6 +51,9 @@
 }
 
 @media only screen and (max-width: 500px) {
+  .card_content{
+    @apply pt-[10px]
+  }
   /* For mobile phones: */
   .slogan {
     text-align: center;
