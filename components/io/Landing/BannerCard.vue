@@ -51,6 +51,14 @@
 }
 
 @media only screen and (max-width: 500px) {
+
+
+  .shadow_card {
+right: unset;
+}
+.get_started{
+  @apply self-center
+}
   .card_content{
     @apply pt-[10px]
   }
@@ -63,6 +71,7 @@
   .sub {
     width: 100%;
     text-align: center;
+    margin-top: unset;
   }
 
   .banner_container {
