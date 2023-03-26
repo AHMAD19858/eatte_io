@@ -83,7 +83,7 @@ const items = [
       <section class="text-black">
         <div class="flex justify-center p-4 mx-auto md:p-8 flex-wrap">
           <div
-            class="item_section flex-col w-full xl:w-1/4 lg:w-1/3 md:w-1/2 text-center"
+            class="item_section flex-col w-full xl:w-1/4 lg:w-1/3 md:w-1/2 text-center "
             v-for="(item, index) in items"
             :key="index"
           >
@@ -98,7 +98,7 @@ const items = [
               v-show="$colorMode.value === 'light'"
               alt="svg"
             />
-            <h3 class="font-montse font-bold text-xl dark:text-white">
+            <h3 class="font-montse font-bold  dark:text-white">
               {{ item.title }}
             </h3>
             <p
@@ -204,7 +204,7 @@ const items = [
   @apply flex flex-col w-full divide-y divide-[#93A3B029];
 }
 .item_section {
-  @apply flex flex-col gap-2 items-center justify-center p-4 sm:py-8 lg:py-12;
+  @apply flex flex-col gap-2 items-center justify-start p-4 sm:py-8 lg:py-12;
 }
 .solutions_section::before,
 .solutions_section::after {
