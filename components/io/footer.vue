@@ -36,43 +36,101 @@
               satisfaction.
             </p>
           </div>
+          <div class="flex flex-col space-y-4">
+            <h2 class="font-semibold text-[26px] text-[#F5F6FA]">Call</h2>
+            <div class="flex flex-col space-y-2 text-sm text-white">
+              <p class="font-montse font-semibold text-base">+13053609462</p>
+            </div>
+
+            <div class="flex flex-col space-y-4">
+              <h2 class="font-semibold text-[26px] text-[#F5F6FA]">Email</h2>
+              <div class="flex flex-col space-y-2 text-sm text-white">
+                <p class="font-montse font-semibold text-base">
+                  hello@eatte.io
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
 
         <div class="flex flex-col space-y-4">
           <h2 class="font-semibold text-[26px] text-[#F5F6FA]">PRODUCT</h2>
           <div class="flex flex-col space-y-2 text-sm text-white">
-            <NuxtLink to="/ordering">
-              <a class="footer_element">Order Management</a>
-            </NuxtLink>
-            <NuxtLink to="/delivery">
-              <a class="footer_element">Takeout & Delivery Services</a>
+            <NuxtLink to="/pos">
+              <a class="footer_element">Point Of Sale (POS)</a>
             </NuxtLink>
             <NuxtLink to="/inventory">
               <a class="footer_element">Inventory Management</a>
             </NuxtLink>
-            <NuxtLink to="/floor-managment">
-              <a class="footer_element">Floor Management</a>
+            <NuxtLink to="/kds">
+              <a class="footer_element">Kitchen Display System (KDS)</a>
             </NuxtLink>
-            <NuxtLink to="/customert-engagement">
-              <a class="footer_element">Customer Engagement</a>
+            <NuxtLink to="/reports">
+              <a class="footer_element">Reports & Analitcs</a>
             </NuxtLink>
-            <NuxtLink to="/employee-managment">
-              <a class="footer_element">Employee Management</a>
-            </NuxtLink>
-            <NuxtLink to="/back-office-managment">
-              <a class="footer_element">Back-Office Management</a>
+            <NuxtLink to="/reservation">
+              <a class="footer_element">Reservation</a>
             </NuxtLink>
             <NuxtLink to="/payment">
               <a class="footer_element">Payment Processing</a>
             </NuxtLink>
+            <NuxtLink to="/marketing">
+              <a class="footer_element">Marketing</a>
+            </NuxtLink>
+            <NuxtLink to="/floor-managment">
+              <a class="footer_element">Floor Management</a>
+            </NuxtLink>
+            <NuxtLink to="/back-office-managment">
+              <a class="footer_element">Back-Office Management</a>
+            </NuxtLink>
+            <NuxtLink to="/table-management">
+              <a class="footer_element">Table Management</a>
+            </NuxtLink>
+            <NuxtLink to="/sms-marketing">
+              <a class="footer_element">SMS Marketing</a>
+            </NuxtLink>
+          </div>
+        </div>
+
+        <div class="flex flex-col space-y-4">
+          <h2 class="font-semibold text-[26px] text-[#F5F6FA] text-transparent">
+            -
+          </h2>
+          <div class="flex flex-col space-y-2 text-sm text-white">
+            <NuxtLink to="/loyalty">
+              <a class="footer_element">Loyalty</a>
+            </NuxtLink>
+            <NuxtLink to="/gift-card">
+              <a class="footer_element">Gift Cards</a>
+            </NuxtLink>
+            <NuxtLink to="/feedback">
+              <a class="footer_element">Guest Feedback</a>
+            </NuxtLink>
+            <NuxtLink to="/coupons">
+              <a class="footer_element">Coupons</a>
+            </NuxtLink>
+            <NuxtLink to="/employee-managment">
+              <a class="footer_element">Employee Management</a>
+            </NuxtLink>
+            <NuxtLink to="/payroll">
+              <a class="footer_element">Payroll</a>
+            </NuxtLink>
+            <NuxtLink to="/tips-management">
+              <a class="footer_element">Tips Managment</a>
+            </NuxtLink>
+            <NuxtLink to="/ordering">
+              <a class="footer_element">Online Ordering</a>
+            </NuxtLink>
+            <NuxtLink to="/delivery">
+              <a class="footer_element">Takeout & Delivery Services</a>
+            </NuxtLink>
+
+            <NuxtLink to="/customert-engagement">
+              <a class="footer_element">Customer Engagement</a>
+            </NuxtLink>
+
             <NuxtLink to="/customer-support">
               <a class="footer_element">Customer Support</a>
-            </NuxtLink>
-            <NuxtLink to="/pos">
-              <a class="footer_element">Point Of Sale (POS)</a>
-            </NuxtLink>
-            <NuxtLink to="/kds">
-              <a class="footer_element">Kitchen Display System (KDS)</a>
             </NuxtLink>
           </div>
         </div>
@@ -86,11 +144,12 @@
             <a rel="noopener noreferrer" href="#" class="footer_element"
               >Why EATTE?</a
             >
-            <a rel="noopener noreferrer" href="#" class="footer_element"
-              >Breakpoints</a
-            >
+
             <a rel="noopener noreferrer" href="#" class="footer_element"
               >Pricing</a
+            >
+            <a rel="noopener noreferrer" href="#" class="footer_element"
+              >Testimonails</a
             >
             <NuxtLink
               to="https://support.eatte.io/knowledgebase/eatte-privacy-and-policy/"
@@ -107,19 +166,6 @@
             <NuxtLink to="https://support.eatte.io/" target="_blank">
               <p class="footer_element">Support</p>
             </NuxtLink>
-          </div>
-        </div>
-        <div class="flex flex-col space-y-4">
-          <h2 class="font-semibold text-[26px] text-[#F5F6FA]">Call</h2>
-          <div class="flex flex-col space-y-2 text-sm text-white">
-            <p class="font-montse font-semibold text-base">+13053609462</p>
-          </div>
-
-          <div class="flex flex-col space-y-4">
-            <h2 class="font-semibold text-[26px] text-[#F5F6FA]">Email</h2>
-            <div class="flex flex-col space-y-2 text-sm text-white">
-              <p class="font-montse font-semibold text-base">hello@eatte.io</P>
-            </div>
           </div>
         </div>
       </div>

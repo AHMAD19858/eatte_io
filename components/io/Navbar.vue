@@ -1,5 +1,5 @@
 <template>
-  <div class="section_container" >
+  <div class="section_container">
     <nav class="nav_container" :class="showMenu ? ' mb-[1100px]' : 'mb-1'">
       <NuxtLink to="/" class="h-[60px]">
         <img
@@ -15,17 +15,9 @@
         />
       </NuxtLink>
       <ul class="nav_ul_container" :class="showMenu ? 'block' : 'hidden'">
-        <li>
-          <NuxtLink to="/about-eatte">
-            <a href="#" class="nav_element">
-              <span class="nav_text">About EATTE</span>
-            </a>
-          </NuxtLink>
-        </li>
-
         <li class="static parent">
           <a href="#" class="nav_parent_element">
-            <span class="nav_text">Services</span>
+            <span class="nav_text">Product</span>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               class="dropDown_icon"
@@ -278,18 +270,9 @@
           </ul>
         </li>
 
-        <li class="relative parent">
-          <a class="nav_parent_element">
-            <span class="nav_text">Features</span>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="dropDown_icon"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M0 7.33l2.829-2.83 9.175 9.339 9.167-9.339 2.829 2.83-11.996 12.17z"
-              />
-            </svg>
+        <li>
+          <a href="#" class="nav_element">
+            <span class="nav_text">Pricing</span>
           </a>
         </li>
 
@@ -302,10 +285,13 @@
         </li>
 
         <li>
-          <a href="#" class="nav_element">
-            <span class="nav_text">Pricing</span>
-          </a>
+          <NuxtLink to="/about-eatte">
+            <a href="#" class="nav_element">
+              <span class="nav_text">About EATTE</span>
+            </a>
+          </NuxtLink>
         </li>
+
         <div class="btn_div" :class="showMenu ? 'block' : 'hidden'">
           <NuxtLink to="/login">
             <p class="login_btn">Login</p>
@@ -421,8 +407,8 @@ const showMenu = ref(false);
 .section_container {
   @apply z-50 bg-background-color dark:bg-dark-background-color py-[10px];
 }
-.mobile_view_container{
-  display: none
+.mobile_view_container {
+  display: none;
 }
 .nav_container {
   @apply relative flex items-center px-4;
@@ -533,7 +519,7 @@ const showMenu = ref(false);
   }
 }
 @media (max-width: 576px) {
-  .mobile_view_container{
+  .mobile_view_container {
     @apply z-50 bg-background-color dark:bg-dark-background-color pt-[10px] pb-[700px];
   }
   .mobile_sub {
