@@ -43,10 +43,7 @@
             <p class="font-montse">Coupons</p>
           </li>
         </ul>
-        <a href="#test" class="font-montse">
-          Learn more about Customer Engagement
-          <i class="bx bx-right-arrow-alt"></i>
-        </a>
+   
       </div>
       <div class="features_side img_side">
         <img src="../../../assets/images/features/landing/one.svg" alt="img" />
@@ -63,11 +60,12 @@
           time-tracking feature to accurately monitor productivity and
           attendance.
         </p>
-
+        <NuxtLink to="/employee-managment">
         <a href="#test" class="font-montse">
           Learn more about Employee Management
           <i class="bx bx-right-arrow-alt"></i>
         </a>
+        </NuxtLink>
       </div>
       <div class="features_side img_side">
         <img src="../../../assets/images/features/landing/two.svg" alt="img" />
@@ -97,10 +95,6 @@
             <p class="font-montse">Reports and analytics</p>
           </li>
         </ul>
-        <a href="#test" class="font-montse">
-          Learn more about Back-Office Management
-          <i class="bx bx-right-arrow-alt"></i>
-        </a>
       </div>
       <div class="features_side img_side">
         <img
@@ -121,11 +115,12 @@
           access to all the features you need to stay organized, such as
           managing inventory, employee scheduling, customer data and more.
         </p>
-
-        <a href="#test" class="font-montse">
-          Learn more about Payment Processing
-          <i class="bx bx-right-arrow-alt"></i>
-        </a>
+        <NuxtLink to="/pos">
+          <a class="font-montse">
+            Learn more about Payment Processing
+            <i class="bx bx-right-arrow-alt"></i>
+          </a>
+        </NuxtLink>
       </div>
       <div class="features_side img_side">
         <img src="../../../assets/images/features/landing/four.svg" alt="img" />
@@ -140,10 +135,12 @@
           Take Action”. It’s a comprehensive strategy that can help you achieve
           your goals and maximize results.
         </p>
-        <a href="#test" class="font-montse">
-          Learn more about Customer Support
-          <i class="bx bx-right-arrow-alt"></i>
-        </a>
+        <NuxtLink to="/kds">
+          <a class="font-montse">
+            Learn more about Customer Support
+            <i class="bx bx-right-arrow-alt"></i>
+          </a>
+        </NuxtLink>
       </div>
       <div class="features_side img_side">
         <img src="../../../assets/images/features/landing/five.svg" alt="img" />
