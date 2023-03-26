@@ -11,7 +11,7 @@
         <article>
           <div class="card_container">
             <img
-              src="../../../assets/images/dummyImg.svg"
+              src="../../../assets/images/icons/box.svg"
               class="phone_icon"
               alt="svg"
             />
@@ -32,7 +32,7 @@
         <article>
           <div class="card_container">
             <img
-              src="../../../assets/images/dummyImg.svg"
+            src="../../../assets/images/icons/ring.svg"
               class="phone_icon"
               alt="svg"
             />
@@ -52,7 +52,7 @@
         <article>
           <div class="card_container">
             <img
-              src="../../../assets/images/dummyImg.svg"
+            src="../../../assets/images/icons/pattern.svg"
               class="phone_icon"
               alt="svg"
             />
@@ -76,6 +76,9 @@
 <script setup></script>
 
 <style scoped>
+.phone_icon {
+  @apply stroke-primary-color w-12 h-6 text-center text-3xl text-primary-color;
+}
 .section_container {
   @apply py-6 sm:py-12;
 }
@@ -89,11 +92,11 @@
 }
 
 article {
-  @apply flex  h-[500px] flex-col bg-white rounded-2xl my-3 dark:bg-[#272727];
+  @apply flex  py-4 flex-col bg-white rounded-2xl my-3 dark:bg-[#272727];
 }
 
 .card_container {
-  @apply flex items-center m-4 justify-center;
+  @apply w-12 h-12 bg-[#ff613729] rounded-lg flex items-center m-4 self-center;
 }
 
 .main_card_text {
