@@ -117,6 +117,7 @@ const props = defineProps({
 
 .shadow_text {
   filter: drop-shadow(0px 0px 35px #ff6137);
+  color: var(--font);
 }
 
 .get_started {

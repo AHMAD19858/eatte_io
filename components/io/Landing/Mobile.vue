@@ -77,13 +77,13 @@ const admin_hover = ref(false);
         </div>
       </div>
 
-           <div class="plan_side pic" v-if="admin_hover === false & pos_hover === false">
+           <div class="plan_side pic animate-fade" v-if="admin_hover === false & pos_hover === false">
         <img src="../../../assets/images/emptyMobile.svg" alt="" />
       </div>
-      <div class="plan_side pic" v-if="admin_hover">
+      <div class="plan_side pic animate-fade" v-if="admin_hover">
         <img src="../../../assets/images/admin_mobile.svg" alt="" />
       </div>
-      <div class="plan_side pic " v-if="pos_hover">
+      <div class="plan_side pic animate-fade" v-if="pos_hover">
         <img src="../../../assets/images/pos_mobile.svg" alt="" />
       </div>
 
