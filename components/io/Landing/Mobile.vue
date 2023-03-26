@@ -14,28 +14,31 @@
               multi-location and inventory management.
             </p>
             <div class="store">
-              <div class="download_container">
-                <div class="flex justify-between gap-2 pl-2">
-                  <i class="bx bxl-apple self-center text-5xl"></i>
-                  <NuxtLink
-                    to="https://apps.apple.com/eg/app/eatte-admin/id1550388849"
-                    target="_blank"
-                  >
-                    <div class="self-center">
-                      <h6
-                        class="text-[#1E1E1E] text-[13px] dark:text-white font-montse"
-                      >
-                        Download on the
-                      </h6>
-                      <h6
-                        class="text-[#1E1E1E] text-[15px] font-bold dark:text-white font-montse"
-                      >
-                        App Store
-                      </h6>
-                    </div>
-                  </NuxtLink>
+              <div class="py-4">
+                <div class="download_container">
+                  <div class="flex justify-between gap-2 pl-2">
+                    <i class="bx bxl-apple self-center text-5xl"></i>
+                    <NuxtLink
+                      to="https://apps.apple.com/eg/app/eatte-admin/id1550388849"
+                      target="_blank"
+                    >
+                      <div class="self-center">
+                        <h6
+                          class="text-[#1E1E1E] text-[13px] dark:text-white font-montse"
+                        >
+                          Download on the
+                        </h6>
+                        <h6
+                          class="text-[#1E1E1E] text-[15px] font-bold dark:text-white font-montse"
+                        >
+                          App Store
+                        </h6>
+                      </div>
+                    </NuxtLink>
+                  </div>
                 </div>
               </div>
+
               <div class="py-4">
                 <div class="download_container">
                   <div class="flex justify-between gap-2 pl-2">
@@ -82,29 +85,30 @@
               service hustling.
             </p>
             <div class="store">
-              <div class="download_container">
-                <div class="flex justify-between gap-2 pl-2">
-                  <i class="bx bxl-apple self-center text-5xl"></i>
-                  <NuxtLink
-                    to="https://apps.apple.com/eg/app/eatte-pos/id1588867847"
-                    target="_blank"
-                  >
-                    <div class="self-center">
-                      <h6
-                        class="text-[#1E1E1E] text-[13px] dark:text-white font-montse"
-                      >
-                        Download on the
-                      </h6>
-                      <h6
-                        class="text-[#1E1E1E] text-[15px] font-bold dark:text-white font-montse"
-                      >
-                        App Store
-                      </h6>
-                    </div>
-                  </NuxtLink>
+              <div class="py-4">
+                <div class="download_container">
+                  <div class="flex justify-between gap-2 pl-2">
+                    <i class="bx bxl-apple self-center text-5xl"></i>
+                    <NuxtLink
+                      to="https://apps.apple.com/eg/app/eatte-pos/id1588867847"
+                      target="_blank"
+                    >
+                      <div class="self-center">
+                        <h6
+                          class="text-[#1E1E1E] text-[13px] dark:text-white font-montse"
+                        >
+                          Download on the
+                        </h6>
+                        <h6
+                          class="text-[#1E1E1E] text-[15px] font-bold dark:text-white font-montse"
+                        >
+                          App Store
+                        </h6>
+                      </div>
+                    </NuxtLink>
+                  </div>
                 </div>
               </div>
-
               <div class="py-4">
                 <div class="download_container">
                   <div class="flex justify-between gap-2 pl-2">
@@ -155,8 +159,8 @@
 .plan_section {
   @apply flex justify-between items-end flex-wrap mb-[100px];
 }
-.store{
-  @apply flex justify-between
+.store {
+  @apply flex justify-between;
 }
 .plan_section .plan_side h1 {
   @apply mb-[15px] font-bold text-6xl;
@@ -223,9 +227,8 @@
 }
 
 @media (max-width: 576px) {
-
-  .store{
-   @apply block
+  .store {
+    @apply block;
   }
   .container {
     max-width: 100%;
