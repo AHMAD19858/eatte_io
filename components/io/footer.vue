@@ -141,8 +141,8 @@
             <a rel="noopener noreferrer" href="#" class="footer_element"
               >About EATTE</a
             >
-            <a rel="noopener noreferrer" href="#" class="footer_element"
-              >Why EATTE?</a
+            <a rel="noopener noreferrer" class="footer_element"
+              >Restaurant Types</a
             >
 
             <a rel="noopener noreferrer" href="#" class="footer_element"

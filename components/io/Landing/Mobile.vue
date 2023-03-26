@@ -1,7 +1,16 @@
+
+<script setup>
+const pos_hover = ref(false);
+const admin_hover = ref(false);
+</script>
+
+
+
 <template>
   <div class="container">
     <div class="plan_section">
-      <div class="plan_side">
+      <div class="plan_side"  @mouseover="admin_hover = true"
+      @mouseleave="admin_hover = false">
         <div class="plan">
           <div class="plan_info">
             <h4 class="font-montse font-semibold text-[35px] dark:text-white">
@@ -68,12 +77,20 @@
         </div>
       </div>
 
-      <div class="plan_side pic">
-        <img src="../../../assets/images/Mockup.svg" alt="" />
+           <div class="plan_side pic" v-if="admin_hover === false & pos_hover === false">
+        <img src="../../../assets/images/emptyMobile.svg" alt="" />
+      </div>
+      <div class="plan_side pic" v-if="admin_hover">
+        <img src="../../../assets/images/admin_mobile.svg" alt="" />
+      </div>
+      <div class="plan_side pic " v-if="pos_hover">
+        <img src="../../../assets/images/pos_mobile.svg" alt="" />
       </div>
 
-      <div class="plan_side">
-        <div class="plan">
+
+      <div class="plan_side" @mouseover="pos_hover = true"
+      @mouseleave="pos_hover = false">
+        <div class="plan " >
           <div class="plan_info">
             <h4 class="font-semibold text-[35px] dark:text-white font-montse">
               POS Mobile App
@@ -141,7 +158,7 @@
   </div>
 </template>
 
-<script setup></script>
+
 
 <style scoped>
 .screen_container {
@@ -158,6 +175,9 @@
 
 .plan_section {
   @apply flex justify-between items-end flex-wrap mb-[100px];
+}
+.admin{
+  display: none
 }
 .store {
   @apply flex justify-between;
@@ -187,7 +207,7 @@
 }
 
 .plan_section .plan_side .plan {
-  @apply py-[25px] border-[3px] px-[15px] border-white border-solid bg-white gap-[20px] rounded-[15px] flex w-[430px]  items-center justify-start relative dark:bg-[#272727] cursor-pointer;
+  @apply hover:border-primary-color hover:border-solid py-[25px] border-[3px] px-[15px] border-white border-solid bg-white gap-[20px] rounded-[15px] flex w-[430px]  items-center justify-start relative dark:bg-[#272727] cursor-pointer;
 }
 
 .plan_section .plan_side .plan .plan_icon {

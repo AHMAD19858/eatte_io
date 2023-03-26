@@ -35,12 +35,12 @@
         </NuxtLink>
       </div>
       <div class="left_side devices_shapes">
-        <img
+  <!--       <img
           class="mobile"
           src="~/assets/images/mobileScreen.svg"
           alt="mobile"
-        />
-        <img src="~/assets/images/webScreen.svg" alt="web" />
+        /> -->
+        <img src="~/assets/images/main.svg" alt="web" />
       </div>
     </div>
   </div>
@@ -71,7 +71,7 @@
 }
 
 .about_section .left_side img {
-  @apply absolute right-[-10%] object-cover object-left-bottom h-[500px];
+  @apply absolute right-[0%] object-cover object-left-bottom h-[440px];
 }
 .about_section .left_side img.mobile {
   right: unset;
