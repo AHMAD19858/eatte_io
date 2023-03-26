@@ -299,7 +299,7 @@ async function onSubmit() {
 @media (max-width: 576px) {
   .container {
     max-width: 100%;
-    margin-top: 150px;
+    margin-top: 100px;
     padding: 0 15px;
   }
 
@@ -335,8 +335,8 @@ async function onSubmit() {
 @media (max-width: 500px) {
   .container {
     max-width: 100%;
-    margin-top: 200px;
-    margin-inline: 20px;
+   /*  margin-top: 200px; */
+/*     margin-inline: 20px; */
   }
 
   .label_input {
