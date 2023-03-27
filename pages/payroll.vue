@@ -3,8 +3,6 @@ import PosImage from "../assets/images/heroImages/payroll.svg";
 import one from "../assets/images/features/payroll/one.svg";
 import two from "../assets/images/features/payroll/two.svg";
 
-
-
 const featuresData = [
   {
     position: "right",
@@ -32,11 +30,11 @@ const featuresData = [
       :row_img="PosImage"
       :another_device="true"
     />
-
-    <div class="container">
-      <IoFeatures :items="featuresData" />
+    <div class="bg-white dark:bg-dark-background-color">
+      <div class="container">
+        <IoFeatures :items="featuresData" />
+      </div>
     </div>
-
     <div class="py-10 bg-background-color dark:bg-dark-background-color">
       <IoHeadersTripleLines
         :first_line="'Discover More'"
@@ -45,7 +43,7 @@ const featuresData = [
         :second_sub_main="'integrated software suite, providing unbeatable convenience.'"
       />
     </div>
-    <IoCard  />
+    <IoCard />
     <!-- <IoButton :secondary="true" :title="'View All Services'" /> -->
 
     <div class="py-10 bg-background-color dark:bg-dark-background-color">
@@ -69,8 +67,6 @@ const featuresData = [
 .screen_container {
   @apply bg-background-color min-h-full dark:text-white dark:bg-dark-background-color pt-[140px];
 }
-
-
 
 .accepts_featurs {
   width: calc(100% / 2 - 25px);

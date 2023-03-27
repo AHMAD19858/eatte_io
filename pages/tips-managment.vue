@@ -21,11 +21,11 @@ const featuresData = [
       :demo_btn="'Get a demo'"
       :row_img="PosImage"
     />
-
-    <div class="container">
-      <IoFeatures :items="featuresData" />
+    <div class="bg-white dark:bg-dark-background-color">
+      <div class="container">
+        <IoFeatures :items="featuresData" />
+      </div>
     </div>
-
     <div class="py-10 bg-background-color dark:bg-dark-background-color">
       <IoHeadersTripleLines
         :first_line="'Discover More'"

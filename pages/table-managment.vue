@@ -52,9 +52,7 @@ const featuresData = [
       />
     </div>
 
-
-
-<!--     <div class="py-10 bg-background-color dark:bg-dark-background-color">
+    <!--     <div class="py-10 bg-background-color dark:bg-dark-background-color">
       <IoHeadersTripleLines
         :first_line="'POS Features'"
         :main="'Everything You Need To Run Your Restaurant'"
@@ -62,10 +60,11 @@ const featuresData = [
         :second_sub_main="'stay one step ahead of a rapidly evolving hospitality market.'"
       />
     </div> -->
-    <div class="container">
-      <IoFeatures :items="featuresData" />
+    <div class="bg-white dark:bg-dark-background-color">
+      <div class="container">
+        <IoFeatures :items="featuresData" />
+      </div>
     </div>
-
     <div class="py-10 bg-background-color dark:bg-dark-background-color">
       <IoHeadersTripleLines
         :first_line="'Discover More'"

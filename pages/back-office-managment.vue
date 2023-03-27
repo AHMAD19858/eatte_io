@@ -27,9 +27,10 @@ const featuresData = [
       :start_btn="'Get Started'"
       :demo_btn="'Get a demo'"
       :row_img="PosImage"
+      :another_device="true"
     />
-
-    <div class="bg-background-color pt-12 pb-12 dark:bg-dark-background-color">
+    <div class="bg-white dark:bg-dark-background-color">
+    <div class="bg-white pt-12 pb-12 dark:bg-dark-background-color">
       <IoHeadersTripleLines
         :first_line="'Ensure your data is kept safe and secure'"
         :main="'We employ a range of encryption and authentication protocols to ensure your data is kept safe and secure. We can assist with data backup and recovery in the event of unexpected outages or emergencies.'"
@@ -39,7 +40,7 @@ const featuresData = [
     <div class="container">
       <IoFeatures :items="featuresData" />
     </div>
-
+</div>
     <div class="py-10 bg-background-color dark:bg-dark-background-color">
       <IoHeadersTripleLines
         :first_line="'Discover More'"

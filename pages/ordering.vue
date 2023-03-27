@@ -143,19 +143,19 @@ const featuresData = [
         </div>
       </div>
     </div>
-
-    <div class="py-10 bg-background-color dark:bg-dark-background-color">
-      <IoHeadersTripleLines
-        :first_line="'Online-ordering Features'"
-        :main="'Increase Takeout & Delivery Revenue'"
-        :first_sub_main="'Stop paying third-party commission fees and keep 100% of your profits with a POS-'"
-        :second_sub_main="`integrated online ordering solution that lets you accept orders directly through your restaurant's website.`"
-      />
+    <div class="bg-white dark:bg-dark-background-color">
+      <div class="py-10 bg-white dark:bg-dark-background-color">
+        <IoHeadersTripleLines
+          :first_line="'Online-ordering Features'"
+          :main="'Increase Takeout & Delivery Revenue'"
+          :first_sub_main="'Stop paying third-party commission fees and keep 100% of your profits with a POS-'"
+          :second_sub_main="`integrated online ordering solution that lets you accept orders directly through your restaurant's website.`"
+        />
+      </div>
+      <div class="container">
+        <IoFeatures :items="featuresData" />
+      </div>
     </div>
-    <div class="container">
-      <IoFeatures :items="featuresData" />
-    </div>
-
     <div class="py-10 bg-background-color dark:bg-dark-background-color">
       <IoHeadersTripleLines
         :first_line="'Increase Profitability'"

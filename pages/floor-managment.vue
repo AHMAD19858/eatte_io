@@ -35,19 +35,21 @@ const featuresData = [
       :start_btn="'Get Started'"
       :demo_btn="'Get a demo'"
       :row_img="PosImage"
+      :another_device="true"
     />
+    <div class="bg-white dark:bg-dark-background-color">
+      <div class="bg-white pt-12 pb-12 dark:bg-dark-background-color">
+        <IoHeadersTripleLines
+          :first_line="'Floor management is a crucial aspect of maintaining a successful business'"
+          :main="'ensure a positive experience for customers and efficient operations for employees'"
+          :first_sub_main="`Floor management is a crucial aspect of maintaining a successful business. It involves the organization and `"
+          :second_sub_main="'maintenance of the floor space to ensure a positive experience for customers and efficient operations for employees. In this essay, we will explore the importance of floor management and discuss strategies for effective management.'"
+        />
+      </div>
 
-    <div class="bg-background-color pt-12 pb-12 dark:bg-dark-background-color">
-      <IoHeadersTripleLines
-        :first_line="'Floor management is a crucial aspect of maintaining a successful business'"
-        :main="'ensure a positive experience for customers and efficient operations for employees'"
-        :first_sub_main="`Floor management is a crucial aspect of maintaining a successful business. It involves the organization and `"
-        :second_sub_main="'maintenance of the floor space to ensure a positive experience for customers and efficient operations for employees. In this essay, we will explore the importance of floor management and discuss strategies for effective management.'"
-      />
-    </div>
-
-    <div class="container">
-      <IoFeatures :items="featuresData" />
+      <div class="container">
+        <IoFeatures :items="featuresData" />
+      </div>
     </div>
 
     <div class="py-10 bg-background-color dark:bg-dark-background-color">

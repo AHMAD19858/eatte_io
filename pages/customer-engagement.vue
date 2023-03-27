@@ -27,6 +27,7 @@ const featuresData = [
       :start_btn="'Get Started'"
       :demo_btn="'Get a demo'"
       :row_img="PosImage"
+      :another_device="true"
     />
 
     <div class="bg-background-color pt-12 pb-12 dark:bg-dark-background-color">
@@ -37,11 +38,11 @@ const featuresData = [
         :second_sub_main="' or you need detailed instructions on how to do something, our knowledgeable support staff is here to help.'"
       />
     </div>
-
-    <div class="container">
-      <IoFeatures :items="featuresData" />
+    <div class="bg-white dark:bg-dark-background-color">
+      <div class="container">
+        <IoFeatures :items="featuresData" />
+      </div>
     </div>
-
     <div class="py-10 bg-background-color dark:bg-dark-background-color">
       <IoHeadersTripleLines
         :first_line="'Discover More'"

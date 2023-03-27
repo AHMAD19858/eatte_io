@@ -36,21 +36,23 @@ const featuresData = [
       :start_btn="'Get Started'"
       :demo_btn="'Get a demo'"
       :row_img="PosImage"
+      :another_device="true"
     />
+    <div class="bg-white dark:bg-dark-background-color">
+      <div class="bg-white pt-12 pb-12 dark:bg-dark-background-color">
+        <IoHeadersTripleLines
+          :first_line="'Our smart guest feedback system allows you to quickly gather valuable feedback from your guests, helping you improve the dining experience for everyone. '"
+          :main="'With EATTE'"
+          :first_sub_main="`you can make sure that everyone leaves your restaurant feeling satisfied! Get started today`"
+          :second_sub_main="' advantage of our powerful features to start gathering feedback and get the most out of every guest experience..'"
+        />
+      </div>
 
-    <div class="bg-background-color pt-12 pb-12 dark:bg-dark-background-color">
-      <IoHeadersTripleLines
-        :first_line="'Our smart guest feedback system allows you to quickly gather valuable feedback from your guests, helping you improve the dining experience for everyone. '"
-        :main="'With EATTE'"
-        :first_sub_main="`you can make sure that everyone leaves your restaurant feeling satisfied! Get started today`"
-        :second_sub_main="' advantage of our powerful features to start gathering feedback and get the most out of every guest experience..'"
-      />
+      <div class="container">
+        <IoFeatures :items="featuresData" />
+      </div>
     </div>
-
-    <div class="container">
-      <IoFeatures :items="featuresData" />
-    </div>
-
+    
     <div class="py-10 bg-background-color dark:bg-dark-background-color">
       <IoHeadersTripleLines
         :first_line="'Discover More'"

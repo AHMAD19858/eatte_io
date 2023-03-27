@@ -159,7 +159,8 @@ const featuresData = [
       </div>
     </div>
 
-    <div class="py-10 bg-background-color dark:bg-dark-background-color">
+<div class="bg-white dark:bg-dark-background-color">
+  <div class="py-10 bg-white dark:bg-dark-background-color">
       <IoHeadersTripleLines
         :first_line="'POS Features'"
         :main="'Everything You Need To Run Your Restaurant'"
@@ -170,6 +171,7 @@ const featuresData = [
     <div class="container">
       <IoFeatures :items="featuresData" />
     </div>
+</div>
 
     <div class="header_container small_header flex gap-12 mx-12 items-center">
       <div>
@@ -250,7 +252,8 @@ const featuresData = [
     <IoCard />
     <!-- <IoButton :secondary="true" :title="'View All Services'" /> -->
 
-    <div class="container">
+<div class="bg-white">
+  <div class="container">
       <IoLandingLineCard
         :sub-title="'POYNT POS Hardware'"
         :title="'Integrations To Supercharge Your Business'"
@@ -258,6 +261,7 @@ const featuresData = [
         :img="hardware"
       />
     </div>
+</div>
 
     <div class="py-10 bg-background-color dark:bg-dark-background-color">
       <IoHeadersTripleLines

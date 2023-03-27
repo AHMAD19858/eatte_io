@@ -128,19 +128,19 @@ const featuresData = [
         </div>
       </div>
     </div>
-
-    <div class="py-10 bg-background-color dark:bg-dark-background-color">
-      <IoHeadersTripleLines
-        :first_line="'Delight Guests and Secure Future Revenue'"
-        :main="'Everything You Need To Run Your Restaurant'"
-        :first_sub_main="'Drive immediate cash flow and repeat business with physical '"
-        :second_sub_main="'and digital gift cards for your restaurant.'"
-      />
+    <div class="bg-white dark:bg-dark-background-color">
+      <div class="py-10 bg-white dark:bg-dark-background-color">
+        <IoHeadersTripleLines
+          :first_line="'Delight Guests and Secure Future Revenue'"
+          :main="'Everything You Need To Run Your Restaurant'"
+          :first_sub_main="'Drive immediate cash flow and repeat business with physical '"
+          :second_sub_main="'and digital gift cards for your restaurant.'"
+        />
+      </div>
+      <div class="container">
+        <IoFeatures :items="featuresData" />
+      </div>
     </div>
-    <div class="container">
-      <IoFeatures :items="featuresData" />
-    </div>
-
     <div class="py-10 bg-background-color dark:bg-dark-background-color">
       <IoHeadersTripleLines
         :first_line="'Increase Profitability'"

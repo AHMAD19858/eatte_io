@@ -103,19 +103,19 @@ const featuresData = [
         </div>
       </div>
     </div>
-
-    <div class="py-10 bg-background-color dark:bg-dark-background-color">
-      <IoHeadersTripleLines
-        :first_line="'Better business decisions'"
-        :main="'Keep Your Finger on the Pulse of Your Business with Intuitive Reporting'"
-        :first_sub_main="'Your business decisions should be based on data, not a gut feeling. Equipped with more than 50 reports that update in real time,'"
-        :second_sub_main="`EATTE POS gives you unprecedented access to the insights you need to reach the right decisions faster.`"
-      />
+    <div class="bg-white dark:bg-dark-background-color">
+      <div class="py-10 bg-white dark:bg-dark-background-color">
+        <IoHeadersTripleLines
+          :first_line="'Better business decisions'"
+          :main="'Keep Your Finger on the Pulse of Your Business with Intuitive Reporting'"
+          :first_sub_main="'Your business decisions should be based on data, not a gut feeling. Equipped with more than 50 reports that update in real time,'"
+          :second_sub_main="`EATTE POS gives you unprecedented access to the insights you need to reach the right decisions faster.`"
+        />
+      </div>
+      <div class="container">
+        <IoFeatures :items="featuresData" />
+      </div>
     </div>
-    <div class="container">
-      <IoFeatures :items="featuresData" />
-    </div>
-
     <div class="py-10 bg-background-color dark:bg-dark-background-color">
       <IoHeadersTripleLines
         :first_line="'Discover More'"

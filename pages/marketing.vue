@@ -32,15 +32,16 @@ const featuresData = [
       :row_img="marketing"
       :another_device="true"
     />
-
-    <div class="py-10 bg-background-color dark:bg-dark-background-color">
-      <IoHeadersTripleLines
-        :first_line="'boost your revenue and improve customer loyalty.'"
-        :main="`With EATTE Marketing, you can automate your customer retention efforts by offering automated discounts to customers who don't frequent your restaurant often. By doing so, you can incentivize these customers to return, boosting your revenue and improving customer loyalty.`"
-      />
+    <div class="bg-white dark:bg-dark-background-color">
+      <div class="py-10 bg-white dark:bg-dark-background-color">
+        <IoHeadersTripleLines
+          :first_line="'boost your revenue and improve customer loyalty.'"
+          :main="`With EATTE Marketing, you can automate your customer retention efforts by offering automated discounts to customers who don't frequent your restaurant often. By doing so, you can incentivize these customers to return, boosting your revenue and improving customer loyalty.`"
+        />
+      </div>
+      <IoFeatures :items="featuresData" />
     </div>
-    <IoFeatures :items="featuresData" />
-
+    
     <div class="bg-background-color dark:bg-dark-background-color">
       <IoHeadersTripleLines
         :first_line="'Discover More'"

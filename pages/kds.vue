@@ -137,18 +137,19 @@ const featuresData = [
         </div>
       </div>
     </div>
+    <div class="bg-white dark:bg-dark-background-color">
+      <div class="py-10 bg-white dark:bg-dark-background-color">
+        <IoHeadersTripleLines
+          :first_line="'Save Money & Time'"
+          :main="'Our Kitchen Display System can help you save time and money by improving communication and increasing efficiency.'"
+          :first_sub_main="'With this system, you can enhance order accuracy, streamline the meal preparation'"
+          :second_sub_main="'process, and ensure courses are timed perfectly.'"
+        />
+      </div>
 
-    <div class="py-10 bg-background-color dark:bg-dark-background-color">
-      <IoHeadersTripleLines
-        :first_line="'Save Money & Time'"
-        :main="'Our Kitchen Display System can help you save time and money by improving communication and increasing efficiency.'"
-        :first_sub_main="'With this system, you can enhance order accuracy, streamline the meal preparation'"
-        :second_sub_main="'process, and ensure courses are timed perfectly.'"
-      />
+      <IoFeatures :items="featuresData" />
     </div>
-
-    <IoFeatures :items="featuresData" />
-
+    
     <div class="py-10 bg-background-color dark:bg-dark-background-color">
       <IoHeadersTripleLines
         :first_line="'Discover More'"

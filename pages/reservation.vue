@@ -54,15 +54,15 @@ const featuresData = [
       :row_img="reservation"
       :another_device="true"
     />
-
-    <div class="py-10 bg-background-color dark:bg-dark-background-color">
-      <IoHeadersTripleLines
-        :first_line="'make reservations and order food in advance'"
-        :main="`Whether they're using a smartphone, tablet, or computer, our platform is accessible from any device with an internet connection`"
-      />
+    <div class="bg-white dark:bg-dark-background-color">
+      <div class="py-10 bg-white dark:bg-dark-background-color">
+        <IoHeadersTripleLines
+          :first_line="'make reservations and order food in advance'"
+          :main="`Whether they're using a smartphone, tablet, or computer, our platform is accessible from any device with an internet connection`"
+        />
+      </div>
+      <IoFeatures :items="featuresData" />
     </div>
-    <IoFeatures :items="featuresData" />
-
     <div class="bg-background-color dark:bg-dark-background-color">
       <IoHeadersTripleLines
         :first_line="'Discover More'"
