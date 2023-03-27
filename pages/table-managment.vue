@@ -54,14 +54,14 @@ const featuresData = [
 
 
 
-    <div class="py-10 bg-background-color dark:bg-dark-background-color">
+<!--     <div class="py-10 bg-background-color dark:bg-dark-background-color">
       <IoHeadersTripleLines
         :first_line="'POS Features'"
         :main="'Everything You Need To Run Your Restaurant'"
         :first_sub_main="'EATTE POS is a fully integrated system that connects all online delivery orders, online pickup orders, table reservations, dine-in, QR orders, and drive-thru orders to '"
         :second_sub_main="'stay one step ahead of a rapidly evolving hospitality market.'"
       />
-    </div>
+    </div> -->
     <div class="container">
       <IoFeatures :items="featuresData" />
     </div>
