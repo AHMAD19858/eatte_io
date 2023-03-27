@@ -1,6 +1,6 @@
 
 <script setup>
-const pos_hover = ref(false);
+const pos_hover = ref(true);
 const admin_hover = ref(false);
 </script>
 

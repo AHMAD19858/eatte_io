@@ -152,7 +152,7 @@ const props = defineProps({
   object-fit: contain !important; 
   object-position: unset;
   height: auto;
-  @apply z-10 top-[-200px] absolute right-[10%] object-cover object-left-bottom h-[500px];
+  @apply z-10 top-[-150px] absolute right-[10%] object-cover object-left-bottom h-[500px];
 }
 .another_device {
   right: unset;
