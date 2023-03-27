@@ -105,6 +105,21 @@ const featuresData = [
     ],
   },
 ];
+
+const graphData = [
+  {
+    title: "Built-in protection",
+    desc: "Secure your data with end-to-end encryption for all transactions, in-store and onlines.",
+  },
+  {
+    title: "Take contactless payments",
+    desc: "Benefit from increased mobility and take payments anywhere, in-store or curbside.",
+  },
+  {
+    title: "fully loaded payments terminal",
+    desc: "Accept every payment type credit, debit and gift cards.",
+  },
+];
 </script>
 
 <template>
@@ -145,6 +160,8 @@ const featuresData = [
     <div class="container">
       <IoFeatures :items="featuresData" />
     </div>
+
+    <IoLandingInfoGraphic2 :data="graphData" />
 
     <div class="py-10 bg-background-color dark:bg-dark-background-color">
       <IoHeadersTripleLines
