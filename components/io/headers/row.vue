@@ -23,7 +23,7 @@ const props = defineProps({
         </h6>
         <h2
           v-if="without_btn === true"
-          class="font-montse text-3xl text-font-color"
+          class="font-montse text-3xl text-font-color font-bold pb-2 dark:text-white"
         >
           Mobile Handheld POS To Keep Your Business Moving
         </h2>
@@ -107,9 +107,17 @@ const props = defineProps({
           </div>
         </div>
       </div>
-      <div class="left_side devices_shapes animate-fade">
+      <div class="left_side devices_shapes animate-fade" v-if="without_btn !== true">
         <img
           :class="another_device == true ? 'another_device' : 'mobile'"
+          :src="row_img"
+          alt="img"
+        />
+      </div>
+
+      <div class="left_side devices_shapes animate-fade" v-if="without_btn === true">
+        <img
+          class="device_img"
           :src="row_img"
           alt="img"
         />
@@ -161,6 +169,15 @@ const props = defineProps({
   height: auto;
   width: 450px;
   @apply z-10 top-[-250px]  absolute right-[10%] object-cover object-left-bottom h-[500px];
+}
+
+.device_img{
+  right: unset;
+  object-fit: contain !important; 
+  object-position: unset;
+  height: auto;
+  width: 450px;
+  @apply z-10 top-[0px]  absolute right-[30%] object-cover object-left-bottom h-[500px];
 }
 .about_section .left_side h1 {
   @apply mb-[15px] font-bold text-5xl font-montse;
