@@ -1,8 +1,8 @@
 <script setup>
 import ordering from "../assets/images/heroImages/ordering.svg";
-import service1 from "../assets/images/icons/hand.svg";
-import service3 from "../assets/images/icons/code.svg";
-import service2 from "../assets/images/icons/charts.svg";
+import service1 from "../assets/images/icons/services/delivery_one.svg";
+import service3 from "../assets/images/icons/services/delivery_two.svg";
+import service2 from "../assets/images/icons/services/delivery_three.svg";
 import one from "../assets/images/features/ordering/one.svg";
 import two from "../assets/images/features/ordering/two.svg";
 import three from "../assets/images/features/ordering/three.svg";
@@ -11,12 +11,12 @@ import figure from "../assets/images/mobile-figure.png";
 
 const serviceData = [
   {
-    img: service2,
+    img: service1,
     label: "Reduce Order Errors",
     desc: "Eliminate the need to enter orders twice and send food straight to the kitchen.",
   },
   {
-    img: service1,
+    img: service2,
     label: "Increase Takeout Revenue",
     desc: "Online Ordering can increase your AOV with suggested items for upselling at checkout.",
   },

@@ -1,24 +1,25 @@
 <script setup>
 import reports from "../assets/images/heroImages/reports.svg";
-import service1 from "../assets/images/icons/hand.svg";
-import service3 from "../assets/images/icons/code.svg";
-import service2 from "../assets/images/icons/charts.svg";
+import service1 from "../assets/images/icons/services/delivery_one.svg";
+import service3 from "../assets/images/icons/services/delivery_two.svg";
+import service2 from "../assets/images/icons/services/delivery_three.svg";
 import one from "../assets/images/features/reports/one.svg";
+import two from "../assets/images/features/reports/two.svg";
 import three from "../assets/images/features/reports/three.svg";
 
 const serviceData = [
   {
-    img: service2,
+    img: service1,
     label: "Increase Sales with Data",
     desc: "Payments with Visa, MasterCard, and Digital Wallets are all supported.",
   },
   {
-    img: service1,
+    img: service3,
     label: "Upgrade the Guest Experience",
     desc: "Eliminate manual entry mistakes at the checkout for faster transactions.",
   },
   {
-    img: service3,
+    img: service2,
     label: "Upgrade the Guest Experience",
     desc: `Monitor all your transactions remotely from any device, anywhere and at any time.`,
   },
@@ -27,7 +28,7 @@ const serviceData = [
 const featuresData = [
   {
     position: "right",
-    img: three,
+    img: one,
     title: "Real-Time Reports on Your Restaurant's POS Performance Metrics",
     sub_title: `Our reporting platform was designed with ease of use in mind so that you can spend more time analyzing trends and less time figuring out how to pull up reports.`,
     details: [
@@ -51,7 +52,7 @@ const featuresData = [
 
   {
     position: "left",
-    img: one,
+    img: two,
     title: "Understand Exactly What Customers Prefer",
     sub_title: `Analyze sales trends to optimize your menu and service - like offering the right promotions at the right time - to provide the best guest experience possible and turn casual diners into loyal regulars.`,
     details: [
@@ -70,7 +71,7 @@ const featuresData = [
 
   {
     position: "right",
-    img: one,
+    img: three,
     title: "Report on Your Restaurant from Anywhere",
     sub_title: `You think about your business even when you're not on premise. Fortunately, our cloud-based POS reports can be accessed from anywhere, at any time.`,
     details: [
