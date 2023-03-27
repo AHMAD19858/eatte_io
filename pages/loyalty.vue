@@ -149,9 +149,7 @@ const featuresData = [
         :second_sub_main="'in store.'"
       />
     </div>
-    <div class="container">
-      <IoLandingInfoGraphic :data="graphData" />
-    </div>
+    <IoLandingInfoGraphic :data="graphData" />
 
     <IoCard />
     <!-- <IoButton :secondary="true" :title="'View All Services'" /> -->

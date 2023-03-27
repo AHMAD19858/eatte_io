@@ -20,7 +20,7 @@ let props = defineProps({
 </script>
 <template>
 
-  <div class="container mx-auto p-[15px] md:p-[70px]" >
+  <div class="container mx-auto p-[15px] md:p-[70px] info-container" >
     <div class="info-graphic relative pb-[100px] mb-10">
       <div class="bg-circle absolute h-[280px] w-[280px] rounded-full">
         <span
@@ -51,6 +51,9 @@ let props = defineProps({
 
 <style scoped lang="scss">
 $spacing: 80px;
+.info-container{
+  max-width: 1075px !important;
+}
 .circle-grid {
   .circle-card {
     position: relative;
