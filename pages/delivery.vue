@@ -1,8 +1,8 @@
 <script setup>
 import delivery from "../assets/images/heroImages/delivery.svg";
-import service1 from "../assets/images/icons/hand.svg";
-import service3 from "../assets/images/icons/code.svg";
-import service2 from "../assets/images/icons/charts.svg";
+import service1 from "../assets/images/icons/services/delivery_one.svg";
+import service3 from "../assets/images/icons/services/delivery_two.svg";
+import service2 from "../assets/images/icons/services/delivery_three.svg";
 import one from "../assets/images/features/delivery/one.svg";
 import two from "../assets/images/features/delivery/two.svg";
 
@@ -150,7 +150,7 @@ const featuresData = [
   width: 100%;
   padding: 0 80px;
   margin: 0 auto;
-  background-color: white;
+  /* background-color: white; */
   @apply dark:bg-dark-background-color;
 }
 
