@@ -171,7 +171,7 @@ const featuresData = [
       <IoFeatures :items="featuresData" />
     </div>
 
-    <div class="header_container small_header flex gap-12 mx-12">
+    <div class="header_container small_header flex gap-12 mx-12 items-center">
       <div>
         <h1 class="main_text">
           EA<span class="text-primary-color dark:bg-dark-background-color"
@@ -181,7 +181,7 @@ const featuresData = [
         <h1 class="main_text pt-3">Payments</h1>
       </div>
       <div>
-        <p class="font-montse detail">
+        <p class="font-montse detail text-xl">
           One of the most powerful features of EATTE POS is its ability to split
           payments for each order by number of people, item, or seat. This means
           that you can easily manage complex orders and split payments between

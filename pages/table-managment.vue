@@ -52,14 +52,7 @@ const featuresData = [
       />
     </div>
 
-    <div class="pos_helps">
-      <div class="pb-12 bg-background-color dark:bg-dark-background-color">
-        <IoServices :items="serviceData" :numbers="3" />
-        <div class="bg-white col">
-          <!-- <IoButton :secondary="true" :title="'See Pricing'" /> -->
-        </div>
-      </div>
-    </div>
+
 
     <div class="py-10 bg-background-color dark:bg-dark-background-color">
       <IoHeadersTripleLines

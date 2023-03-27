@@ -20,7 +20,7 @@ const featuresData = [
     sub_title: `AOur state-of-the-art customer feedback solutions enable you to track, analyze, and act on customer experiences in real-time. Make the feedback process more efficient and reliable with our automated surveys, real-time alerts, and advanced analytics. Deliver an exceptional customer experience every time and boost your restaurant's reputation with EATTE!`,
   },
   {
-    position: "left",
+    position: "right",
     img: three,
     title: "Get an accurate picture of your guests' experience with EATTE! ",
     sub_title: `Our easy-to-use guest feedback solution provides the insights you need to deliver unforgettable experiences and make customers come back for more. With EATTE, you can quickly measure customer satisfaction, identify areas of improvement and make sure that each guest leaves happy. No more guessing - get real-time visibility into your guests’ experience!""`,

@@ -146,7 +146,7 @@ const cardData = [
     :modules="[SwiperAutoplay, SwiperEffectCreative]"
     :slides-per-view="4"
     :autoplay="{
-       delay: 250,
+       delay: 2500,
       disableOnInteraction: false,
     }"
     :creative-effect="{

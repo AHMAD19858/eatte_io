@@ -277,8 +277,8 @@
         </li>
 
         <li>
-          <NuxtLink to="/about-eatte">
-            <a  class="nav_element">
+          <NuxtLink>
+            <a class="nav_element">
               <span class="nav_text">Restaurant Types</span>
             </a>
           </NuxtLink>
