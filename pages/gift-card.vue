@@ -1,20 +1,20 @@
 <script setup>
 import GiftCard from "../assets/images/heroImages/gift.svg";
-import service1 from "../assets/images/icons/hand.svg";
-import service3 from "../assets/images/icons/code.svg";
-import service2 from "../assets/images/icons/charts.svg";
+import service1 from "../assets/images/icons/services/gift_one.svg";
+import service3 from "../assets/images/icons/services/gift_two.svg";
+import service2 from "../assets/images/icons/services/gift_three.svg";
 import one from "../assets/images/features/gift/one.svg";
 import two from "../assets/images/features/gift/two.svg";
 import phoneCase from "../assets/images/phone-case.png";
 
 const serviceData = [
   {
-    img: service2,
+    img: service1,
     label: "Multi-Channel",
     desc: "Allow guests to text or email e-gift cards. Physical gift cards are also available.",
   },
   {
-    img: service1,
+    img: service2,
     label: "Integrated",
     desc: "E-gift cards can be used when ordering online as well as in-store.",
   },

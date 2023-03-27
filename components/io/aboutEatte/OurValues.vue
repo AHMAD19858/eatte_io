@@ -22,7 +22,7 @@
               <div class="img_container">
                 <div class="card_container">
                   <img
-                    src="../../../assets/images/icons/charts.svg"
+                    src="../../../assets/images/icons/services/about_one.svg"
                     class="phone_icon"
                     alt="svg"
                   />
@@ -41,7 +41,7 @@
               <div class="img_container">
                 <div class="card_container">
                   <img
-                    src="../../../assets/images/icons/charts.svg"
+                    src="../../../assets/images/icons/services/about_two.svg"
                     class="phone_icon"
                     alt="svg"
                   />
@@ -63,7 +63,7 @@
               <div class="img_container">
                 <div class="card_container">
                   <img
-                    src="../../../assets/images/icons/charts.svg"
+                    src="../../../assets/images/icons/services/about_three.svg"
                     class="phone_icon"
                     alt="svg"
                   />
@@ -82,7 +82,7 @@
               <div class="img_container">
                 <div class="card_container">
                   <img
-                    src="../../../assets/images/icons/charts.svg"
+                    src="../../../assets/images/icons/services/about_four.svg"
                     class="phone_icon"
                     alt="svg"
                   />
@@ -110,7 +110,7 @@
   @apply flex-1 leading-snug text-2xl font-bold font-montse text-center;
 }
 .phone_icon {
-  @apply stroke-primary-color w-12 h-6 text-center text-3xl text-primary-color;
+  @apply stroke-primary-color w-[32px] h-[32px] text-center text-3xl text-primary-color;
 }
 .cards_container {
   @apply md:grid grid-cols-3 gap-[320px] md:grid-cols-2 lg:grid-cols-3;
