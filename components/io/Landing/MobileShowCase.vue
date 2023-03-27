@@ -70,13 +70,13 @@ onMounted(() => {
       <div class="col-span-6">
         <div class="relative z-[2]" id="start">
           <img :src="img" id="" class="w-[280px] relative z-[2]" alt="" />
-          <img
+     <!--      <img
             :src="figure"
             v-if="figure"
             id=""
             class="mobile-figure z-[1] absolute w-[200px] bottom-0 left-[250px]"
             alt=""
-          />
+          /> -->
         </div>
       </div>
       <div class="col-span-6">
@@ -86,8 +86,8 @@ onMounted(() => {
           :key="index"
           :id="`lineEndDiv${index + 1}`"
         >
-          <h4 class="text-primary-color mb-3">{{ el.title }}</h4>
-          <p class="text-zinc-700 text-sm">{{ el.desc }}</p>
+          <h4 class="text-primary-color mb-3 font-montse text-[15px] font-bold">{{ el.title }}</h4>
+          <p class=" text-base font-montse font-normal text-[#535353]">{{ el.desc }}</p>
         </div>
       </div>
     </div>

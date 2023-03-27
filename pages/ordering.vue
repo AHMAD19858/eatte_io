@@ -6,7 +6,7 @@ import service2 from "../assets/images/icons/charts.svg";
 import one from "../assets/images/features/ordering/one.svg";
 import two from "../assets/images/features/ordering/two.svg";
 import three from "../assets/images/features/ordering/three.svg";
-import phoneCase from "../assets/images/phone-case.png";
+import phoneCase from "../assets/images/mobile_orders.svg";
 import figure from "../assets/images/mobile-figure.png";
 
 const serviceData = [

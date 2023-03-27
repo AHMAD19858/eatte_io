@@ -131,7 +131,14 @@ const featuresData = [
       </div>
     </div>
 
-    <div class="container">
+    
+    <div class="container py-10">
+      <IoHeadersTripleLines
+          :first_line="'Increase Profitability'"
+          :main="'Guests With Gift Cards Spend More'"
+          :first_sub_main="'Create multiple gift cards for your customers to boost your profit and further engage '"
+          :second_sub_main="'with your customers.'"
+        />
       <IoLandingMobileShowCase :data="graphData" :img="phoneCase" />
     </div>
 
