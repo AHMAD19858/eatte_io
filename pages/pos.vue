@@ -252,7 +252,7 @@ const featuresData = [
     <IoCard />
     <!-- <IoButton :secondary="true" :title="'View All Services'" /> -->
 
-<div class="bg-white">
+<div class="bg-white dark:bg-dark-background-color">
   <div class="container">
       <IoLandingLineCard
         :sub-title="'POYNT POS Hardware'"
