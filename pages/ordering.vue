@@ -168,7 +168,6 @@ const featuresData = [
       <IoLandingMobileShowCase
         :data="graphData"
         :img="phoneCase"
-        :figure="figure"
       />
     </div>
 
