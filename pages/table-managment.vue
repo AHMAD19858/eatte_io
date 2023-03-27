@@ -5,7 +5,6 @@ import service3 from "../assets/images/icons/code.svg";
 import service2 from "../assets/images/icons/charts.svg";
 import one from "../assets/images/features/table/one.svg";
 
-
 const serviceData = [
   {
     img: service2,
@@ -54,10 +53,10 @@ const featuresData = [
     </div>
 
     <div class="pos_helps">
-      <div class="py-12 bg-background-color dark:bg-dark-background-color">
+      <div class="pb-12 bg-background-color dark:bg-dark-background-color">
         <IoServices :items="serviceData" :numbers="3" />
         <div class="bg-white col">
-          <IoButton :secondary="true" :title="'See Pricing'" />
+          <!-- <IoButton :secondary="true" :title="'See Pricing'" /> -->
         </div>
       </div>
     </div>
@@ -83,7 +82,7 @@ const featuresData = [
       />
     </div>
     <IoCard />
-    <IoButton :secondary="true" :title="'View All Services'" />
+    <!-- <IoButton :secondary="true" :title="'View All Services'" /> -->
 
     <div class="py-10 bg-background-color dark:bg-dark-background-color">
       <IoHeadersTripleLines

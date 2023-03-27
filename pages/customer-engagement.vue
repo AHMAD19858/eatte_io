@@ -50,8 +50,8 @@ const featuresData = [
         :second_sub_main="'integrated software suite, providing unbeatable convenience.'"
       />
     </div>
-    <IoCard  />
-    <IoButton :secondary="true" :title="'View All Services'" />
+    <IoCard />
+    <!-- <IoButton :secondary="true" :title="'View All Services'" /> -->
 
     <div class="py-10 bg-background-color dark:bg-dark-background-color">
       <IoHeadersTripleLines

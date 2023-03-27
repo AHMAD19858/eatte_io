@@ -22,7 +22,7 @@ const props = defineProps({
 
 <style scoped>
 .header_container {
-  @apply space-y-2 text-center mx-[100px] mb-12 dark:bg-dark-background-color
+  @apply space-y-2 text-center mx-[100px] my-12 dark:bg-dark-background-color
 }
 
 .main_text {
@@ -30,7 +30,7 @@ const props = defineProps({
 }
 
 .sub_text {
-  @apply text-sm  font-montse dark:text-background-color;
+  @apply text-lg font-montse dark:text-background-color;
 }
 
 .question {

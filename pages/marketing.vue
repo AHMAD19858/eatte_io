@@ -2,7 +2,6 @@
 import marketing from "../assets/images/heroImages/marketing.svg";
 import one from "../assets/images/features/marketing/one.svg";
 
-
 const featuresData = [
   {
     position: "right",
@@ -51,9 +50,9 @@ const featuresData = [
       />
     </div>
 
-    <IoCard  />
+    <IoCard />
 
-    <IoButton :secondary="true" :title="'View All Services'" />
+    <!-- <IoButton :secondary="true" :title="'View All Services'" /> -->
 
     <div class="triple_section">
       <IoHeadersTripleLines

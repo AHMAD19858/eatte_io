@@ -148,9 +148,9 @@
             <a rel="noopener noreferrer" href="#" class="footer_element"
               >Pricing</a
             >
-            <a rel="noopener noreferrer" href="#" class="footer_element"
+          <!--   <a rel="noopener noreferrer" href="#" class="footer_element"
               >Testimonails</a
-            >
+            > -->
             <NuxtLink
               to="https://support.eatte.io/knowledgebase/eatte-privacy-and-policy/"
               target="_blank"

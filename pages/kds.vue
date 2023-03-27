@@ -8,7 +8,6 @@ import service1 from "../assets/images/icons/hand.svg";
 import service3 from "../assets/images/icons/code.svg";
 import service2 from "../assets/images/icons/charts.svg";
 
-
 const serviceData = [
   {
     img: service2,
@@ -131,10 +130,10 @@ const featuresData = [
     </div>
 
     <div class="pos_helps">
-      <div class="py-12 bg-background-color dark:bg-dark-background-color">
+      <div class="pb-12 bg-background-color dark:bg-dark-background-color">
         <IoServices :items="serviceData" :numbers="3" />
         <div class="bg-white col">
-          <IoButton :secondary="true" :title="'See Pricing'" />
+          <!-- <IoButton :secondary="true" :title="'See Pricing'" /> -->
         </div>
       </div>
     </div>
@@ -159,9 +158,9 @@ const featuresData = [
       />
     </div>
 
-    <IoCard  />
+    <IoCard />
 
-    <IoButton :secondary="true" :title="'View All Services'" />
+    <!-- <IoButton :secondary="true" :title="'View All Services'" /> -->
   </div>
 </template>
 
@@ -181,7 +180,7 @@ const featuresData = [
 }
 
 .screen_container {
-  @apply pt-[100px] bg-background-color min-h-full dark:text-white dark:bg-dark-background-color;
+  @apply pt-[170px] bg-background-color min-h-full dark:text-white dark:bg-dark-background-color;
 }
 @media (max-width: 576px) {
   .small_container {

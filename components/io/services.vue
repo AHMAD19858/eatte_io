@@ -55,7 +55,7 @@ const props = defineProps({
 }
 
 article {
-  @apply flex flex-col bg-white rounded-2xl my-3 dark:bg-[#272727] h-[300px];
+  @apply flex flex-col bg-white rounded-2xl my-3 dark:bg-[#272727] py-5;
 }
 
 .card_container {

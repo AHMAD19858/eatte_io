@@ -1,7 +1,7 @@
 <script setup>
 import PosImage from "../assets/images/heroImages/coupons.svg";
-import one from "../assets/images/features/pos/one.svg";
-import two from "../assets/images/features/pos/two.svg";
+import one from "../assets/images/features/coupons/one.svg";
+import two from "../assets/images/features/coupons/two.svg";
 
 const featuresData = [
   {
@@ -43,7 +43,7 @@ const featuresData = [
       />
     </div>
     <IoCard />
-    <IoButton :secondary="true" :title="'View All Services'" />
+    <!-- <IoButton :secondary="true" :title="'View All Services'" /> -->
 
     <div class="py-10 bg-background-color dark:bg-dark-background-color">
       <IoHeadersTripleLines

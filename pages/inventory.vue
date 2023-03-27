@@ -80,10 +80,10 @@ const featuresData = [
     </div>
 
     <div class="pos_helps">
-      <div class="py-12 bg-background-color dark:bg-dark-background-color">
+      <div class="pb-12 bg-background-color dark:bg-dark-background-color">
         <IoServices :items="serviceData" :numbers="2" />
         <div class="bg-white col">
-          <IoButton :secondary="true" :title="'See Pricing'" />
+          <!-- <IoButton :secondary="true" :title="'See Pricing'" /> -->
         </div>
       </div>
     </div>
@@ -109,7 +109,7 @@ const featuresData = [
 
     <IoCard />
 
-    <IoButton :secondary="true" :title="'View All Services'" />
+    <!-- <IoButton :secondary="true" :title="'View All Services'" /> -->
 
     <div class="triple_section">
       <IoHeadersTripleLines

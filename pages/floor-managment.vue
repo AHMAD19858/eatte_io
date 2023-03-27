@@ -4,7 +4,6 @@ import one from "../assets/images/features/floor/one.svg";
 import two from "../assets/images/features/floor/two.svg";
 import three from "../assets/images/features/floor/three.svg";
 
-
 const featuresData = [
   {
     position: "right",
@@ -60,7 +59,7 @@ const featuresData = [
       />
     </div>
     <IoCard />
-    <IoButton :secondary="true" :title="'View All Services'" />
+    <!-- <IoButton :secondary="true" :title="'View All Services'" /> -->
 
     <div class="py-10 bg-background-color dark:bg-dark-background-color">
       <IoHeadersTripleLines

@@ -5,7 +5,6 @@ import one from "../assets/images/features/feedback/one.svg";
 import two from "../assets/images/features/feedback/two.svg";
 import three from "../assets/images/features/feedback/three.svg";
 
-
 const featuresData = [
   {
     position: "right",
@@ -60,8 +59,8 @@ const featuresData = [
         :second_sub_main="'integrated software suite, providing unbeatable convenience.'"
       />
     </div>
-    <IoCard  />
-    <IoButton :secondary="true" :title="'View All Services'" />
+    <IoCard />
+    <!-- <IoButton :secondary="true" :title="'View All Services'" /> -->
 
     <div class="container">
       <IoLandingLineCard

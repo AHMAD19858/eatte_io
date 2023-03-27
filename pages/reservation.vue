@@ -4,7 +4,6 @@ import one from "../assets/images/features/reservation/one.svg";
 import two from "../assets/images/features/reservation/two.svg";
 import three from "../assets/images/features/reservation/three.svg";
 
-
 const featuresData = [
   {
     position: "right",
@@ -75,7 +74,7 @@ const featuresData = [
 
     <IoCard />
 
-    <IoButton :secondary="true" :title="'View All Services'" />
+    <!-- <IoButton :secondary="true" :title="'View All Services'" /> -->
 
     <div class="triple_section">
       <IoHeadersTripleLines
@@ -90,7 +89,7 @@ const featuresData = [
 
 <style scoped>
 .screen_container {
-  @apply bg-background-color min-h-full dark:text-white dark:bg-dark-background-color;
+  @apply bg-background-color min-h-full  dark:text-white dark:bg-dark-background-color;
 }
 .triple_section {
   @apply mx-[200px] py-5;

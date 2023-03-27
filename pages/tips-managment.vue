@@ -1,7 +1,6 @@
 <script setup>
 import PosImage from "../assets/images/heroImages/tips.svg";
-import one from "../assets/images/features/pos/one.svg";
-
+import one from "../assets/images/features/tips/one.svg";
 
 const featuresData = [
   {
@@ -10,7 +9,6 @@ const featuresData = [
     title: "Stop wasting time trying to remember all your tips!",
     sub_title: `With EATTE, you can easily manage all your tips in one place. Whether you're a restaurant manager or a server, EATTE makes it easy to store and manage all your tips in the most organized way. Plus, its intuitive interface ensures you can access your tips quickly and efficiently. Get the hassle-free way to manage all your tips with EATTE!`,
   },
-
 ];
 </script>
 
@@ -37,7 +35,7 @@ const featuresData = [
       />
     </div>
     <IoCard />
-    <IoButton :secondary="true" :title="'View All Services'" />
+    <!-- <IoButton :secondary="true" :title="'View All Services'" /> -->
 
     <div class="py-10 bg-background-color dark:bg-dark-background-color">
       <IoHeadersTripleLines

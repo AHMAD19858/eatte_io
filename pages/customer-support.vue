@@ -2,7 +2,6 @@
 import PosImage from "../assets/images/heroImages/support.svg";
 import one from "../assets/images/features/support/one.svg";
 
-
 const featuresData = [
   {
     position: "right",
@@ -44,7 +43,7 @@ const featuresData = [
       />
     </div>
     <IoCard />
-    <IoButton :secondary="true" :title="'View All Services'" />
+    <!-- <IoButton :secondary="true" :title="'View All Services'" /> -->
 
     <div class="py-10 bg-background-color dark:bg-dark-background-color">
       <IoHeadersTripleLines
@@ -61,7 +60,7 @@ const featuresData = [
 .container {
   width: 100%;
   max-width: 1200px;
- /*  padding: 0 70px; */
+  /*  padding: 0 70px; */
   margin: 0 auto;
 }
 .pos_helps {

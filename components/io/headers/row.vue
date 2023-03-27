@@ -160,7 +160,7 @@ const props = defineProps({
   object-position: unset;
   height: auto;
   width: 450px;
-  @apply z-10 top-[-270px]  absolute right-[10%] object-cover object-left-bottom h-[500px];
+  @apply z-10 top-[-250px]  absolute right-[10%] object-cover object-left-bottom h-[500px];
 }
 .about_section .left_side h1 {
   @apply mb-[15px] font-bold text-5xl font-montse;

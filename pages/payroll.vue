@@ -1,7 +1,7 @@
 <script setup>
 import PosImage from "../assets/images/heroImages/payroll.svg";
-import one from "../assets/images/features/pos/one.svg";
-import two from "../assets/images/features/pos/two.svg";
+import one from "../assets/images/features/payroll/one.svg";
+import two from "../assets/images/features/payroll/two.svg";
 
 
 
@@ -30,6 +30,7 @@ const featuresData = [
       :start_btn="'Get Started'"
       :demo_btn="'Get a demo'"
       :row_img="PosImage"
+      :another_device="true"
     />
 
     <div class="container">
@@ -45,7 +46,7 @@ const featuresData = [
       />
     </div>
     <IoCard  />
-    <IoButton :secondary="true" :title="'View All Services'" />
+    <!-- <IoButton :secondary="true" :title="'View All Services'" /> -->
 
     <div class="py-10 bg-background-color dark:bg-dark-background-color">
       <IoHeadersTripleLines
@@ -66,19 +67,10 @@ const featuresData = [
 }
 
 .screen_container {
-  @apply bg-background-color min-h-full dark:text-white dark:bg-dark-background-color pt-[170px];
+  @apply bg-background-color min-h-full dark:text-white dark:bg-dark-background-color pt-[140px];
 }
 
-.accepts_container {
-  display: grid;
-  list-style: none;
-  padding: 0;
-  justify-content: space-between;
-  align-items: flex-start;
-  flex-wrap: wrap;
-  gap: 10px;
-  margin: 20px 0px;
-}
+
 
 .accepts_featurs {
   width: calc(100% / 2 - 25px);

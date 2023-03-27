@@ -146,7 +146,7 @@ const cardData = [
     :modules="[SwiperAutoplay, SwiperEffectCreative]"
     :slides-per-view="4"
     :autoplay="{
-       delay: 2500,
+       delay: 250,
       disableOnInteraction: false,
     }"
     :creative-effect="{
@@ -171,7 +171,7 @@ const cardData = [
               <img :src="item.img" class="phone_icon" alt="svg" />
             </div>
 
-            <div class="p-4">
+            <div >
               <h3 class="main_card_text">{{ item.label }}</h3>
               <p class="sub_title cursor-pointer">
                 {{ item.learn_text }}
@@ -185,9 +185,9 @@ const cardData = [
 </template>
 
 <style scoped>
-.services_container {
+/* .services_container {
   @apply container  max-w-fit p-1 mx-auto space-y-8;
-}
+} */
 .small_container {
   @apply md:grid grid-cols-3 gap-1 md:grid-cols-2 lg:grid-cols-3;
 }
@@ -205,14 +205,14 @@ article {
 }
 
 .main_card_text {
-  @apply text-primary-color flex-1 leading-snug text-[15px] font-bold font-montse  mb-2 dark:text-primary-color;
+  @apply  pl-4 pb-5 text-primary-color flex-1 leading-snug text-[15px] font-bold font-montse  mb-2 dark:text-primary-color;
 }
 
 .phone_icon {
   @apply stroke-primary-color w-12 h-6 text-center text-3xl text-primary-color;
 }
 .sub_title {
-  @apply underline font-montse font-normal text-[#3F4440] text-sm  dark:text-white;
+  @apply  pl-4 pb-5 underline font-montse font-normal text-[#3F4440] text-sm  dark:text-white;
 }
 
 @media (max-width: 576px) {
