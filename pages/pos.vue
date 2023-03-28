@@ -139,6 +139,7 @@ const featuresData = [
       :start_btn="'Get Started'"
       :demo_btn="'Get a demo'"
       :row_img="PosImage"
+      :another_device="true"
     />
 
     <div class="bg-background-color pt-12 pb-12 dark:bg-dark-background-color">
@@ -302,7 +303,7 @@ const featuresData = [
   max-width: 1200px;
 }
 .screen_container {
-  @apply bg-background-color min-h-full dark:text-white dark:bg-dark-background-color pt-[170px];
+  @apply bg-background-color min-h-full dark:text-white dark:bg-dark-background-color pt-[200px];
 }
 
 .cards_container {

@@ -155,7 +155,7 @@ const featuresData = [
       />
     </div>
 
-    <div class="pb-12">
+    <div class="pb-12 pt-[50px]">
       <IoButtonsDouble :start_btn="'Get Started'" :demo_btn="'Get a demo'" />
     </div>
   </div>

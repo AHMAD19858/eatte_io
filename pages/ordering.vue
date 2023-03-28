@@ -8,7 +8,6 @@ import two from "../assets/images/features/ordering/two.svg";
 import three from "../assets/images/features/ordering/three.svg";
 import phoneCase from "../assets/images/mobile_orders.svg";
 
-
 const serviceData = [
   {
     img: service1,
@@ -165,11 +164,7 @@ const featuresData = [
       />
     </div>
     <div class="container">
-      <IoLandingMobileShowCase
-        :data="graphData"
-        :img="phoneCase"
-     
-      />
+      <IoLandingMobileShowCase :data="graphData" :img="phoneCase" />
     </div>
 
     <div class="py-12 bg-background-color dark:bg-dark-background-color">
@@ -191,7 +186,7 @@ const featuresData = [
       />
     </div>
 
-    <div class="pb-12">
+    <div class="pb-12 pt-[50px]">
       <IoButtonsDouble :start_btn="'Get Started'" :demo_btn="'Get a demo'" />
     </div>
   </div>
@@ -220,7 +215,7 @@ const featuresData = [
   max-width: 1200px;
 }
 .screen_container {
-  @apply bg-background-color min-h-full dark:text-white dark:bg-dark-background-color pt-[170px];
+  @apply bg-background-color min-h-full dark:text-white dark:bg-dark-background-color pt-[270px];
 }
 
 .cards_container {

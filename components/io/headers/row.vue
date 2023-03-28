@@ -29,11 +29,11 @@ const props = defineProps({
         </h2>
 
         <div v-if="without_btn !== true">
-          <h1 class="main_text ">
-            EA<span class="text-primary-color ">TT</span>E {{ service }}
+          <h1 class="main_text">
+            EA<span class="text-primary-color">TT</span>E {{ service }}
           </h1>
         </div>
-        <p class="sub_text ">
+        <p class="sub_text">
           {{ sub_text }}
         </p>
         <ul v-if="without_btn === true">
@@ -59,10 +59,12 @@ const props = defineProps({
             </p>
           </li>
         </ul>
-        <div class="right_section animate-slideDown" v-if="without_btn !== true">
+        <div
+          class="right_section animate-slideDown"
+          v-if="without_btn !== true"
+        >
           <div class="col">
             <NuxtLink to="https://eatte.io/new_wizard/" target="_blank">
-
               <button class="get_started">
                 {{ start_btn }}
                 <svg
@@ -85,7 +87,6 @@ const props = defineProps({
 
           <div class="col demo_container">
             <NuxtLink to="https://eatte.io/request-demo" target="_blank">
-
               <button class="get_demo">
                 {{ demo_btn }}
                 <svg
@@ -107,7 +108,10 @@ const props = defineProps({
           </div>
         </div>
       </div>
-      <div class="left_side devices_shapes animate-fade" v-if="without_btn !== true">
+      <div
+        class="left_side devices_shapes animate-fade"
+        v-if="without_btn !== true"
+      >
         <img
           :class="another_device == true ? 'another_device' : 'mobile'"
           :src="row_img"
@@ -115,12 +119,11 @@ const props = defineProps({
         />
       </div>
 
-      <div class="left_side devices_shapes animate-fade" v-if="without_btn === true">
-        <img
-          class="device_img"
-          :src="row_img"
-          alt="img"
-        />
+      <div
+        class="left_side devices_shapes animate-fade"
+        v-if="without_btn === true"
+      >
+        <img class="device_img" :src="row_img" alt="img" />
       </div>
     </div>
   </div>
@@ -139,7 +142,7 @@ const props = defineProps({
 }
 
 .about_section {
-  @apply flex justify-between items-start flex-wrap mb-[100px] gap-[50px];
+  @apply flex justify-between flex-wrap mb-[100px] gap-[50px] items-baseline;
 }
 
 .about_section .left_side {
@@ -157,23 +160,23 @@ const props = defineProps({
 } */
 .mobile {
   right: unset;
-  object-fit: contain !important; 
+  object-fit: contain !important;
   object-position: unset;
   height: auto;
-  @apply z-10 top-[-150px] absolute right-[10%] object-cover object-left-bottom h-[500px];
+  @apply z-10 top-[-180px] absolute right-[10%] object-cover object-left-bottom h-[500px];
 }
 .another_device {
   right: unset;
-  object-fit: contain !important; 
+  object-fit: contain !important;
   object-position: unset;
   height: auto;
   width: 450px;
   @apply z-10 top-[-250px]  absolute right-[10%] object-cover object-left-bottom h-[500px];
 }
 
-.device_img{
+.device_img {
   right: unset;
-  object-fit: contain !important; 
+  object-fit: contain !important;
   object-position: unset;
   height: auto;
   width: 450px;
@@ -214,7 +217,7 @@ const props = defineProps({
 }
 
 .main_text {
-  @apply text-[35px] font-bold text-font-color leading-7 font-montse dark:text-white
+  @apply text-[35px] font-bold text-font-color leading-7 font-montse dark:text-white;
 }
 
 @media (min-width: 1440px) {

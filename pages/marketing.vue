@@ -41,7 +41,7 @@ const featuresData = [
       </div>
       <IoFeatures :items="featuresData" />
     </div>
-    
+
     <div class="bg-background-color dark:bg-dark-background-color py-12">
       <IoHeadersTripleLines
         :first_line="'Discover More'"
@@ -62,7 +62,7 @@ const featuresData = [
       />
     </div>
 
-    <div class="pb-12">
+    <div class="pb-12 pt-[50px]">
       <IoButtonsDouble :start_btn="'Get Started'" :demo_btn="'Get a demo'" />
     </div>
   </div>
@@ -76,7 +76,7 @@ const featuresData = [
   @apply dark:bg-dark-background-color;
 }
 .triple_section {
-  @apply mx-[200px] pt-5;
+  @apply mx-[60px] pt-5;
 }
 .screen_container {
   @apply pt-[170px] bg-background-color min-h-full dark:text-white dark:bg-dark-background-color;

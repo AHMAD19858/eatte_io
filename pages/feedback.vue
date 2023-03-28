@@ -52,7 +52,7 @@ const featuresData = [
         <IoFeatures :items="featuresData" />
       </div>
     </div>
-    
+
     <div class="py-12 bg-background-color dark:bg-dark-background-color">
       <IoHeadersTripleLines
         :first_line="'Discover More'"
@@ -80,7 +80,7 @@ const featuresData = [
       />
     </div>
 
-    <div class="pb-12">
+    <div class="pb-12 pt-[50px]">
       <IoButtonsDouble :start_btn="'Get Started'" :demo_btn="'Get a demo'" />
     </div>
   </div>
@@ -95,7 +95,7 @@ const featuresData = [
 }
 
 .screen_container {
-  @apply bg-background-color min-h-full dark:text-white dark:bg-dark-background-color pt-[170px];
+  @apply bg-background-color min-h-full dark:text-white dark:bg-dark-background-color pt-[270px];
 }
 
 @media (max-width: 768px) {
