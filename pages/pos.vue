@@ -19,7 +19,7 @@ const data = [
     img: pay1,
     label: "pay with",
     title: "Google pay",
-  },
+  }, 
   {
     img: pay2,
     label: "pay with",
