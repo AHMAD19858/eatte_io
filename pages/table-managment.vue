@@ -74,7 +74,7 @@ const featuresData = [
       />
     </div>
 
-    <div class="pb-12 pt-[50px]">
+    <div class="pb-12 pt-[2px]">
       <IoButtonsDouble :start_btn="'Get Started'" :demo_btn="'Get a demo'" />
     </div>
   </div>

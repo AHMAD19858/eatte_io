@@ -62,7 +62,7 @@ const featuresData = [
       />
     </div>
 
-    <div class="pb-12 pt-[50px]">
+    <div class="pb-12 pt-[2px]">
       <IoButtonsDouble :start_btn="'Get Started'" :demo_btn="'Get a demo'" />
     </div>
   </div>
@@ -79,7 +79,7 @@ const featuresData = [
   @apply mx-[60px] pt-5;
 }
 .screen_container {
-  @apply pt-[170px] bg-background-color min-h-full dark:text-white dark:bg-dark-background-color;
+  @apply pt-[270px] bg-background-color min-h-full dark:text-white dark:bg-dark-background-color;
 }
 @media (max-width: 576px) {
   .small_container {

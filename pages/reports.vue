@@ -155,7 +155,7 @@ const featuresData = [
       />
     </div>
 
-    <div class="pb-12 pt-[50px]">
+    <div class="pb-12 pt-[40px]">
       <IoButtonsDouble :start_btn="'Get Started'" :demo_btn="'Get a demo'" />
     </div>
   </div>
@@ -183,7 +183,7 @@ const featuresData = [
   max-width: 1200px;
 }
 .screen_container {
-  @apply bg-background-color min-h-full dark:text-white dark:bg-dark-background-color pt-[170px];
+  @apply bg-background-color min-h-full dark:text-white dark:bg-dark-background-color pt-[270px];
 }
 
 .cards_container {
