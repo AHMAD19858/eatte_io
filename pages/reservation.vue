@@ -89,7 +89,7 @@ const featuresData = [
 
 <style scoped>
 .screen_container {
-  @apply bg-background-color min-h-full  dark:text-white dark:bg-dark-background-color;
+  @apply pt-[170px] bg-background-color min-h-full dark:text-white dark:bg-dark-background-color;
 }
 .triple_section {
   @apply mx-[200px] pt-5;

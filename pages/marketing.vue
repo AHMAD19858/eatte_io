@@ -79,7 +79,7 @@ const featuresData = [
   @apply mx-[200px] pt-5;
 }
 .screen_container {
-  @apply bg-background-color min-h-full dark:text-white dark:bg-dark-background-color;
+  @apply pt-[170px] bg-background-color min-h-full dark:text-white dark:bg-dark-background-color;
 }
 @media (max-width: 576px) {
   .small_container {

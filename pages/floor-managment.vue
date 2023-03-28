@@ -99,7 +99,7 @@ const featuresData = [
   max-width: 1200px;
 }
 .screen_container {
-  @apply bg-background-color min-h-full dark:text-white dark:bg-dark-background-color pt-[170px];
+  @apply pt-[200px] bg-background-color min-h-full dark:text-white dark:bg-dark-background-color;
 }
 
 .cards_container {

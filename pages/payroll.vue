@@ -67,7 +67,7 @@ const featuresData = [
 }
 
 .screen_container {
-  @apply bg-background-color min-h-full dark:text-white dark:bg-dark-background-color pt-[140px];
+  @apply bg-background-color min-h-full dark:text-white dark:bg-dark-background-color pt-[200px];
 }
 
 .accepts_featurs {
