@@ -271,17 +271,17 @@
         </li>
 
         <li>
-          <a href="#" class="nav_element">
+          <a href="#price" class="nav_element">
             <span class="nav_text">Pricing</span>
           </a>
         </li>
 
         <li>
-          <NuxtLink>
-            <a class="nav_element">
+         
+            <a class="nav_element" href="#types">
               <span class="nav_text">Restaurant Types</span>
             </a>
-          </NuxtLink>
+         
         </li>
 
         <li>

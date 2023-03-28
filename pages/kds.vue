@@ -150,7 +150,7 @@ const featuresData = [
       <IoFeatures :items="featuresData" />
     </div>
     
-    <div class="py-10 bg-background-color dark:bg-dark-background-color">
+    <div class="py-12 bg-background-color dark:bg-dark-background-color">
       <IoHeadersTripleLines
         :first_line="'Discover More'"
         :main="'All You Require, Conveniently Located in One Place.'"
@@ -161,7 +161,6 @@ const featuresData = [
 
     <IoCard />
 
-    <!-- <IoButton :secondary="true" :title="'View All Services'" /> -->
   </div>
 </template>
 

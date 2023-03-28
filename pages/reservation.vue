@@ -55,7 +55,7 @@ const featuresData = [
       :another_device="true"
     />
     <div class="bg-white dark:bg-dark-background-color">
-      <div class="py-10 bg-white dark:bg-dark-background-color">
+      <div class="py-12 bg-white dark:bg-dark-background-color">
         <IoHeadersTripleLines
           :first_line="'make reservations and order food in advance'"
           :main="`Whether they're using a smartphone, tablet, or computer, our platform is accessible from any device with an internet connection`"
@@ -63,7 +63,7 @@ const featuresData = [
       </div>
       <IoFeatures :items="featuresData" />
     </div>
-    <div class="bg-background-color dark:bg-dark-background-color">
+    <div class="bg-background-color dark:bg-dark-background-color py-12">
       <IoHeadersTripleLines
         :first_line="'Discover More'"
         :main="'All You Require, Conveniently Located in One Place.'"
@@ -92,7 +92,7 @@ const featuresData = [
   @apply bg-background-color min-h-full  dark:text-white dark:bg-dark-background-color;
 }
 .triple_section {
-  @apply mx-[200px] py-5;
+  @apply mx-[200px] pt-5;
 }
 
 @media (max-width: 576px) {

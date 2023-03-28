@@ -159,19 +159,19 @@ const featuresData = [
       </div>
     </div>
 
-<div class="bg-white dark:bg-dark-background-color">
-  <div class="py-10 bg-white dark:bg-dark-background-color">
-      <IoHeadersTripleLines
-        :first_line="'POS Features'"
-        :main="'Everything You Need To Run Your Restaurant'"
-        :first_sub_main="'EATTE POS is a fully integrated system that connects all online delivery orders, online pickup orders, table reservations, dine-in, QR orders, and drive-thru orders to '"
-        :second_sub_main="'stay one step ahead of a rapidly evolving hospitality market.'"
-      />
+    <div class="bg-white dark:bg-dark-background-color">
+      <div class="py-10 bg-white dark:bg-dark-background-color">
+        <IoHeadersTripleLines
+          :first_line="'POS Features'"
+          :main="'Everything You Need To Run Your Restaurant'"
+          :first_sub_main="'EATTE POS is a fully integrated system that connects all online delivery orders, online pickup orders, table reservations, dine-in, QR orders, and drive-thru orders to '"
+          :second_sub_main="'stay one step ahead of a rapidly evolving hospitality market.'"
+        />
+      </div>
+      <div class="container">
+        <IoFeatures :items="featuresData" />
+      </div>
     </div>
-    <div class="container">
-      <IoFeatures :items="featuresData" />
-    </div>
-</div>
 
     <div class="header_container small_header flex gap-12 mx-12 items-center">
       <div>
@@ -199,30 +199,30 @@ const featuresData = [
         <ul class="accepts_container">
           <li class="accepts_featurs">
             <i class="bx bx-check-circle"></i>
-            <p class="font-montse">credit cards</p>
+            <p class="font-montse text-xl">credit cards</p>
           </li>
 
           <li class="accepts_featurs">
             <i class="bx bx-check-circle"></i>
-            <p class="font-montse">Apple Pay</p>
+            <p class="font-montse text-xl">Apple Pay</p>
           </li>
 
           <li class="accepts_featurs">
             <i class="bx bx-check-circle"></i>
-            <p class="font-montse">Google Pay</p>
+            <p class="font-montse text-xl">Google Pay</p>
           </li>
 
           <li class="accepts_featurs">
             <i class="bx bx-check-circle"></i>
-            <p class="font-montse">gift cards</p>
+            <p class="font-montse text-xl">gift cards</p>
           </li>
 
           <li class="accepts_featurs">
             <i class="bx bx-check-circle"></i>
-            <p class="font-montse">QR pay</p>
+            <p class="font-montse text-xl">QR pay</p>
           </li>
 
-          <p class="font-montse pt-2">
+          <p class="font-montse pt-2 text-xl">
             and many more, making it easy for your customers to pay using their
             preferred payment method.
           </p>
@@ -230,7 +230,8 @@ const featuresData = [
       </div>
 
       <IoCarouselSingle :items="data" />
-
+    </div>
+    <div class="bg-white dark:bg-dark-background-color py-12">
       <IoHeadersRow
         :service="'POS'"
         :sub_text="' Take contactless payments, streamline your ordering, and keep service hustling. The next generation of our handheld POS is ready for inside, outside, drive-through, curbside and more.'"
@@ -241,7 +242,7 @@ const featuresData = [
       />
     </div>
 
-    <div class="py-10 bg-background-color dark:bg-dark-background-color">
+    <div class=" py-16 bg-background-color dark:bg-dark-background-color">
       <IoHeadersTripleLines
         :first_line="'Discover More'"
         :main="'All You Require, Conveniently Located in One Place.'"
@@ -252,8 +253,7 @@ const featuresData = [
     <IoCard />
     <!-- <IoButton :secondary="true" :title="'View All Services'" /> -->
 
-<div class="bg-white dark:bg-dark-background-color">
-  <div class="container">
+    <div class="container bg-white dark:bg-dark-background-color">
       <IoLandingLineCard
         :sub-title="'POYNT POS Hardware'"
         :title="'Integrations To Supercharge Your Business'"
@@ -261,16 +261,16 @@ const featuresData = [
         :img="hardware"
       />
     </div>
-</div>
 
-    <div class="py-10 bg-background-color dark:bg-dark-background-color">
+    <div class="pt-10 bg-background-color dark:bg-dark-background-color">
       <IoHeadersTripleLines
         :first_line="'Overall, EATTE POS is the perfect tool for restaurant owners who want to take their operations to the next level. With our platform, you can streamline your operations, increase efficiency, and boost profitability.,'"
         :main="'So why wait? Sign up for EATTE today and transform the way you run your restaurant!'"
       />
     </div>
-
-    <IoButtonsDouble :start_btn="'Get Started'" :demo_btn="'Get a demo'" />
+    <div class="pb-12">
+      <IoButtonsDouble :start_btn="'Get Started'" :demo_btn="'Get a demo'" />
+    </div>
   </div>
 </template>
 

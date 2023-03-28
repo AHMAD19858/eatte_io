@@ -88,7 +88,7 @@ const featuresData = [
       </div>
     </div>
     <div class="bg-white dark:bg-dark-background-color">
-      <div class="py-10 bg-white dark:bg-dark-background-color">
+      <div class="py-12 bg-white dark:bg-dark-background-color">
         <IoHeadersTripleLines
           :first_line="'Save Money & Time'"
           :main="'Our Kitchen Display System can help you save time and money by improving communication and increasing efficiency.'"
@@ -98,8 +98,8 @@ const featuresData = [
       </div>
       <IoFeatures :items="featuresData" />
     </div>
-    
-    <div class="bg-background-color dark:bg-dark-background-color">
+
+    <div class="py-16 bg-background-color dark:bg-dark-background-color">
       <IoHeadersTripleLines
         :first_line="'Discover More'"
         :main="'All You Require, Conveniently Located in One Place.'"
@@ -119,7 +119,9 @@ const featuresData = [
       />
     </div>
 
-    <IoButtonsDouble :start_btn="'Get Started'" :demo_btn="'Get a demo'" />
+    <div class="pb-12">
+      <IoButtonsDouble :start_btn="'Get Started'" :demo_btn="'Get a demo'" />
+    </div>
   </div>
 </template>
 
@@ -132,7 +134,7 @@ const featuresData = [
   @apply dark:bg-dark-background-color;
 }
 .triple_section {
-  @apply mx-[200px] py-5;
+  @apply mx-[200px] pt-5;
 }
 .screen_container {
   @apply bg-background-color min-h-full dark:text-white dark:bg-dark-background-color pt-[15px];

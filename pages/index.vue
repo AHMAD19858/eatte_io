@@ -19,8 +19,14 @@
     <IoLandingServices />
     <IoLandingBannerCard />
     <IoLandingSystemFeatures />
-    <IoLandingSolutions />
-    <IoLandingPlans />
+    <a name="types" >
+
+      <IoLandingSolutions />
+    </a>
+    <a name="price">
+
+      <IoLandingPlans />
+    </a>
     <IoLandingMobile />
     <IoLandingFaq />
     <IoLandingContactForm />

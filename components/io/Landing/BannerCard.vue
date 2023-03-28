@@ -36,7 +36,7 @@
 }
 
 .get_started {
-  @apply font-montse flex w-72 self-end items-center justify-evenly rounded-lg px-8 py-3 m-2 text-lg font-semibold text-primary-color bg-gradient-to-r bg-white;
+  @apply font-montse flex w-72 self-end items-center justify-evenly rounded-lg px-8 py-3 m-6 text-lg font-semibold text-primary-color bg-gradient-to-r bg-white;
 }
 
 .slogan {

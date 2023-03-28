@@ -104,7 +104,7 @@ const featuresData = [
       </div>
     </div>
     <div class="bg-white dark:bg-dark-background-color">
-      <div class="py-10 bg-white dark:bg-dark-background-color">
+      <div class="py-12 bg-white dark:bg-dark-background-color">
         <IoHeadersTripleLines
           :first_line="'Better business decisions'"
           :main="'Keep Your Finger on the Pulse of Your Business with Intuitive Reporting'"
@@ -116,7 +116,7 @@ const featuresData = [
         <IoFeatures :items="featuresData" />
       </div>
     </div>
-    <div class="py-10 bg-background-color dark:bg-dark-background-color">
+    <div class="py-12 bg-background-color dark:bg-dark-background-color">
       <IoHeadersTripleLines
         :first_line="'Discover More'"
         :main="'All You Require, Conveniently Located in One Place.'"
@@ -127,14 +127,16 @@ const featuresData = [
     <IoCard />
     <!-- <IoButton :secondary="true" :title="'View All Services'" /> -->
 
-    <div class="py-10 bg-background-color dark:bg-dark-background-color">
+    <div class="py-12 bg-background-color dark:bg-dark-background-color">
       <IoHeadersTripleLines
         :first_line="'Overall, EATTE Marketing is the perfect tool for restaurant owners who want to automate their marketing efforts and improve customer retention. With our platform, you can save time and money while also building stronger relationships with your customers. ,'"
         :main="'So why wait? Sign up for EATTE today and take your restaurant to the next level'"
       />
     </div>
 
-    <IoButtonsDouble :start_btn="'Get Started'" :demo_btn="'Get a demo'" />
+    <div class="pb-12">
+      <IoButtonsDouble :start_btn="'Get Started'" :demo_btn="'Get a demo'" />
+    </div>
   </div>
 </template>
 

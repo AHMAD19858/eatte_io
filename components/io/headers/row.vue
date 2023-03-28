@@ -12,9 +12,9 @@ const props = defineProps({
 </script>
 
 <template>
-  <div class="container">
-    <div class="about_section">
-      <div class="left_side">
+  <div class="container ">
+    <div class="about_section ">
+      <div class="left_side ">
         <h6
           v-if="without_btn === true"
           class="font-montse font-bold text-lg mb-0 text-primary-color mt-10"
