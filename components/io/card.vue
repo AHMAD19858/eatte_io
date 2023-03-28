@@ -142,7 +142,7 @@ const cardData = [
 
 <template>
   <Swiper
-    class=" mb-24"
+    class=" mb-36"
     :modules="[SwiperAutoplay, SwiperEffectCreative]"
     :slides-per-view="4"
     :autoplay="{

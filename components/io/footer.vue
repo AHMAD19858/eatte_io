@@ -192,7 +192,7 @@
 
 <style scoped>
 .footer_container {
-  @apply bg-background-color pt-[48px] dark:bg-dark-background-color;
+  @apply bg-background-color pt-[160px] dark:bg-dark-background-color;
 }
 .raduis {
   border-radius: 69px 40px 0px 0px;

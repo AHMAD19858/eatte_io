@@ -160,7 +160,7 @@ const featuresData = [
     </div>
 
     <div class="bg-white dark:bg-dark-background-color">
-      <div class="py-10 bg-white dark:bg-dark-background-color">
+      <div class="py-12 bg-white dark:bg-dark-background-color">
         <IoHeadersTripleLines
           :first_line="'POS Features'"
           :main="'Everything You Need To Run Your Restaurant'"
@@ -228,10 +228,12 @@ const featuresData = [
           </p>
         </ul>
       </div>
-
+      <div class="py-[50px]">
       <IoCarouselSingle :items="data" />
+      </div>
+ 
     </div>
-    <div class="bg-white dark:bg-dark-background-color py-12">
+    <div class="bg-white dark:bg-dark-background-color pt-12 pb-1">
       <IoHeadersRow
         :service="'POS'"
         :sub_text="' Take contactless payments, streamline your ordering, and keep service hustling. The next generation of our handheld POS is ready for inside, outside, drive-through, curbside and more.'"
@@ -262,13 +264,13 @@ const featuresData = [
       />
     </div>
 
-    <div class="pt-10 bg-background-color dark:bg-dark-background-color">
+    <div class="pt-[105px] bg-background-color dark:bg-dark-background-color">
       <IoHeadersTripleLines
         :first_line="'Overall, EATTE POS is the perfect tool for restaurant owners who want to take their operations to the next level. With our platform, you can streamline your operations, increase efficiency, and boost profitability.,'"
         :main="'So why wait? Sign up for EATTE today and transform the way you run your restaurant!'"
       />
     </div>
-    <div class="pb-12">
+    <div class="pb-12 pt-[50px]">
       <IoButtonsDouble :start_btn="'Get Started'" :demo_btn="'Get a demo'" />
     </div>
   </div>
