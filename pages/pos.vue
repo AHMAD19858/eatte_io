@@ -195,7 +195,7 @@ const featuresData = [
 
     <div class="header_container">
       <div class="mt-9">
-        <p class="font-montse">Our platform also accepts all kinds of:</p>
+        <p class="font-montse text-xl">Our platform also accepts all kinds of:</p>
         <ul class="accepts_container">
           <li class="accepts_featurs">
             <i class="bx bx-check-circle"></i>
