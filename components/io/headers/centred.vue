@@ -92,7 +92,7 @@ const props = defineProps({
 }
 @media (max-width: 576px) {
   .header_container {
-    padding-top: 3rem;
+    @apply pt-12 mb-12
   }
   .support{
     @apply mt-5

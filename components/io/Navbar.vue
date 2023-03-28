@@ -405,6 +405,10 @@ const showMenu = ref(false);
 }
 
 .section_container {
+  
+  position: fixed;
+  top: 0;
+  width: 100%;
   @apply z-50 bg-background-color dark:bg-dark-background-color py-[10px];
 }
 .mobile_view_container {
