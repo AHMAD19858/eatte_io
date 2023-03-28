@@ -405,7 +405,7 @@ const showMenu = ref(false);
 }
 
 .section_container {
-  
+  z-index: 999999999;
   position: fixed;
   top: 0;
   width: 100%;
