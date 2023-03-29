@@ -160,19 +160,19 @@ const graphData = [
       <IoFeatures :items="featuresData" />
     </div>
     <div
-      class="pt-[100px] pb-[80px] bg-background-color dark:bg-dark-background-color"
+      class="pb-[80px] bg-background-color dark:bg-dark-background-color"
     >
       <IoHeadersTripleLines
         :first_line="'Increase Profitability'"
         :main="'Process payments on a platform built for restaurants'"
         :first_sub_main="'Accept payments easily online or via POYNT Hardware, built exclusively for restaurants.'"
       />
-      <!-- abdo's component here -->
+      <IoLandingInfoGraphic2 :data="graphData"/>
     </div>
 
 
     <div
-      class="pt-[100px] pb-[80px] bg-background-color dark:bg-dark-background-color"
+      class=" pb-[80px] bg-background-color dark:bg-dark-background-color"
     >
       <IoHeadersTripleLines
         :first_line="'Discover More'"
