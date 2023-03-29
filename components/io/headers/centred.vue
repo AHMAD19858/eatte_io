@@ -131,4 +131,11 @@ const props = defineProps({
 .screen_container {
   @apply bg-background-color min-h-full;
 }
+
+
+@media (max-width: 576px) {
+  .slogan{
+    @apply pt-12
+  }
+}
 </style>

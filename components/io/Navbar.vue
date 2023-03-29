@@ -345,23 +345,18 @@
           type="button"
           class="text-gray-800 hover:text-gray-400 focus:outline-none focus:text-gray-400 md:hidden"
         >
-          <svg viewBox="0 0 24 24" class="w-6 h-6 fill-current">
+     <!--      <svg viewBox="0 0 24 24" class="w-6 h-6 fill-current">
             <path
               fill-rule="evenodd"
               d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"
             ></path>
-          </svg>
+          </svg> -->
+          <i class='bx bx-menu-alt-right text-2xl dark:text-white'
+        ></i>
         </button>
       </div>
     </nav>
 
-    <!--    <div class="btn_div" :class="showMenu ? 'block' : 'hidden'">
-      <NuxtLink to="/login">
-        <p class="login_btn">Login</p>
-      </NuxtLink>
-
-      <button class="get_started_mobile">Get Started</button>
-    </div> -->
   </div>
 </template>
 
