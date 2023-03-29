@@ -14,19 +14,17 @@
       :demo_btn="'Get a demo'"
       :landing="true"
     />
-   
+
     <IoLandingFeatures />
     <IoLandingServices />
     <IoLandingBannerCard />
     <IoLandingSystemFeatures />
-    <a name="types" >
-
+    <div id="types">
       <IoLandingSolutions />
-    </a>
-    <a name="price">
-
+    </div>
+    <div id="price">
       <IoLandingPlans />
-    </a>
+    </div>
     <IoLandingMobile />
     <IoLandingFaq />
     <IoLandingContactForm />
