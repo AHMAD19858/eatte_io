@@ -1,7 +1,7 @@
 
 <script setup>
 const pos_hover = ref(false);
-const admin_hover = ref(false);
+const admin_hover = ref(true);
 </script>
 
 
@@ -10,8 +10,8 @@ const admin_hover = ref(false);
   <div class="container">
     <div class="plan_section">
       <div class="plan_side"  @mouseover="admin_hover = true"
-      @mouseleave="admin_hover = false">
-        <div class="plan">
+      @mouseleave="admin_hover = false ">
+        <div  class="plan">
           <div class="plan_info">
             <h4 class="font-montse font-semibold text-[35px] dark:text-white">
               Admin Mobile App
@@ -205,7 +205,9 @@ const admin_hover = ref(false);
 .plan_section .plan_side ul li p {
   @apply text-base font-semibold mb-0;
 }
-
+.active{
+  @apply border-primary-color py-[25px] border-[3px] px-[15px]  border-solid bg-white gap-[20px] rounded-[15px] flex w-[430px]  items-center justify-start relative dark:bg-[#272727] cursor-pointer;
+}
 .plan_section .plan_side .plan {
   @apply hover:border-primary-color hover:border-solid py-[25px] border-[3px] px-[15px] border-white border-solid bg-white gap-[20px] rounded-[15px] flex w-[430px]  items-center justify-start relative dark:bg-[#272727] cursor-pointer;
 }
