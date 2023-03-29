@@ -83,7 +83,7 @@ const items = [
       <section class="text-black">
         <div class="flex justify-center p-4 mx-auto md:p-8 flex-wrap">
           <div
-            class="item_section flex-col w-full xl:w-1/4 lg:w-1/3 md:w-1/2 text-center "
+            class="item_section flex-col w-full xl:w-1/4 lg:w-1/3 md:w-1/2 text-center"
             v-for="(item, index) in items"
             :key="index"
           >
@@ -98,7 +98,7 @@ const items = [
               v-show="$colorMode.value === 'light'"
               alt="svg"
             />
-            <h3 class="font-montse font-bold  dark:text-white">
+            <h3 class="font-montse font-bold dark:text-white">
               {{ item.title }}
             </h3>
             <p
@@ -111,15 +111,11 @@ const items = [
       </section>
     </div>
 
-    <img
-      class="line-bottom"
-      src="~/assets/images/lineEnd.svg"
-      alt="svg"
-    />
+    <img class="line-bottom" src="~/assets/images/lineEnd.svg" alt="svg" />
   </div>
 </template>
 
-<style  scoped lang="scss">
+<style scoped lang="scss">
 .item_section {
   border-block-end: 1px solid #93a3b029;
   border-inline-end: 1px solid #93a3b029;
@@ -231,7 +227,6 @@ const items = [
   .container {
     max-width: 992px;
   }
-
 }
 
 @media (max-width: 992px) {
@@ -247,7 +242,6 @@ const items = [
   .container {
     @apply max-w-[576px];
   }
-
 }
 
 @media (max-width: 576px) {

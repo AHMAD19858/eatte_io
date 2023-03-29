@@ -106,7 +106,7 @@ const featuresData = [
       :another_device="true"
     />
 
-    <div class="bg-background-color pt-12 pb-12 dark:bg-dark-background-color">
+    <div class="bg-background-color py-16 dark:bg-dark-background-color">
       <IoHeadersTripleLines
         :first_line="'How Insights Helps You'"
         :main="'Better business decisions with advanced analytics'"
@@ -116,7 +116,7 @@ const featuresData = [
     </div>
 
     <div class="pos_helps">
-      <div class="pb-12 bg-background-color dark:bg-dark-background-color">
+      <div class="py-12 bg-background-color dark:bg-dark-background-color">
         <IoServices :items="serviceData" :numbers="3" />
         <div class="bg-white col">
           <!-- <IoButton :secondary="true" :title="'See Pricing'" /> -->
@@ -124,7 +124,7 @@ const featuresData = [
       </div>
     </div>
     <div class="bg-white dark:bg-dark-background-color">
-      <div class="py-10 bg-white dark:bg-dark-background-color">
+      <div class="py-16 bg-white dark:bg-dark-background-color">
         <IoHeadersTripleLines
           :first_line="'Better business decisions'"
           :main="'Keep Your Finger on the Pulse of Your Business with Intuitive Reporting'"
@@ -137,7 +137,7 @@ const featuresData = [
       </div>
     </div>
 
-    <div class="py-10 bg-background-color dark:bg-dark-background-color">
+    <div class="py-12 bg-background-color dark:bg-dark-background-color">
       <IoHeadersTripleLines
         :first_line="'Discover More'"
         :main="'All You Require, Conveniently Located in One Place.'"
@@ -148,14 +148,16 @@ const featuresData = [
     <IoCard />
     <!-- <IoButton :secondary="true" :title="'View All Services'" /> -->
 
-    <div class="py-10 bg-background-color dark:bg-dark-background-color">
+    <div class="pt-5 bg-background-color dark:bg-dark-background-color">
       <IoHeadersTripleLines
         :first_line="'Overall, EATTE Marketing is the perfect tool for restaurant owners who want to automate their marketing efforts and improve customer retention. With our platform, you can save time and money while also building stronger relationships with your customers. ,'"
         :main="'So why wait? Sign up for EATTE today and take your restaurant to the next level'"
       />
     </div>
 
-    <IoButtonsDouble :start_btn="'Get Started'" :demo_btn="'Get a demo'" />
+    <div class="pb-12 pt-[40px]">
+      <IoButtonsDouble :start_btn="'Get Started'" :demo_btn="'Get a demo'" />
+    </div>
   </div>
 </template>
 
@@ -181,7 +183,7 @@ const featuresData = [
   max-width: 1200px;
 }
 .screen_container {
-  @apply bg-background-color min-h-full dark:text-white dark:bg-dark-background-color pt-[170px];
+  @apply bg-background-color min-h-full dark:text-white dark:bg-dark-background-color pt-[270px];
 }
 
 .cards_container {

@@ -88,18 +88,18 @@ const featuresData = [
       </div>
     </div>
     <div class="bg-white dark:bg-dark-background-color">
-      <div class="py-10 bg-white dark:bg-dark-background-color">
+      <div class="py-12 bg-white dark:bg-dark-background-color">
         <IoHeadersTripleLines
-          :first_line="'Save Money & Time'"
-          :main="'Our Kitchen Display System can help you save time and money by improving communication and increasing efficiency.'"
-          :first_sub_main="'With this system, you can enhance order accuracy, streamline the meal preparation'"
-          :second_sub_main="'process, and ensure courses are timed perfectly.'"
+          :first_line="'Inventory management Features'"
+          :main="'automatically keep track of all your restaurant inventory in real time, thanks to our integration with EATTE POS system'"
         />
       </div>
       <IoFeatures :items="featuresData" />
     </div>
-    
-    <div class="bg-background-color dark:bg-dark-background-color">
+
+    <div
+      class="pt-16 pb-[80px] bg-background-color dark:bg-dark-background-color"
+    >
       <IoHeadersTripleLines
         :first_line="'Discover More'"
         :main="'All You Require, Conveniently Located in One Place.'"
@@ -110,8 +110,6 @@ const featuresData = [
 
     <IoCard />
 
-    <!-- <IoButton :secondary="true" :title="'View All Services'" /> -->
-
     <div class="triple_section">
       <IoHeadersTripleLines
         :first_line="'Overall, EATTE Inventory is the perfect tool for restaurant owners who want to automate their inventory management process and avoid the hassle of manual stock tracking. With our platform, you can save time and money while also improving the customer experience by ensuring that all menu items are always available'"
@@ -119,7 +117,9 @@ const featuresData = [
       />
     </div>
 
-    <IoButtonsDouble :start_btn="'Get Started'" :demo_btn="'Get a demo'" />
+    <div class="pb-12 pt-[50px]">
+      <IoButtonsDouble :start_btn="'Get Started'" :demo_btn="'Get a demo'" />
+    </div>
   </div>
 </template>
 
@@ -132,10 +132,10 @@ const featuresData = [
   @apply dark:bg-dark-background-color;
 }
 .triple_section {
-  @apply mx-[200px] py-5;
+  @apply mx-[60px] pt-5;
 }
 .screen_container {
-  @apply bg-background-color min-h-full dark:text-white dark:bg-dark-background-color pt-[15px];
+  @apply bg-background-color min-h-full dark:text-white dark:bg-dark-background-color pt-[200px];
 }
 
 @media (max-width: 576px) {

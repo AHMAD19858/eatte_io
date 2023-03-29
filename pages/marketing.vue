@@ -33,7 +33,7 @@ const featuresData = [
       :another_device="true"
     />
     <div class="bg-white dark:bg-dark-background-color">
-      <div class="py-10 bg-white dark:bg-dark-background-color">
+      <div class="py-12 bg-white dark:bg-dark-background-color">
         <IoHeadersTripleLines
           :first_line="'boost your revenue and improve customer loyalty.'"
           :main="`With EATTE Marketing, you can automate your customer retention efforts by offering automated discounts to customers who don't frequent your restaurant often. By doing so, you can incentivize these customers to return, boosting your revenue and improving customer loyalty.`"
@@ -41,8 +41,8 @@ const featuresData = [
       </div>
       <IoFeatures :items="featuresData" />
     </div>
-    
-    <div class="bg-background-color dark:bg-dark-background-color">
+
+    <div class="bg-background-color dark:bg-dark-background-color py-12">
       <IoHeadersTripleLines
         :first_line="'Discover More'"
         :main="'All You Require, Conveniently Located in One Place.'"
@@ -62,7 +62,9 @@ const featuresData = [
       />
     </div>
 
-    <IoButtonsDouble :start_btn="'Get Started'" :demo_btn="'Get a demo'" />
+    <div class="pb-12 pt-[2px]">
+      <IoButtonsDouble :start_btn="'Get Started'" :demo_btn="'Get a demo'" />
+    </div>
   </div>
 </template>
 
@@ -74,10 +76,10 @@ const featuresData = [
   @apply dark:bg-dark-background-color;
 }
 .triple_section {
-  @apply mx-[200px] py-5;
+  @apply mx-[60px] pt-5;
 }
 .screen_container {
-  @apply bg-background-color min-h-full dark:text-white dark:bg-dark-background-color;
+  @apply pt-[270px] bg-background-color min-h-full dark:text-white dark:bg-dark-background-color;
 }
 @media (max-width: 576px) {
   .small_container {

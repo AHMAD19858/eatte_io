@@ -22,7 +22,7 @@ const props = defineProps({
 
 <style scoped>
 .header_container {
-  @apply space-y-2 text-center mx-[100px] my-12 dark:bg-dark-background-color
+  @apply space-y-2 text-center  my-12 dark:bg-dark-background-color mx-[60px]
 }
 
 .main_text {
@@ -34,7 +34,7 @@ const props = defineProps({
 }
 
 .question {
-  @apply text-base  font-semibold text-primary-color;
+  @apply text-xl font-montse  font-bold text-primary-color pb-[8px];
 }
 
 @media (max-width: 576px) {

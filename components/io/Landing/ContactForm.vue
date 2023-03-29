@@ -304,8 +304,8 @@ async function onSubmit() {
   }
 
   .plan_section .plan_side .plan {
-    height: 410px;
-    margin-left: -20px;
+   /*  height: 410px; */
+    margin-left: -15px;
     margin-bottom: unset;
   }
   .plan_section .plan_btn {
@@ -346,8 +346,8 @@ async function onSubmit() {
     width: 300px;
   }
   .plan_section .plan_side .plan {
-    height: 410px;
-    margin-left: -20px;
+    /* height: 410px; */
+    margin-left: -15px;
     margin-bottom: unset;
   }
 
