@@ -20,21 +20,23 @@ const featuresData = [
       :start_btn="'Get Started'"
       :demo_btn="'Get a demo'"
       :row_img="PosImage"
+      :another_device="true"
     />
 
-    <div class="py-10 bg-background-color dark:bg-dark-background-color">
-      <IoHeadersTripleLines
-        :first_line="'POS Features'"
-        :main="'Everything You Need To Run Your Restaurant'"
-        :first_sub_main="'EATTE POS is a fully integrated system that connects all online delivery orders, online pickup orders, table reservations, dine-in, QR orders, and drive-thru orders to '"
-        :second_sub_main="'stay one step ahead of a rapidly evolving hospitality market.'"
-      />
+    <div class="bg-white dark:bg-dark-background-color">
+      <div class="py-10 bg-white dark:bg-dark-background-color">
+        <IoHeadersTripleLines
+          :first_line="'POS Features'"
+          :main="'Everything You Need To Run Your Restaurant'"
+          :first_sub_main="'EATTE POS is a fully integrated system that connects all online delivery orders, online pickup orders, table reservations, dine-in, QR orders, and drive-thru orders to '"
+          :second_sub_main="'stay one step ahead of a rapidly evolving hospitality market.'"
+        />
+      </div>
+      <div class="container">
+        <IoFeatures :items="featuresData" />
+      </div>
     </div>
-    <div class="container">
-      <IoFeatures :items="featuresData" />
-    </div>
-
-    <div class="py-10 bg-background-color dark:bg-dark-background-color">
+    <div class="py-12 bg-background-color dark:bg-dark-background-color">
       <IoHeadersTripleLines
         :first_line="'Discover More'"
         :main="'All You Require, Conveniently Located in One Place.'"
@@ -45,14 +47,16 @@ const featuresData = [
     <IoCard />
     <!-- <IoButton :secondary="true" :title="'View All Services'" /> -->
 
-    <div class="py-10 bg-background-color dark:bg-dark-background-color">
+    <div class="py-12 bg-background-color dark:bg-dark-background-color">
       <IoHeadersTripleLines
         :first_line="'Overall, EATTE Payments is the perfect tool for restaurant owners who want to take their operations to the next level. With our platform, you can streamline your operations, increase efficiency, and boost profitability.'"
         :main="'So why wait? Sign up for EATTE today and transform the way you run your restaurant!'"
       />
     </div>
 
-    <IoButtonsDouble :start_btn="'Get Started'" :demo_btn="'Get a demo'" />
+    <div class="pb-12 pt-[2px]">
+      <IoButtonsDouble :start_btn="'Get Started'" :demo_btn="'Get a demo'" />
+    </div>
   </div>
 </template>
 
@@ -78,7 +82,7 @@ const featuresData = [
   max-width: 1200px;
 }
 .screen_container {
-  @apply bg-background-color min-h-full dark:text-white dark:bg-dark-background-color pt-[170px];
+  @apply bg-background-color min-h-full dark:text-white dark:bg-dark-background-color pt-[270px];
 }
 
 .cards_container {

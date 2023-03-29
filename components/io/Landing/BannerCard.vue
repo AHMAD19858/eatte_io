@@ -28,7 +28,7 @@
   @apply container mx-auto pt-[40px] pl-[23px]
 }
 .banner_container {
-  @apply container max-w-5xl mx-auto mb-20 py-3 bg-primary-color text-white rounded-lg;
+  @apply container max-w-5xl mx-auto mb-[140px] mt-[160px] py-3 bg-primary-color text-white rounded-lg;
 }
 
 .row_container {
@@ -36,7 +36,7 @@
 }
 
 .get_started {
-  @apply font-montse flex w-72 self-end items-center justify-evenly rounded-lg px-8 py-3 m-2 text-lg font-semibold text-primary-color bg-gradient-to-r bg-white;
+  @apply font-montse flex w-72 self-end items-center justify-evenly rounded-lg px-8 py-3 m-10 text-lg font-semibold text-primary-color bg-gradient-to-r bg-white z-10;
 }
 
 .slogan {

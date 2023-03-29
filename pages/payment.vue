@@ -1,20 +1,20 @@
 <script setup>
 import payment from "../assets/images/heroImages/payment.svg";
-import service1 from "../assets/images/icons/hand.svg";
-import service3 from "../assets/images/icons/code.svg";
-import service2 from "../assets/images/icons/charts.svg";
+import service1 from "../assets/images/icons/services/delivery_one.svg";
+import service3 from "../assets/images/icons/services/delivery_two.svg";
+import service2 from "../assets/images/icons/services/delivery_three.svg";
 import one from "../assets/images/features/payment/one.svg";
 import two from "../assets/images/features/payment/two.svg";
 import three from "../assets/images/features/payment/three.svg";
 
 const serviceData = [
   {
-    img: service2,
+    img: service1,
     label: "Accept All Payment Methods",
     desc: "Payments with Visa, MasterCard, and Digital Wallets are all supported.",
   },
   {
-    img: service1,
+    img: service2,
     label: "Eliminate Manual Entry",
     desc: "Eliminate manual entry mistakes at the checkout for faster transactions.",
   },
@@ -145,12 +145,11 @@ const graphData = [
       <div class="pb-12 bg-background-color dark:bg-dark-background-color">
         <IoServices :items="serviceData" :numbers="3" />
         <div class="bg-white col">
-          <!-- <IoButton :secondary="true" :title="'See Pricing'" /> -->
         </div>
       </div>
     </div>
 
-    <div class="py-10 bg-background-color dark:bg-dark-background-color">
+    <div class="py-12 bg-background-color dark:bg-dark-background-color">
       <IoHeadersTripleLines
         :first_line="'Payment Features'"
         :main="'A better experience, for you and your customers'"
@@ -160,10 +159,21 @@ const graphData = [
     <div class="container">
       <IoFeatures :items="featuresData" />
     </div>
+    <div
+      class="pt-[100px] pb-[80px] bg-background-color dark:bg-dark-background-color"
+    >
+      <IoHeadersTripleLines
+        :first_line="'Increase Profitability'"
+        :main="'Process payments on a platform built for restaurants'"
+        :first_sub_main="'Accept payments easily online or via POYNT Hardware, built exclusively for restaurants.'"
+      />
+      <!-- abdo's component here -->
+    </div>
 
-    <IoLandingInfoGraphic2 :data="graphData" />
 
-    <div class="py-10 bg-background-color dark:bg-dark-background-color">
+    <div
+      class="pt-[100px] pb-[80px] bg-background-color dark:bg-dark-background-color"
+    >
       <IoHeadersTripleLines
         :first_line="'Discover More'"
         :main="'All You Require, Conveniently Located in One Place.'"
@@ -172,16 +182,17 @@ const graphData = [
       />
     </div>
     <IoCard />
-    <!-- <IoButton :secondary="true" :title="'View All Services'" /> -->
 
-    <div class="py-10 bg-background-color dark:bg-dark-background-color">
+    <div class="py-12 bg-background-color dark:bg-dark-background-color">
       <IoHeadersTripleLines
         :first_line="'Overall, EATTE Marketing is the perfect tool for restaurant owners who want to automate their marketing efforts and improve customer retention. With our platform, you can save time and money while also building stronger relationships with your customers. ,'"
         :main="'So why wait? Sign up for EATTE today and take your restaurant to the next level'"
       />
     </div>
 
-    <IoButtonsDouble :start_btn="'Get Started'" :demo_btn="'Get a demo'" />
+    <div class="pb-12 pt-[2px]">
+      <IoButtonsDouble :start_btn="'Get Started'" :demo_btn="'Get a demo'" />
+    </div>
   </div>
 </template>
 
@@ -189,9 +200,7 @@ const graphData = [
 .container {
   width: 100%;
   max-width: 1200px;
-  /* padding: 0 70px; */
   margin: 0 auto;
-  /* padding-top: 150px; */
 }
 .pos_helps {
   width: 100%;
@@ -208,7 +217,7 @@ const graphData = [
   max-width: 1200px;
 }
 .screen_container {
-  @apply bg-background-color min-h-full dark:text-white dark:bg-dark-background-color pt-[170px];
+  @apply bg-background-color min-h-full dark:text-white dark:bg-dark-background-color pt-[270px];
 }
 
 .cards_container {

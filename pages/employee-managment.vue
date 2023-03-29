@@ -21,20 +21,22 @@ const featuresData = [
       :start_btn="'Get Started'"
       :demo_btn="'Get a demo'"
       :row_img="PosImage"
+      :another_device="true"
     />
+    <div class="bg-white dark:bg-dark-background-color">
+      <div class="bg-white pt-12 pb-12 dark:bg-dark-background-color">
+        <IoHeadersTripleLines
+          :first_line="'Our system is easy to use and provides you with a secure platform to store and access data'"
+          :main="`You can create employee profiles and assign them to teams, roles, and tasks. You can also utilize our time-tracking feature to accurately monitor productivity and attendance. `"
+        />
+      </div>
 
-    <div class="bg-background-color pt-12 pb-12 dark:bg-dark-background-color">
-      <IoHeadersTripleLines
-        :first_line="'Our system is easy to use and provides you with a secure platform to store and access data'"
-        :main="`You can create employee profiles and assign them to teams, roles, and tasks. You can also utilize our time-tracking feature to accurately monitor productivity and attendance. `"
-      />
+      <div class="container">
+        <IoFeatures :items="featuresData" />
+      </div>
     </div>
 
-    <div class="container">
-      <IoFeatures :items="featuresData" />
-    </div>
-
-    <div class="py-10 bg-background-color dark:bg-dark-background-color">
+    <div class="py-12 bg-background-color dark:bg-dark-background-color">
       <IoHeadersTripleLines
         :first_line="'Discover More'"
         :main="'All You Require, Conveniently Located in One Place.'"
@@ -45,14 +47,16 @@ const featuresData = [
     <IoCard />
     <!-- <IoButton :secondary="true" :title="'View All Services'" /> -->
 
-    <div class="py-10 bg-background-color dark:bg-dark-background-color">
+    <div class="py-12 bg-background-color dark:bg-dark-background-color">
       <IoHeadersTripleLines
         :first_line="'Overall, EATTE Payments is the perfect tool for restaurant owners who want to take their operations to the next level. With our platform, you can streamline your operations, increase efficiency, and boost profitability.'"
         :main="'So why wait? Sign up for EATTE today and transform the way you run your restaurant!'"
       />
     </div>
 
-    <IoButtonsDouble :start_btn="'Get Started'" :demo_btn="'Get a demo'" />
+    <div class="pb-12 pt-[2px]">
+      <IoButtonsDouble :start_btn="'Get Started'" :demo_btn="'Get a demo'" />
+    </div>
   </div>
 </template>
 
@@ -77,7 +81,7 @@ const featuresData = [
   max-width: 1200px;
 }
 .screen_container {
-  @apply bg-background-color min-h-full dark:text-white dark:bg-dark-background-color pt-[100px];
+  @apply bg-background-color min-h-full dark:text-white dark:bg-dark-background-color pt-[270px];
 }
 
 .cards_container {

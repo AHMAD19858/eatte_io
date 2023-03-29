@@ -135,7 +135,7 @@ const select_pay = ref(true);
 }
 
 .plan_section {
-  @apply flex justify-between items-start flex-wrap mb-[100px];
+  @apply flex justify-between items-start flex-wrap mb-[125px];
 }
 
 /* .plan_section .plan_side {

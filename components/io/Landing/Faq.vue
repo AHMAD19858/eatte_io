@@ -100,7 +100,7 @@
       </div>
     </div>
 
-    <div class="card dark:bg-dark-background-color">
+    <div class="card dark:bg-dark-background-color mt-11">
       <div class="flex flex-col items-center justify-center py-10">
         <div class="flex -space-x-4">
           <img

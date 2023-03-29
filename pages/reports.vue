@@ -1,24 +1,25 @@
 <script setup>
 import reports from "../assets/images/heroImages/reports.svg";
-import service1 from "../assets/images/icons/hand.svg";
-import service3 from "../assets/images/icons/code.svg";
-import service2 from "../assets/images/icons/charts.svg";
+import service1 from "../assets/images/icons/services/delivery_one.svg";
+import service3 from "../assets/images/icons/services/delivery_two.svg";
+import service2 from "../assets/images/icons/services/delivery_three.svg";
 import one from "../assets/images/features/reports/one.svg";
+import two from "../assets/images/features/reports/two.svg";
 import three from "../assets/images/features/reports/three.svg";
 
 const serviceData = [
   {
-    img: service2,
+    img: service1,
     label: "Increase Sales with Data",
     desc: "Payments with Visa, MasterCard, and Digital Wallets are all supported.",
   },
   {
-    img: service1,
+    img: service3,
     label: "Upgrade the Guest Experience",
     desc: "Eliminate manual entry mistakes at the checkout for faster transactions.",
   },
   {
-    img: service3,
+    img: service2,
     label: "Upgrade the Guest Experience",
     desc: `Monitor all your transactions remotely from any device, anywhere and at any time.`,
   },
@@ -27,7 +28,7 @@ const serviceData = [
 const featuresData = [
   {
     position: "right",
-    img: three,
+    img: one,
     title: "Real-Time Reports on Your Restaurant's POS Performance Metrics",
     sub_title: `Our reporting platform was designed with ease of use in mind so that you can spend more time analyzing trends and less time figuring out how to pull up reports.`,
     details: [
@@ -51,7 +52,7 @@ const featuresData = [
 
   {
     position: "left",
-    img: one,
+    img: two,
     title: "Understand Exactly What Customers Prefer",
     sub_title: `Analyze sales trends to optimize your menu and service - like offering the right promotions at the right time - to provide the best guest experience possible and turn casual diners into loyal regulars.`,
     details: [
@@ -70,7 +71,7 @@ const featuresData = [
 
   {
     position: "right",
-    img: one,
+    img: three,
     title: "Report on Your Restaurant from Anywhere",
     sub_title: `You think about your business even when you're not on premise. Fortunately, our cloud-based POS reports can be accessed from anywhere, at any time.`,
     details: [
@@ -105,7 +106,7 @@ const featuresData = [
       :another_device="true"
     />
 
-    <div class="bg-background-color pt-12 pb-12 dark:bg-dark-background-color">
+    <div class="bg-background-color py-16 dark:bg-dark-background-color">
       <IoHeadersTripleLines
         :first_line="'How Insights Helps You'"
         :main="'Better business decisions with advanced analytics'"
@@ -115,27 +116,28 @@ const featuresData = [
     </div>
 
     <div class="pos_helps">
-      <div class="pb-12 bg-background-color dark:bg-dark-background-color">
+      <div class="py-12 bg-background-color dark:bg-dark-background-color">
         <IoServices :items="serviceData" :numbers="3" />
         <div class="bg-white col">
           <!-- <IoButton :secondary="true" :title="'See Pricing'" /> -->
         </div>
       </div>
     </div>
-
-    <div class="py-10 bg-background-color dark:bg-dark-background-color">
-      <IoHeadersTripleLines
-        :first_line="'Better business decisions'"
-        :main="'Keep Your Finger on the Pulse of Your Business with Intuitive Reporting'"
-        :first_sub_main="'Your business decisions should be based on data, not a gut feeling. Equipped with more than 50 reports that update in real time,'"
-        :second_sub_main="`EATTE POS gives you unprecedented access to the insights you need to reach the right decisions faster.`"
-      />
+    <div class="bg-white dark:bg-dark-background-color">
+      <div class="py-16 bg-white dark:bg-dark-background-color">
+        <IoHeadersTripleLines
+          :first_line="'Better business decisions'"
+          :main="'Keep Your Finger on the Pulse of Your Business with Intuitive Reporting'"
+          :first_sub_main="'Your business decisions should be based on data, not a gut feeling. Equipped with more than 50 reports that update in real time,'"
+          :second_sub_main="`EATTE POS gives you unprecedented access to the insights you need to reach the right decisions faster.`"
+        />
+      </div>
+      <div class="container">
+        <IoFeatures :items="featuresData" />
+      </div>
     </div>
-    <div class="container">
-      <IoFeatures :items="featuresData" />
-    </div>
 
-    <div class="py-10 bg-background-color dark:bg-dark-background-color">
+    <div class="py-12 bg-background-color dark:bg-dark-background-color">
       <IoHeadersTripleLines
         :first_line="'Discover More'"
         :main="'All You Require, Conveniently Located in One Place.'"
@@ -146,14 +148,16 @@ const featuresData = [
     <IoCard />
     <!-- <IoButton :secondary="true" :title="'View All Services'" /> -->
 
-    <div class="py-10 bg-background-color dark:bg-dark-background-color">
+    <div class="pt-5 bg-background-color dark:bg-dark-background-color">
       <IoHeadersTripleLines
         :first_line="'Overall, EATTE Marketing is the perfect tool for restaurant owners who want to automate their marketing efforts and improve customer retention. With our platform, you can save time and money while also building stronger relationships with your customers. ,'"
         :main="'So why wait? Sign up for EATTE today and take your restaurant to the next level'"
       />
     </div>
 
-    <IoButtonsDouble :start_btn="'Get Started'" :demo_btn="'Get a demo'" />
+    <div class="pb-12 pt-[40px]">
+      <IoButtonsDouble :start_btn="'Get Started'" :demo_btn="'Get a demo'" />
+    </div>
   </div>
 </template>
 
@@ -179,7 +183,7 @@ const featuresData = [
   max-width: 1200px;
 }
 .screen_container {
-  @apply bg-background-color min-h-full dark:text-white dark:bg-dark-background-color pt-[170px];
+  @apply bg-background-color min-h-full dark:text-white dark:bg-dark-background-color pt-[270px];
 }
 
 .cards_container {

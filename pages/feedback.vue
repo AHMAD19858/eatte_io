@@ -20,7 +20,7 @@ const featuresData = [
     sub_title: `AOur state-of-the-art customer feedback solutions enable you to track, analyze, and act on customer experiences in real-time. Make the feedback process more efficient and reliable with our automated surveys, real-time alerts, and advanced analytics. Deliver an exceptional customer experience every time and boost your restaurant's reputation with EATTE!`,
   },
   {
-    position: "left",
+    position: "right",
     img: three,
     title: "Get an accurate picture of your guests' experience with EATTE! ",
     sub_title: `Our easy-to-use guest feedback solution provides the insights you need to deliver unforgettable experiences and make customers come back for more. With EATTE, you can quickly measure customer satisfaction, identify areas of improvement and make sure that each guest leaves happy. No more guessing - get real-time visibility into your guests’ experience!""`,
@@ -36,22 +36,24 @@ const featuresData = [
       :start_btn="'Get Started'"
       :demo_btn="'Get a demo'"
       :row_img="PosImage"
+      :another_device="true"
     />
+    <div class="bg-white dark:bg-dark-background-color">
+      <div class="bg-white pt-12 pb-12 dark:bg-dark-background-color">
+        <IoHeadersTripleLines
+          :first_line="'Our smart guest feedback system allows you to quickly gather valuable feedback from your guests, helping you improve the dining experience for everyone. '"
+          :main="'With EATTE'"
+          :first_sub_main="`you can make sure that everyone leaves your restaurant feeling satisfied! Get started today`"
+          :second_sub_main="' advantage of our powerful features to start gathering feedback and get the most out of every guest experience..'"
+        />
+      </div>
 
-    <div class="bg-background-color pt-12 pb-12 dark:bg-dark-background-color">
-      <IoHeadersTripleLines
-        :first_line="'Our smart guest feedback system allows you to quickly gather valuable feedback from your guests, helping you improve the dining experience for everyone. '"
-        :main="'With EATTE'"
-        :first_sub_main="`you can make sure that everyone leaves your restaurant feeling satisfied! Get started today`"
-        :second_sub_main="' advantage of our powerful features to start gathering feedback and get the most out of every guest experience..'"
-      />
+      <div class="container">
+        <IoFeatures :items="featuresData" />
+      </div>
     </div>
 
-    <div class="container">
-      <IoFeatures :items="featuresData" />
-    </div>
-
-    <div class="py-10 bg-background-color dark:bg-dark-background-color">
+    <div class="py-12 bg-background-color dark:bg-dark-background-color">
       <IoHeadersTripleLines
         :first_line="'Discover More'"
         :main="'All You Require, Conveniently Located in One Place.'"
@@ -71,14 +73,16 @@ const featuresData = [
       />
     </div>
 
-    <div class="py-10 bg-background-color dark:bg-dark-background-color">
+    <div class="py-12 bg-background-color dark:bg-dark-background-color">
       <IoHeadersTripleLines
         :first_line="'Overall, EATTE Payments is the perfect tool for restaurant owners who want to take their operations to the next level. With our platform, you can streamline your operations, increase efficiency, and boost profitability.'"
         :main="'So why wait? Sign up for EATTE today and transform the way you run your restaurant!'"
       />
     </div>
 
-    <IoButtonsDouble :start_btn="'Get Started'" :demo_btn="'Get a demo'" />
+    <div class="pb-12 pt-[2px]">
+      <IoButtonsDouble :start_btn="'Get Started'" :demo_btn="'Get a demo'" />
+    </div>
   </div>
 </template>
 
@@ -91,7 +95,7 @@ const featuresData = [
 }
 
 .screen_container {
-  @apply bg-background-color min-h-full dark:text-white dark:bg-dark-background-color pt-[170px];
+  @apply bg-background-color min-h-full dark:text-white dark:bg-dark-background-color pt-[270px];
 }
 
 @media (max-width: 768px) {

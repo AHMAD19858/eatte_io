@@ -35,22 +35,24 @@ const featuresData = [
       :start_btn="'Get Started'"
       :demo_btn="'Get a demo'"
       :row_img="PosImage"
+      :another_device="true"
     />
+    <div class="bg-white dark:bg-dark-background-color">
+      <div class="bg-white pt-12 pb-12 dark:bg-dark-background-color">
+        <IoHeadersTripleLines
+          :first_line="'Floor management is a crucial aspect of maintaining a successful business'"
+          :main="'ensure a positive experience for customers and efficient operations for employees'"
+          :first_sub_main="`Floor management is a crucial aspect of maintaining a successful business. It involves the organization and `"
+          :second_sub_main="'maintenance of the floor space to ensure a positive experience for customers and efficient operations for employees. In this essay, we will explore the importance of floor management and discuss strategies for effective management.'"
+        />
+      </div>
 
-    <div class="bg-background-color pt-12 pb-12 dark:bg-dark-background-color">
-      <IoHeadersTripleLines
-        :first_line="'Floor management is a crucial aspect of maintaining a successful business'"
-        :main="'ensure a positive experience for customers and efficient operations for employees'"
-        :first_sub_main="`Floor management is a crucial aspect of maintaining a successful business. It involves the organization and `"
-        :second_sub_main="'maintenance of the floor space to ensure a positive experience for customers and efficient operations for employees. In this essay, we will explore the importance of floor management and discuss strategies for effective management.'"
-      />
+      <div class="container">
+        <IoFeatures :items="featuresData" />
+      </div>
     </div>
 
-    <div class="container">
-      <IoFeatures :items="featuresData" />
-    </div>
-
-    <div class="py-10 bg-background-color dark:bg-dark-background-color">
+    <div class="py-12 bg-background-color dark:bg-dark-background-color">
       <IoHeadersTripleLines
         :first_line="'Discover More'"
         :main="'All You Require, Conveniently Located in One Place.'"
@@ -61,14 +63,16 @@ const featuresData = [
     <IoCard />
     <!-- <IoButton :secondary="true" :title="'View All Services'" /> -->
 
-    <div class="py-10 bg-background-color dark:bg-dark-background-color">
+    <div class="py-12 bg-background-color dark:bg-dark-background-color">
       <IoHeadersTripleLines
         :first_line="'In conclusion, floor management is critical to the success of any business. The layout and organization of the floor space, the role of employees in maintaining a clean and tidy floor, and strategies for managing high traffic areas and preventing overcrowding are all essential components of effective floor management. By implementing these strategies, businesses can create a positive shopping experience for customers while also improving operational efficiency.'"
         :main="'So why wait? Sign up for EATTE today and transform the way you run your restaurant!'"
       />
     </div>
 
-    <IoButtonsDouble :start_btn="'Get Started'" :demo_btn="'Get a demo'" />
+    <div class="pb-12 pt-[2px]">
+      <IoButtonsDouble :start_btn="'Get Started'" :demo_btn="'Get a demo'" />
+    </div>
   </div>
 </template>
 
@@ -95,7 +99,7 @@ const featuresData = [
   max-width: 1200px;
 }
 .screen_container {
-  @apply bg-background-color min-h-full dark:text-white dark:bg-dark-background-color pt-[170px];
+  @apply pt-[270px] bg-background-color min-h-full dark:text-white dark:bg-dark-background-color;
 }
 
 .cards_container {

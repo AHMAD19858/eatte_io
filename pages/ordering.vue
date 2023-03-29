@@ -1,22 +1,21 @@
 <script setup>
 import ordering from "../assets/images/heroImages/ordering.svg";
-import service1 from "../assets/images/icons/hand.svg";
-import service3 from "../assets/images/icons/code.svg";
-import service2 from "../assets/images/icons/charts.svg";
+import service1 from "../assets/images/icons/services/delivery_one.svg";
+import service3 from "../assets/images/icons/services/delivery_two.svg";
+import service2 from "../assets/images/icons/services/delivery_three.svg";
 import one from "../assets/images/features/ordering/one.svg";
 import two from "../assets/images/features/ordering/two.svg";
 import three from "../assets/images/features/ordering/three.svg";
-import phoneCase from "../assets/images/phone-case.png";
-import figure from "../assets/images/mobile-figure.png";
+import phoneCase from "../assets/images/mobile_orders.svg";
 
 const serviceData = [
   {
-    img: service2,
+    img: service1,
     label: "Reduce Order Errors",
     desc: "Eliminate the need to enter orders twice and send food straight to the kitchen.",
   },
   {
-    img: service1,
+    img: service2,
     label: "Increase Takeout Revenue",
     desc: "Online Ordering can increase your AOV with suggested items for upselling at checkout.",
   },
@@ -143,20 +142,20 @@ const featuresData = [
         </div>
       </div>
     </div>
-
-    <div class="py-10 bg-background-color dark:bg-dark-background-color">
-      <IoHeadersTripleLines
-        :first_line="'Online-ordering Features'"
-        :main="'Increase Takeout & Delivery Revenue'"
-        :first_sub_main="'Stop paying third-party commission fees and keep 100% of your profits with a POS-'"
-        :second_sub_main="`integrated online ordering solution that lets you accept orders directly through your restaurant's website.`"
-      />
+    <div class="bg-white dark:bg-dark-background-color">
+      <div class="py-10 bg-white dark:bg-dark-background-color">
+        <IoHeadersTripleLines
+          :first_line="'Online-ordering Features'"
+          :main="'Increase Takeout & Delivery Revenue'"
+          :first_sub_main="'Stop paying third-party commission fees and keep 100% of your profits with a POS-'"
+          :second_sub_main="`integrated online ordering solution that lets you accept orders directly through your restaurant's website.`"
+        />
+      </div>
+      <div class="container">
+        <IoFeatures :items="featuresData" />
+      </div>
     </div>
-    <div class="container">
-      <IoFeatures :items="featuresData" />
-    </div>
-
-    <div class="py-10 bg-background-color dark:bg-dark-background-color">
+    <div class="py-12 bg-background-color dark:bg-dark-background-color">
       <IoHeadersTripleLines
         :first_line="'Increase Profitability'"
         :main="'Easy-to-Use Restaurant Online Ordering System'"
@@ -165,14 +164,10 @@ const featuresData = [
       />
     </div>
     <div class="container">
-      <IoLandingMobileShowCase
-        :data="graphData"
-        :img="phoneCase"
-        :figure="figure"
-      />
+      <IoLandingMobileShowCase :data="graphData" :img="phoneCase" />
     </div>
 
-    <div class="py-10 bg-background-color dark:bg-dark-background-color">
+    <div class="py-12 bg-background-color dark:bg-dark-background-color">
       <IoHeadersTripleLines
         :first_line="'Discover More'"
         :main="'All You Require, Conveniently Located in One Place.'"
@@ -184,14 +179,16 @@ const featuresData = [
     <IoCard />
     <!-- <IoButton :secondary="true" :title="'View All Services'" /> -->
 
-    <div class="py-10 bg-background-color dark:bg-dark-background-color">
+    <div class="py-12 bg-background-color dark:bg-dark-background-color">
       <IoHeadersTripleLines
         :first_line="'Overall, EATTE Marketing is the perfect tool for restaurant owners who want to automate their marketing efforts and improve customer retention. With our platform, you can save time and money while also building stronger relationships with your customers. ,'"
         :main="'So why wait? Sign up for EATTE today and take your restaurant to the next level'"
       />
     </div>
 
-    <IoButtonsDouble :start_btn="'Get Started'" :demo_btn="'Get a demo'" />
+    <div class="pb-12 pt-[50px]">
+      <IoButtonsDouble :start_btn="'Get Started'" :demo_btn="'Get a demo'" />
+    </div>
   </div>
 </template>
 
@@ -218,7 +215,7 @@ const featuresData = [
   max-width: 1200px;
 }
 .screen_container {
-  @apply bg-background-color min-h-full dark:text-white dark:bg-dark-background-color pt-[170px];
+  @apply bg-background-color min-h-full dark:text-white dark:bg-dark-background-color pt-[270px];
 }
 
 .cards_container {
