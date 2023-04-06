@@ -5,9 +5,9 @@ definePageMeta({
 </script>
 
 <template>
-    <div class="pt-10 pl-36">
+ <!--    <div class="pt-10 pl-36">
         <p>home page</p>
-    </div>
+    </div> -->
 </template>
 
 
