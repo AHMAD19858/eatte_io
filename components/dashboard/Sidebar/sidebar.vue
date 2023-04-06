@@ -13,7 +13,7 @@
         class="flex flex-col flex-auto flex-shrink-0 min-h-screen overflow-auto antialiased text-gray-800"
       >
         <div
-          class="fixed top-0 left-0 flex flex-col w-64 h-full bg-primary-color border-r dark:bg-slate-900"
+          class="fixed top-0 left-0 flex flex-col w-[265px] h-full bg-primary-color border-r dark:bg-slate-900"
         >
           <div class="flex items-center justify-right">
             <div class="flex align-middle items-center py-3">
@@ -36,32 +36,33 @@
               </li>
               <li>
                 <NuxtLink to="/dashboard/home" class="link">
-                  <span class="inline-flex items-center justify-center ml-4">
+                  <span class="inline-flex items-center justify-center ml-3">
                     <svg
-                      class="w-5 h-5"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 16 16"
                       fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
                       xmlns="http://www.w3.org/2000/svg"
                     >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
-                      ></path>
+                      <g clip-path="url(#clip0_159_1062)">
+                        <path
+                          d="M15.414 6.04738L10.3573 0.990042C9.7315 0.366035 8.88378 0.015625 8.00001 0.015625C7.11623 0.015625 6.26851 0.366035 5.64267 0.990042L0.586008 6.04738C0.399625 6.23257 0.251855 6.45291 0.151263 6.69563C0.0506715 6.93836 -0.000740267 7.19863 8.05299e-06 7.46138V14.006C8.05299e-06 14.5365 0.210722 15.0452 0.585795 15.4203C0.960867 15.7953 1.46958 16.006 2.00001 16.006H14C14.5304 16.006 15.0391 15.7953 15.4142 15.4203C15.7893 15.0452 16 14.5365 16 14.006V7.46138C16.0008 7.19863 15.9493 6.93836 15.8488 6.69563C15.7482 6.45291 15.6004 6.23257 15.414 6.04738ZM10 14.6727H6.00001V12.05C6.00001 11.5196 6.21072 11.0109 6.58579 10.6358C6.96087 10.2608 7.46958 10.05 8.00001 10.05C8.53044 10.05 9.03915 10.2608 9.41422 10.6358C9.7893 11.0109 10 11.5196 10 12.05V14.6727ZM14.6667 14.006C14.6667 14.1829 14.5964 14.3524 14.4714 14.4774C14.3464 14.6025 14.1768 14.6727 14 14.6727H11.3333V12.05C11.3333 11.166 10.9822 10.3181 10.357 9.69302C9.73191 9.0679 8.88406 8.71671 8.00001 8.71671C7.11595 8.71671 6.26811 9.0679 5.64299 9.69302C5.01786 10.3181 4.66667 11.166 4.66667 12.05V14.6727H2.00001C1.8232 14.6727 1.65363 14.6025 1.5286 14.4774C1.40358 14.3524 1.33334 14.1829 1.33334 14.006V7.46138C1.33396 7.2847 1.40413 7.11537 1.52867 6.99004L6.58534 1.93471C6.96114 1.56066 7.46979 1.35067 8.00001 1.35067C8.53023 1.35067 9.03888 1.56066 9.41467 1.93471L14.4713 6.99204C14.5954 7.11687 14.6655 7.28539 14.6667 7.46138V14.006Z"
+                          fill="white"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_159_1062">
+                          <rect width="16" height="16" fill="white" />
+                        </clipPath>
+                      </defs>
                     </svg>
                   </span>
-                  <span
-                    class="ml-2 tracking-wide truncate font-montse font-semibold text-base"
-                  >
-                    Home
-                  </span>
+                  <span class="item"> Home </span>
                 </NuxtLink>
               </li>
               <li>
                 <div class="link flex items-center">
-                  <span class="inline-flex items-center justify-center ml-4">
+                  <span class="inline-flex items-center justify-center ml-3">
                     <svg
                       width="20"
                       height="18"
@@ -75,12 +76,8 @@
                       />
                     </svg>
                   </span>
-                  <span
-                    class="ml-2 tracking-wide truncate font-semibold text-base"
-                  >
-                    Merchants/Restaurants
-                  </span>
-                  <span class="inline-flex items-center justify-center ml-auto">
+                  <span class="item"> Merchants/Restaurants </span>
+                  <span class="inline-flex items-center justify-center ml-auto mr-4">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
@@ -100,7 +97,7 @@
               </li>
               <li>
                 <div class="link flex items-center">
-                  <span class="inline-flex items-center justify-center ml-4">
+                  <span class="inline-flex items-center justify-center ml-3">
                     <svg
                       width="20"
                       height="20"
@@ -127,12 +124,8 @@
                       </g>
                     </svg>
                   </span>
-                  <span
-                    class="ml-2 tracking-wide truncate font-montse font-semibold text-base"
-                  >
-                    Orders
-                  </span>
-                  <span class="inline-flex items-center justify-center ml-auto">
+                  <span class="item"> Orders </span>
+                  <span class="inline-flex items-center justify-center ml-auto mr-4">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
@@ -153,7 +146,7 @@
 
               <li>
                 <div class="link flex items-center">
-                  <span class="inline-flex items-center justify-center ml-4">
+                  <span class="inline-flex items-center justify-center ml-3 ">
                     <svg
                       width="20"
                       height="20"
@@ -180,12 +173,8 @@
                       </g>
                     </svg>
                   </span>
-                  <span
-                    class="ml-2 tracking-wide truncate font-montse font-semibold text-base"
-                  >
-                    Wizard control
-                  </span>
-                  <span class="inline-flex items-center justify-center ml-auto">
+                  <span class="item"> Wizard control </span>
+                  <span class="inline-flex items-center justify-center ml-auto mr-4">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
@@ -206,7 +195,7 @@
 
               <li>
                 <div class="link flex items-center">
-                  <span class="inline-flex items-center justify-center ml-4">
+                  <span class="inline-flex items-center justify-center ml-3">
                     <svg
                       width="20"
                       height="20"
@@ -231,12 +220,8 @@
                       </defs>
                     </svg>
                   </span>
-                  <span
-                    class="ml-2 tracking-wide truncate font-montse font-semibold text-base"
-                  >
-                    Reports
-                  </span>
-                  <span class="inline-flex items-center justify-center ml-auto">
+                  <span class="item"> Reports </span>
+                  <span class="inline-flex items-center justify-center ml-auto mr-4">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
@@ -268,7 +253,7 @@
 
               <li>
                 <div class="link flex items-center">
-                  <span class="inline-flex items-center justify-center ml-4">
+                  <span class="inline-flex items-center justify-center ml-3">
                     <svg
                       width="16"
                       height="16"
@@ -293,12 +278,8 @@
                       </defs>
                     </svg>
                   </span>
-                  <span
-                    class="ml-2 tracking-wide truncate font-montse font-semibold text-base"
-                  >
-                    Settings
-                  </span>
-                  <span class="inline-flex items-center justify-center ml-auto">
+                  <span class="item"> Settings </span>
+                  <span class="inline-flex items-center justify-center ml-auto mr-4">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
@@ -319,7 +300,7 @@
 
               <li>
                 <div class="link flex items-center">
-                  <span class="inline-flex items-center justify-center ml-4">
+                  <span class="inline-flex items-center justify-center ml-3">
                     <svg
                       width="16"
                       height="16"
@@ -348,17 +329,13 @@
                       </defs>
                     </svg>
                   </span>
-                  <span
-                    class="ml-2 tracking-wide truncate font-montse font-semibold text-base"
-                  >
-                    Help
-                  </span>
+                  <span class="item"> Help </span>
                 </div>
               </li>
 
               <li>
                 <div class="link flex items-center">
-                  <span class="inline-flex items-center justify-center ml-4">
+                  <span class="inline-flex items-center justify-center ml-3">
                     <svg
                       class="w-5 h-5"
                       fill="none"
@@ -382,7 +359,6 @@
                 </div>
               </li>
             </ul>
-            <hr />
           </div>
         </div>
       </div>
@@ -393,11 +369,16 @@
 <style scoped>
 .link {
   color: white;
-
-  @apply relative flex font-semibold text-base flex-row items-center pr-2 border-l-4 border-transparent h-11 focus:outline-none hover:bg-white hover:text-primary-color hover:rounded-lg hover:mx-2;
+  transition: all 0.2s ease-in-out;
+  @apply relative flex font-semibold text-base flex-row items-center pr-2 border-l-4 border-transparent h-11 focus:outline-none hover:bg-white hover:text-primary-color hover:rounded-lg hover:ml-2 hover:mr-4;
 }
 
 .link:hover svg path {
+  transition: all 0.2s ease-in-out;
   @apply fill-primary-color;
+}
+
+.item {
+  @apply ml-2 tracking-wide truncate font-montse font-semibold text-[14px];
 }
 </style>
