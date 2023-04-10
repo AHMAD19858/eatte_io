@@ -1,4 +1,6 @@
-<script setup></script>
+<script setup>
+import { Disclosure, DisclosureButton, DisclosurePanel } from "@headlessui/vue";
+</script>
 
 <template>
   <div data-dev-hint="container">
@@ -61,40 +63,93 @@
                 </NuxtLink>
               </li>
               <li>
-                <div class="link flex items-center">
-                  <span class="inline-flex items-center justify-center ml-3">
-                    <svg
-                      width="20"
-                      height="18"
-                      viewBox="0 0 20 18"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M7.44319 16.9999H11.4432V15.8614L12.0009 15.6691C13.2765 15.2742 14.3608 14.6348 15.2538 13.7508C16.1467 12.8668 16.7599 11.9499 17.0932 10.9999H1.83167C2.165 11.9499 2.77077 12.8668 3.64897 13.7508C4.52717 14.6348 5.60602 15.2742 6.88552 15.6691L7.44319 15.8614V16.9999ZM6.44319 17.9999V16.5576C4.85218 15.9345 3.52814 15.0435 2.47107 13.8845C1.41402 12.7255 0.776527 11.4306 0.558594 9.99986V9.96139L2.05859 9.99986V1.99986L19.3278 0.115234V0.999859L7.48167 2.29986V4.34601H19.4432V5.23063H7.48167V9.99986H18.3663C18.174 11.4306 17.5365 12.7255 16.4538 13.8845C15.3711 15.0435 14.0342 15.9345 12.4432 16.5576V17.9999H6.44319ZM5.21244 4.34601H6.59704V2.41138L5.21244 2.54986V4.34601ZM2.94319 4.34601H4.32782V2.63448L2.94319 2.77138V4.34601ZM5.21244 9.99986H6.59704V5.23063H5.21244V9.99986ZM2.94319 9.99986H4.32782V5.23063H2.94319V9.99986Z"
-                        fill="white"
-                      />
-                    </svg>
-                  </span>
-                  <span class="item"> Merchants/Restaurants </span>
-                  <span class="inline-flex items-center justify-center ml-auto mr-4">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke-width="3.5"
-                      stroke="currentColor"
-                      class="w-4 h-4"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        d="M8.25 4.5l7.5 7.5-7.5 7.5"
-                      />
-                    </svg>
-                  </span>
+                <div class="w-full">
+                  <div>
+                    <Disclosure v-slot="{ open }">
+                      <DisclosureButton
+                        class="flex w-full justify-between text-left text-sm font-medium"
+                      >
+                        <div class="link flex items-center">
+                          <span
+                            class="inline-flex items-center justify-center ml-3"
+                          >
+                            <svg
+                              width="20"
+                              height="18"
+                              viewBox="0 0 20 18"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M7.44319 16.9999H11.4432V15.8614L12.0009 15.6691C13.2765 15.2742 14.3608 14.6348 15.2538 13.7508C16.1467 12.8668 16.7599 11.9499 17.0932 10.9999H1.83167C2.165 11.9499 2.77077 12.8668 3.64897 13.7508C4.52717 14.6348 5.60602 15.2742 6.88552 15.6691L7.44319 15.8614V16.9999ZM6.44319 17.9999V16.5576C4.85218 15.9345 3.52814 15.0435 2.47107 13.8845C1.41402 12.7255 0.776527 11.4306 0.558594 9.99986V9.96139L2.05859 9.99986V1.99986L19.3278 0.115234V0.999859L7.48167 2.29986V4.34601H19.4432V5.23063H7.48167V9.99986H18.3663C18.174 11.4306 17.5365 12.7255 16.4538 13.8845C15.3711 15.0435 14.0342 15.9345 12.4432 16.5576V17.9999H6.44319ZM5.21244 4.34601H6.59704V2.41138L5.21244 2.54986V4.34601ZM2.94319 4.34601H4.32782V2.63448L2.94319 2.77138V4.34601ZM5.21244 9.99986H6.59704V5.23063H5.21244V9.99986ZM2.94319 9.99986H4.32782V5.23063H2.94319V9.99986Z"
+                                fill="white"
+                              />
+                            </svg>
+                          </span>
+                          <span class="item"> Merchants/Restaurants </span>
+
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke-width="3.5"
+                            stroke="currentColor"
+                            class="w-4 h-4"
+                            :class="open ? 'rotate-90 transform' : ''"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              d="M8.25 4.5l7.5 7.5-7.5 7.5"
+                            />
+                          </svg>
+                        </div>
+                      </DisclosureButton>
+                      <DisclosurePanel class="item">
+                        <div class="link flex items-center">
+                          <span
+                            class="inline-flex items-center justify-center ml-3"
+                          >
+                            <svg
+                              width="20"
+                              height="18"
+                              viewBox="0 0 20 18"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M7.44319 16.9999H11.4432V15.8614L12.0009 15.6691C13.2765 15.2742 14.3608 14.6348 15.2538 13.7508C16.1467 12.8668 16.7599 11.9499 17.0932 10.9999H1.83167C2.165 11.9499 2.77077 12.8668 3.64897 13.7508C4.52717 14.6348 5.60602 15.2742 6.88552 15.6691L7.44319 15.8614V16.9999ZM6.44319 17.9999V16.5576C4.85218 15.9345 3.52814 15.0435 2.47107 13.8845C1.41402 12.7255 0.776527 11.4306 0.558594 9.99986V9.96139L2.05859 9.99986V1.99986L19.3278 0.115234V0.999859L7.48167 2.29986V4.34601H19.4432V5.23063H7.48167V9.99986H18.3663C18.174 11.4306 17.5365 12.7255 16.4538 13.8845C15.3711 15.0435 14.0342 15.9345 12.4432 16.5576V17.9999H6.44319ZM5.21244 4.34601H6.59704V2.41138L5.21244 2.54986V4.34601ZM2.94319 4.34601H4.32782V2.63448L2.94319 2.77138V4.34601ZM5.21244 9.99986H6.59704V5.23063H5.21244V9.99986ZM2.94319 9.99986H4.32782V5.23063H2.94319V9.99986Z"
+                                fill="white"
+                              />
+                            </svg>
+                          </span>
+                          <span class="item">item1</span>
+                        </div>
+                        <div class="link flex items-center">
+                          <span
+                            class="inline-flex items-center justify-center ml-3"
+                          >
+                            <svg
+                              width="20"
+                              height="18"
+                              viewBox="0 0 20 18"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M7.44319 16.9999H11.4432V15.8614L12.0009 15.6691C13.2765 15.2742 14.3608 14.6348 15.2538 13.7508C16.1467 12.8668 16.7599 11.9499 17.0932 10.9999H1.83167C2.165 11.9499 2.77077 12.8668 3.64897 13.7508C4.52717 14.6348 5.60602 15.2742 6.88552 15.6691L7.44319 15.8614V16.9999ZM6.44319 17.9999V16.5576C4.85218 15.9345 3.52814 15.0435 2.47107 13.8845C1.41402 12.7255 0.776527 11.4306 0.558594 9.99986V9.96139L2.05859 9.99986V1.99986L19.3278 0.115234V0.999859L7.48167 2.29986V4.34601H19.4432V5.23063H7.48167V9.99986H18.3663C18.174 11.4306 17.5365 12.7255 16.4538 13.8845C15.3711 15.0435 14.0342 15.9345 12.4432 16.5576V17.9999H6.44319ZM5.21244 4.34601H6.59704V2.41138L5.21244 2.54986V4.34601ZM2.94319 4.34601H4.32782V2.63448L2.94319 2.77138V4.34601ZM5.21244 9.99986H6.59704V5.23063H5.21244V9.99986ZM2.94319 9.99986H4.32782V5.23063H2.94319V9.99986Z"
+                                fill="white"
+                              />
+                            </svg>
+                          </span>
+                          <span class="item">item2 </span>
+                        </div>
+                      </DisclosurePanel>
+                    </Disclosure>
+                  </div>
                 </div>
               </li>
+
               <li>
                 <div class="link flex items-center">
                   <span class="inline-flex items-center justify-center ml-3">
@@ -125,7 +180,9 @@
                     </svg>
                   </span>
                   <span class="item"> Orders </span>
-                  <span class="inline-flex items-center justify-center ml-auto mr-4">
+                  <span
+                    class="inline-flex items-center justify-center ml-auto mr-4"
+                  >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
@@ -146,7 +203,7 @@
 
               <li>
                 <div class="link flex items-center">
-                  <span class="inline-flex items-center justify-center ml-3 ">
+                  <span class="inline-flex items-center justify-center ml-3">
                     <svg
                       width="20"
                       height="20"
@@ -174,7 +231,9 @@
                     </svg>
                   </span>
                   <span class="item"> Wizard control </span>
-                  <span class="inline-flex items-center justify-center ml-auto mr-4">
+                  <span
+                    class="inline-flex items-center justify-center ml-auto mr-4"
+                  >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
@@ -221,7 +280,9 @@
                     </svg>
                   </span>
                   <span class="item"> Reports </span>
-                  <span class="inline-flex items-center justify-center ml-auto mr-4">
+                  <span
+                    class="inline-flex items-center justify-center ml-auto mr-4"
+                  >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
@@ -279,7 +340,9 @@
                     </svg>
                   </span>
                   <span class="item"> Settings </span>
-                  <span class="inline-flex items-center justify-center ml-auto mr-4">
+                  <span
+                    class="inline-flex items-center justify-center ml-auto mr-4"
+                  >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
