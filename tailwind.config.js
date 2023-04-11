@@ -9,6 +9,7 @@ module.exports = {
         "second-font-color": "var(--second-font)",
         "background-color": "var(--background)",
         "dark-background-color": "var(--dark_background)",
+		  "dashboard-font-color":"var(--dashboard-font-color)"
       },
       fontFamily: {
         'montse': ['Montserrat']

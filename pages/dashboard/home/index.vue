@@ -1,17 +1,11 @@
 <script setup>
 definePageMeta({
-    layout: 'dashboard'
-})
+  layout: "dashboard",
+});
 </script>
 
 <template>
- <!--    <div class="pt-10 pl-36">
-        <p>home page</p>
-    </div> -->
+  <DashboardTitle :title="'General data'" :isRow="false" />
 </template>
 
-
-
-<style lang="scss" scoped>
-
-</style>
+<style  scoped></style>
