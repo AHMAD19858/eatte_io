@@ -19,7 +19,7 @@ const props = defineProps({
 </template>
 
 <style scoped>
-isRow {
+.isRow {
   @apply flex justify-evenly;
 }
 .title {

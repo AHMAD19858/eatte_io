@@ -10,12 +10,11 @@
     <DashboardNavbar />
     <DashboardSidebar />
 
-    <div class="pt-10 ml-64 pl-36">
+    <div class="pt-10 ml-64 pl-6">
     <!--   <DashboardBreadcrumb :primary="a.name.split('-')" /> -->
 
       <slot />
     </div>
-  <!--   <DashboardFooter class="mt-auto" /> -->
   </div>
 </template>
 
