@@ -23,6 +23,6 @@ const props = defineProps({
   @apply flex justify-evenly;
 }
 .title {
-  @apply text-base font-montse font-semibold text-dashboard-font-color;
+  @apply text-base font-montse font-semibold text-dashboard-font-color text-left;
 }
 </style>
