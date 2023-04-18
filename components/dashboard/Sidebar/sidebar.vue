@@ -255,12 +255,22 @@ import { Disclosure, DisclosureButton, DisclosurePanel } from "@headlessui/vue";
                     </div>
                   </DisclosureButton>
                   <DisclosurePanel class="item">
-                    <div class="link flex items-center pl-[25px]">
-                      <span class="item">item1</span>
-                    </div>
-                    <div class="link flex items-center pl-[25px]">
-                      <span class="item">item2 </span>
-                    </div>
+                    <NuxtLink
+                      to="/dashboard/reports/sales"
+                      class="link flex items-center pl-[25px]"
+                    >
+                      <div>
+                        <span class="item">Sales</span>
+                      </div>
+                    </NuxtLink>
+                    <NuxtLink
+                      to="/dashboard/reports/customers-data"
+                      class="link flex items-center pl-[25px]"
+                    >
+                      <div>
+                        <span class="item">Customer data</span>
+                      </div>
+                    </NuxtLink>
                   </DisclosurePanel>
                 </Disclosure>
               </li>
@@ -331,14 +341,14 @@ import { Disclosure, DisclosureButton, DisclosurePanel } from "@headlessui/vue";
                     >
                       <span class="item">Overview</span>
                     </NuxtLink>
-                    <div class="link flex items-center pl-[25px]">
-                      <NuxtLink
-                        to="/dashboard/affiliate/all-affiliate"
-                        class="link flex items-center "
-                      >
-                      <span class="item">All affiliate </span>
+                    <NuxtLink
+                      to="/dashboard/affiliate/all-affiliate"
+                      class="link flex items-center pl-[25px]"
+                    >
+                      <div>
+                        <span class="item">All affiliate </span>
+                      </div>
                     </NuxtLink>
-                    </div>
                   </DisclosurePanel>
                 </Disclosure>
               </li>
