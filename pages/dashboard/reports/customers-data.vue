@@ -5,14 +5,14 @@ definePageMeta({
 });
 
 const headers: Header[] = [
-  { text: "PLAYER", value: "player" },
-  { text: "TEAM", value: "team" },
-  { text: "NUMBER", value: "number" },
-  { text: "POSITION", value: "position" },
-  { text: "HEIGHT", value: "indicator.height" },
-  { text: "WEIGHT (lbs)", value: "indicator.weight", sortable: true },
-  { text: "LAST ATTENDED", value: "lastAttended", width: 200 },
-  { text: "COUNTRY", value: "country" },
+  { text: "Name", value: "player" },
+  { text: "age", value: "team" },
+  { text: "Gender", value: "number" },
+  { text: "Location", value: "position" },
+  { text: "Loyalty Points Earned", value: "indicator.height" },
+  { text: "Redeemed ", value: "indicator.weight", sortable: true },
+  { text: "expired", value: "lastAttended", width: 200 },
+  { text: "Rate ", value: "country" },
 ];
 
 const items: Item[] = [
@@ -100,7 +100,7 @@ const items: Item[] = [
   </div>
 </template>
 
-<style scoped>
+<style>
 .numbers {
   @apply text-center pt-4 text-dashboard-font-color font-bold text-lg font-montse;
 }
@@ -111,5 +111,12 @@ const items: Item[] = [
 
 .card_container {
   @apply rounded-md bg-white w-[168px] h-[93px] border-solid border-[1px] border-[#E4E4E7];
+}
+
+.vue3-easy-data-table__header tr {
+  height: 88px !important;
+}
+.vue3-easy-data-table__body tr {
+  height: 40px;
 }
 </style>

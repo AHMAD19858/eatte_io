@@ -5,7 +5,6 @@ definePageMeta({
 </script>
 
 <template>
-  <!-- <DashboardTitle :title="'All orders data'" :isRow="false" /> -->
 
   <div class="grid grid-flow-row-dense grid-cols-3 grid-rows-3">
     <div class="col-span-2">

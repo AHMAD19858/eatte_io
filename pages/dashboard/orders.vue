@@ -5,14 +5,13 @@ definePageMeta({
 });
 
 const headers: Header[] = [
-  { text: "Item name", value: "player" },
-  { text: "Count", value: "team" },
-  { text: "Total sales", value: "number" },
-  { text: "Return", value: "position" },
-  { text: "Discount", value: "indicator.height" },
-  { text: "Net sales", value: "indicator.weight", sortable: true },
-  { text: "Category", value: "lastAttended", width: 200 },
-  { text: "Payment type", value: "country" },
+  { text: "merchants Name", value: "player" },
+  { text: "Order ID", value: "team" },
+  { text: "Order date", value: "number" },
+  { text: "status", value: "position" },
+  { text: "Customer", value: "indicator.height" },
+  { text: "amount of items, ", value: "indicator.weight", sortable: true },
+  { text: "payment method,", value: "lastAttended",  },
 ];
 
 const items: Item[] = [
@@ -94,8 +93,8 @@ const items: Item[] = [
 <template>
   <div>
     <div>
-      <DashboardTitle :title="'Sales'" :isRow="false" />
-      <Table :headers="headers" :items="items" />
+      <DashboardTitle :title="'All Orders'" :isRow="false" />
+      <Table :headers="headers" :items="items"/>
     </div>
   </div>
 </template>

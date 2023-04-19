@@ -9,10 +9,6 @@ const headers: Header[] = [
   { text: "Affiliate name", value: "team" },
   { text: "Time", value: "number" },
   { text: "Conversion funnel", value: "position", sortable: true },
-  /*   { text: "HEIGHT", value: "indicator.height" },
-  { text: "WEIGHT (lbs)", value: "indicator.weight", sortable: true },
-  { text: "LAST ATTENDED", value: "lastAttended", width: 200 },
-  { text: "COUNTRY", value: "country" }, */
 ];
 
 const items: Item[] = [
@@ -114,7 +110,7 @@ const items: Item[] = [
   </div>
 </template>
 
-<style >
+<style>
 .numbers {
   @apply text-center pt-4 text-dashboard-font-color font-bold text-lg font-montse;
 }
@@ -134,16 +130,22 @@ const items: Item[] = [
   text-align: center !important;
 }
 
-
-.header-text{
- color: #93A3B0CC;
- font-size: 12px;
- font-weight: 400;
- @apply font-montse
+.header-text {
+  color: #93a3b0cc;
+  font-size: 12px;
+  font-weight: 400;
+  @apply font-montse;
 }
 
 .vue3-easy-data-table[data-v-19cc4b1b] {
   border-radius: 8px;
-  border: 1px solid #E4E4E7;
+  border: 1px solid #e4e4e7;
+}
+
+.vue3-easy-data-table__header tr {
+  height: 88px !important;
+}
+.vue3-easy-data-table__body tr {
+  height: 40px;
 }
 </style>
