@@ -99,6 +99,7 @@ import { Disclosure, DisclosureButton, DisclosurePanel } from "@headlessui/vue";
                 <div class="w-full">
                   <div>
                     <div class="link flex items-center">
+                      <NuxtLink to="/dashboard/merchants" class="link">
                       <span
                         class="inline-flex items-center justify-center ml-3"
                       >
@@ -116,6 +117,7 @@ import { Disclosure, DisclosureButton, DisclosurePanel } from "@headlessui/vue";
                         </svg>
                       </span>
                       <span class="item"> Merchants/Restaurants </span>
+                    </NuxtLink>
                     </div>
                   </div>
                 </div>
