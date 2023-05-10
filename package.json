@@ -10,8 +10,7 @@
   "devDependencies": {
     "@nuxtjs/color-mode": "^3.2.0",
     "@nuxtjs/i18n": "^8.0.0-beta.9",
-    "@nuxtjs/tailwindcss": "^6.4.0",
-    "nuxt": "^3.2.0",
+    "nuxt": "^3.4.3",
     "nuxt-headlessui": "^1.1.1",
     "sass": "^1.59.2",
     "sass-loader": "^13.2.0"
@@ -19,7 +18,16 @@
   "dependencies": {
     "@headlessui/vue": "^1.7.9",
     "@heroicons/vue": "^2.0.15",
+    "@nuxtjs/google-fonts": "^3.0.0",
+    "@nuxtjs/tailwindcss": "^6.6.7",
+    "@pinia-plugin-persistedstate/nuxt": "^1.1.1",
+    "@pinia/nuxt": "^0.4.10",
+    "@sidebase/nuxt-auth": "^0.6.0-beta.0",
+    "@vee-validate/i18n": "^4.8.6",
+    "@vee-validate/nuxt": "^4.8.6",
+    "@vee-validate/rules": "^4.8.6",
     "@vue-hero-icons/outline": "^1.7.2",
+    "maska": "^2.1.9",
     "md5": "^2.3.0",
     "nuxt-swiper": "^1.0.1",
     "vue3-easy-data-table": "^1.5.42"

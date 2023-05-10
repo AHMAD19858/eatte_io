@@ -300,7 +300,7 @@
       <div class="right_side">
         <div class="right_container">
           <NuxtLink to="/login"><p class="login_btn login">Login</p></NuxtLink>
-          <NuxtLink to="https://eatte.io/new_wizard/" target="_blank">
+          <NuxtLink to="/get-started">
             <button class="get_started">
               <p class="text-center font-montse font-normal text-[14px]">
                 Get Started

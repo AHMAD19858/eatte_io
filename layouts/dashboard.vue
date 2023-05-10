@@ -2,7 +2,7 @@
 </script>
 
 <template>
-    <link
+  <link
     href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
     rel="stylesheet"
   />
@@ -10,12 +10,13 @@
     <DashboardNavbar />
     <DashboardSidebar />
 
-    <div class="pt-10 ml-64 pl-6">
-    <!--   <DashboardBreadcrumb :primary="a.name.split('-')" /> -->
+    <div class="pt-10 ml-64 px-6">
+      <!--   <DashboardBreadcrumb :primary="a.name.split('-')" /> -->
 
       <slot />
     </div>
   </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+</style>

@@ -6,9 +6,11 @@ export default defineNuxtConfig({
     '@nuxtjs/i18n',
     '@nuxtjs/color-mode',
     'nuxt-swiper',
-    'nuxt-headlessui'
+    'nuxt-headlessui',
+    '@pinia/nuxt',
+    '@pinia-plugin-persistedstate/nuxt',
+    '@nuxtjs/google-fonts',
   ],
-
   app: {
     head: {
       title: 'EATTE-All-in-One Restaurant Management & Ordering System',
@@ -23,6 +25,11 @@ export default defineNuxtConfig({
     baseURL: NODE_ENV === 'production' ? '/new-design/' : '/'
 
   },
+  googleFonts: {
+    families: {
+      Montserrat: true,
+    }
+  },
   headlessui: {
     prefix: 'Headless'
 },
@@ -36,6 +43,14 @@ export default defineNuxtConfig({
     exposeConfig: false,
     injectPosition: 0,
     viewer: true,
+  },
+  runtimeConfig: {
+    // The private keys which are only available within server-side
+    apiSecret: process.env.API_BASE_URL,
+    // Keys within public, will be also exposed to the client-side
+    public: {
+      apiBase: '/api'
+    }
   },
 
 })

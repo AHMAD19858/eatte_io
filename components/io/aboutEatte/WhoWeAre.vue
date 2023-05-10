@@ -27,7 +27,7 @@
             <p class="title">Customers are using & it’s growing everyday</p>
           </div>
         </div> -->
-        <NuxtLink to="https://eatte.io/new_wizard/" target="_blank">
+        <NuxtLink to="/get-started">
           <button class="plan_btn">
             <p class="font-montse">Get Started</p>
             <i class="bx bx-right-arrow-alt"></i>
@@ -35,7 +35,7 @@
         </NuxtLink>
       </div>
       <div class="left_side devices_shapes">
-  <!--       <img
+        <!--       <img
           class="mobile"
           src="~/assets/images/mobileScreen.svg"
           alt="mobile"

@@ -64,7 +64,7 @@ const props = defineProps({
           v-if="without_btn !== true"
         >
           <div class="col">
-            <NuxtLink to="https://eatte.io/new_wizard/" target="_blank">
+            <NuxtLink to="/get-started">
               <button class="get_started">
                 {{ start_btn }}
                 <svg
