@@ -7,25 +7,25 @@ const props = defineProps({
 </script>
 <template>
   <div class="view_button" v-if="primary === true">
-    <NuxtLink to="https://eatte.io/new_wizard/" target="_blank">
-    <button class="get_started">
-      {{ title }}
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 24 24"
-        stroke-width="1.5"
-        stroke="currentColor"
-        class="w-6 h-6"
-      >
-        <path
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
-        />
-      </svg>
-    </button>
-  </NuxtLink>
+    <NuxtLink to="/get-started">
+      <button class="get_started">
+        {{ title }}
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="w-6 h-6"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
+          />
+        </svg>
+      </button>
+    </NuxtLink>
   </div>
 
   <div class="view_button">
@@ -51,7 +51,7 @@ const props = defineProps({
 
 <style scoped>
 .view_button {
-  @apply flex flex-wrap bg-background-color justify-center mb-12 mt-8 dark:bg-dark-background-color
+  @apply flex flex-wrap bg-background-color justify-center mb-12 mt-8 dark:bg-dark-background-color;
 }
 
 .get_demo {

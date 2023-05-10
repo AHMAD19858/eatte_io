@@ -6,7 +6,7 @@ const props = defineProps({
   start_btn: String,
   demo_btn: String,
   about: Boolean,
-  landing:false
+  landing: false,
 });
 </script>
 
@@ -35,7 +35,7 @@ const props = defineProps({
         {{ sub_header }}
       </p>
       <div class="header_buttons">
-        <NuxtLink to="https://eatte.io/new_wizard/" target="_blank">
+        <NuxtLink to="/get-started">
           <button class="get_started">
             {{ start_btn }}
             <svg
@@ -74,7 +74,9 @@ const props = defineProps({
           </button>
         </NuxtLink>
       </div>
-      <p v-if="landing === true" class="support">Support available 24/7   .    Paying in different ways</p>
+      <p v-if="landing === true" class="support">
+        Support available 24/7 . Paying in different ways
+      </p>
     </div>
   </section>
 </template>
@@ -87,15 +89,15 @@ const props = defineProps({
 .header_container {
   @apply mb-[201px] container flex flex-col items-center px-4  pt-[9rem] mx-auto text-center md:px-10 lg:px-32 dark:bg-dark-background-color;
 }
-.support{
-  @apply font-montse text-[#3F4440] dark:text-white
+.support {
+  @apply font-montse text-[#3F4440] dark:text-white;
 }
 @media (max-width: 576px) {
   .header_container {
-    @apply pt-12 mb-12
+    @apply pt-12 mb-12;
   }
-  .support{
-    @apply mt-5
+  .support {
+    @apply mt-5;
   }
 }
 
@@ -132,10 +134,9 @@ const props = defineProps({
   @apply bg-background-color min-h-full;
 }
 
-
 @media (max-width: 576px) {
-  .slogan{
-    @apply pt-12
+  .slogan {
+    @apply pt-12;
   }
 }
 </style>

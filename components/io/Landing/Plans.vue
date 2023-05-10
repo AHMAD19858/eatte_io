@@ -98,7 +98,7 @@ const select_pay = ref(true);
           </div>
           <p class="plan_best">Best Value</p>
         </div>
-        <NuxtLink to="https://eatte.io/new_wizard/" target="_blank">
+        <NuxtLink to="/get-started">
           <button class="plan_btn">
             <p class="font-montse">Try</p>
             <i class="bx bx-right-arrow-alt"></i>
